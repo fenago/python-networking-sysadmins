@@ -27,6 +27,8 @@ Leverage the features and libraries of Python to administrate your environment e
 
 Labs for this course are available at endpoints shared below. Update `<host-ip>` with the lab environment DNS.
 
+**Path :** ~/work/python-networking-sysadmins/scripting
+
 1. ##### Python Scripting Overview
 		* http://<host-ip>/lab/workspaces/lab1_
 2. ##### Debugging and Profiling Python Scripts

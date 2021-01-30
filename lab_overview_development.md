@@ -25,6 +25,8 @@ Learn the fundamentals of clean, effective Python coding and build the practical
 
 Labs for this course are available at endpoints shared below. Update `<host-ip>` with the lab environment DNS.
 
+**Path :** ~/work/python-networking-sysadmins/development
+
 1. ##### Vital Python – Math, Strings, Conditionals, and Loops
 		* http://<host-ip>/lab/workspaces/lab1_
 2. ##### Python Structures
