@@ -1,6 +1,6 @@
 <img align="right" src="./logo.png">
 
-<h2><span style="color:red;"></span> Python Development</h2>
+<h2><span style="color:red;"></span>Python Development</h2>
 
 ### Description
 
@@ -28,27 +28,27 @@ Labs for this course are available at endpoints shared below. Update `<host-ip>`
 **Path :** ~/work/python-networking-sysadmins/development
 
 1. ##### Vital Python – Math, Strings, Conditionals, and Loops
-		* http://<host-ip>/lab/workspaces/lab1_
+		* http://<host-ip>/lab/workspaces/lab1_Python
 2. ##### Python Structures
-		* http://<host-ip>/lab/workspaces/lab2_
+		* http://<host-ip>/lab/workspaces/lab2_Structures
 3. ##### Executing Python – Programs, Algorithms, and Functions
-		* http://<host-ip>/lab/workspaces/lab3_
+		* http://<host-ip>/lab/workspaces/lab3_Algorithms
 4. ##### Extending Python, Files, Errors, and Graphs
-		* http://<host-ip>/lab/workspaces/lab4_
+		* http://<host-ip>/lab/workspaces/lab4_Files
 5. ##### Constructing Python – Classes and Methods
-		* http://<host-ip>/lab/workspaces/lab5_
+		* http://<host-ip>/lab/workspaces/lab5_Classes
 6. ##### The Standard Library
-		* http://<host-ip>/lab/workspaces/lab6_
+		* http://<host-ip>/lab/workspaces/lab6_Library
 7. #####  Becoming Pythonic
-		* http://<host-ip>/lab/workspaces/lab7_
+		* http://<host-ip>/lab/workspaces/lab7_Pythonic
 8. ##### Software Development
-		* http://<host-ip>/lab/workspaces/lab8_
+		* http://<host-ip>/lab/workspaces/lab8_Development
 9. ##### Practical Python – Advanced Topics
-		* http://<host-ip>/lab/workspaces/lab9_
+		* http://<host-ip>/lab/workspaces/lab9_Advanced
 10. ##### Data Analytics with pandas and NumPy
-		* http://<host-ip>/lab/workspaces/lab10_
+		* http://<host-ip>/lab/workspaces/lab10_Analytics
 11. ##### Machine Learning
-		* http://<host-ip>/lab/workspaces/lab11_
+		* http://<host-ip>/lab/workspaces/lab11_ML
 
 ### About
 
