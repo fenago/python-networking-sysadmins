@@ -10,7 +10,7 @@ Leverage the features and libraries of Python to administrate your environment e
 
 - Learn how to solve problems of system administrators and automate routine activities
 - Learn to handle regular expressions, network administration
-- Building GUI, web-scraping and database administration including data analytics
+- Web-scraping and database administration including data analytics
 
 **What You Will Learn**
 

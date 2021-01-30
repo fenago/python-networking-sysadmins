@@ -60,4 +60,3 @@ The Python course starts by showing you how to correctly apply Python syntax to 
 As you advance, you'll understand how to use the standard library, debug code to troubleshoot problems, and write unit tests to validate application behavior.
 
 You'll gain insights into using the pandas and NumPy libraries for analyzing data, and the graphical libraries of Matplotlib and Seaborn to create impactful data visualizations. By focusing on entry-level data science, you'll build your practical Python skills in a way that mirrors real-world development. Finally, you'll discover the key steps in building and using simple machine learning algorithms.
-=
