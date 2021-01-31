@@ -1044,8 +1044,8 @@ The output is as follows:
 
 In the preceding example, we imported two
 modules,`matplotlib`and`numpy`, to visualize the
-data as well as to create the arrays [*x*]{.emphasis} and
-[*y*]{.emphasis}, respectively. After this, we plotted two arrays
+data as well as to create the arrays [*x*] and
+[*y*], respectively. After this, we plotted two arrays
 as`plt.plot(x,y)`. Then we added a title and labels to the
 plot using the`xlabel()`,
 `ylabel()`, and`title()`functions, and to display

@@ -395,7 +395,7 @@ student@ubuntu:~/Desktop$ python3 -m http.server 9000
  
 
 Now open your browser and write `localhost:9000` in your
-address bar and press [*Enter*]{.emphasis}. You will get the output
+address bar and press [*Enter*]. You will get the output
 following:
 
 

@@ -128,7 +128,7 @@ and listing the tables.
 Now, we will create a database using a create database statement in
 the `mysql` console. Now, open the `mysql` console
 using `mysql -u root -p`, then enter your password, which you
-entered while installing, and press [*Enter*]{.emphasis}. Next, create
+entered while installing, and press [*Enter*]. Next, create
 your database. In this section, we are going to create a database named
 `test` and we will use this database throughout this section:
 

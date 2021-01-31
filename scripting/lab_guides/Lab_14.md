@@ -387,7 +387,7 @@ specific information. This string may contain literal characters. Those
 characters will get copied directly in log output.
 
 The `CustomLog` directive will set up a new log file with the
-help of a defined [*nickname*]{.emphasis}. The filename for the access
+help of a defined [*nickname*]. The filename for the access
 log is relative to the `ServerRoot`, unless it begins with a
 slash.
 

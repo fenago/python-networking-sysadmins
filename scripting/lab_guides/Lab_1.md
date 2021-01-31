@@ -5,12 +5,6 @@ Lab 1. Python Scripting Overview
 ---------------------------------------------
 
 
-
-Python is a scripting language, created by Guido van Rossum in 1991,
-which is used in various applications, such as game development, GIS
-programming, software development, web development, data analytics,
-machine learning, and system scripting.
-
 Python is an object-oriented, high-level programming language with
 dynamic semantics. Mainly, Python is an interpreted language. Python is
 used for rapid application development, as it has all of the advanced
@@ -18,12 +12,6 @@ features for development.
 
 Python is simple and easy to learn, as its syntax makes programs more
 readable. Hence, the program maintenance cost is low.
-
-Python has one more important feature of importing modules and packages.
-This feature allows for code reuse. The Python interpreter is easy to
-understand. We can write the complete code one by one in it and, as
-Python is an interpreted language, the code gets executed line by line.
-Python also has a wide range of libraries for advanced functionality.
 
 This lab will cover the following topics:
 
@@ -39,186 +27,6 @@ This lab will cover the following topics:
 -   Functions
 -   Modules
 
-
-Technical requirements
-----------------------------------------
-
-
-
-
-Why Python?
------------------------------
-
-
-
-Python has a wide range of libraries for open
-source data analysis tools, web frameworks, testing, and so on. Python
-is a programming language that can be used on different platforms
-(Windows, Mac, Linux, and embedded Linux H/W platforms, such as
-Raspberry Pi). It\'s used to develop desktop as well as web
-applications.
-
-Developers can write programs with fewer lines if they use Python.
-Prototyping is very quick, as Python runs on an interpreter system.
-Python can be treated in an object-oriented, a procedural, or a
-functional way.
-
-Python can do various tasks, such as creating web applications. It is
-used with the software to create workflows; it connects to database
-systems, handles files, handles big data, and performs complex
-mathematics.
-
-
-
-Python syntax compared to other programming languages
------------------------------------------------------------------------
-
-
-
-The code written in Python is highly readable
-because it\'s similar to the English language. To complete a command,
-Python uses new lines.
-
-Python has a great feature: indentation. Using indentations, we can
-define the scope for decision-making statements, loops such as
-`for` and `while` loops, functions, and classes.
-
-
-
-Python installation
--------------------------------------
-
-
-
-In this section, we will be learning about
-the installation of Python on different platforms, such as Linux and
-Windows.
-
-
-
-### Installation on the Linux platform
-
-
-
-Most Linux distributions have Python 2 in their default[]{#id326402538
-.indexterm} installations. Some of them also have Python 3 included.
-
-To install `python3` on Debian-based Linux, run the following
-command in the Terminal:
-
-
-```
-sudo apt install python3
-```
-
-To install `python3` on `centos`, run the following
-command in the Terminal:
-
-
-```
-sudo yum install python3
-```
-
-If you are unable to install Python using the preceding commands,
-download Python from <https://www.python.org/downloads/> and follow the
-instructions.
-
-
-### Installation on the Windows platform
-
-
-
-For installing Python in Microsoft Windows,
-you\'ll have to download the executable from `python.org` and
-install it. Download `python.exe` from
-<https://www.python.org/downloads/> and choose the Python version that
-you want install on your PC. Then, double-click on the downloaded
-`exe` and install Python. On the installation wizard, there\'s
-checkbox that says **Add Python to the path**. Check this
-checkbox and then follow the instructions to install
-`python3`.
-
-
-
-#### Installing and using pip to install packages
-
-
-
-In Linux, install `pip` as follows:
-
-
-```
-sudo apt install python-pip --- This will install pip for python 2.
-sudo apt install python3-pip --- This will install pip for python 3.
-```
-
-In Windows, install `pip` as
-follows:
-
-
-```
-python -m pip install pip
-```
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-### Installation on Mac
-
-
-
-To install `python3`, first we must
-have `brew` installed on our system. To install
-`brew` on your system, run the following command:
-
-
-```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-By running the preceding command. `brew` will get installed.
-Now we will install `python3` using `brew`:
-
-
-```
-brew install python3
-```
-
-
-### Installing Jupyter notebook
-
-
-
-For installing the Jupyter Notebook, download
-Anaconda.
-
-Install the downloaded version of Anaconda
-and follow the instructions on the wizard.
-
-Install Jupyter using `pip`:
-
-
-```
-pip install jupyter
-```
-
-In Linux, `pip install jupyter` will install Jupyter for
-`python 2`. If you want to install `jupyter` for
-`python 3`, run the following command:
-
-
-```
-pip3 install jupyter
-```
 
 
 ### Installing and using the virtual environment
@@ -274,37 +82,6 @@ install the virtual environment. The steps for installing
 `virtualenv` are same as with Linux.
 
 
-### Installing Geany and PyCharm
-
-
-
-Download Geany from
-<https://www.geany.org/download/releases> and download the
-required binaries. Follow the[]{#id326403063
-.indexterm}instructions while installing.
-
-Download PyCharm
-from <https://www.jetbrains.com/pycharm/download/#section=windows> and
-follow the instructions.
-
-
-
-Python interpreter
-------------------------------------
-
-
-
-Python is an interpreted language. It has an interactive[]{#id326134526
-.indexterm} console called the Python interpreter or Python shell. This
-shell provides a way to execute your program line by line without
-creating a script.
-
-You can access all of Python\'s built-in functions and libraries,
-installed modules, and command history in the Python interactive
-console. This console gives you the opportunity to to explore Python.
-You\'re able to paste code into scripts when you are ready.
-
-
 
 ### The difference between Python and Bash scripting
 
@@ -339,10 +116,7 @@ This will start the default Python interactive console.
 In Linux, if we write `Python` in the Terminal,
 the `python2.7` console starts. If you want to start
 the `python3` console, then enter `python3` in the
-Terminal and press [*Enter*]{.emphasis}.
-
-In Windows, when you enter `Python` in Command Prompt, it will
-start the console of the downloaded Python version.
+Terminal and press [*Enter*].
 
 
 ### Writing scripts with the Python interactive console
@@ -369,7 +143,7 @@ following example:
 ```
 
 Here, we\'ve assigned a character value of `John` to the
-`name` variable. We pressed [*Enter*]{.emphasis} and received
+`name` variable. We pressed [*Enter*] and received
 a new line with `>>> prefix`:
 
 
@@ -421,7 +195,7 @@ When we write multiple lines of code in the Python[]{#id326062798
 and `for` and `while` loop functions), then the
 interpreter uses three dots (`...`) as a secondary prompt for
 line continuation. To come out of these lines, you have to press
-the [*Enter*]{.emphasis} key twice. Now we will look at the following
+the [*Enter*] key twice. Now we will look at the following
 example:
 
 
@@ -465,7 +239,7 @@ If you are importing any module, then the Python[]{#id326134555
 .indexterm} interpreter checks if that module is available or not. You
 can do this by using the `import` statement. If that module is
 available, then you will see the `>>>` prefix after pressing
-the [*Enter*]{.emphasis} key. This indicates that the execution was
+the [*Enter*] key. This indicates that the execution was
 successful. If that module doesn\'t exist, the Python interpreter will
 show an error:
 
@@ -516,7 +290,7 @@ We can come out of the Python[]{#id326207388
 .indexterm} console in two ways:
 
 
--   The keyboard shortcut: [*Ctrl + D*]{.emphasis}
+-   The keyboard shortcut: [*Ctrl + D*]
 -   Using the `quit()` or `exit()` functions
 
 
@@ -524,7 +298,7 @@ We can come out of the Python[]{#id326207388
 
 
 
-The keyboard shortcut, [*Ctrl + D,*]{.emphasis} will give you the
+The keyboard shortcut, [*Ctrl + D,*] will give you the
 following code:
 
 
@@ -2274,7 +2048,7 @@ We also learned about functions and how to use them in scripts and
 modules and how to create and import them.
 
 In the next lab, [*Debugging and Profiling Python
-Scripts*]{.emphasis}, you will learn about Python debugging techniques,
+Scripts*], you will learn about Python debugging techniques,
 error handling (exception handling), debuggers tools, debugging basic
 program crashes, profiling and timing programs, and making programs run
 faster.
@@ -2303,5 +2077,5 @@ All of the Python documentation is available on the following
 site: [www.python.org](http://www.python.org/){.ulink}.
 
 You can also check the following courses, [*Learn Python Hard
-Way*]{.emphasis} and [*Byte of Python*]{.emphasis}, to cover the basics
+Way*] and [*Byte of Python*], to cover the basics
 of Python.

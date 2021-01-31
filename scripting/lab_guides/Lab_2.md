@@ -275,9 +275,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 To continue debugging, enter `continue` after the
-(`Pdb`) prompt and press [*Enter*]{.emphasis}. If you want to
+(`Pdb`) prompt and press [*Enter*]. If you want to
 know the options we can use in this, then after the (`Pdb`)
-prompt press the [*Tab *]{.emphasis}key twice.
+prompt press the [*Tab *]key twice.
 
 Now, after entering `continue`, we will get the output as
 follows:

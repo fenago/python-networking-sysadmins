@@ -50,7 +50,7 @@ script. The `unittest` module has `TestCase` class
 for creating test cases.
 
 Individual test cases can be created as methods. These method names
-start with the word [*test*]{.emphasis}. So, test runner will know which
+start with the word [*test*]. So, test runner will know which
 methods represent test cases.
 
 
