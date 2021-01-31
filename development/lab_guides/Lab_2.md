@@ -170,7 +170,7 @@ this:
 ![](./images/C13963_02_04.jpg)
 
 
-Figure 2.4: A matrix representation of data
+Caption: A matrix representation of data
 
 Now you will see how you can store this matrix as a nested list in the
 following exercise.
@@ -323,12 +323,12 @@ Subtraction)*, you will be using the following matrix data,
 ![](./images/C13963_02_07.jpg)
 
 
-Figure 2.7: Matrix data for matrix X
+Caption: Matrix data for matrix X
 
 ![](./images/C13963_02_08.jpg)
 
 
-Figure 2.8: Matrix data for matrix Y
+Caption: Matrix data for matrix Y
 
 
 Exercise 23: Implementing Matrix Operations (Addition and Subtraction)
@@ -431,12 +431,12 @@ for the two matrices shown in figures *2.9* and *2.10*:
 ![](./images/C13963_02_09.jpg)
 
 
-Figure 2.9: The data of matrix X
+Caption: The data of matrix X
 
 ![](./images/C13963_02_10.jpg)
 
 
-Figure 2.10: The data of matrix Y
+Caption: The data of matrix Y
 
 For a matrix multiplication operation, the number of columns in the
 first matrix (X) must be equal the number of rows in the second matrix
@@ -503,7 +503,7 @@ steps will enable you to complete the exercise:
 ![](./images/C13963_02_11.jpg)
 
 
-Figure 2.11: Output of multiplying matrix X and matrix Y
+Caption: Output of multiplying matrix X and matrix Y
 
 Note
 
@@ -980,7 +980,7 @@ these two data types --- lists and dictionaries:
 ![](./images/C13963_02_15.jpg)
 
 
-Figure 2.15: Employee data in a table
+Caption: Employee data in a table
 
 Follow these steps to complete this activity:
 
@@ -1203,7 +1203,7 @@ items:
 ![](./images/C13963_02_17.jpg)
 
 
-Figure 2.17: A representation of a Python tuple with a positive index
+Caption: A representation of a Python tuple with a positive index
 
 For instance, you can define the weekdays using a list, as follows:
 
@@ -1271,7 +1271,7 @@ tuple:
     You should get the following output:
 
     
-    ![](./images/C13963_02_18.jpg)
+![](./images/C13963_02_18.jpg)
 
 
     The only way to get around this is to create a new tuple by
@@ -1291,10 +1291,10 @@ tuple:
     You should get the following output:
 
     
-    ![](./images/C13963_02_19.jpg)
+![](./images/C13963_02_19.jpg)
 
 
-    Figure 2.19: A concatenated tuple with new items
+    Caption: A concatenated tuple with new items
 
 5.  Enter the following statements in a new cell and observe the output:
 
@@ -1313,10 +1313,10 @@ tuple:
     You should get the following output:
 
     
-    ![](./images/C13963_02_20.jpg)
+![](./images/C13963_02_20.jpg)
 
 
-Figure 2.20: Nested and mixed items in a tuple
+Caption: Nested and mixed items in a tuple
 
 
 A Survey of Sets
@@ -1367,10 +1367,10 @@ set is a collection of objects:
     You should get the following output:
 
     
-    ![](./images/C13963_02_22.jpg)
+![](./images/C13963_02_22.jpg)
 
 
-    Figure 2.22: A set initialized using a list
+    Caption: A set initialized using a list
 
     You can see that the set is unique and unordered, so duplicate items
     and the original order are not preserved.
@@ -1425,14 +1425,14 @@ and also belongs to set B at the same time:
 ![](./images/C13963_02_23.jpg)
 
 
-Figure 2.23: Set A in union with Set B
+Caption: Set A in union with Set B
 
 The following figure represents the intersect operation:
 
 ![](./images/C13963_02_24.jpg)
 
 
-Figure 2.24: Set A intersects with Set B
+Caption: Set A intersects with Set B
 
 Now you should look at how to implement these set operations in Python
 in the following exercise:
@@ -1465,10 +1465,10 @@ operations:
     You should get the following output:
 
     
-    ![](./images/C13963_02_25.jpg)
+![](./images/C13963_02_25.jpg)
 
 
-    Figure 2.25: Output with the union operator
+    Caption: Output with the union operator
 
 4.  Now use the `&` operator or the `intersection`
     method for an `intersection` operation:
@@ -1482,10 +1482,10 @@ operations:
     You should get the following output:
 
     
-    ![](./images/C13963_02_26.jpg)
+![](./images/C13963_02_26.jpg)
 
 
-    Figure 2.26: Output with the & operator
+    Caption: Output with the & operator
 
 5.  Use the `–` operator or the `difference` method
     to find the `difference` between two sets:
@@ -1499,10 +1499,10 @@ operations:
     You should get the following output:
 
     
-    ![](./images/C13963_02_27.jpg)
+![](./images/C13963_02_27.jpg)
 
 
-    Figure 2.27: Output with the difference operator
+    Caption: Output with the difference operator
 
 6.  Now enter the `<=` operator or the `issubset`
     method to check if one set is a subset of another:
@@ -1520,10 +1520,10 @@ operations:
     You should get the following output:
 
     
-    ![](./images/C13963_02_28.jpg)
+![](./images/C13963_02_28.jpg)
 
 
-    Figure 2.28: Output with the issubset method
+    Caption: Output with the issubset method
 
     The first two statements will return `false` because
     `s5` is not a subset of `s6`. The last two
@@ -1549,10 +1549,10 @@ operations:
     You should get the following output:
 
     
-    ![](./images/C13963_02_29.jpg)
+![](./images/C13963_02_29.jpg)
 
 
-    Figure 2.29: Output if s7 is a formal subset of s8
+    Caption: Output if s7 is a formal subset of s8
 
     We can see that `s7` is a proper subset of `s8`
     because there are other elements in `s8` apart from all

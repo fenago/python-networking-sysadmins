@@ -65,7 +65,7 @@ that we will be using while coding. The following table covers these:
 ![](./images/C13963_01_02.jpg)
 
 
-Figure 1.2: Standard math operations
+Caption: Standard math operations
 
 Note
 
@@ -704,7 +704,7 @@ You should get the following output:
 ![](./images/C13963_01_03.jpg)
 
 
-Figure 1.3: Output showing the Python keywords
+Caption: Output showing the Python keywords
 
 Note
 
@@ -730,10 +730,10 @@ Jupyter:
     You should get the following output:
 
     
-    ![](./images/C13963_01_04.jpg)
+![](./images/C13963_01_04.jpg)
 
 
-    Figure 1.4: Output throwing a syntax error
+    Caption: Output throwing a syntax error
 
     You\'ll get the error mentioned in the preceding screenshot because
     you cannot begin a variable with a number.
@@ -755,10 +755,10 @@ Jupyter:
     You should get the following output:
 
     
-    ![](./images/C13963_01_05.jpg)
+![](./images/C13963_01_05.jpg)
 
 
-    Figure 1.5: Output throwing a syntax error
+    Caption: Output throwing a syntax error
 
     You get the error mentioned because you cannot include
     a variable with a special character.
@@ -906,7 +906,7 @@ in Python. This exercise can be performed in the Jupyter Notebook:
 ![](./images/C13963_01_06.jpg)
 
 
-Figure 1.6: Output from the Jupyter Notebook using comments
+Caption: Output from the Jupyter Notebook using comments
 
 In this exercise, you have learned how to write comments in Python. As a
 developer, writing comments is essential to make your code legible to
@@ -1030,10 +1030,10 @@ The goal of this exercise is to learn appropriate string syntax:
     You should get the following output:
 
     
-    ![](./images/C13963_01_07.jpg)
+![](./images/C13963_01_07.jpg)
 
 
-    Figure 1.7: Output with invalid string format
+    Caption: Output with invalid string format
 
     If you start with a single quote, you must end with a single quote.
     Since the string has not been completed, you receive a syntax error.
@@ -1062,7 +1062,7 @@ The goal of this exercise is to learn appropriate string syntax:
 ![](./images/C13963_01_08.jpg)
 
 
-Figure 1.8: Output with the invalid string
+Caption: Output with the invalid string
 
 This is a problem. You started and ended with single quotes, and then
 you added an `s` and another single quote.
@@ -1087,7 +1087,7 @@ which is used to create a new line:
 ![](./images/C13963_01_09.jpg)
 
 
-Figure 1.9: Escape sequences and their meaning
+Caption: Escape sequences and their meaning
 
 Note
 
@@ -1467,10 +1467,10 @@ In this exercise, you will learn how to implement string methods.
     following screenshot:
 
     
-    ![](./images/C13963_01_10.jpg)
+![](./images/C13963_01_10.jpg)
 
 
-    Figure 1.10: Setting a variable name via the dropdown menu
+    Caption: Setting a variable name via the dropdown menu
 
     You can scroll down the list to obtain all available string methods.
 
@@ -1629,7 +1629,7 @@ In this exercise, you will learn how types and casting work together:
 ![](./images/C13963_01_11.jpg)
 
 
-Figure 1.11: Output after adding two integers converted from a string
+Caption: Output after adding two integers converted from a string
 
 In this exercise, you have learned several ways in which strings work
 with casting.
@@ -1662,10 +1662,10 @@ obtain information from the user:
     You should get the following output:
 
     
-    ![](./images/C13963_01_12.jpg)
+![](./images/C13963_01_12.jpg)
 
 
-    Figure 1.12: The user is prompted to answer a question
+    Caption: The user is prompted to answer a question
 
 3.  Now, set a variable that will be equal to the `input()`
     function, as mentioned in the following code snippet:
@@ -1678,10 +1678,10 @@ obtain information from the user:
     You should get the following output:
 
     
-    ![](./images/C13963_01_13.jpg)
+![](./images/C13963_01_13.jpg)
 
 
-    Figure 1.13: The user may type anything into the provided space
+    Caption: The user may type anything into the provided space
 
 4.  Finally, select an appropriate output:
 
@@ -1695,7 +1695,7 @@ obtain information from the user:
 ![](./images/C13963_01_14.jpg)
 
 
-Figure 1.14: After pressing Enter, the full sequence is displayed
+Caption: After pressing Enter, the full sequence is displayed
 
 Note
 
@@ -1856,7 +1856,7 @@ the word `Francisco`, and the corresponding index count:
 ![](./images/C13963_01_16.jpg)
 
 
-Figure 1.16: Index value for the negative values for San Francisco
+Caption: Index value for the negative values for San Francisco
 
 Here is one more example:
 
@@ -3143,7 +3143,7 @@ The following steps in this exercise will help you with this:
     You should get the following output:
 
     
-    ![](./images/C13963_01_18.jpg)
+![](./images/C13963_01_18.jpg)
 
 
 In this exercise, you have prompted the user to bid for a house and let

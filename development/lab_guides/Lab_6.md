@@ -53,7 +53,7 @@ output:
 ![](./images/C13963_06_02.jpg)
 
 
-Figure 6.2: Example of output screen when using turtle
+Caption: Example of output screen when using turtle
 
 You can go ahead and explore and input different values, playing around
 a bit with the `turtle` module and checking the different
@@ -241,7 +241,7 @@ When you execute the code, it should generate the following
 ![](./images/C13963_06_04.jpg)
 
 
-Figure 6.4: Expected output from the Exercise 86 help command
+Caption: Expected output from the Exercise 86 help command
 
 It should produce the following output when running with these
 arguments:
@@ -249,7 +249,7 @@ arguments:
 ![](./images/C13963_06_05.jpg)
 
 
-Figure 6.5: Expected output of running the Exercise 86 script
+Caption: Expected output of running the Exercise 86 script
 
 1.  Add a description to the `echo` command.
 
@@ -379,7 +379,7 @@ The output is as follows:
 ![](./images/C13963_06_06.jpg)
 
 
-Figure 6.6: Representation of a date object
+Caption: Representation of a date object
 
 The output format for time is similar; it takes hour, minute, second,
 and microsecond. All of them are optional and are initialized at 0 if
@@ -499,7 +499,7 @@ zones:
     The output is as follows:
 
     
-    ![](./images/C13963_06_07.jpg)
+![](./images/C13963_06_07.jpg)
 
 
     When you compare the two `datetime` objects, you can see
@@ -617,10 +617,10 @@ notebook:
     The output is as follows:
 
     
-    ![](./images/C13963_06_08.jpg)
+![](./images/C13963_06_08.jpg)
 
 
-    Figure 6.8: Output with the delta between 2 days and seconds
+    Caption: Output with the delta between 2 days and seconds
 
 4.  You can see that the delta between the two `datetime` is 1
     day and 1,800 seconds, which can be translated to the total number
@@ -726,7 +726,7 @@ This exercise can be performed in a Jupyter notebook:
 ![](./images/C13963_06_10.jpg)
 
 
-Figure 6.10: Calculating the epoch
+Caption: Calculating the epoch
 
 The result is the Unix epoch --- January 1, 1970.
 
@@ -747,7 +747,7 @@ The output is as follows:
 ![](./images/C13963_06_11.jpg)
 
 
-Figure 6.11: Output showing month 1 and its days as a calendar
+Caption: Output showing month 1 and its days as a calendar
 
 Note
 
@@ -873,7 +873,7 @@ information about the running process and the platform on your system:
 
     The output is as follows:
 
-    ![](./images/C13963_06_13.jpg)
+![](./images/C13963_06_13.jpg)
 
 
     This gives us the process ID and the parent process ID. This
@@ -897,7 +897,7 @@ information about the running process and the platform on your system:
     The output is as follows:
 
     
-    ![](./images/C13963_06_14.jpg)
+![](./images/C13963_06_14.jpg)
 
 
     These functions of the module platform can be used to ascertain the
@@ -1056,7 +1056,7 @@ the GitHub repository:
 ![](./images/C13963_06_16.jpg)
 
 
-Figure 6.16: Initial folder structure
+Caption: Initial folder structure
 
 1.  Create a path object for the current `path`:
 
@@ -1085,10 +1085,10 @@ Figure 6.16: Initial folder structure
     The output is as follows:
 
     
-    ![](./images/C13963_06_17.jpg)
+![](./images/C13963_06_17.jpg)
 
 
-    Figure 6.17: Output showing the file with the .txt extension
+    Caption: Output showing the file with the .txt extension
 
     This lists all the files in the current location that end with
     `txt`, which, in this case, is the only
@@ -1114,10 +1114,10 @@ Figure 6.16: Initial folder structure
     The output is as follows:
 
     
-    ![](./images/C13963_06_18.jpg)
+![](./images/C13963_06_18.jpg)
 
 
-    Figure 6.18: Output showing all the files in all the folders
+    Caption: Output showing all the files in all the folders
 
     This lists all files that end with `.txt` within any
     folder in the current path described by the path object,
@@ -1149,7 +1149,7 @@ Figure 6.16: Initial folder structure
 ![](./images/C13963_06_19.jpg)
 
 
-Figure 6.19: Output showing the files within a subdirectory
+Caption: Output showing the files within a subdirectory
 
 This will list both files within
 `folder_1 and the folder "folder_2/folder_3`, which is also a
@@ -1293,7 +1293,7 @@ The output is as follows:
 ![](./images/C13963_06_22.jpg)
 
 
-Figure 6.22: Output showing the subprocesses using stdout
+Caption: Output showing the subprocesses using stdout
 
 You can also pass more arguments, such as `-l`, to have the
 files listed with details:
@@ -1311,7 +1311,7 @@ The output is as follows:
 ![](./images/C13963_06_23.jpg)
 
 
-Figure 6.23: Output showing the files listed in detail using -l
+Caption: Output showing the files listed in detail using -l
 
 The first thing that usually surprises users when using
 `suprocess.run` is that the command that needs to be passed in
@@ -1373,7 +1373,7 @@ The output is as follows:
 ![](./images/C13963_06_24.jpg)
 
 
-Figure 6.24: The result of running subprocess on a failed command
+Caption: The result of running subprocess on a failed command
 
 This is a great way to call other programs in which we just want them to
 be executed to have a look at the error, such as calling batch
@@ -1461,10 +1461,10 @@ change environment variables when using `subprocess`:
     already set; those match the ones of the parent process:
 
     
-    ![](./images/C13963_06_25.jpg)
+![](./images/C13963_06_25.jpg)
 
 
-    Figure 6.25: Output showing the environment variables using env
+    Caption: Output showing the environment variables using env
 
 3.  Use a different set of environment variables.
 
@@ -1486,7 +1486,7 @@ change environment variables when using `subprocess`:
     The output is as follows:
 
     
-    ![](./images/C13963_06_26.jpg)
+![](./images/C13963_06_26.jpg)
 
 
 4.  Now, modify the default set of variables.
@@ -1520,7 +1520,7 @@ change environment variables when using `subprocess`:
 ![](./images/C13963_06_27.jpg)
 
 
-Figure 6.27: Modifying the default set of environment variables
+Caption: Modifying the default set of environment variables
 
 You can see that you now have the same environments in the process
 created with `subprocess` as those in the current process, but
@@ -1740,10 +1740,10 @@ mentioned in the Logging section:
     The output is as follows:
 
     
-    ![](./images/C13963_06_28.jpg)
+![](./images/C13963_06_28.jpg)
 
 
-    Figure 6.28: The output of running logging
+    Caption: The output of running logging
 
     By default, the logging stack will be configured to log warnings and
     above, which explains why you only see those levels being printed to
@@ -1767,7 +1767,7 @@ mentioned in the Logging section:
 ![](./images/C13963_06_29.jpg)
 
 
-Figure 6.29: The output of running warning logs
+Caption: The output of running warning logs
 
 Note
 
@@ -1831,7 +1831,7 @@ The output is as follows:
 ![](./images/C13963_06_30.jpg)
 
 
-Figure 6.30: Example output when logging an exception with exc\_info.
+Caption: Example output when logging an exception with exc\_info.
 
 The error information now includes the message you passed in, but also
 the exception that was being handled with the traceback. This is so
@@ -1968,7 +1968,7 @@ which should look like this:
 ![](./images/C13963_06_33.jpg)
 
 
-Figure 6.33: Outputting logs to the console
+Caption: Outputting logs to the console
 
 Note
 
@@ -2217,10 +2217,10 @@ words in the text document:
     results:
 
     
-    ![](./images/C13963_06_34.jpg)
+![](./images/C13963_06_34.jpg)
 
 
-    Figure 6.34: Getting the five common words as output
+    Caption: Getting the five common words as output
 
 4.  Now, explore occurrences of some words, as shown in the following
     code snippet:
@@ -2239,10 +2239,10 @@ words in the text document:
     `PYTHON`:
 
     
-    ![](./images/C13963_06_35.jpg)
+![](./images/C13963_06_35.jpg)
 
 
-Figure 6.35: Output exploring the occurrences of some words
+Caption: Output exploring the occurrences of some words
 
 Note how you can just query the counter with a key to get the number of
 occurrences. Something else interesting to note is that when you query
@@ -2368,7 +2368,7 @@ way:
     You should get the following output:
 
     
-    ![](./images/C13963_06_36.jpg)
+![](./images/C13963_06_36.jpg)
 
     You can see that this works as expected, and you can add items to
     the audit and report them.
@@ -2463,7 +2463,7 @@ way:
 ![](./images/C13963_06_37.jpg)
 
 
-Figure 6.37: Output with a function to create the first element
+Caption: Output with a function to create the first element
 
 At the end of this exercise, you now know how to use
 `defaultdict` with multiple different factory methods. This is
@@ -2526,7 +2526,7 @@ The output is as follows:
 ![](./images/C13963_06_38.jpg)
 
 
-Figure 6.38: Chainmap outputting different values
+Caption: Chainmap outputting different values
 
 If the user passes in no customization, you get the default menu. All
 keys and values are taken from the `_default` dictionary that
@@ -2543,7 +2543,7 @@ The output is as follows:
 ![](./images/C13963_06_39.jpg)
 
 
-Figure 6.39: Output with no customization; that is, the default menu
+Caption: Output with no customization; that is, the default menu
 
 When a user passes a dictionary that changes one of the keys that is
 present in the `_default` dictionary, the value of the second
@@ -2592,7 +2592,7 @@ The output is as follows:
 ![](./images/C13963_06_41.jpg)
 
 
-Figure 6.41: Output with changed default values
+Caption: Output with changed default values
 
 Note
 
@@ -2730,7 +2730,7 @@ will improve the performance in the steps that follow:
     The output is as follows:
 
     
-    ![](./images/C13963_06_43.jpg)
+![](./images/C13963_06_43.jpg)
 
 
 2.  Change the cache size using the `maxsize` argument.
@@ -2766,10 +2766,10 @@ will improve the performance in the steps that follow:
     The output is as follows:
 
     
-    ![](./images/C13963_06_44.jpg)
+![](./images/C13963_06_44.jpg)
 
 
-    Figure 6.44: Output with a changed cache size
+    Caption: Output with a changed cache size
 
     The cache successfully returned the previous values for the second
     call of `2` and `3`, but the result for
@@ -2812,7 +2812,7 @@ will improve the performance in the steps that follow:
 ![](./images/C13963_06_45.jpg)
 
 
-Figure 6.45: Output with the lru\_cache function
+Caption: Output with the lru\_cache function
 
 We can see how the cached version of the function did not execute the
 code in the second call, but the uncached version did.
@@ -2851,7 +2851,7 @@ The output is as follows:
 ![](./images/C13963_06_46.jpg)
 
 
-Figure 6.46: The output, which simply prints the arguments
+Caption: The output, which simply prints the arguments
 
 You can use `partial` to transform this function to take fewer
 arguments. This can be done in two ways, mainly, bypassing the arguments
@@ -2869,7 +2869,7 @@ The output is as follows:
 ![](./images/C13963_06_47.jpg)
 
 
-Figure 6.47: Using partial to transform the output
+Caption: Using partial to transform the output
 
 You can call `new_func` without passing the `z`
 argument, as you have provided a value through the `partial`
@@ -2893,7 +2893,7 @@ The output is as follows:
 ![](./images/C13963_06_48.jpg)
 
 
-Figure 6.48: Output with positional arguments
+Caption: Output with positional arguments
 
 
 Exercise 98: Creating a print Function That Writes to stderr
@@ -2923,10 +2923,10 @@ In this exercise, you will create a function that acts like
     The output is as follows:
 
     
-    ![](./images/C13963_06_49.jpg)
+![](./images/C13963_06_49.jpg)
 
 
-    Figure 6.49: Output with print arguments
+    Caption: Output with print arguments
 
     The argument that you are interested in is the `file`,
     which allows us to specify the stream you want to write to.
@@ -2946,10 +2946,10 @@ In this exercise, you will create a function that acts like
     The output is as follows:
 
     
-    ![](./images/C13963_06_50.jpg)
+![](./images/C13963_06_50.jpg)
 
 
-    Figure 6.50: Print to stderr output
+    Caption: Print to stderr output
 
     As you are printing to `stderr`, the output appears in red
     as expected.
@@ -2972,7 +2972,7 @@ In this exercise, you will create a function that acts like
 ![](./images/C13963_06_51.jpg)
 
 
-Figure 6.51: Print to stderr output through partial
+Caption: Print to stderr output through partial
 
 Great -- this works as expected; we now have a function that has changed
 the default value for the optional `file` argument.

@@ -386,7 +386,7 @@ Here is a 4 x 4 matrix:
 ![](./images/C13963_10_01.jpg)
 
 
-Figure 10.1: Matrix representation of a 4 x 4 matrix
+Caption: Matrix representation of a 4 x 4 matrix
 
 
 Exercise 132: Matrices
@@ -419,7 +419,7 @@ The following steps will enable you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_02.jpg)
+![](./images/C13963_10_02.jpg)
 
 
     Figure 10.2 A random matrix being generated
@@ -447,10 +447,10 @@ The following steps will enable you to complete the exercise:
     the first row:
 
     
-    ![](./images/C13963_10_03.jpg)
+![](./images/C13963_10_03.jpg)
 
 
-    Figure 10.3: The values of the matrix row
+    Caption: The values of the matrix row
 
 
     ```
@@ -469,10 +469,10 @@ The following steps will enable you to complete the exercise:
     first column:
 
     
-    ![](./images/C13963_10_04.jpg)
+![](./images/C13963_10_04.jpg)
 
 
-    Figure 10.4: The values of the matrix column
+    Caption: The values of the matrix column
 
 4.  Now find individual entries by specifying the value of the matrix
     `[row, column]`, as shown in the following code snippet:
@@ -588,7 +588,7 @@ The output will be as follows:
 ![](./images/C13963_10_05.jpg)
 
 
-Figure 10.5: Computation time for a large matrix
+Caption: Computation time for a large matrix
 
 Now, to find the computation time for the mean of the matrix.
 
@@ -604,7 +604,7 @@ You should get the following output:
 ![](./images/C13963_10_06.jpg)
 
 
-Figure 10.6: Computation time for the mean of the matrix
+Caption: Computation time for the mean of the matrix
 
 Your time will be different than ours, but it should be in the order of
 milliseconds. Not bad. It takes much less than a second to generate a
@@ -639,10 +639,10 @@ you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_07.jpg)
+![](./images/C13963_10_07.jpg)
 
 
-    Figure 10.7: Showing ndarray with values 1 to 100
+    Caption: Showing ndarray with values 1 to 100
 
 3.  Reshape the array to `20` rows and `5` columns:
 
@@ -654,10 +654,10 @@ you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_08.jpg)
+![](./images/C13963_10_08.jpg)
 
 
-    Figure 10.8: Output with the reshaped array of 20 rows and 5 columns
+    Caption: Output with the reshaped array of 20 rows and 5 columns
 
 4.  Now, define `mat1` as a `20` x `5`
     array between `1` and `100` and then subtract
@@ -673,10 +673,10 @@ you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_09.jpg)
+![](./images/C13963_10_09.jpg)
 
 
-    Figure 10.9: Output subtracting values from the array
+    Caption: Output subtracting values from the array
 
 5.  Now, multiply `mat1` by `10` and observe the
     change in the output:
@@ -689,10 +689,10 @@ you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_10.jpg)
+![](./images/C13963_10_10.jpg)
 
 
-    Figure 10.10: Output when you multiply mat1 by 10
+    Caption: Output when you multiply mat1 by 10
 
 6.  Now you need to add `mat1` to itself, as mentioned in the
     following code snippet:
@@ -705,10 +705,10 @@ you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_11.jpg)
+![](./images/C13963_10_11.jpg)
 
 
-    Figure 10.11: Output of adding mat1 to itself
+    Caption: Output of adding mat1 to itself
 
 7.  Now you will multiply each entry in `mat1` by itself:
 
@@ -720,10 +720,10 @@ you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_12.jpg)
+![](./images/C13963_10_12.jpg)
 
 
-    Figure 10.12: Output of multiplying mat1 by itself
+    Caption: Output of multiplying mat1 by itself
 
 8.  Now, take the `dot` product of `mat1` and
     `mat1.T`:
@@ -819,10 +819,10 @@ will enable you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_14.jpg)
+![](./images/C13963_10_14.jpg)
 
 
-    Figure 10.14: Output with the values added in the DataFrame
+    Caption: Output with the values added in the DataFrame
 
     You can inspect the `DataFrame`. First, each dictionary
     key is listed as a column. Second, the rows are labeled with indices
@@ -852,7 +852,7 @@ will enable you to complete the exercise:
 ![](./images/C13963_10_15.jpg)
 
 
-Figure 10.15: The output of the transpose on the DataFrame
+Caption: The output of the transpose on the DataFrame
 
 In this exercise, you created a DataFrame that holds the values of
 `testscores`, and to finish, you transposed this DataFrame to
@@ -896,10 +896,10 @@ will then select the data to display as output from the DataFrame:
     You should get the following output:
 
     
-    ![](./images/C13963_10_16.jpg)
+![](./images/C13963_10_16.jpg)
 
 
-    Figure 10.16: Output with changed column names
+    Caption: Output with changed column names
 
     Now, select a range of values from specific rows and columns. You
     will be using `.iloc` with the index number, which is a
@@ -917,10 +917,10 @@ will then select the data to display as output from the DataFrame:
     You should get the following output:
 
     
-    ![](./images/C13963_10_17.jpg)
+![](./images/C13963_10_17.jpg)
 
 
-    Figure 10.17: Output with the selected values
+    Caption: Output with the selected values
 
 5.  Now, select a column using its name, as shown in the following code
     snippet.
@@ -937,7 +937,7 @@ will then select the data to display as output from the DataFrame:
     You should get the following output:
 
     
-    ![](./images/C13963_10_18.jpg)
+![](./images/C13963_10_18.jpg)
 
 
 6.  Now, select a column using the dot (`.`) notation:
@@ -953,7 +953,7 @@ will then select the data to display as output from the DataFrame:
 ![](./images/C13963_10_19.jpg)
 
 
-Figure 10.19: Output of selecting a column using the dot notation
+Caption: Output of selecting a column using the dot notation
 
 Note
 
@@ -1004,10 +1004,10 @@ enable you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_20.jpg)
+![](./images/C13963_10_20.jpg)
 
 
-    Figure 10.20: Output of arranging rows
+    Caption: Output of arranging rows
 
 4.  Transpose the DataFrame:
 
@@ -1030,10 +1030,10 @@ enable you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_21.jpg)
+![](./images/C13963_10_21.jpg)
 
 
-    Figure 10.21: Output with the renamed column names
+    Caption: Output with the renamed column names
 
 6.  Now, define a new `DataFrame` from the first two rows and
     the last two columns.
@@ -1053,10 +1053,10 @@ enable you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_22.jpg)
+![](./images/C13963_10_22.jpg)
 
 
-    Figure 10.22: Output of the newly defined DataFrame
+    Caption: Output of the newly defined DataFrame
 
 7.  Now, select the first two rows and the last two columns using index
     numbers.
@@ -1073,7 +1073,7 @@ enable you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_23.jpg)
+![](./images/C13963_10_23.jpg)
 
     Now, add a new column to find the quiz average of our students.
 
@@ -1095,10 +1095,10 @@ enable you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_24.jpg)
+![](./images/C13963_10_24.jpg)
 
 
-    Figure 10.24: Adding a new quiz\_avg column to the output
+    Caption: Adding a new quiz\_avg column to the output
 
     A new column can also be added as a list by choosing the rows and
     columns by name first.
@@ -1115,10 +1115,10 @@ enable you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_25.jpg)
+![](./images/C13963_10_25.jpg)
 
 
-    Figure 10.25: Output with a newly added column using lists
+    Caption: Output with a newly added column using lists
 
     What if you need to delete the column you created? You can do so by
     using the `del` function. It\'s easy to delete columns in
@@ -1138,7 +1138,7 @@ enable you to complete the exercise:
 ![](./images/C13963_10_26.jpg)
 
 
-Figure 10.26: Output with a deleted column
+Caption: Output with a deleted column
 
 In this exercise, you implemented different ways to add and remove
 columns as per our requirements. In the next section, you will be
@@ -1199,10 +1199,10 @@ scores. The following steps will enable you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_27.jpg)
+![](./images/C13963_10_27.jpg)
 
 
-    Figure 10.27: The transposed and renamed DataFrame
+    Caption: The transposed and renamed DataFrame
 
 4.  Now, add a new column, as shown in *Exercise 136*, *Computing
     DataFrames within DataFrames*:
@@ -1216,10 +1216,10 @@ scores. The following steps will enable you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_28.jpg)
+![](./images/C13963_10_28.jpg)
 
 
-    Figure 10.28: Output of the added Quiz\_4 column
+    Caption: Output of the added Quiz\_4 column
 
 5.  Now, add a new row with the value set as `Adrian`, as
     shown in the following code snippet:
@@ -1245,10 +1245,10 @@ scores. The following steps will enable you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_29.jpg)
+![](./images/C13963_10_29.jpg)
 
 
-    Figure 10.29: Output with the row added to the DataFrame
+    Caption: Output with the row added to the DataFrame
 
     You can now compute the new mean, but you must skip the
     `NaN` values; otherwise, there will be no mean score for
@@ -1269,7 +1269,7 @@ scores. The following steps will enable you to complete the exercise:
 ![](./images/C13963_10_30.jpg)
 
 
-Figure 10.30: Output with quiz\_4 values added to Adrian
+Caption: Output with quiz\_4 values added to Adrian
 
 Notice that all values are floats except for `Quiz_4`. There
 will be occasions when you need to cast all values in a particular
@@ -1294,7 +1294,7 @@ You should get the following output:
 ![](./images/C13963_10_31.jpg)
 
 
-Figure 10.31: Output with the cast column types
+Caption: Output with the cast column types
 
 You can observe the change in values by examining the DataFrame
 yourself. Now, move on to the next topic: which is data.
@@ -1356,7 +1356,7 @@ the code for reading data:
 ![](./images/C13963_10_32.jpg)
 
 
-Figure 10.32: Standard data files that pandas read
+Caption: Standard data files that pandas read
 
 If the files are clean, pandas will read them properly. Sometimes, files
 are not clean, and changing function parameters may be required. It\'s
@@ -1430,7 +1430,7 @@ particular case, you might want to know what the columns actually mean:
 ![](./images/C13963_10_34.jpg)
 
 
-Figure 10.34: Representation of the column values of the dataset
+Caption: Representation of the column values of the dataset
 
 Now that you know what the values in the dataset mean you will start
 performing some advanced operations on the dataset. You will cover this
@@ -1467,10 +1467,10 @@ insights. The following steps will enable you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_35.jpg)
+![](./images/C13963_10_35.jpg)
 
 
-    Figure 10.35: Output with the desired () method
+    Caption: Output with the desired () method
 
     In this output, you will review the meaning of each row.
 
@@ -1512,7 +1512,7 @@ insights. The following steps will enable you to complete the exercise:
 ![](./images/C13963_10_36.jpg)
 
 
-Figure 10.36: Output with the info () method
+Caption: Output with the info () method
 
 As you can see, `.info()` reveals the count of non-null values
 in each column along with the column type. Since some columns have less
@@ -1602,10 +1602,10 @@ select the columns that have null values in our dataset:
     You should get the following output:
 
     
-    ![](./images/C13963_10_37.jpg)
+![](./images/C13963_10_37.jpg)
 
 
-    Figure 10.37: Output of the columns with null values
+    Caption: Output of the columns with null values
 
     The `.isnull()` method will display an entire
     `DataFrame` of `True/False` values depending on
@@ -1630,10 +1630,10 @@ select the columns that have null values in our dataset:
     You should get the following output:
 
     
-    ![](./images/C13963_10_38.jpg)
+![](./images/C13963_10_38.jpg)
 
 
-    Figure 10.38: Output of the dataset with the null columns
+    Caption: Output of the dataset with the null columns
 
     Now for the final step. Use the `.describe` method on
     these particular columns but select all of the rows.
@@ -1729,7 +1729,7 @@ You should get the following output:
 ![](./images/C13963_10_40.jpg)
 
 
-Figure 10.40: Output with the null values eliminated
+Caption: Output with the null values eliminated
 
 After eliminating all null values, the dataset is much cleaner. There
 may also be unrealistic outliers or extreme outliers that will lead to
@@ -1839,10 +1839,10 @@ following steps will enable you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_41.jpg)
+![](./images/C13963_10_41.jpg)
 
 
-    Figure 10.41: Output of the histogram
+    Caption: Output of the histogram
 
 6.  Now, plot the changes onto the histogram, as shown in the following
     code snippet:
@@ -1859,10 +1859,10 @@ following steps will enable you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_42.jpg)
+![](./images/C13963_10_42.jpg)
 
 
-    Figure 10.42: Histogram with meaningful values using seaborn
+    Caption: Histogram with meaningful values using seaborn
 
     Now, this is a bit clearer. But in the Jupyter Notebook, the entry
     is a little small. You can make the graph and the title larger. You
@@ -1890,7 +1890,7 @@ following steps will enable you to complete the exercise:
 ![](./images/C13963_10_43.jpg)
 
 
-Figure 10.43: Output of an ideal histogram
+Caption: Output of an ideal histogram
 
 By the end of this exercise, you were able to achieve a solid histogram,
 which can help to communicate your results to a wider audience.
@@ -1939,7 +1939,7 @@ You should get the following output:
 ![](./images/C13963_10_44.jpg)
 
 
-Figure 10.44: Output with the histogram function
+Caption: Output with the histogram function
 
 Okay. It\'s not bad, but there\'s one glaring issue. It\'s the
 distribution of bins. It seems most rooms have an average of six, but
@@ -1985,7 +1985,7 @@ You should get the following output:
 ![](./images/C13963_10_45.jpg)
 
 
-Figure 10.45: Output of the improved histogram function being called
+Caption: Output of the improved histogram function being called
 
 Now it\'s clear that the highest average is between six and seven. Also,
 note that this dataset is surveying groups of houses, not individual
@@ -2048,7 +2048,7 @@ The following steps will enable you to complete the exercise:
 ![](./images/C13963_10_46.jpg)
 
 
-Figure 10.46: Scatter plot output of the dataset
+Caption: Scatter plot output of the dataset
 
 There is a definite positive association. This means that as the x value
 goes up, the y value goes up.
@@ -2113,10 +2113,10 @@ you to complete the exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_10_47.jpg)
+![](./images/C13963_10_47.jpg)
 
 
-    Figure 10.47: Correlation value output
+    Caption: Correlation value output
 
     This tells us the exact correlation values. For instance, to see
     what variables are the most correlated with the
@@ -2156,7 +2156,7 @@ you to complete the exercise:
 ![](./images/C13963_10_48.jpg)
 
 
-Figure 10.48: Heatmap for the correlation values
+Caption: Heatmap for the correlation values
 
 The darker the squares, the higher the correlation, and the lighter the
 squares, the lower the correlation. Now when examining the MEDV column,
@@ -2290,7 +2290,7 @@ dataset. The following steps will enable you to complete the exercise:
 ![](./images/C13963_10_51.jpg)
 
 
-Figure 10.51: Box plot output
+Caption: Box plot output
 
 Note that the open circles are considered outliers. The orange bar in
 the middle is the median, and the bars at the end of the black box are

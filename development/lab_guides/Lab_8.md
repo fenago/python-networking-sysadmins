@@ -357,10 +357,10 @@ The following steps will help you complete this exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_08_01.jpg)
+![](./images/C13963_08_01.jpg)
 
 
-    Figure 8.1: Listing the pdb output
+    Caption: Listing the pdb output
 
     To use `args` to print the arguments of the function:
 
@@ -372,10 +372,10 @@ The following steps will help you complete this exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_08_02.jpg)
+![](./images/C13963_08_02.jpg)
 
 
-    Figure 8.2: The args output (continued)
+    Caption: The args output (continued)
 
     You are effectively on the first line of the code, and the arguments
     are what you expected. We could also run `ll` to get the
@@ -541,7 +541,7 @@ The following table is a summary of the preceding scenario:
 ![](./images/C13963_08_03.jpg)
 
 
-Figure 8.3: A summary table of the problem
+Caption: A summary table of the problem
 
 There is a reproducer in the code example, so continue the debugging
 from there, and figure out where the issue is in the code.
@@ -782,10 +782,10 @@ validate the implementation and potentially find any existing bugs:
     You should get the following output:
 
     
-    ![](./images/C13963_08_05.jpg)
+![](./images/C13963_08_05.jpg)
 
 
-    Figure 8.5: The unit test run output
+    Caption: The unit test run output
 
 5.  Now, add more complex tests:
 
@@ -1077,7 +1077,7 @@ contain multiple files and upload them to the test version of PyPI:
 ![](./images/C13963_08_06.jpg)
 
 
-Figure 8.6: Uploading with the twine output
+Caption: Uploading with the twine output
 
 This will prompt you for the user and password that you used to create
 your account. Once this is uploaded, you can go to
@@ -1087,7 +1087,7 @@ be able to see the following on the `PyPI` web:
 ![](./images/C13963_08_07.jpg)
 
 
-Figure 8.7: Sample uploaded package website
+Caption: Sample uploaded package website
 
 You just published your first package. In this exercise, you learned how
 to create a Python package, package it, and upload it to
@@ -1163,7 +1163,7 @@ print(print.__doc__)
 ![](./images/C13963_08_08.jpg)
 
 
-Figure 8.8: Print documentation
+Caption: Print documentation
 
 It is the same content as calling `help(print)`. You can
 create your own function with a `__doc__` attribute, as
@@ -1184,7 +1184,7 @@ You can now use `help` in your function, by executing the
 ![](./images/C13963_08_09.jpg)
 
 
-Figure 8.9: The Help content in the example module
+Caption: The Help content in the example module
 
 Docstrings usually contain a title with a short description of the
 function and a body with further information about what it does in
@@ -1312,10 +1312,10 @@ in the testing topic, `divisible.py`, from *Exercise 113*,
     You should get the following output:
 
     
-    ![](./images/C13963_08_10.jpg)
+![](./images/C13963_08_10.jpg)
 
 
-    Figure 8.10: The first documentation output with Sphinx
+    Caption: The first documentation output with Sphinx
 
     It\'s not a lot of content, but it\'s quite impressive for the
     amount of code you have written.
@@ -1421,7 +1421,7 @@ in the testing topic, `divisible.py`, from *Exercise 113*,
 ![](./images/C13963_08_11.jpg)
 
 
-Figure 8.11: HTML documentation output with docstring
+Caption: HTML documentation output with docstring
 
 You can now distribute our documentation to our users. Note that it will
 always be up to date as you are generating it from the source code.
@@ -1616,10 +1616,10 @@ Terminal:
     as CPython has a lot of code and long history:
 
     
-    ![](./images/C13963_08_13.jpg)
+![](./images/C13963_08_13.jpg)
 
 
-    Figure 8.13: The git clone output of CPython
+    Caption: The git clone output of CPython
 
 2.  Edit the `Misc/ACKS` file and confirm the changes.
 
@@ -1631,10 +1631,10 @@ Terminal:
     will show you whether there are any changed files:
 
     
-    ![](./images/C13963_08_14.jpg)
+![](./images/C13963_08_14.jpg)
 
 
-    Figure 8.14: The git status output
+    Caption: The git status output
 
     Note how it gives you instructions on how to proceed if you want to
     add the changes to the staging area in preparation for a commit or
@@ -1642,10 +1642,10 @@ Terminal:
     `git diff`:
 
     
-    ![](./images/C13963_08_15.jpg)
+![](./images/C13963_08_15.jpg)
 
 
-    Figure 8.15: The git diff output
+    Caption: The git diff output
 
     This provides you with a nice output that indicates the changes in
     the lines. Green with a plus sign means that a line was added, while
@@ -1664,14 +1664,14 @@ Terminal:
 ![](./images/C13963_08_16.jpg)
 
 
-Figure 8.16: A commit message output example
+Caption: A commit message output example
 
 When you close the editor and save, the commit should be created:
 
 ![](./images/C13963_08_17.jpg)
 
 
-Figure 8.17: The git commit output
+Caption: The git commit output
 
 You have created your first commit. You can check the contents of it by
 running `git show`:

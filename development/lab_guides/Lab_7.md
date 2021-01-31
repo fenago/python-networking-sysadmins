@@ -47,7 +47,7 @@ have already seen:
     You should get the following output:
 
     
-    ![](./images/C13963_07_01.jpg)
+![](./images/C13963_07_01.jpg)
 
 
     Understanding this code involves keeping track of the state of the
@@ -71,7 +71,7 @@ have already seen:
     You should get the following output:
 
     
-    ![](./images/C13963_07_02.jpg)
+![](./images/C13963_07_02.jpg)
 
 
     This says, \"For each member in the `[1,2,3,4,5]` list,
@@ -90,10 +90,10 @@ have already seen:
     You should get the following output:
 
     
-    ![](./images/C13963_07_03.jpg)
+![](./images/C13963_07_03.jpg)
 
 
-    Figure 7.3: The output with the optimized style of writing code
+    Caption: The output with the optimized style of writing code
 
     Now the code is as short and succinct as it can be. Rather than
     telling you the recipe that the computer follows to build a list of
@@ -135,7 +135,7 @@ have already seen:
 ![](./images/C13963_07_04.jpg)
 
 
-Figure 7.4: The output with the optimized style of writing code
+Caption: The output with the optimized style of writing code
 
 By completing this exercise, we have created a filter list using list
 comprehension.
@@ -180,10 +180,10 @@ ingredients from its menu to explore multiple-list comprehension:
     You should get the following output:
 
     
-    ![](./images/C13963_07_05.jpg)
+![](./images/C13963_07_05.jpg)
 
 
-    Figure 7.5: The output printing the elements of two lists together
+    Caption: The output printing the elements of two lists together
 
     Inspecting the result shows that the collections are iterated in a
     nested fashion, with the rightmost collection on the inside of the
@@ -205,7 +205,7 @@ ingredients from its menu to explore multiple-list comprehension:
 ![](./images/C13963_07_06.jpg)
 
 
-Figure 7.6: The output with the reverse order of the list
+Caption: The output with the reverse order of the list
 
 Swapping the order of the lists changes the order of the results in the
 comprehension. Now, `x` is initially set to `1`,
@@ -232,7 +232,7 @@ You should get the following output:
 ![](./images/C13963_07_07.jpg)
 
 
-Figure 7.7: The output iterating lists multiple times
+Caption: The output iterating lists multiple times
 
 In the following activity, we will be creating fixtures for a chess
 tournament among four players. We will be using list comprehension and
@@ -335,10 +335,10 @@ In this exercise, you will be changing a set comprehension into a set:
     You should get the following output:
 
     
-    ![](./images/C13963_07_09.jpg)
+![](./images/C13963_07_09.jpg)
 
 
-    Figure 7.9: The result of the set
+    Caption: The result of the set
 
 2.  Now change the result into a set.
 
@@ -355,7 +355,7 @@ In this exercise, you will be changing a set comprehension into a set:
 ![](./images/C13963_07_10.jpg)
 
 
-Figure 7.10: A set without duplicate entries
+Caption: A set without duplicate entries
 
 Notice that the set created in *step 2* is much shorter than the list
 created in *step 1*. The reason for this is that the set does not
@@ -490,10 +490,10 @@ In this exercise, you will be using a regular dictionary that raises a
     You should get the following output:
 
     
-    ![](./images/C13963_07_13.jpg)
+![](./images/C13963_07_13.jpg)
 
 
-    Figure 7.13: The output showing KeyError: \'middle\_name\'
+    Caption: The output showing KeyError: \'middle\_name\'
 
 2.  Now, import the `defaultdict` from `collections`
     and wrap the dictionary in a `defaultdict`:
@@ -518,7 +518,7 @@ In this exercise, you will be using a regular dictionary that raises a
     You should get the following output:
 
     
-    ![](./images/C13963_07_14.jpg)
+![](./images/C13963_07_14.jpg)
 
 
     No exception is triggered at this stage; instead, an empty string is
@@ -552,10 +552,10 @@ In this exercise, you will be using a regular dictionary that raises a
     You should get the following output:
 
     
-    ![](./images/C13963_07_15.jpg)
+![](./images/C13963_07_15.jpg)
 
 
-    Figure 7.15: The returned value from the lambda on an unknown key
+    Caption: The returned value from the lambda on an unknown key
 
 6.  Access the value at a known key in this new dictionary:
 
@@ -569,7 +569,7 @@ In this exercise, you will be using a regular dictionary that raises a
 ![](./images/C13963_07_16.jpg)
 
 
-Figure 7.16: The print value for the Java list
+Caption: The print value for the Java list
 
 The benefit of the default dictionary is that in situations where you
 know it is likely that expected keys will be missing from a dictionary,
@@ -789,7 +789,7 @@ will return itself:
 ![](./images/C13963_07_18.jpg)
 
 
-Figure 7.18: The output indicating all prime numbers below 100
+Caption: The output indicating all prime numbers below 100
 
 This exercise demonstrates that by implementing an iterative algorithm
 as a Python iterator, you can treat it like a collection. In fact, the
@@ -928,10 +928,10 @@ less space than the Sieve for generating prime numbers:
     You should get the following output:
 
     
-    ![](./images/C13963_07_20.jpg)
+![](./images/C13963_07_20.jpg)
 
 
-    Figure 7.20: Iterator forced exit
+    Caption: Iterator forced exit
 
     To work with this iterator, `itertools` provides the
     `takewhile()` function, which wraps the iterator in
@@ -1036,7 +1036,7 @@ version:
 ![](./images/C13963_07_23.jpg)
 
 
-Figure 7.23: The output indicating all prime numbers below 100
+Caption: The output indicating all prime numbers below 100
 
 That\'s really all there is to generators --- they\'re just a different
 way of expressing an iterator. They do, however, communicate a different
@@ -1075,7 +1075,7 @@ approximate value for π. Here\'s how it works: two random numbers,
 ![](./images/C13963_07_24.jpg)
 
 
-Figure 7.24: A random point in a square having its side as unit 1
+Caption: A random point in a square having its side as unit 1
 
 Using Pythagoras\' Theorem, if the value of
 `$$\sqrt{x^2 + y^2}$$` is less than `1`, then the
@@ -1192,7 +1192,7 @@ using this regex are as follows:
 ![](./images/C13963_07_27.jpg)
 
 
-Figure 7.27: Searching for a string using the re module
+Caption: Searching for a string using the re module
 
 The `re.search()` function finds matches anywhere in the
 string: if it doesn\'t find any matches, it will return

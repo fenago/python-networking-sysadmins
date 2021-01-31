@@ -37,10 +37,10 @@ reading data as the output:
     folder where your Jupyter Notebook runs:
 
     
-    ![](./images/C13963_04_01.jpg)
+![](./images/C13963_04_01.jpg)
 
 
-    Figure 4.1: The Upload button on the Jupyter Notebook
+    Caption: The Upload button on the Jupyter Notebook
 
 4.  Now, you should extract the content of the file using Python code.
     Open a new Jupyter notebook file and type the following code into a
@@ -58,10 +58,10 @@ reading data as the output:
     You should get the following output:
 
     
-    ![](./images/C13963_04_02.jpg)
+![](./images/C13963_04_02.jpg)
 
 
-    Figure 4.2: Output showing the extracted content from the file
+    Caption: Output showing the extracted content from the file
 
     Note that you can scroll within the cell and check the entire
     content.
@@ -76,7 +76,7 @@ reading data as the output:
 ![](./images/C13963_04_03.jpg)
 
 
-Figure 4.3: Output with the text-only command
+Caption: Output with the text-only command
 
 The difference in the output between this cell and the previous cell,
 shown in *Figures 4.2* and *4.3*, is the presence of control characters.
@@ -183,7 +183,7 @@ will only be partially reading the content from the text file:
 ![](./images/C13963_04_04.jpg)
 
 
-Figure 4.4: Output accessing the text line by line
+Caption: Output accessing the text line by line
 
 By completing this exercise, you have learned the use of the control
 structure that is used in Python to close a code block automatically.
@@ -280,10 +280,10 @@ every second:
     You should get the following output:
 
     
-    ![](./images/C13963_04_05.jpg)
+![](./images/C13963_04_05.jpg)
 
 
-    Figure 4.5: Output with the write() function in use
+    Caption: Output with the write() function in use
 
 4.  Now, go back to the main page of your Jupyter Notebook, or browse to
     your Jupyter Notebook folder using `Windows Explorer` or
@@ -291,10 +291,10 @@ every second:
     created `log.txt` file present:
 
     
-    ![](./images/C13963_04_06.jpg)
+![](./images/C13963_04_06.jpg)
 
 
-    Figure 4.6: The log file is created
+    Caption: The log file is created
 
 5.  Open the file inside Jupyter Notebook or your favorite text editor
     (for example, Visual Studio Code or Notepad), and you should see
@@ -303,7 +303,7 @@ every second:
 ![](./images/C13963_04_07.jpg)
 
 
-Figure 4.7: Content added to the log.txt file
+Caption: Content added to the log.txt file
 
 You have now created your first `text` file. The example shown
 in this exercise is very common in most data science processing tasks;
@@ -363,7 +363,7 @@ follows:
 ![](./images/C13963_04_08.jpg)
 
 
-Figure 4.8: Output showing AssertionError
+Caption: Output showing AssertionError
 
 Note
 
@@ -435,7 +435,7 @@ calculate the average marks of students:
 ![](./images/C13963_04_09.jpg)
 
 
-Figure 4.9: Assertion fails when we pass in an empty list
+Caption: Assertion fails when we pass in an empty list
 
 In the cell with the code where you provide 3 scores, the
 `len(marks) !=0` statement returns `true`, and
@@ -539,7 +539,7 @@ sale of ice cream against varying temperature data:
     You should get the following output:
 
     
-    ![](./images/C13963_04_10.jpg)
+![](./images/C13963_04_10.jpg)
 
 
     Our plot looks fine, but only to our eyes. Anyone who has just seen
@@ -620,10 +620,10 @@ as the number of days against the growth in price.
     as the output:
 
     
-    ![](./images/C13963_04_12.jpg)
+![](./images/C13963_04_12.jpg)
 
 
-    Figure 4.12: Line chart for opening stock prices
+    Caption: Line chart for opening stock prices
 
     If you\'ve noticed that the number of days in our line plot starts
     at `0`, you have sharp eyes. Usually, you start your axes
@@ -706,7 +706,7 @@ students and corresponding bar plots as a visual output.
     Execute the cell **twice**, and you should get the following output:
 
     
-    ![](./images/C13963_04_14.jpg)
+![](./images/C13963_04_14.jpg)
 
 
     Here, you define two lists: the `grades` list stores the
@@ -732,7 +732,7 @@ students and corresponding bar plots as a visual output.
     output:
 
     
-    ![](./images/C13963_04_15.jpg)
+![](./images/C13963_04_15.jpg)
 
 
 
@@ -926,7 +926,7 @@ In this exercise, you will be generating a heatmap:
 ![](./images/C13963_04_18.jpg)
 
 
-Figure 4.18: Heatmap output from the sample data
+Caption: Heatmap output from the sample data
 
 Note that you put our data in a `numpy` array
 (`np.array`). This is because the methods you are going to
@@ -1041,7 +1041,7 @@ weights of people to output a contour plot:
 ![](./images/C13963_04_20.jpg)
 
 
-Figure 4.20: Contour plot output using the weight dataset
+Caption: Contour plot output using the weight dataset
 
 By the end of this exercise, you learned to output a contour graph from
 a dataset.
@@ -1168,7 +1168,7 @@ wave using sample data:
 ![](./images/C13963_04_22.jpg)
 
 
-Figure 4.22: 3D plot of demo data using matplotlib
+Caption: 3D plot of demo data using matplotlib
 
 In this exercise, you were successfully able to implement a very
 interesting feature provided by `matplotlib`; that is, the 3D
@@ -1194,7 +1194,7 @@ ways to do this: the misleading way, and the right way:
 ![](./images/C13963_04_23.jpg)
 
 
-Figure 4.23: Chart A (starts from 80) and Chart B (starts from 0)
+Caption: Chart A (starts from 80) and Chart B (starts from 0)
 
 Looking at **Chart A**, it will be interpreted that the score of student
 **A** is about 10 times higher than student **B** and student **C**.
@@ -1232,7 +1232,7 @@ teaching building:
 ![](./images/C13963_04_25.jpg)
 
 
-Figure 4.25: A pie chart versus a column chart
+Caption: A pie chart versus a column chart
 
 Using the wrong graph can give readers the wrong context to understand
 the data. Here, **Chart A** uses a pie chart to make readers think that
@@ -1311,7 +1311,7 @@ Follow these steps to complete this activity:
 ![](./images/C13963_04_26.jpg)
 
 
-Figure 4.26: A pie chart showing the survival rate of the passengers
+Caption: A pie chart showing the survival rate of the passengers
 
 -   Compare the gender of passengers who survived the incident (in a bar
     plot).

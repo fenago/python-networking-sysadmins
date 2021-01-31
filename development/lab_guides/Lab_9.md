@@ -31,10 +31,10 @@ this exercise more effective, you can collaborate with a friend.
     clicking on **New**:
 
     
-    ![](./images/C13963_09_01.jpg)
+![](./images/C13963_09_01.jpg)
 
 
-    Figure 9.1: The GitHub home page
+    Caption: The GitHub home page
 
 3.  Give the repository an appropriate name, such as
     `python-demo`, and click on **Create**.
@@ -44,10 +44,10 @@ this exercise more effective, you can collaborate with a friend.
     will see **Use SSH** on the same tab, which you need to click on:
 
     
-    ![](./images/C13963_09_02.jpg)
+![](./images/C13963_09_02.jpg)
 
 
-    Figure 9.2: Using SSH URL on GitHub
+    Caption: Using SSH URL on GitHub
 
 5.  Now copy the `SSH URL` on GitHub. Then, using your local
     Command Prompt, such as `CMD` in Windows, clone the
@@ -89,10 +89,10 @@ this exercise more effective, you can collaborate with a friend.
     You should get the following output:
 
     
-    ![](./images/C13963_09_03.jpg)
+![](./images/C13963_09_03.jpg)
 
 
-    Figure 9.3: Pushing our initial commit
+    Caption: Pushing our initial commit
 
     At this point, if you are working with someone else, clone their
     repository, and perform the following steps on their code base to
@@ -109,10 +109,10 @@ this exercise more effective, you can collaborate with a friend.
     You should get the following output:
 
     
-    ![](./images/C13963_09_04.jpg)
+![](./images/C13963_09_04.jpg)
 
 
-    Figure 9.4: Creating a dev branch
+    Caption: Creating a dev branch
 
 9.  Create a new file called `hello_world.py`. This can be
     done in a text editor, or with the following simple command:
@@ -135,10 +135,10 @@ this exercise more effective, you can collaborate with a friend.
     **Compare & pull request**:
 
     
-    ![](./images/C13963_09_05.jpg)
+![](./images/C13963_09_05.jpg)
 
 
-    Figure 9.5: The home page of the repository on GitHub
+    Caption: The home page of the repository on GitHub
 
 12. Here, you can see a list of changes made on the `dev`
     branch that you created. You can also provide an explanation that
@@ -146,10 +146,10 @@ this exercise more effective, you can collaborate with a friend.
     whether or not it should be committed to the master branch:
 
     
-    ![](./images/C13963_09_06.jpg)
+![](./images/C13963_09_06.jpg)
 
 
-    Figure 9.6: Adding justifications to the code on GitHub
+    Caption: Adding justifications to the code on GitHub
 
 13. Click on **Create pull request** to add the justifications on
     GitHub.
@@ -232,10 +232,10 @@ example, `numpy`.
     You should get the following output:
 
     
-    ![](./images/C13963_09_10.jpg)
+![](./images/C13963_09_10.jpg)
 
 
-    Figure 9.10: Creating a new conda environment (truncated)
+    Caption: Creating a new conda environment (truncated)
 
     Note
 
@@ -263,10 +263,10 @@ example, `numpy`.
     You should get the following output:
 
     
-    ![](./images/C13963_09_11.jpg)
+![](./images/C13963_09_11.jpg)
 
 
-    Figure 9.11: The pandas output
+    Caption: The pandas output
 
     Note
 
@@ -529,10 +529,10 @@ This exercise will be performed in the `docker` environment:
     You should get the following output:
 
     
-    ![](./images/C13963_09_13.jpg)
+![](./images/C13963_09_13.jpg)
 
 
-    Figure 9.13: Running your program inside Docker (truncated)
+    Caption: Running your program inside Docker (truncated)
 
     You can see the full list of Docker images available on your system
     by running `docker images`. This list should include your
@@ -579,7 +579,7 @@ order, as follows:
 ![](./images/C13963_09_14.jpg)
 
 
-Figure 9.14: Processing with a single thread
+Caption: Processing with a single thread
 
 However, what if you could do all of these steps at the same time,
 rather than waiting for one to complete before moving onto the next? Our
@@ -588,7 +588,7 @@ workflow would look like this:
 ![](./images/C13963_09_15.jpg)
 
 
-Figure 9.15: Multithreaded processing
+Caption: Multithreaded processing
 
 This has the potential to be a lot faster if you have the infrastructure
 to execute these steps at the same time. That is, each step will need to
@@ -711,7 +711,7 @@ This exercise will be performed on a Jupyter notebook:
     You should get the following output:
 
     
-    ![](./images/C13963_09_16.jpg)
+![](./images/C13963_09_16.jpg)
 
 
     Here, you loop through 10 integers, send them through the
@@ -809,7 +809,7 @@ Execute a Simple Python Squaring Program*:
 ![](./images/C13963_09_17.jpg)
 
 
-Figure 9.17: Running our multiprocessing script
+Caption: Running our multiprocessing script
 
 In this exercise, you learned how to pass tasks between our parent and
 child Python processes using the `multiprocessing` package,
@@ -898,7 +898,7 @@ complete the same task of squaring numbers as in *Exercise 121*,
 ![](./images/C13963_09_18.jpg)
 
 
-Figure 9.18: Output from the threading loop
+Caption: Output from the threading loop
 
 In this exercise, you learned how to pass tasks between our parent and
 child Python processes using the threading package. In the next section,
@@ -1009,10 +1009,10 @@ user, its value is `False`. If it is provided, its value is
     You should get the following output:
 
     
-    ![](./images/C13963_09_19.jpg)
+![](./images/C13963_09_19.jpg)
 
 
-    Figure 9.19: Running argparse\_demo with no arguments
+    Caption: Running argparse\_demo with no arguments
 
 8.  Run the script again, with the `--flag` argument, to set
     it to `True`:
@@ -1025,10 +1025,10 @@ user, its value is `False`. If it is provided, its value is
     You should get the following output:
 
     
-    ![](./images/C13963_09_20.jpg)
+![](./images/C13963_09_20.jpg)
 
 
-    Figure 9.20: Running argparse\_demo with the \--flag argument
+    Caption: Running argparse\_demo with the \--flag argument
 
 9.  Now enter the following code and see the `help` text that
     `argparse` extracted from the description and
@@ -1119,10 +1119,10 @@ This exercise will be performed in a Python terminal:
     You should get the following output:
 
     
-    ![](./images/C13963_09_22.jpg)
+![](./images/C13963_09_22.jpg)
 
 
-    Figure 9.22: Running the script with no arguments specified
+    Caption: Running the script with no arguments specified
 
 8.  Try running the script and specifying two locations as the source
     and destination positional arguments.
@@ -1142,7 +1142,7 @@ This exercise will be performed in a Python terminal:
 ![](./images/C13963_09_23.jpg)
 
 
-Figure 9.23: Successfully specifying two positional arguments
+Caption: Successfully specifying two positional arguments
 
 In this exercise, you learned how to parameterize your scripts by
 accepting positional arguments using the `argparse` Python
@@ -1228,7 +1228,7 @@ is compatible with Python 3.7.
 ![](./images/C13963_09_24.jpg)
 
 
-Figure 9.24: Executing with the regular Python interpreter
+Caption: Executing with the regular Python interpreter
 
 The number will be different on your computer, but that\'s
 `17.6` seconds to execute the
@@ -1421,10 +1421,10 @@ have on the profile. This example will be performed on the command line:
     You should get the following output:
 
     
-    ![](./images/C13963_09_25.jpg)
+![](./images/C13963_09_25.jpg)
 
 
-    Figure 9.25: Investigating performance with cProfile
+    Caption: Investigating performance with cProfile
 
     The `__next__()` function is called most often, which is
     not surprising as it is the iterative part of the iteration. It also
@@ -1459,7 +1459,7 @@ have on the profile. This example will be performed on the command line:
     You should get the following output:
 
     
-    ![](./images/C13963_09_26.jpg)
+![](./images/C13963_09_26.jpg)
 
 
 
@@ -1496,10 +1496,10 @@ have on the profile. This example will be performed on the command line:
     You should get the following output:
 
     
-    ![](./images/C13963_09_27.jpg)
+![](./images/C13963_09_27.jpg)
 
 
-    Figure 9.27: Getting faster this time
+    Caption: Getting faster this time
 
 5.  Much better. Well, much better than `Primes2` anyway. This
     still takes seven times longer than the original algorithm. There\'s
@@ -1536,7 +1536,7 @@ have on the profile. This example will be performed on the command line:
     You should get the following output:
 
     
-    ![](./images/C13963_09_28.jpg)
+![](./images/C13963_09_28.jpg)
 
 
 
@@ -1558,7 +1558,7 @@ have on the profile. This example will be performed on the command line:
 ![](./images/C13963_09_29.jpg)
 
 
-Figure 9.29: The result of the naive implementation
+Caption: The result of the naive implementation
 
 
 ``` {.language-markup}
@@ -1622,10 +1622,10 @@ Here are the steps:
     You should get the following output:
 
     
-    ![](./images/C13963_09_31.jpg)
+![](./images/C13963_09_31.jpg)
 
 
-    Figure 9.31: The expected sample output
+    Caption: The expected sample output
 
 9.  Rerun the numbers with a large number of iterations and use
     `cProfile` to view a breakdown of what is taking time to

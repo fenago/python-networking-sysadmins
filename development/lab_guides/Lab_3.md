@@ -211,10 +211,10 @@ docstring:
     You should get the following output:
 
     
-    ![](./images/C13963_03_02.jpg)
+![](./images/C13963_03_02.jpg)
 
 
-    Figure 3.2: The output of the help function
+    Caption: The output of the help function
 
 6.  View the `__doc__` property of `my_module` as a
     second way of viewing the docstring:
@@ -229,7 +229,7 @@ docstring:
 ![](./images/C13963_03_03.jpg)
 
 
-Figure 3.3: Viewing the docstring
+Caption: Viewing the docstring
 
 Docstrings can span one line, such as in the preceding example, or
 multiple lines. The following is an example of a Docstring:
@@ -357,7 +357,7 @@ to the console by importing the `datetime` module:
 ![](./images/C13963_03_04.jpg)
 
 
-Figure 3.4: The command-line output
+Caption: The command-line output
 
 In this exercise, you were able to write a script that prints the date
 and time using the `datetime` module. Hence, you can see how
@@ -459,7 +459,7 @@ The steps to do this are as follows:
 ![](./images/C13963_03_05.jpg)
 
 
-Figure 3.5: Printing the time to the command line
+Caption: Printing the time to the command line
 
 The output from a Python console should look like this:
 
@@ -659,7 +659,7 @@ the number 11 in the following list:
 ![](./images/C13963_03_13.jpg)
 
 
-Figure 3.13: A simple problem for a search algorithm to solve
+Caption: A simple problem for a search algorithm to solve
 
 The binary search algorithm will be explained as follows:
 
@@ -670,10 +670,10 @@ The binary search algorithm will be explained as follows:
     know the array is sorted):
 
     
-    ![](./images/C13963_03_14.jpg)
+![](./images/C13963_03_14.jpg)
 
 
-    Figure 3.14: Splitting the list at the midpoint, 8
+    Caption: Splitting the list at the midpoint, 8
 
     Note
 
@@ -685,7 +685,7 @@ The binary search algorithm will be explained as follows:
     than the midpoint 12, and you discard the right side of our sublist:
 
     
-    ![](./images/C13963_03_15.jpg)
+![](./images/C13963_03_15.jpg)
 
 
 
@@ -694,7 +694,7 @@ The binary search algorithm will be explained as follows:
 ![](./images/C13963_03_16.jpg)
 
 
-Figure 3.16: Reaching the final result
+Caption: Reaching the final result
 
 
 Exercise 41: Binary Search in Python
@@ -869,7 +869,7 @@ Prompt:
 ![](./images/C13963_03_18.jpg)
 
 
-Figure 3.18: Running from the command line
+Caption: Running from the command line
 
 In this exercise, you worked on defining and calling a function within a
 Python script.
@@ -951,7 +951,7 @@ You should get the following output:
 ![](./images/C13963_03_19.jpg)
 
 
-Figure 3.19: The current date and time
+Caption: The current date and time
 
 
 Keyword Arguments
@@ -1092,10 +1092,10 @@ through a `convert_usd_to_aud` function:
 4.  Execute this script from Command Prompt:
 
     
-    ![](./images/C13963_03_20.jpg)
+![](./images/C13963_03_20.jpg)
 
 
-    Figure 3.20: Converting a list of USD amounts to AUD
+    Caption: Converting a list of USD amounts to AUD
 
     Note that the `convert_and_sum_list` function didn\'t need
     the rate argument. It simply needed to pass it through to the
@@ -1120,7 +1120,7 @@ through a `convert_usd_to_aud` function:
 ![](./images/C13963_03_21.jpg)
 
 
-Figure 3.21: Altering the result by specifying the kwarg rate
+Caption: Altering the result by specifying the kwarg rate
 
 
 Activity 9: Formatting Customer Names
@@ -1158,7 +1158,7 @@ The steps are as follows:
 ![](./images/C13963_03_22.jpg)
 
 
-Figure 3.22: The formatted customer name
+Caption: The formatted customer name
 
 
 ``` {.language-markup}
@@ -1425,7 +1425,7 @@ You should get the following output:
 ![](./images/C13963_03_24.jpg)
 
 
-Figure 3.24: Terminating the loop
+Caption: Terminating the loop
 
 
 Exercise 50: Recursive Countdown
@@ -1456,7 +1456,7 @@ recursively counts down from integer `n` until we hit
 ![](./images/C13963_03_25.jpg)
 
 
-Figure 3.25: Counting down with recursion
+Caption: Counting down with recursion
 
 In this exercise, you successfully implemented a termination statement
 after number 1, with the term `liftoff`. This shows us that
@@ -1685,7 +1685,7 @@ integers up to 6:
 ![](./images/C13963_03_26.jpg)
 
 
-Figure 3.26: Stopping early with saved results
+Caption: Stopping early with saved results
 
 In this exercise, you were able to reduce the number of steps in our
 code using dynamic programming to find the sum of integers up to
@@ -1750,10 +1750,10 @@ function in the previous exercise:
     You should get the following output:
 
     
-    ![](./images/C13963_03_27.jpg)
+![](./images/C13963_03_27.jpg)
 
 
-    Figure 3.27: Timing our code
+    Caption: Timing our code
 
 4.  Rerun the same code in the shell:
 
@@ -1767,7 +1767,7 @@ function in the previous exercise:
 ![](./images/C13963_03_28.jpg)
 
 
-Figure 3.28: Speeding up the execution with dynamic programming
+Caption: Speeding up the execution with dynamic programming
 
 Note
 
@@ -1848,7 +1848,7 @@ You should get the following output:
 ![](./images/C13963_03_29.jpg)
 
 
-Figure 3.29: Timing our helper functions
+Caption: Timing our helper functions
 
 The `print` statement is repeated twice in the preceding code,
 and will be better expressed as a helper function, as follows:
@@ -2086,7 +2086,7 @@ You should get the following output:
 ![](./images/C13963_03_30.jpg)
 
 
-Figure 3.30: We are unable to access the local variable y
+Caption: We are unable to access the local variable y
 
 Note that if you define a variable within a function that has already
 been defined globally, the value will change depending on where the
@@ -2360,7 +2360,7 @@ with binary response variables. It is defined as follows:
 ![](./images/C13963_03_31.jpg)
 
 
-Figure 3.31: The logistic function
+Caption: The logistic function
 
 1.  Import the `math` module as needed for the exponential
     function:
@@ -2388,7 +2388,7 @@ Figure 3.31: The logistic function
 ![](./images/C13963_03_32.jpg)
 
 
-Figure 3.32: Applying the logistic function to a list
+Caption: Applying the logistic function to a list
 
 In this exercise, you used the `lambda` function to find the
 list of values by using `map`.
@@ -2416,7 +2416,7 @@ You should get the following output:
 ![](./images/C13963_03_33.jpg)
 
 
-Figure 3.33: The filtered list
+Caption: The filtered list
 
 
 Exercise 57: Using the Filter Lambda
@@ -2488,7 +2488,7 @@ You should get the following output:
 ![](./images/C13963_03_34.jpg)
 
 
-Figure 3.34: Sorting using the lambda function
+Caption: Sorting using the lambda function
 
 Recall that the `%` (`modulo`) operator returns the
 remainder from the division of the first list.

@@ -71,10 +71,10 @@ To proceed with the exercises in the lab, you will need the
     You should get the following output:
 
     
-    ![](./images/C13963_11_04.jpg)
+![](./images/C13963_11_04.jpg)
 
 
-    Figure 11.4: Output with the dataset displayed
+    Caption: Output with the dataset displayed
 
 4.  Next, enter the following code to clean the dataset of null values
     using `.dropna()`:
@@ -176,7 +176,7 @@ To proceed with the exercises in the lab, you will need the
     You should get the following output:
 
     
-    ![](./images/C13963_11_05.jpg)
+![](./images/C13963_11_05.jpg)
 
 
 
@@ -222,7 +222,7 @@ To proceed with the exercises in the lab, you will need the
 ![](./images/C13963_11_06.jpg)
 
 
-Figure 11.6: Output on the accuracy of the dataset model
+Caption: Output on the accuracy of the dataset model
 
 Note that there are other errors to choose from. The square root of
 `mean_squared_error` is a standard choice with linear
@@ -490,7 +490,7 @@ the data:
 ![](./images/C13963_11_07.jpg)
 
 
-Figure 11.7: Model fitting the data points
+Caption: Model fitting the data points
 
 There are many models and approaches to counteract overfitting. Let\'s
 go over a couple of models now.
@@ -814,7 +814,7 @@ using `GridSearchCV`:
 ![](./images/C13963_11_08.jpg)
 
 
-Figure 11.8: Output showing the best score using n\_neighbors
+Caption: Output showing the best score using n\_neighbors
 
 In our case, 7 gave the best results. Your results may differ. Now,
 moving on, let\'s look at the different types of decision trees and
@@ -841,7 +841,7 @@ survived:
 ![](./images/C13963_11_09.jpg)
 
 
-Figure 11.9: Decision tree sample on the Titanic incident
+Caption: Decision tree sample on the Titanic incident
 
 This decision tree starts by determining whether the passenger was male.
 If the passenger was male, the branch is followed that asks the question
@@ -1045,10 +1045,10 @@ median house value predictions for Boston:
     You should get the following output:
 
     
-    ![](./images/C13963_11_10.jpg)
+![](./images/C13963_11_10.jpg)
 
 
-    Figure 11.10: Output of the tuned parameters and score
+    Caption: Output of the tuned parameters and score
 
     Keep in mind that with `RandomizedSearchCV`, there is no
     guarantee that the hyperparameters will produce the best results.
@@ -1153,10 +1153,10 @@ learning. The exercises from here on will be on the same notebook file:
     You should get the following output:
 
     
-    ![](./images/C13963_11_12.jpg)
+![](./images/C13963_11_12.jpg)
 
 
-    Figure 11.12: The first five rows of the pulsar dataset
+    Caption: The first five rows of the pulsar dataset
 
     Looks interesting, and problematic. Notice that the column headers
     appear to be another row. It\'s impossible to analyze data without
@@ -1190,10 +1190,10 @@ learning. The exercises from here on will be on the same notebook file:
     You should get the following output:
 
     
-    ![](./images/C13963_11_13.jpg)
+![](./images/C13963_11_13.jpg)
 
 
-    Figure 11.13: Check for null values using df.info() and len(df)
+    Caption: Check for null values using df.info() and len(df)
 
 4.  Now, let\'s find the info of the dataset using `.info()`:
 
@@ -1205,10 +1205,10 @@ learning. The exercises from here on will be on the same notebook file:
     You should get the following output:
 
     
-    ![](./images/C13963_11_14.jpg)
+![](./images/C13963_11_14.jpg)
 
 
-    Figure 11.14: Information based on the pulsar dataset
+    Caption: Information based on the pulsar dataset
 
 5.  Finally, use `len(df)` and match all columns of
     `df.info()` with only the non-null entries:
@@ -1256,7 +1256,7 @@ numerical values in the activity at the end of his lab):
 ![](./images/C13963_11_15.jpg)
 
 
-Figure 11.15: Sigmoid curve on a plot
+Caption: Sigmoid curve on a plot
 
 The sigmoid curve in figure 11.14 approaches 1 from the left and 0 from
 the right, without ever reaching 0 or 1. In this respect, 0 and 1
@@ -1322,7 +1322,7 @@ classification of pulsar stars:
 ![](./images/C13963_11_16.jpg)
 
 
-Figure 11.16: Mean score using logistic regression
+Caption: Mean score using logistic regression
 
 These numbers represent accuracy. A mean score of `0.977706`
 means that the logistic regression model is classifying
@@ -1401,10 +1401,10 @@ DecisionTreeClassifier, and RandomForestClassifier.
     You should get the following output:
 
     
-    ![](./images/C13963_11_17.jpg)
+![](./images/C13963_11_17.jpg)
 
 
-    Figure 11.17: Mean score using GaussianNB
+    Caption: Mean score using GaussianNB
 
 3.  Now, run the `clf_model` function with
     `KNeighborsClassifier()` as the input:
@@ -1418,10 +1418,10 @@ DecisionTreeClassifier, and RandomForestClassifier.
     You should get the following output:
 
     
-    ![](./images/C13963_11_18.jpg)
+![](./images/C13963_11_18.jpg)
 
 
-    Figure 11.18: Mean score using KNeighborsClassifier
+    Caption: Mean score using KNeighborsClassifier
 
 4.  Run the `clf_model` function with
     `DecisionTreeClassifier()` as the input:
@@ -1435,10 +1435,10 @@ DecisionTreeClassifier, and RandomForestClassifier.
     You should get the following output:
 
     
-    ![](./images/C13963_11_19.jpg)
+![](./images/C13963_11_19.jpg)
 
 
-    Figure 11.19: Mean score using DecisionTreeClassifier
+    Caption: Mean score using DecisionTreeClassifier
 
     Note
 
@@ -1458,7 +1458,7 @@ DecisionTreeClassifier, and RandomForestClassifier.
 ![](./images/C13963_11_20.jpg)
 
 
-Figure 11.20: Mean score using RandomForestClassifier
+Caption: Mean score using RandomForestClassifier
 
 All classifiers have achieved between 94% and 98% accuracy. It\'s
 unusual for this many classifiers to all perform this well. There must
@@ -1509,10 +1509,10 @@ limited cases, such as setting values):
     You should get the following output:
 
     
-    ![](./images/C13963_11_21.jpg)
+![](./images/C13963_11_21.jpg)
 
 
-    Figure 11.21: Output of the potential pulsars in the dataset
+    Caption: Output of the potential pulsars in the dataset
 
 3.  Use the `.count()` method on `df[df.Class == 1]`
     to obtain the number of actual pulsars:
@@ -1525,10 +1525,10 @@ limited cases, such as setting values):
     You should get the following output:
 
     
-    ![](./images/C13963_11_22.jpg)
+![](./images/C13963_11_22.jpg)
 
 
-    Figure 11.22: Output of the total actual pulsars in the dataset
+    Caption: Output of the total actual pulsars in the dataset
 
 4.  Divide step 2 by step 1 to obtain the percentage of pulsars:
 
@@ -1542,7 +1542,7 @@ limited cases, such as setting values):
 ![](./images/C13963_11_23.jpg)
 
 
-Figure 11.23: Output showing the percentage of pulsars
+Caption: Output showing the percentage of pulsars
 
 The results show that 0.09158 or 9% of the data are pulsars. The other
 91% are not pulsars. This means that it\'s very easy to make a machine
@@ -1561,7 +1561,7 @@ datasets:
 ![](./images/C13963_11_24.jpg)
 
 
-Figure 11.24: Overview of the confusion matrix
+Caption: Overview of the confusion matrix
 
 As you can see from figure 11.24, the confusion matrix is designed to
 show you what happened to each of the outputs. Every output will fall
@@ -1571,7 +1571,7 @@ into one of four boxes, labeled \"True positive,\" \"False positive,\"
 ![](./images/C13963_11_25.jpg)
 
 
-Figure 11.25: Prediction of the confusion matrix based on conditions
+Caption: Prediction of the confusion matrix based on conditions
 
 Consider the following example. This is the confusion matrix for the
 decision tree classifier we used earlier. You will see the code to
@@ -1580,7 +1580,7 @@ obtain this shortly. First, we want to focus on the interpretation:
 ![](./images/C13963_11_26.jpg)
 
 
-Figure 11.26: Confusion matrix
+Caption: Confusion matrix
 
 In sklearn, the default order is 0, 1. This means that the zeros or
 negative values are actually listed first. So, in effect, the confusion
@@ -1589,7 +1589,7 @@ matrix is interpreted as follows:
 ![](./images/C13963_11_27.jpg)
 
 
-Figure 11.27: Confusion matrix with the default orders
+Caption: Confusion matrix with the default orders
 
 In this particular case, 3,985 non-pulsars have been identified
 correctly, and 334 pulsars have been identified correctly. The 91 in the
@@ -1611,7 +1611,7 @@ decision tree classifier:
 ![](./images/C13963_11_28.jpg)
 
 
-Figure 11.28: Classification report on the confusion matrix
+Caption: Classification report on the confusion matrix
 
 In the classification report, the columns on the two ends are the
 easiest to interpret. On the far right, `support` is the
@@ -1724,10 +1724,10 @@ confusion matrix along with the classification report:
     You should get the following output:
 
     
-    ![](./images/C13963_11_29.jpg)
+![](./images/C13963_11_29.jpg)
 
 
-    Figure 11.29: Output of the confusion matrix on LogisticRegression
+    Caption: Output of the confusion matrix on LogisticRegression
 
     As you can see, the precision of classifying actual pulsars, the 1
     in the classification report, is 94%, whereas the total is 98%.
@@ -1746,7 +1746,7 @@ confusion matrix along with the classification report:
     You should get the following output:
 
     
-    ![](./images/C13963_11_30.jpg)
+![](./images/C13963_11_30.jpg)
 
 
     They\'re all high scores overall, but the 78% recall and 84%
@@ -1763,10 +1763,10 @@ confusion matrix along with the classification report:
     You should get the following output:
 
     
-    ![](./images/C13963_11_31.jpg)
+![](./images/C13963_11_31.jpg)
 
 
-    Figure 11.31: Output of the confusion matrix on GaussianNB
+    Caption: Output of the confusion matrix on GaussianNB
 
     In this particular case, the 68% precision of correctly identifying
     pulsars is not up to par.
@@ -1784,7 +1784,7 @@ confusion matrix along with the classification report:
 ![](./images/C13963_11_32.jpg)
 
 
-Figure 11.32: Output of the confusion matrix on RandomForestClassifier
+Caption: Output of the confusion matrix on RandomForestClassifier
 
 We\'ve now finished this exercise, and you can see that, in this case,
 the f1-score of 87% is the highest that we have seen.
@@ -1849,10 +1849,10 @@ prices in Boston using AdaBoost:
     You should get the following output:
 
     
-    ![](./images/C13963_11_33.jpg)
+![](./images/C13963_11_33.jpg)
 
 
-    Figure 11.33: Mean score output using AdaBoostClassifier
+    Caption: Mean score output using AdaBoostClassifier
 
     As you can see, the AdaBoost classifier gave one of the best results
     yet. Let\'s see how it performs on the confusion matrix.
@@ -1868,10 +1868,10 @@ prices in Boston using AdaBoost:
     You should get the following output:
 
     
-    ![](./images/C13963_11_34.jpg)
+![](./images/C13963_11_34.jpg)
 
 
-    Figure 11.34: Output of the confusion matrix on AdaBoostClassifier
+    Caption: Output of the confusion matrix on AdaBoostClassifier
 
     Totals of 98% for precision, recall, and the f1-score are
     outstanding. The f1-score of the positive pulsar classification, the

@@ -110,10 +110,10 @@ Jupyter Notebook:
     You should get the following output:
 
     
-    ![](./images/C13963_05_01.jpg)
+![](./images/C13963_05_01.jpg)
 
 
-    Figure 5.1: The docstring of the str class
+    Caption: The docstring of the str class
 
 4.  View the full list of properties and methods of `my_str`:
 
@@ -125,10 +125,10 @@ Jupyter Notebook:
     You should get the following output:
 
     
-    ![](./images/C13963_05_02.jpg)
+![](./images/C13963_05_02.jpg)
 
 
-    Figure 5.2: Complete list of the properties and methods of my\_str
+    Caption: Complete list of the properties and methods of my\_str
 
     Note
 
@@ -395,7 +395,7 @@ circles:
 ![](./images/C13963_05_04.jpg)
 
 
-Figure 5.4: Checking the attributes of our circles
+Caption: Checking the attributes of our circles
 
 In this exercise, you learned how to use the `init` method to
 set instance attributes.
@@ -423,7 +423,7 @@ keyword arguments are optional:
 ![](./images/C13963_05_05.jpg)
 
 
-Figure 5.5: Args and Kwargs
+Caption: Args and Kwargs
 
 The examples so far in this lab have just contained positional
 arguments. However, you may want to provide a default value for an
@@ -504,7 +504,7 @@ optional attributes that can be passed in the `init` method:
 ![](./images/C13963_05_06.jpg)
 
 
-Figure 5.6: Dictionary output of our usa object
+Caption: Dictionary output of our usa object
 
 In this exercise, you learned how keyword arguments can be used when
 initializing an object with a class.
@@ -556,7 +556,7 @@ formula, which you may recall from math classes:
 ![](./images/C13963_05_07.jpg)
 
 
-Figure 5.7: Formula to calculate the area of a circle
+Caption: Formula to calculate the area of a circle
 
 You can now test the `area` method:
 
@@ -832,7 +832,7 @@ You should get the following output:
 ![](./images/C13963_05_08.jpg)
 
 
-Figure 5.8: An unhelpful string representation of the Pet object
+Caption: An unhelpful string representation of the Pet object
 
 This is not a very helpful representation of our pet. So, we need to add
 an `__str__` method:
@@ -866,7 +866,7 @@ You should get the following output:
 ![](./images/C13963_05_09.jpg)
 
 
-Figure 5.9: A much nicer string representation of the object
+Caption: A much nicer string representation of the object
 
 This is a much nicer representation of our `Pet` object and
 makes it easier to quickly inspect objects without diving into the
@@ -1601,7 +1601,7 @@ You should get the following output:
 ![](./images/C13963_05_11.jpg)
 
 
-Figure 5.11: Demonstrating validation as part of the setter property
+Caption: Demonstrating validation as part of the setter property
 
 
 Inheritance
@@ -1720,7 +1720,7 @@ of our classes as a hierarchy, much like a family tree:
 ![](./images/C13963_05_12.jpg)
 
 
-Figure 5.12: Class inheritance
+Caption: Class inheritance
 
 
 Exercise 81: Inheriting from the Person Class
@@ -1777,7 +1777,7 @@ In this exercise, you will create a `Baby` class and an
 ![](./images/C13963_05_13.jpg)
 
 
-Figure 5.13: Our baby and adult speaking
+Caption: Our baby and adult speaking
 
 In this exercise, you learned how to inherit attributes and methods
 between classes.
@@ -1861,7 +1861,7 @@ allows us to increment the date by a given number of days:
 ![](./images/C13963_05_14.jpg)
 
 
-Figure 5.14: Adding days to a date
+Caption: Adding days to a date
 
 In this exercise, you learned how to inherit from classes in external
 libraries. This will often be useful, as external libraries may get you
@@ -1912,7 +1912,7 @@ You should get the following output:
 ![](./images/C13963_05_15.jpg)
 
 
-Figure 5.15: Failing to set a property
+Caption: Failing to set a property
 
 Suppose that in cases where there are three or more names that make up
 the full name, you want to assign the first part of the name to the
@@ -2017,7 +2017,7 @@ You should get the following output:
 ![](./images/C13963_05_16.jpg)
 
 
-Figure 5.16: Our talkative person speaking
+Caption: Our talkative person speaking
 
 This implementation is okay, though it isn\'t ideal that you\'ve copied
 the \"Hello, my name is John\" line from the `Person` class.
@@ -2046,7 +2046,7 @@ You should get the following output:
 ![](./images/C13963_05_17.jpg)
 
 
-Figure 5.17: Using the super() method to write cleaner code
+Caption: Using the super() method to write cleaner code
 
 The `super()` method allows you to access the parent class,
 `Person`, and call the corresponding `speak` method.
@@ -2128,7 +2128,7 @@ modify the behavior of a class without unnecessarily repeating code:
 ![](./images/C13963_05_18.jpg)
 
 
-Figure 5.18: Viewing our diary dates
+Caption: Viewing our diary dates
 
 In this exercise, you learned how to override methods using the super
 function. This allows you to more carefully override methods in the
@@ -2145,7 +2145,7 @@ class structure could look like this:
 ![](./images/C13963_05_19.jpg)
 
 
-Figure 5.19: Single inheritance
+Caption: Single inheritance
 
 Each child class is inheriting from a single parent class,
 `Person`.
@@ -2159,7 +2159,7 @@ to create a new class. For example, you might combine an
 ![](./images/C13963_05_20.jpg)
 
 
-Figure 5.20: Multiple inheritance
+Caption: Multiple inheritance
 
 
 Exercise 84: Creating a Consultation Appointment System
@@ -2235,10 +2235,10 @@ inheriting from a second parent class, `Calendar`:
     You should get the following output:
 
     
-    ![](./images/C13963_05_21.jpg)
+![](./images/C13963_05_21.jpg)
 
 
-    Figure 5.21: Booking an appointment
+    Caption: Booking an appointment
 
 6.  Suppose you wanted to warn the user when they try to course an
     appointment with a baby. You could override the
