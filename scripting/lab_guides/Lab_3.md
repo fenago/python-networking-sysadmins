@@ -223,7 +223,7 @@ F
 FAIL: test_if (test_if.Test_if)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/student/Desktop/test_if.py", line 7, in test_if
+  File "/home/jovyan/Desktop/test_if.py", line 7, in test_if
     self.assertEqual(result, 100)
 AssertionError: 50 != 100
 

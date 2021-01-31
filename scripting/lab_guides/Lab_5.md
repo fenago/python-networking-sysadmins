@@ -50,7 +50,7 @@ Python 3.6.5 (default, Apr  1 2018, 05:46:30)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import os
 >>> os.getcwd()
-'/home/student'
+'/home/jovyan'
 >> 
 ```
 
@@ -64,9 +64,9 @@ For that, the `os` module has the
 
 
 ```
->>> os.chdir('/home/student/work')
+>>> os.chdir('/home/jovyan/work')
 >>> print(os.getcwd())
-/home/student/work
+/home/jovyan/work
 >>> 
 ```
 
@@ -173,7 +173,7 @@ content in it:
 
 ```
 import shutil
-shutil.move('/home/student/sample.txt', '/home/student/Desktop/.')
+shutil.move('/home/jovyan/sample.txt', '/home/jovyan/Desktop/.')
 ```
 
 Run the script as follows:
@@ -184,11 +184,11 @@ $ python3 shutil_move_example.py
 ```
 
 In this script, our file to move is `sample.txt`, which is in
-the `/home/student` directory. `/home/student` is
-our source folder and `/home/student/Desktop` is our
+the `/home/jovyan` directory. `/home/jovyan` is
+our source folder and `/home/jovyan/Desktop` is our
 destination folder. So, after running the script, `sample.txt`
-will be moved from `/home/student` to
-the `/home/student/Desktop` directory.
+will be moved from `/home/jovyan` to
+the `/home/jovyan/Desktop` directory.
 
  
 
@@ -285,7 +285,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 >>> import os
 >>> os.path.abspath('sample.txt')
-'/home/student/work/sample.txt'
+'/home/jovyan/work/sample.txt'
 ```
 
 
@@ -293,8 +293,8 @@ Type "help", "copyright", "credits" or "license" for more information.
     your path.
 
 ```
->>> os.path.dirname('/home/student/work/sample.txt')
-'/home/student/work'
+>>> os.path.dirname('/home/jovyan/work/sample.txt')
+'/home/jovyan/work'
 ```
 
 
@@ -302,7 +302,7 @@ Type "help", "copyright", "credits" or "license" for more information.
     path.
 
 ```
->>> os.path.basename('/home/student/work/sample.txt')
+>>> os.path.basename('/home/jovyan/work/sample.txt')
 'sample.txt'
 ```
 
@@ -311,7 +311,7 @@ Type "help", "copyright", "credits" or "license" for more information.
     refers to the existing path.
 
 ```
->>> os.path.exists('/home/student/work/sample.txt')
+>>> os.path.exists('/home/jovyan/work/sample.txt')
 True
 ```
 
@@ -320,7 +320,7 @@ True
     path in bytes.
 
 ```
->>> os.path.getsize('/home/student/work/sample.txt')
+>>> os.path.getsize('/home/jovyan/work/sample.txt')
 39
 ```
 
@@ -329,7 +329,7 @@ True
     an existing file or not. Returns `True` if it is a file.
 
 ```
->>> os.path.isfile('/home/student/work/sample.txt')
+>>> os.path.isfile('/home/jovyan/work/sample.txt')
 True
 ```
 
@@ -339,7 +339,7 @@ True
     directory.
 
 ```
->>> os.path.isdir('/home/student/work/sample.txt')
+>>> os.path.isdir('/home/jovyan/work/sample.txt')
 False
 ```
 
@@ -584,7 +584,7 @@ this script in Python 2:
 ```
 import pyPdf
 def main():
-            file_name = '/home/student/sample_pdf.pdf'
+            file_name = '/home/jovyan/sample_pdf.pdf'
             pdfFile = pyPdf.PdfFileReader(file(file_name,'rb'))
             pdf_data = pdfFile.getDocumentInfo()
             print ("----Metadata of the file----")

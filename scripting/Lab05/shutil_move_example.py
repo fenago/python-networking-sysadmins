@@ -1,3 +1,3 @@
 import shutil
 
-shutil.move('/home/student/work/sample.txt', '/home/student/Desktop')
+shutil.move('/home/jovyan/work/sample.txt', '/home/jovyan/Desktop')

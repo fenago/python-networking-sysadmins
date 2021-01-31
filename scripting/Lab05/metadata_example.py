@@ -1,6 +1,6 @@
 import pyPdf
 def main():
-	file_name = '/home/student/sample_pdf.pdf'
+	file_name = '/home/jovyan/sample_pdf.pdf'
 	pdfFile = pyPdf.PdfFileReader(file(file_name,'rb'))
 	pdf_data = pdfFile.getDocumentInfo()
 	print ("----Metadata of the file----")

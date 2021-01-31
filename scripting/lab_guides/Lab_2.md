@@ -320,7 +320,7 @@ loaded and it will stop the execution on the first line it finds. Enter
 
 ```
 student@ubuntu:~$ python3 -m pdb pdb_example.py
-> /home/student/pdb_example.py(1)<module>()
+> /home/jovyan/pdb_example.py(1)<module>()
 -> class Student:
 (Pdb) continue
 0
@@ -329,7 +329,7 @@ student@ubuntu:~$ python3 -m pdb pdb_example.py
 3
 4
 The program finished and will be restarted
-> /home/student/pdb_example.py(1)<module>()
+> /home/jovyan/pdb_example.py(1)<module>()
 -> class Student:
 (Pdb)
 ```
@@ -370,11 +370,11 @@ Now, run the program as follows:
 
 ```
 student@ubuntu:~$ python3 pdb_example.py
-> /home/student/pdb_example.py(10)print_std()
+> /home/jovyan/pdb_example.py(10)print_std()
 -> print(i)
 (Pdb) continue
 0
-> /home/student/pdb_example.py(9)print_std()
+> /home/jovyan/pdb_example.py(9)print_std()
 -> pdb.set_trace()
 (Pdb)
 ```

@@ -920,7 +920,7 @@ Run the script as follows:
 
 
 ```
-$ python3 list_dir.py /home/student/
+$ python3 list_dir.py /home/jovyan/
 
 ['.ICEauthority', '.bash_history', '.bash_logout', '.bashrc', '.cache', '.config', '.gnupg', '.local', '.mozilla', '.pam_environment', '.profile', '.python_history', '.ssh', '.sudo_as_admin_successful', '.viminfo', '1.sh', '1.sh.x', '1.sh.x.c', 'Desktop', 'Documents', 'Downloads', 'Music', 'Pictures', 'Public', 'Templates', 'Videos', 'examples.desktop', 'execute_external_commands.py', 'log.txt', 'numbers.txt', 'python_learning', 'work']
 ```
@@ -994,10 +994,10 @@ student@ubuntu:~/work$ python3 take_backup.py
 
 Output :
 Enter directory to backup
-/home/student/work
-/home/student/work saved.
+/home/jovyan/work
+/home/jovyan/work saved.
 Where to backup?
-/home/student/Desktop
+/home/jovyan/Desktop
 Doing the backup now!
 Do you want to Continue? yes/no
 yes

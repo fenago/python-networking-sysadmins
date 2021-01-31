@@ -273,7 +273,7 @@ called `read_excel.py` and write the following content in it:
 ```
 import xlrd
 
-excel_file = (r"/home/student/sample.xlsx")
+excel_file = (r"/home/jovyan/sample.xlsx")
 course_obj = xlrd.open_workcourse(excel_file)
 excel_sheet = course_obj.sheet_by_index(0)
 result = excel_sheet.cell_value(0, 1)
@@ -313,7 +313,7 @@ following content in it:
 ```
 import xlrd
 
-excel_file = ("/home/student/work/sample.xlsx")
+excel_file = ("/home/jovyan/work/sample.xlsx")
 course_obj = xlrd.open_workcourse(excel_file)
 excel_sheet = course_obj.sheet_by_index(0)
 excel_sheet.cell_value(0, 0)

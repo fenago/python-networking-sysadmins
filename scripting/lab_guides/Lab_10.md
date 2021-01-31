@@ -399,14 +399,14 @@ from ftplib import FTP
 ftp = FTP('your-ftp-domain-or-ip')
 with ftp:
     ftp.login('your-username','your-password')
-    ftp.cwd('/home/student/work/')
+    ftp.cwd('/home/jovyan/work/')
     files = ftp.nlst()
     print(files)
     # Print the files
     for file in files:
         if os.path.isfile(file):
             print("Downloading..." + file)
-            ftp.retrbinary("RETR " + file ,open("/home/student/testing/" + file, 'wb').write)
+            ftp.retrbinary("RETR " + file ,open("/home/jovyan/testing/" + file, 'wb').write)
 
 ftp.close()
 ```
@@ -503,7 +503,7 @@ from ftplib import FTP
 ftp = FTP('your-ftp-domain-or-ip')
 ftp.login('your-username','your-password')
 
-ftp.cwd('/home/student/')
+ftp.cwd('/home/jovyan/')
 s_cmd_stat = ftp.sendcmd('STAT')
 print(s_cmd_stat)
 print()
@@ -542,7 +542,7 @@ You will get the following output:
      vsFTPd 3.0.3 - secure, fast, stable
 211 End of status
 
-257 "/home/student" is the current directory
+257 "/home/jovyan" is the current directory
 ```
 
 In the preceding code, we first mentioned the IP address, username, and
