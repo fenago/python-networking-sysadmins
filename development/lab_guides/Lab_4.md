@@ -990,7 +990,6 @@ sample data:
 ![](./images/C13963_04_19.jpg)
 
 
-Figure 4.19: Density plot output from the sample data
 
 So far, in this exercise, you have used the `seaborn` library,
 which is a data visualization library based on `matplotlib`.
@@ -999,15 +998,6 @@ and supports chart types that do not come with `matplotlib`.
 For example, you use the `seaborn` library for density plots
 simply because it is not available in `matplotlib`.
 
-In this exercise, you were able to implement and output the density plot
-graph, as shown in *Figure 4.19*, from the list sample data we inputted.
-
-If you were to do it using `matplotlib`, you would need to
-write a separate function that calculates the density. To make things
-easier and create density plots using `seaborn`. The line in
-the chart is drawn using **kernel density estimation (KDE)**. KDE
-estimates the probability density function of a random variable, which,
-in this case, is the score of students.
 
 In the next exercise, you will be implementing contour plots. Contour
 plots are suitable for visualizing large and continuous datasets. A
@@ -1172,11 +1162,6 @@ wave using sample data:
     ax.set_ylabel('Y')
     ax.set_zlabel('Z')
     ```
-
-    Note
-
-    Enter the preceding code in a single input field in your Jupyter
-    Notebook, as shown in *Figure 4.22*.
 
     Execute the cell twice, and you should get the following output:
 

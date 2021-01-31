@@ -352,7 +352,7 @@ to the console by importing the `datetime` module:
     ```
     print(datetime.date.today())
     ```
-5.  Run the script from the command line as shown in the *Figure 3.4*.
+5.  Run the script from the command line as shown in the image below.
 
 ![](./images/C13963_03_04.jpg)
 

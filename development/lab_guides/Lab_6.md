@@ -36,12 +36,6 @@ terminal. The code mentioned here is with the `>>>` symbol:
 >>> done()
 ```
 
-This code uses the `turtle` module which can be used to print
-the output on the screen, as shown in *Figure 6.2*. This output will
-look like the trail of a turtle that follows when the cursor is moved.
-The `turtle` module allows the user to interact with the
-cursor and leave a trail as it keeps moving. It has functions to move
-around the screen and print as it advances.
 
 Here is a detailed explanation of the `turtle` module code
 snippet:
@@ -104,15 +98,14 @@ The code then takes the input message and chooses whether to capitalize
 it based on the flag.
 
 You can now interact with this file, named `echo.py`, as shown
-in output *Figure 6.3*:
+in output :
 
 ![](./images/C13963_06_03.jpg)
 
 
 Note
 
-We will be using this capitalize tool in *Exercise 86, Extending the
-echo.py Example*.
+We will be using this capitalize tool in *Exercise 86, Extending the echo.py Example*.
 
 
 Exercise 85: Using the dataclass Module
@@ -737,16 +730,7 @@ Figure 6.10: Calculating the epoch
 
 The result is the Unix epoch --- January 1, 1970.
 
-Having completed this exercise, you know how to use the `time`
-and `datetime` modules to get the output as the Unix
-`epoch` time, as shown in *Figure 6.10*, and to use
-`timedelta` to represent intervals.
 
-There is one more module that it is sometimes used in combination with
-`datetime`, which is the `calendar` module. The
-`calendar` module provides additional information about
-calendar years; that is, how many days there are in a month. This can
-also be used to output calendars such as the Unix function.
 
 Now have a look at an example where you create a calendar and get all of
 the days in a month as follows:
@@ -1069,7 +1053,7 @@ with a filesystem.
 You are given the following file and folder structure, which you have in
 the GitHub repository:
 
-![ Figure 6.16: Initial folder structure ](./images/C13963_06_16.jpg)
+![](./images/C13963_06_16.jpg)
 
 
 Figure 6.16: Initial folder structure
@@ -1289,16 +1273,12 @@ The output is as follows:
 ![](./images/C13963_06_21.jpg)
 
 
-Figure 6.21: Output showing the subprocess module
-
 Note
 
 The `stdout` and `stderr` result is a byte string.
 If you know that the result is text, you can pass the `text`
 argument to have it decoded.
 
-Now, Let\'s omit `stderr` from the output as you know it is
-empty as shown in the Figure 6.21.
 
 
 ``` {.language-markup}

@@ -188,22 +188,18 @@ should get the following output:
 ![](./images/C13963_09_08.jpg)
 
 
-Figure 9.8: Output of pip freeze (truncated)
 
 This package list could be saved to a `text` file with the
 following command: `pip freeze` \>
 `requirements.txt`. This will create a file called
-`requirements.txt`, which will be similar to *Figure 9.9*:
+`requirements.txt`, which will be similar to:
 
 ![](./images/C13963_09_09.jpg)
 
 
-Figure 9.9: Viewing requirements.txt in Notepad (truncated)
-
 Now that you have the information about the packages, you can choose to
 install these packages on another machine or environment with the
 following command: `pip install -r requirements.txt`.
-
 
 
 

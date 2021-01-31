@@ -155,14 +155,13 @@ Programming languages do not provide table structures as it is not the
 role of a language to do so. A table structure is simply a way to
 present data.
 
-What you can do is to present the table structure shown in *Figure 2.3*
+What you can do is to present the table structure shown in
 using a list of lists; for example, if you want to store the following
 fruit orders using a list:
 
 ![](./images/C13963_02_03.jpg)
 
 
-Figure 2.3: A representation of lists of lists as a matrix
 
 Mathematically, you can present the information shown in figure 2.3
 using a 2 x 3 (2 rows by 3 columns) matrix. This matrix would look like
@@ -285,15 +284,8 @@ are currently working in an IT company and are given the following list
 of employees. You are asked by your manager to use Python to store this
 data for further company use.
 
-The aim of this activity is to use nested lists to store data and print
-them as you need them.
-
-The data provided to you by your company is shown in *Figure 2.5*:
-
 ![](./images/C13963_02_05.jpg)
 
-
-Figure 2.5: Table consisting of employee data
 
 Follow these steps to complete this activity:
 
@@ -873,47 +865,13 @@ and JSON. Although you can load JSON directly into Python, a Python
 dictionary is a complete data structure that implements its own
 algorithms, and JSON is just a pure string written in a similar format..
 
-Python dictionaries are something similar to key-value pairs. They
-simply map keys to associated values, as shown in *Figure 2.12*:
 
 ![](./images/C13963_02_12.jpg)
 
 
-Figure 2.12: Mapping keys and values in Python dictionaries
-
-Dictionaries are like lists. They both share the following properties:
-
--   Both can be used to store values.
--   Both can be changed in place and can grow and shrink on demand.
--   Both can be nested: a dictionary can contain another dictionary, a
-    list can contain another list, and a list can contain a dictionary
-    and vice versa.
-
 The main difference between lists and dictionaries is how elements are
 accessed. List elements are accessed by their position index, which is
-\[0,1,2...\] while dictionary elements are accessed via keys. Therefore,
-a dictionary is a better choice for representing collections, and
-mnemonic keys are more suitable when a collection\'s items are labeled,
-for instance, a database record such as *Figure 2.13*. The database here
-is equivalent to a list, and the database list contains a record which
-can be represented using a dictionary. Within each record, there are
-fields to store respective values, and a dictionary can be used to store
-a record with unique keys that are mapped to values:
-
-![](./images/C13963_02_13.jpg)
-
-
-Figure 2.13: A sample database record
-
-There are, however, a few rules that you need to remember with Python
-dictionaries:
-
--   Keys must be unique --- no duplicate keys are allowed.
--   Keys must be immutable --- they can be a string, a number, or a
-    tuple.
-
-You will work with dictionaries and store a record in *Exercise 28*,
-*Using a Dictionary to Store a Movie Record*.
+\[0,1,2...\] while dictionary elements are accessed via keys.
 
 
 Exercise 28: Using a Dictionary to Store a Movie Record

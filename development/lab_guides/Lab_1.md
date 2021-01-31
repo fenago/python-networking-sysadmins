@@ -760,7 +760,7 @@ Jupyter:
 
     Figure 1.5: Output throwing a syntax error
 
-    You get the error mentioned in Figure 1.4 because you cannot include
+    You get the error mentioned because you cannot include
     a variable with a special character.
 
 4.  Now, use letters again instead of special characters for the
@@ -1809,7 +1809,7 @@ You should get the following output:
 ```
 
 The character value for `San Francisco` and the corresponding
-index count is shown in *Figure 1.15*:
+index count is shown :
 
 ![](./images/C13963_01_15.jpg)
 
@@ -2196,13 +2196,9 @@ Comparison Operators
 Python objects may be compared using a variety of symbols that evaluate
 to Booleans.
 
-*Figure 1.17* shows the comparison table with their corresponding
-operators:
 
 ![](./images/C13963_01_17.jpg)
 
-
-Figure 1.17: Comparison table with its corresponding symbols
 
 Note
 

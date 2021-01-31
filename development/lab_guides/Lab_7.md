@@ -335,7 +335,7 @@ In this exercise, you will be changing a set comprehension into a set:
     You should get the following output:
 
     
-    ![ Figure 7.9: The result of the set ](./images/C13963_07_09.jpg)
+    ![](./images/C13963_07_09.jpg)
 
 
     Figure 7.9: The result of the set
@@ -352,7 +352,7 @@ In this exercise, you will be changing a set comprehension into a set:
 
     You should get the following output:
 
-![ Figure 7.10: A set without duplicate entries](./images/C13963_07_10.jpg)
+![](./images/C13963_07_10.jpg)
 
 
 Figure 7.10: A set without duplicate entries
@@ -400,12 +400,8 @@ the names in a list and print the length of each name:
 
     You should get the following output:
 
-![ Figure 7.11: A lookup dictionary equaling the length of the names in
-the list ](./images/C13963_07_11.jpg)
+![](./images/C13963_07_11.jpg)
 
-
-Figure 7.11: A lookup dictionary equaling the length of the names in the
-list
 
 Notice that the entry for `Terry` only appears once, because
 dictionaries cannot contain duplicate keys. You have created an index of
@@ -494,7 +490,7 @@ In this exercise, you will be using a regular dictionary that raises a
     You should get the following output:
 
     
-    ![ Figure 7.13: The output showing KeyError: \'middle\_name\'](./images/C13963_07_13.jpg)
+    ![](./images/C13963_07_13.jpg)
 
 
     Figure 7.13: The output showing KeyError: \'middle\_name\'
@@ -873,51 +869,8 @@ exercise:
 
     You should get the following output:
 
-![ Figure 7.19: The StopIteration error is thrown when the object runs
-out of prime numbers ](./images/C13963_07_19.jpg)
+![](./images/C13963_07_19.jpg)
 
-
-Figure 7.19: The StopIteration error is thrown when the object runs out
-of prime numbers
-
-Being able to step through an iteration manually is incredibly useful in
-programs that are driven by a sequence of inputs, including a command
-interpreter. You can treat the input stream as an iteration over a list
-of strings, where each string represents a command. Call
-`next()` to get the next command, work out what to do, and
-then execute it. Then, print the result, and go back to
-`next()` to await the subsequent command. When
-`StopIteration` is raised, the user has no more commands for
-your program, and it can exit.
-
-
-Itertools
-=========
-
-
-Iterators are useful for describing sequences, such as Python lists and
-ranges, and sequence-like collections, such as your own data types, that
-provide ordered access to their contents. Iterators make it easy to work
-with these types in a Pythonic way. Python\'s library includes the
-`itertools` module, which has a selection of helpful functions
-for combining, manipulating, and otherwise working with iterators. In
-this section, you will use a couple of helpful tools from the module.
-There are plenty more available, so be sure to check out the official
-documentation for `itertools`.
-
-One of the important uses of `itertools` is in dealing with
-infinite sequences. There are plenty of situations in which a sequence
-does not have an end: everything from infinite series in mathematics to
-the event loop in a graphical application. A graphical user interface is
-usually built around an event loop in which the program waits for an
-event (such as a keypress, a mouse click, a timer expiring, or something
-else) and then reacts to it. The stream of events can be treated as a
-potentially infinite list of event objects, with the program taking the
-next event object from the sequence and doing its reaction work.
-Iterating over such a sequence with either a Python `for..in`
-loop or a comprehension will never terminate. There are functions in
-`itertools` for providing a window onto an infinite sequence,
-and the following exercise will look at one of those.
 
 
 Exercise 107: Using Infinite Sequences and takewhile
@@ -1000,11 +953,8 @@ less space than the Sieve for generating prime numbers:
 
     You should get the following output:
 
-![ Figure 7.21: Using the takewhile function to produce a finite
-sequence ](./images/C13963_07_21.jpg)
+![](./images/C13963_07_21.jpg)
 
-
-Figure 7.21: Using the takewhile function to produce a finite sequence
 
 Surprisingly, it\'s also useful to be able to turn a finite sequence
 into an infinite one.
@@ -1052,58 +1002,8 @@ to decide whose turn it is:
 
     You should get the following output:
 
-![ Figure 7.22: Using the takewhile function to list the players who
-take the first 10 turns in the chess game ](./images/C13963_07_22.jpg)
+![](./images/C13963_07_22.jpg)
 
-
-Figure 7.22: Using the takewhile function to list the players who take
-the first 10 turns in the chess game
-
-This is the \"round-robin\" algorithm for allocating actions (in this
-case, making a chess move) to resources (in this case, the players), and
-has many more applications than board games. A simple way to do load
-balancing between multiple servers in a web service or database
-application is to build an infinite sequence of the available servers
-and choose one in turn for each incoming request.
-
-
-Generators
-==========
-
-
-A function that returns a value does all of its computation and gives up
-control to its caller, which supplies that value. This is not the only
-possible behavior for a function. It can instead yield a value, which
-passes control (and the value) back to the caller but leaves the
-function\'s state intact. Later, it can yield another value, or finally
-return to indicate that it is done. A function that yields is called a
-generator.
-
-Generators are useful because they allow a program to defer or postpone
-calculating a result until it\'s required. Finding the successive digits
-of π, for example, is hard work, and it gets harder as the number of
-digits increases. If you wrote a program to display the digits of π, you
-might calculate the first 1,000 digits. Much of that effort will be
-wasted if the user only asks to see the first 10 digits. Using a
-generator, you can put off the expensive work until your program
-actually requires the results.
-
-A real-world example of a situation where generators can help is when
-dealing with I/O. A stream of data coming from a network service can be
-represented by a generator that yields the available data until the
-stream is closed when it returns the remaining data. Using a generator
-allows the program to pass control back and forth between the I/O stream
-when data is available, and the caller where the data can be processed.
-
-Python internally turns generator functions into objects that use the
-iterator protocol (such as `__iter__`, `__next__`,
-and the `StopIteration` error), so the work you put into
-understanding iterations in the previous section means you already know
-what generators are doing. There is nothing you can write for a
-generator that could not be replaced with an equivalent iterator object.
-However, sometimes, a generator is easier to write or understand.
-Writing code that is easier to understand is the definition of
-Pythonicity.
 
 
 Exercise 109: Generating a Sieve
@@ -1133,7 +1033,7 @@ version:
 
     You should get the following output:
 
-![ Figure 7.23: The output indicating all prime numbers below 100](./images/C13963_07_23.jpg)
+![](./images/C13963_07_23.jpg)
 
 
 Figure 7.23: The output indicating all prime numbers below 100
@@ -1228,7 +1128,7 @@ follows:
     Note that because this activity uses random numbers, you may not get
     the exact results shown here:
 
-![ Figure 7.26: A generator yielding successive estimates of π](./images/C13963_07_26.jpg)
+![](./images/C13963_07_26.jpg)
 
 
 
@@ -1334,11 +1234,8 @@ are as follows:
 
     You should get the following output:
 
-![ Figure 7.28: Replacing occurrences of a repeating pattern in the
-string ](./images/C13963_07_28.jpg)
+![](./images/C13963_07_28.jpg)
 
-
-Figure 7.28: Replacing occurrences of a repeating pattern in the string
 
 The replacement refers to the capture group, `"\1"`, which is
 the first expression in the search pattern to be surrounded by
