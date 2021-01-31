@@ -53,8 +53,7 @@ text, and rotating PDF pages.
 
 
 In this section, we are going read a PDF file
-using the `PyPDF2` module. Also, we are going[]{#id326064795
-.indexterm} to get the number of pages of that PDF. This module has a
+using the `PyPDF2` module. Also, we are going to get the number of pages of that PDF. This module has a
 function called  `PdfFileReader()` that helps in reading a PDF
 file. Make sure you have a PDF file in your system. Right now, I have
 the `test.pdf` file present in my system so I will use this
@@ -162,8 +161,7 @@ the text from the page number that we mentioned in
 In this section, we are going to see how to rotate PDF pages. For that,
 we will use the  `rotate.Clockwise()` method of
 a `PDF` object. Create a script
-called `rotate_pdf.py` and write the following[]{#id326468714
-.indexterm} content in it:
+called `rotate_pdf.py` and write the following content in it:
 
 
 ```
@@ -269,8 +267,7 @@ rows and columns from the Excel file.
 
 In this section, we will look at how to read an Excel file. We are going
 to use the `xlrd` module. Create a script
-called `read_excel.py` and write the following[]{#id326062803
-.indexterm} content in it:
+called `read_excel.py` and write the following content in it:
 
 
 ```
@@ -353,8 +350,7 @@ attribute.
 
 Before proceeding to read Excel files using Pandas, first we have to
 install the `pandas` module. We can
-install `pandas` using the following[]{#id326048458
-.indexterm} command:
+install `pandas` using the following command:
 
 
 ```
@@ -428,8 +424,7 @@ index zero. Finally, we printed the `pandas` data frame.
 
 
 
-When we use the pandas module to read an Excel[]{#id326845289
-.indexterm} file using the `read_excel` method, we can also
+When we use the pandas module to read an Excel file using the `read_excel` method, we can also
 read specific columns in that file. For reading specific columns, we
 need to use the  `usecols` parameter in the
 `read_excel` method.
@@ -491,8 +486,7 @@ particular rows, and reading multiple Excel sheets.
 `openpyxl` is a Python library that\'s used to read and write
 `xlsx`, `xlsm`, `xltx`,
 and `xltm` files. First, we have to
-install `openpyxl.` Run the following[]{#id326846825
-.indexterm} command:
+install `openpyxl.` Run the following command:
 
 
 ```
@@ -663,8 +657,7 @@ Working with CSV files
 
 The **CSV** format stands for **Comma Separated
 Values**. The commas are used to separate the fields in a
-record. These are commonly used for importing and[]{#id326844812
-.indexterm} exporting the format for spreadsheets and databases.
+record. These are commonly used for importing and exporting the format for spreadsheets and databases.
 
 A CSV file is a plain text file that uses a specific type of structuring
 to arrange tabular data. Python has the  built-in `csv` module
@@ -844,8 +837,7 @@ The access modes in Python are as follows:
 
 
 
-This function is used to open a file and does not require[]{#id325847869
-.indexterm} any external module to be imported.
+This function is used to open a file and does not require any external module to be imported.
 
 The syntax is as follows:
 
@@ -959,8 +951,7 @@ of the stored `test.txt` file.
 
 
 
-Reading a file is as easy as writing from a file. To open[]{#id326696613
-.indexterm} a file for reading, we set the second parameter that is the
+Reading a file is as easy as writing from a file. To open a file for reading, we set the second parameter that is the
 access mode  to `"r"` instead of `"w"`. To read the
 data from this file, we use the `read()` method of the
 `file handle` object. Create a script

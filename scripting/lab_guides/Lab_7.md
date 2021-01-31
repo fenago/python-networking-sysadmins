@@ -51,8 +51,7 @@ one now.
 
 
 
-The `wrap()` function is used to wrap[]{#id326468195
-.indexterm} an entire paragraph in to a single string. The
+The `wrap()` function is used to wrap an entire paragraph in to a single string. The
 output will be a list of output lines.
 
 The syntax is `textwrap.wrap(text, width)`:
@@ -153,8 +152,7 @@ the `fill()` function. Finally, we printed the output.
 
 
 The `dedent()` is another function of
-the `textwrap` module. This function[]{#id326823298
-.indexterm} removes the common
+the `textwrap` module. This function removes the common
 leading `whitespaces` from every line of your text.  
 
 The syntax for this function is as follows:
@@ -269,8 +267,7 @@ a `*` prefix. And next, we printed the output.
 
 
 
-This function of the `textwrap`module[]{#id325805176
-.indexterm} is used truncate the text to fit in the
+This function of the `textwrap`module is used truncate the text to fit in the
 specified width. For example, if you want to
 create a summary or preview, use the `shorten()` function.
 Using `shorten()`, all the whitespaces in your text will get
@@ -355,8 +352,7 @@ The following table lists the whitespace
 characters, and there\'s a description for each one:
 
 ![](./images/14.PNG)
-The following table lists the flags[]{#id326064829
-.indexterm}, and there\'s a description for
+The following table lists the flags, and there\'s a description for
 each one:
 
 ![](./images/15.PNG)
@@ -382,8 +378,7 @@ following sections.
 
 
 
-The `match()` function is a function[]{#id326263021
-.indexterm} of the `re` module. This function will match the
+The `match()` function is a function of the `re` module. This function will match the
 specified `re` pattern with the string. If the match is found,
 a `match` object will be returned.
 A `match` object will contain the information about the
@@ -444,8 +439,7 @@ search through a string. It will look for any
 location for the specified `re` pattern. The
 `search()` will take a pattern and text and it will search
 through our specified string for a match. It will return a
-`match` object when a match is found. It will[]{#id326050625
-.indexterm} return `None` if no match found. The
+`match` object when a match is found. It will return `None` if no match found. The
 `match` object has two methods:
 
 
@@ -687,8 +681,7 @@ Unicode strings
 
 
 
-In this section, we are going to learn about how[]{#id325824786
-.indexterm} to print Unicode strings in Python. Python handles Unicode
+In this section, we are going to learn about how to print Unicode strings in Python. Python handles Unicode
 strings in a very easy way. The string type actually holds Unicode
 strings, not a sequence of bytes.
 
@@ -799,8 +792,7 @@ following code:
 
 
 
-`UnicodeDecodeError` occurs whenever[]{#id326062829
-.indexterm} byte strings cannot decode to Unicode code points. To avoid
+`UnicodeDecodeError` occurs whenever byte strings cannot decode to Unicode code points. To avoid
 this exception, we can pass `replace`,
 `backslashreplace`, or `ignore` to the error
 argument in `decode` the as shown here:

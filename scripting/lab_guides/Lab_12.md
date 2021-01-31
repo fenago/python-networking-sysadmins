@@ -301,8 +301,7 @@ SSH using fabric module
 
 
 
-Fabric is a Python library as well as a command-line tool[]{#id326167680
-.indexterm} for the use of SSH. It is used for system administration and
+Fabric is a Python library as well as a command-line tool for the use of SSH. It is used for system administration and
 application deployment over the network. We can also execute shell
 commands over SSH.
 
@@ -479,8 +478,7 @@ server\'s host key without prompting it. We can use this policy for
 testing purposes only, but this is not a good option in a production
 environment because of security purpose.
 
-When an SSH connection is established, you can[]{#id326166977
-.indexterm} do any configuration or operation that you want on
+When an SSH connection is established, you can do any configuration or operation that you want on
 your device. Here, we created a few virtual
 LANs on a remote device. After creating VLANs, we just closed the
 connection.
@@ -497,8 +495,7 @@ advanced version of Paramiko. It is a `multi_vendor` library
 that is based on Paramiko. Netmiko simplifies SSH connection to a
 network device and takes particular operation on the device. Before
 going doing SSH to your remote device or multi-layer router, make sure
-they are configured properly and, if not, you can[]{#id326062929
-.indexterm} do basic configuration by command mentioned in the Paramiko
+they are configured properly and, if not, you can do basic configuration by command mentioned in the Paramiko
 section.
 
 Now, let\'s see an example. Create a `nmiko.py`script and

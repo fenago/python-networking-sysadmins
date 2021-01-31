@@ -302,8 +302,7 @@ directives for the error log are as follows:
 -   `LogLevel`
 :::
 
-The location and the name of server log files are set[]{#id326367550
-.indexterm} by the `ErrorLog` directive. It is the most
+The location and the name of server log files are set by the `ErrorLog` directive. It is the most
 important log file. The Apache `httpd` sends the information
 in this and also records produced while processing. Whenever a problem
 occurs with the server, this will be the first place to look. It
@@ -542,8 +541,7 @@ sub-sequence is known as slicing. In our example, we use square brackets
 inside it, separated by a colon (`:`). The operator
 `[1:3]` returns the part of the sequence from the first
 element to the third element, including the first but excluding the
-last. When we slice any sequence, the sub-sequence we got[]{#id326065748
-.indexterm} always has the same type as the original sequence from which
+last. When we slice any sequence, the sub-sequence we got always has the same type as the original sequence from which
 it was derived. However, the elements of a list (or tuple) can be of any
 type; no matter how we apply slicing over it, the derived slice of a
 list is a list. So, after applying slicing on log file, as a result of

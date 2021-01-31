@@ -35,8 +35,7 @@ interactive session, `stdin` acts as input and
 `stdout` will be the user\'s Terminal. As `stdin` is
 a file-like object, we have to read the data from `stdin`
 rather than reading data at runtime. `stdout` is used for the
-output. It is used as an output for expressions[]{#id326065578
-.indexterm} and `print()` function, as well as a
+output. It is used as an output for expressions and `print()` function, as well as a
 prompt for the `input()` function.
 
  
@@ -199,8 +198,7 @@ Information formatting
 
 
 In this section, we are going to learn about
-string formatting. We are going to learn how to format[]{#id326064837
-.indexterm} information in two ways: one by using the string
+string formatting. We are going to learn how to format information in two ways: one by using the string
 `format()` method and the other by using the `%`
 operator.
 

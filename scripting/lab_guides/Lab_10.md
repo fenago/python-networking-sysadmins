@@ -422,8 +422,7 @@ The ftplib module
 
 
 
-`ftplib` is a module in Python that provides[]{#id326648258
-.indexterm} all the functionality needed to perform various actions over
+`ftplib` is a module in Python that provides all the functionality needed to perform various actions over
 the FTP protocol. `ftplib` contains the FTP client class, as
 well as some helper functions. Using this module, we can easily connect
 to an FTP server to retrieve multiple files and process them. By
@@ -439,8 +438,7 @@ the `ftplib` module. We are going see various FTP objects.
 
 
 
-In this section, we are going to learn about downloading[]{#id326648226
-.indexterm} files from another machine using `ftplib`. For
+In this section, we are going to learn about downloading files from another machine using `ftplib`. For
 that, create a `get_ftp_files.py` script and write the
 following content in it:
 

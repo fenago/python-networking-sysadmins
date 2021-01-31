@@ -91,8 +91,7 @@ files that are archived.
 
 
 To unpack the archives, the `shutil` module has
-the `unpack_archive()` function. Using this[]{#id326064841
-.indexterm} function, we can extract the archive files. We passed the
+the `unpack_archive()` function. Using this function, we can extract the archive files. We passed the
 archive filename and the directory where we want to extract the
 contents. If no directory name is passed, then it will extract the
 contents into your current working directory.

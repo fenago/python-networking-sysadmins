@@ -109,10 +109,8 @@ What is a RESTful API?
 
 
 **REST** stands for **Representational State
-Transfer**. RESTful API has an approach[]{#id325778709
-.indexterm} to communication used in the development of web services. It
-is a style of a web service that works as a channel[]{#id325778702
-.indexterm} of communication between different systems over the
+Transfer**. RESTful API has an approach to communication used in the development of web services. It
+is a style of a web service that works as a channel of communication between different systems over the
 internet. It is an application interface and is used to `GET`,
 `PUT`, `POST`, and `DELETE` data using
 `HTTP` requests.
@@ -364,8 +362,7 @@ json false false
 json null null
 ```
 
-In the preceding example, we converted various types[]{#id326468688
-.indexterm} of Python objects into JSON string using
+In the preceding example, we converted various types of Python objects into JSON string using
 the `json.dumps()` function. After conversion, the Python list
 and tuples are converted into arrays. Integers and floats are treated as
 numbers in JSON. The following is the chart of conversion from Python to

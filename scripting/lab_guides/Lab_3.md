@@ -24,8 +24,7 @@ What is unittest?
 
 
 
-The `unittest` is a unit testing framework[]{#id326301276
-.indexterm} in Python. It supports multiple tasks such as test fixtures,
+The `unittest` is a unit testing framework in Python. It supports multiple tasks such as test fixtures,
 writing test cases, aggregating test cases into the test suites, and
 running tests.
 
@@ -152,8 +151,7 @@ Methods used in unit testing
 
 
 
-Whenever we use `unittest`, there are some[]{#id325847874
-.indexterm} methods we use in our script. These methods are the
+Whenever we use `unittest`, there are some methods we use in our script. These methods are the
 following:
 
 

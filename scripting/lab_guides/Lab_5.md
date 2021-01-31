@@ -49,8 +49,7 @@ some functions that can be used while working with directories.
 
 
 
-To start working with directories, first, we will get[]{#id326062915
-.indexterm} the name of our current working
+To start working with directories, first, we will get the name of our current working
 directory. The `os` module has
 a `getcwd()` function, using which we can get the current
 working directory. Start the `python3` console and enter the
@@ -73,8 +72,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 
 
-Using the `os` module, we can change[]{#id326064792
-.indexterm} the current working directory.
+Using the `os` module, we can change the current working directory.
 For that, the `os` module has the
 `chdir()` function, for example:
 
@@ -307,8 +305,7 @@ Working with paths
 
 
 Now, we are going to learn about `os.path()`. It is used for
-path manipulations. In this section, we will look at some[]{#id326339892
-.indexterm} of the functions that the `os` module offers for
+path manipulations. In this section, we will look at some of the functions that the `os` module offers for
 pathnames.
 
 Start the `python3` console:

@@ -190,8 +190,7 @@ Here, we performed a division operation. We divided `509` by
 
 
 
-When we write multiple lines of code in the Python[]{#id326062798
-.indexterm} interpreter (for example, the `If` statement
+When we write multiple lines of code in the Python interpreter (for example, the `If` statement
 and `for` and `while` loop functions), then the
 interpreter uses three dots (`...`) as a secondary prompt for
 line continuation. To come out of these lines, you have to press
@@ -235,8 +234,7 @@ IndentationError: expected an indented block
 
 
 
-If you are importing any module, then the Python[]{#id326134555
-.indexterm} interpreter checks if that module is available or not. You
+If you are importing any module, then the Python interpreter checks if that module is available or not. You
 can do this by using the `import` statement. If that module is
 available, then you will see the `>>>` prefix after pressing
 the [*Enter*] key. This indicates that the execution was
@@ -286,8 +284,7 @@ follows:
 
 
 
-We can come out of the Python[]{#id326207388
-.indexterm} console in two ways:
+We can come out of the Python console in two ways:
 
 
 -   The keyboard shortcut: [*Ctrl + D*]
@@ -335,8 +332,7 @@ student@ubuntu$
 
 
 Indentation is a must when writing block code
-in Python. Indentation is useful when you are writing[]{#id326224668
-.indexterm} functions, decision-making statements, looping statements,
+in Python. Indentation is useful when you are writing functions, decision-making statements, looping statements,
 and classes. This makes it easy to read your Python programs.
 
 We use indentation to indicate the block of code in Python programs. To
@@ -362,8 +358,7 @@ we didn\'t indent it.
 
 Like other programming languages, there\'s no need to declare your
 variables first. In Python, just think of any name to give your variable
-and assign it a value. You can use that variable in your[]{#id326224714
-.indexterm} program. So, in Python, you can declare variables whenever
+and assign it a value. You can use that variable in your program. So, in Python, you can declare variables whenever
 you need them.
 
 In Python, the value of a variable may change during the program
@@ -424,8 +419,7 @@ the following code:
 
 
 
-In Python, variables don\'t need to be declared[]{#id326236548
-.indexterm} explicitly to reserve memory space. So, the
+In Python, variables don\'t need to be declared explicitly to reserve memory space. So, the
 declaration is done automatically
 whenever you assign a value to the variable.
 In Python, the equal sign `=` is used to assign values to
@@ -894,8 +888,7 @@ Data Analytics and Machine learning, System Scripting etc.
 
 
 
-Strings are immutable, meaning we can\'t change[]{#id326107848
-.indexterm} the values. Refer to the given example:
+Strings are immutable, meaning we can\'t change the values. Refer to the given example:
 
 
 ```
@@ -972,8 +965,7 @@ As you might expect, you can assign list values to variables:
 
 
 
-We can access the values from a list by using index[]{#id325837136
-.indexterm} values. We will specify the index number
+We can access the values from a list by using index values. We will specify the index number
 in `[ and ]`. Index starts from `0`. Refer to the
 given example:
 
@@ -1057,8 +1049,7 @@ There are five basic list operations:
 
 
 
-In this section, we are going to learn about basic[]{#id326064758
-.indexterm} list operations: concatenation and repetition.
+In this section, we are going to learn about basic list operations: concatenation and repetition.
 
 The `+` operator concatenates lists:
 
@@ -1186,8 +1177,7 @@ The slice operator selects a range of elements.
 
 
 
-To access values in a tuple, use the square brackets[]{#id326134538
-.indexterm} for slicing along with the index or indices to obtain the
+To access values in a tuple, use the square brackets for slicing along with the index or indices to obtain the
 value available at that index or indices, as shown in the following
 example:
 
@@ -1380,8 +1370,7 @@ Dictionaries
 
 
 
-A dictionary is a data type in Python, which consists[]{#id326134574
-.indexterm} of key value pairs and is enclosed in curly braces
+A dictionary is a data type in Python, which consists of key value pairs and is enclosed in curly braces
 `{}`. Dictionaries are unordered and indexed by keys, where
 each key must be unique. These keys must be immutable type. Tuples can
 be used as keys if they contain only strings, numbers, or tuples.
@@ -1472,8 +1461,7 @@ Now, we are going to use modules to get the arguments:
 
 
 
-The `sys` module is used to access[]{#id326062854
-.indexterm} command-line parameters. The
+The `sys` module is used to access command-line parameters. The
 `len(sys.argv)` function contains the number of arguments. To
 print all of the arguments, simply execute `str(sys.argv)`.
 Let\'s have a look at an example: 
@@ -1584,8 +1572,7 @@ Positive number
 
 
 
-The `elif` statement checks multiple[]{#id326359324
-.indexterm} statements for a `true` value. Whenever the value
+The `elif` statement checks multiple statements for a `true` value. Whenever the value
 evaluates to `true`, that code block gets executed. Refer to
 the following syntax: 
 
@@ -1728,8 +1715,7 @@ The number is 4
 
 
 
-`while` is a looping statement that will[]{#id326064848
-.indexterm} iterate over a block of code until the entered test
+`while` is a looping statement that will iterate over a block of code until the entered test
 expression is `true`. We use this loop when we don\'t know how
 many times the iterations will go on. Refer to the following syntax:
 
@@ -1870,8 +1856,7 @@ Functions
 
 
 
-A function is a set of statements that perform[]{#id325847866
-.indexterm} a specific task. Using functions helps in breaking our
+A function is a set of statements that perform a specific task. Using functions helps in breaking our
 program into smaller parts. Programs will be more organized if we use
 functions as it avoids repetition and makes code reusable. Look at the
 following syntax:
@@ -2016,8 +2001,7 @@ Python program.
 
 
 
-Now, after creating a module, we will learn how to import[]{#id326062798
-.indexterm} that module. In the previous example, we created a sample
+Now, after creating a module, we will learn how to import that module. In the previous example, we created a sample
 module. Now we will import the sample module in
 `add.py script`:
 

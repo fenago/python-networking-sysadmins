@@ -31,8 +31,7 @@ What is debugging?
 
 
 
-Debugging is a process that resolves the issues[]{#id326841438
-.indexterm} that occur in your code and prevent your software from
+Debugging is a process that resolves the issues that occur in your code and prevent your software from
 running properly. In Python, debugging is very easy. The Python debugger
 sets conditional breakpoints and debugs the source code one line at a
 time. We\'ll debug our Python scripts using a `pdb` module
@@ -69,8 +68,7 @@ Error handling (exception handling)
 
 
 
-In this section, we\'re going to learn how Python[]{#id325818598
-.indexterm} handles exceptions. But first, what is an exception? An
+In this section, we\'re going to learn how Python handles exceptions. But first, what is an exception? An
 exception is an error that occurs during program execution. Whenever any
 error occurs, Python generates an exception that will be handled using
 a `try…except` block. Some exceptions can\'t be handled by
@@ -203,8 +201,7 @@ and is always available to use.
 
 
 
-The `pdb` module is used to debug Python[]{#id325814873
-.indexterm} programs. Python programs use `pdb` interactive
+The `pdb` module is used to debug Python programs. Python programs use `pdb` interactive
 source code debugger to debug the programs.
 `pdb` sets breakpoints and inspects the stack frames, and
 lists the source code.
@@ -563,8 +560,7 @@ Making programs run faster
 
 
 
-There are various ways to make your Python programs[]{#id326062858
-.indexterm} run faster, such as the following:
+There are various ways to make your Python programs run faster, such as the following:
 
 
 -   Profile your code so you can identify the bottlenecks

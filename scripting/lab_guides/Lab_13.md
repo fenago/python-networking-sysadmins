@@ -189,8 +189,7 @@ perform the printing operation after clicking on the button. The
 
  
 
-Now, we are going to see an example of the box[]{#id326064852
-.indexterm} layout. For that, create
+Now, we are going to see an example of the box layout. For that, create
 a `box_layout.py`script and write following code in it:
 
 
@@ -234,8 +233,7 @@ Installing and using the Apache Log Viewer app
 
 
 As we already have an Apache Log Viewer app, download the
-Apache Log Viewer app from[]{#id326064755
-.indexterm} the following
+Apache Log Viewer app from the following
 link: <https://www.apacheviewer.com/download/>.
 
  
@@ -265,8 +263,7 @@ the `access.log file` after applying a filter:
 ![](./images/99400f5f-249f-452e-85da-3e0430164c39.png)
 :::
 
-In the first case, we took the access log file and[]{#id326062832
-.indexterm} opened it in the Apache Logs Viewer. We can easily see that
+In the first case, we took the access log file and opened it in the Apache Logs Viewer. We can easily see that
 the access file that we opened in the Apache Logs Viewer contains all
 kinds of entries, such as authorized and unauthorized, with their
 status, IP address, request, and so on. However, in the second case we

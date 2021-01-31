@@ -26,8 +26,7 @@ Email message format
 
 
 
-In this section, we\'re going to learn about the email[]{#id326367321
-.indexterm} message format. Email messages consist of three primary
+In this section, we\'re going to learn about the email message format. Email messages consist of three primary
 components:
 
 
@@ -118,8 +117,7 @@ for receiving emails via Python scripts.
 **POP3** stands for **Post Office Protocol version
 3**. This standard protocol helps
 you receive emails from a remote server to our local machine. The main
-advantage of POP3 is that it allows us to download[]{#id326064756
-.indexterm} emails on to our local machine and read the downloaded
+advantage of POP3 is that it allows us to download emails on to our local machine and read the downloaded
 emails offline.
 
 The POP3 protocol works on two ports:

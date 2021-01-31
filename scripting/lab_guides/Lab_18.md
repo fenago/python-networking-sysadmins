@@ -219,8 +219,7 @@ and deleting the data.
 
 
 
-First, we will see an example of getting the database[]{#id326147545
-.indexterm} version. For that, we will create
+First, we will see an example of getting the database version. For that, we will create
 a `get_database_version.py`script and write the following
 content in it:
 
@@ -349,8 +348,7 @@ You can see that your table courses is created.
 
 
 To retrieve the data from the table, we use the `select`
-statement. Now, we are going to retrieve the data from[]{#id326202890
-.indexterm} our courses table. For that, create
+statement. Now, we are going to retrieve the data from our courses table. For that, create
 a `retrieve_data.py`script and write the following content in
 it:
 
@@ -802,8 +800,7 @@ sqlite>
 
 
 
-Now, we will see an example of deleting data from[]{#id326810283
-.indexterm} a table. We are going to do this using the
+Now, we will see an example of deleting data from a table. We are going to do this using the
 `delete` statement. Create
 a `delete_data.py`script and write the following content in
 it:

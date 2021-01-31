@@ -543,8 +543,7 @@ is the copy the original array.
 
 
 
-A 2D array is an array of arrays. In this, the position[]{#id326845208
-.indexterm} of the data element normally refers to two indices instead
+A 2D array is an array of arrays. In this, the position of the data element normally refers to two indices instead
 of one and it represents the table with rows and columns of data. Now we
 are going to do indexing of such a type of arrays.
 
@@ -1186,8 +1185,7 @@ in a particular image format. You can check them in your current
 directory (if you did not mention the path) where you run your Python
 script.
 
-You can open those images by directly accessing[]{#id326132513
-.indexterm} that directory or you can also use following method to open
+You can open those images by directly accessing that directory or you can also use following method to open
 those generated images using `matplotlib`. Now, we will look
 at an example to open saved figures. For that, create a script
 called `open_image.py` and write the following content in it:
@@ -1277,8 +1275,7 @@ the `plt.hist()` method.
 
 
 
-This type of plot shows us the data as a collection[]{#id326151797
-.indexterm} of points. It offers a convenient way to visualize how
+This type of plot shows us the data as a collection of points. It offers a convenient way to visualize how
 numeric values are related. It also helps us to understand the
 relationships between multiple variables. We are going to use
 the `scatter()` method to plot the data in a scatter plot. In
@@ -1326,8 +1323,7 @@ the `x` and `y` values.
 
 
 
-A bar chart is a chart that represents your data[]{#id326158858
-.indexterm} in rectangular bars. You can plot them vertically or
+A bar chart is a chart that represents your data in rectangular bars. You can plot them vertically or
 horizontally. Create a script called  `bar_chart.py` and write
 the following content in it:
 
@@ -1382,8 +1378,7 @@ operations using another tool of data visualization: `plotly`.
 
 
 
-Plotly is an interactive, open source graphing[]{#id326158973
-.indexterm} library in Python. It is a charting library that provides
+Plotly is an interactive, open source graphing library in Python. It is a charting library that provides
 over 30 chart types, such as scientific charts, 3D graphs, statistical
 charts, financial charts, and more.
 

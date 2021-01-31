@@ -39,9 +39,7 @@ pipe, and external input files.
  
 
 For accepting input by redirection, we use
-`stdin`. `pipe` is another form[]{#id326154217
-.indexterm} of redirection. This concept means[]{#id326154226
-.indexterm} providing the output of one program as the input to another
+`stdin`. `pipe` is another form of redirection. This concept means providing the output of one program as the input to another
 program. We can accept input by external files as well as by using
 Python.
 
@@ -51,8 +49,7 @@ Python.
 
 
 
-`stdin` and `stdout` are objects[]{#id326154246
-.indexterm} created by the `os` module. We\'re going to write
+`stdin` and `stdout` are objects created by the `os` module. We\'re going to write
 a script in which we will use
 `stdin` and `stdout`.
 
@@ -100,8 +97,7 @@ Entered strings are:  'hello' and 'python'
 
 Whenever the program runs in an interactive session, `stdin`
 is the keyboard input and `stdout` is the user\'s Terminal.
-The `input()` function is used to take input[]{#id326349846
-.indexterm} from the user, and `print()` is the
+The `input()` function is used to take input from the user, and `print()` is the
 way to write on the Terminal
 (`stdout`).
 
@@ -112,9 +108,7 @@ way to write on the Terminal
 
 
 
-Pipe is another form of redirection. This technique[]{#id326350146
-.indexterm} is used to pass information from one program[]{#id326350154
-.indexterm} to another. The `|` symbol denotes pipe. By using
+Pipe is another form of redirection. This technique is used to pass information from one program to another. The `|` symbol denotes pipe. By using
 the pipe technique, we can use more than two commands in such a way that
 the output of one command acts as input to the next command.
 
@@ -168,20 +162,8 @@ Output:
 
 After running this, we got floor divisions
 for `15`, `45` and `20` as `7`,
-`22`, and `10`, respectively, on new[]{#id326480957
-.indexterm} lines.
+`22`, and `10`, respectively, on new lines.
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 
 ### Input by input file
@@ -231,8 +213,7 @@ Handling passwords at runtime in scripts
 
 
 
-In this section, we will look at a simple example[]{#id326132210
-.indexterm} for handling passwords in script. We will
+In this section, we will look at a simple example for handling passwords in script. We will
 create a script
 called `handling_password.py` and write the following content
 in it:
@@ -341,8 +322,7 @@ Capturing output using the subprocess module
 
 
 
-In this section, we are going to learn about how[]{#id326575658
-.indexterm} we can capture output. We will pass `PIPE` for
+In this section, we are going to learn about how we can capture output. We will pass `PIPE` for
 the `stdout` argument to capture the output. Write a script
 called `capture_output.py` and write
 the following code in it:
@@ -398,8 +378,7 @@ Prompting for passwords during runtime and validation
 
 
 In this section, we are going learn about
-the `getpass module` to handle passwords[]{#id326419348
-.indexterm} at runtime. The `getpass()` module in Python
+the `getpass module` to handle passwords at runtime. The `getpass()` module in Python
 prompts the user to enter a password without echoing. The
 `getpass` module is used to handle the password prompt
 whenever programs interact with a user through the Terminal.
@@ -881,8 +860,7 @@ helps in achieving operating system tasks. We
 need to import the `os` module if we want to perform
 operating system tasks.
 
-We will look at some examples related to handlingfiles[]{#id326781040
-.indexterm} and directories.
+We will look at some examples related to handlingfiles and directories.
 
  
 
@@ -939,10 +917,8 @@ path.
 
 
 
-In this section, we will list all of the content[]{#id326064829
-.indexterm} of a directory using `listdir()`. Create a script
-called `list_dir.py` and write the following[]{#id326064844
-.indexterm} code in it:
+In this section, we will list all of the content of a directory using `listdir()`. Create a script
+called `list_dir.py` and write the following code in it:
 
 
 ```

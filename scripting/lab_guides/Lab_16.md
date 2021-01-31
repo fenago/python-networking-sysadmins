@@ -23,8 +23,7 @@ What is web scraping?
 
 
 
-Web scraping is the technique used to extract information[]{#id326681596
-.indexterm} from websites. This technique is used to transform
+Web scraping is the technique used to extract information from websites. This technique is used to transform
 unstructured data into structured data.
 
 The use of web scraping is to extract the data from the websites. The
@@ -46,8 +45,7 @@ Data extraction
 
 
 
-In this section, we are going to see the actual data[]{#id326418842
-.indexterm} extraction process. Python has the `beautifulsoup`
+In this section, we are going to see the actual data extraction process. Python has the `beautifulsoup`
 library to perform the data extraction task. We are also going to use
 the requests library of Python.
 
@@ -263,8 +261,7 @@ Extracting information from Wikipedia
 
 
 
-In this section, we are going to see an example[]{#id326064861
-.indexterm} of a list of dance forms from Wikipedia. We are going to
+In this section, we are going to see an example of a list of dance forms from Wikipedia. We are going to
 list all classical Indian dances. For that, create
 a `extract_from_wikipedia.py`script and write the following
 content in it:
