@@ -78,51 +78,6 @@ reading data as the output:
 
 Caption: Output with the text-only command
 
-The difference in the output between this cell and the previous cell,
-shown in *Figures 4.2* and *4.3*, is the presence of control characters.
-Using the `print` command helps us to render the control
-characters while calling `text` shows the actual content and
-does not render as the output.
-
-In this exercise, you have learned how to read the content of the entire
-data sample file.
-
-Moving ahead, you will take a look at the `open()` function
-that you used in this exercise. It opens the file to let us access it.
-The `open()` function requires the name of the file you want
-to open as the argument. If you provide a filename without the full
-path, Python will look for the file in the same directory where it is
-currently running. In your case, it looks for the `text` file
-under the same folder where our `ipynb` file is, and where the
-Jupyter Notebook started. The `open()` function returns an
-object, which you store as `f` (which represents
-\"**file**\"), and you use the `read()` function to extract
-its content.
-
-You may also be wondering whether you need to close the file. The answer
-is that it depends. Usually, when you call a `read()`
-function, you can assume that Python will close the file automatically,
-either during garbage collection or at the program exit. However, your
-program might end prematurely, and the file may never close. Files that
-have not been closed properly can cause data to be lost or corrupted.
-However, calling `close()` too early in our program will also
-lead to more errors. It\'s not always easy to know exactly when you
-should close a file. However, with the structure shown here, Python will
-figure that out for you. All you have to do is open the file and work
-with it as desired, trusting that Python will close it automatically
-when the time is right.
-
-Although most of the data in the real world today is in the form of
-databases, and content such as videos, audio, and images is stored using
-respective proprietary formats, the use of text files is still
-important. They can be exchanged and opened in all operating systems
-without requiring any special parser. In practical use cases, you use a
-text file to record ongoing information, such as server logs in the IT
-world.
-
-But what if you are dealing with a large file or you only need to access
-parts of the content or read the file line by line? You should check
-this out in the next exercise.
 
 
 Exercise 59: Reading Partial Content from a Text File
@@ -191,19 +146,7 @@ Doing so, you were able to access the raw data text file and read it one
 line at a time.
 
 
-Writing Files
-=============
-
-
-Now that you have learned how to read the content of a file, you are
-going to learn how to write content to a file. Writing content to a file
-is the easiest way for us to store content in our database storage, save
-our data by writing it to a particular file, and save data on our hard
-disk. This way, the output will still be available for us after you
-close the terminal or terminate the notebook that contains our program
-output. This will allow us to reuse the content later with the
-`read()` method that was covered in the previous section,
-*Reading Files*.
+**Writing Files**
 
 You will still be using the `open()` method to write to a
 file, except when it requires an extra argument to indicate how you want
@@ -315,27 +258,6 @@ is closed properly and that all content in the buffer is written to the
 file.
 
 
-Preparing for Debugging (Defensive Code)
-========================================
-
-
-In the programming world, a bug refers to defects or problems that
-prevent code or programs from running normally or as expected. Debugging
-is the process of finding and resolving those defects. Debugging methods
-include interactive debugging, unit testing, integration testing, and
-other types of monitoring and profiling practices.
-
-**Defensive programming** is a form of debugging approach that ensures
-the continuing function of a piece of a program under unforeseen
-circumstances. Defensive programming is particularly useful when you
-require our programs to have high reliability. In general, you practice
-defensive programming to improve the quality of software and source
-code, and to write code that is both readable and understandable.
-
-By making our software behave in a predictable manner, you can use
-exceptions to handle unexpected inputs or user actions that can
-potentially reduce the risk of crashing our programs.
-
 
 Writing Assertions
 ------------------
@@ -373,11 +295,6 @@ error message.
 Next, you will take a look at how to use `assert` in a
 practical example.
 
-Say that you want to calculate the average marks of a student in a
-semester. You need to write a function to calculate the average, and you
-want to make sure that the user who calls the function actually passes
-in the marks. You will explore how you can implement this in the
-following exercise.
 
 
 Exercise 61: Working with Incorrect Parameters to Find the Average Using Assert with Functions
@@ -443,23 +360,6 @@ therefore no `AssertionError` will be raised. However, in the
 next cell, you did not provide any marks, and therefore it raises an
 `AssertionError` message
 
-In this exercise, you have used the `AssertionError` message
-to throw the output in case it is incorrect or if missing data is
-provided. This has proved to be useful when, in the real world, data can
-be of the incorrect format, and you can then use this to debug the
-incorrect data.
-
-Note that although `assert` behaves like a check or data
-validation tool, it is not. Asserts in Python can be disabled globally
-to nullify all of the assert statements. Do not use `assert`
-to check whether a function argument contains an invalid or unexpected
-value, as this can quickly lead to bugs and security holes. The baseline
-is to treat Python\'s assert statement like a debugging tool and not to
-use it for handling runtime errors. The goal of using assertions is to
-let us detect a bug more quickly. An `AssertionError` message
-should never happen unless there\'s a bug in your program. In the next
-section, you will look at plotting functions to provide you with a
-visual output using Python.
 
 
 Plotting Techniques
@@ -471,30 +371,9 @@ graphics. Various visualization techniques have been invented to make
 humans understand different datasets. There are various types of graphs
 that you can plot, each with its own strengths and weakness.
 
-Each type of chart is only suitable for a certain scenario, and they
-shouldn\'t be mixed up. For instance, to present dropped-out customer
-details for marketing scatter plots is a good example. A scatter plot is
-suitable for visualizing a categorical dataset with numeric values, and
-you will be exploring this further in the following exercise.
 
-For the best presentation of your data, you should choose the right
-graph for the right data. In the following exercises, you will be
-introduced to various graph types and their suitability for different
-scenarios. You will also demonstrate how to avoid plotting misleading
-charts.
-
-You will plot each of these graphs in the following exercises and
+You will plot graphs in the following exercises and
 observe the changes in these graphs.
-
-Note
-
-These exercises require external libraries such as `seaborn`
-and `matplotlib`. Please refer to the Preface section of this
-lab to find out how to install these libraries.
-
-In some installations of Jupyter, graphs do not show automatically. Use
-the `%matplotlib inline` command at the beginning of your
-notebook to get around this.
 
 
 Exercise 62: Drawing a Scatter Plot to Study the Data between Ice Cream Sales versus Temperature
@@ -571,16 +450,6 @@ Our chart is now easier to understand. In this exercise, you used the
 sample ice cream sales versus temperature dataset and used the data to
 create a scatter plot that will be easier to understand for another
 user.
-
-However, what if your dataset is a time-based dataset? In that case, you
-will usually use a line plot. Some examples of a line plot include the
-plotting of heart rate, the visualization of population growth against
-time, or even the stock market. By creating a line plot, you are able to
-understand the trend and seasonality of data.
-
-In the following exercise, you will be outputting the line chart, which
-corresponds to the time (that is, the number of days) and the price. For
-this, you will be plotting out stock prices.
 
 
 Exercise 63: Drawing a Line Chart to Find the Growth in Stock Prices

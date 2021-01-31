@@ -1574,7 +1574,7 @@ operations:
 
     You should get the following output:
 
-    [](./images/C13963_02_30.jpg)
+[](./images/C13963_02_30.jpg)
 
 
 

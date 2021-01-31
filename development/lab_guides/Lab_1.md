@@ -21,31 +21,6 @@ This lab covers the fundamentals of the Python language.
 
 
 
-
-Python as a Calculator
-======================
-
-
-Now that you are all set up, you can begin with the very first
-interesting topic. Python is an incredibly powerful calculator. By
-leveraging the `math` library, `numpy`, and
-`scipy`, Python typically outperforms pre-programmed
-calculators. In later labs, you will learn how to use the
-`numpy` and `scipy` libraries. For now, we\'ll
-introduce the calculator tools that most people use daily.
-
-**Addition**, **subtraction**, **multiplication**, **division**, and
-**exponentiation** are core operations. In computer science, the
-`modulus` operator and **integer division** are equally
-essential as well, so we\'ll cover them here.
-
-The `modulus` operator is the remainder in mathematical
-division. **Modular arithmetic** is also called **clock arithmetic**.
-For instance, in `mod5` which is a modulus of 5, we count
-0,1,2,3,4,0,1,2,3,4,0,1\... This goes in a circle, like the hands on a
-clock.
-
-
 Note
 
 In this course, copy everything that follows `>>>` in a cell in

@@ -194,28 +194,6 @@ This exercise can be performed in the Jupyter notebook:
 
 You now know how to use data classes to create value semantic types!
 
-Note
-
-Even if developers might be tempted to implement methods by themselves
-because they seem trivial, there are many edge cases that modules such
-as `dataclass` already takes account of, such as what happens
-if `__eq__` receives an object of a different type or a
-subclass of it.
-
-The `dataclasses` module is part of the standard library, so
-most experienced users will understand how a class decorated with a
-`dataclass` decorator will behave compared to a custom
-implementation of those methods. This would require either further
-documentation to be written, or for users to fully understand all the
-code in all classes that are manually crafting those methods.
-
-Moreover, using a battle-tested code that the standard library provides
-is also key to writing an efficient and robust application. Functions
-such as `sort` in Python use a custom sorting algorithm known
-as `timsort`. This is a hybrid stable sorting algorithm
-derived from `merge` sort and `insertion` sort, and
-will usually result in better performance results and fewer bugs than
-any algorithm that a user could implement in a limited amount of time.
 
 
 Exercise 86: Extending the echo.py Example
@@ -830,19 +808,6 @@ the essentials of how to do it in a multiplatform way through the
 `os`, `sys`, `platform`, and
 `pathlib` modules of the standard library.
 
-
-OS Information
---------------
-
-There are three key modules that are used to inspect the runtime
-environment and the OS. The `os` module enables miscellaneous
-interfaces with the OS. You can use it to inspect environment variables
-or to get other user and process-related information. This, combined
-with the `platform` module, which contains information about
-the interpreter and the machine where the process is running, and the
-`sys` module, which provides you with helpful system-specific
-information, will usually provide you with all the information that you
-need about the runtime environment.
 
 
 Exercise 90: Inspecting the Current Process Information
@@ -2594,68 +2559,6 @@ The output is as follows:
 
 Caption: Output with changed default values
 
-Note
-
-You were able to change the main dish. Changes in any of the
-`dict` that is part of `chainmap` are visible when
-interacting with it.
-
-The different classes in the collection modules allow the developer to
-write better code by using more appropriate structures. With the
-knowledge you have gained in this topic, try to explore others, such as
-deque or basic skeletons, to build your own containers. Using these
-classes effectively in many situations is what differentiates an
-experienced Python programmer from a beginner.
-
-
-Functools
-=========
-
-
-The final module of the standard library you are going to look at allows
-constructs with a minimal amount of code. In this topic, you are going
-to see how to use `lru_cache` and `partial`.
-
-
-Caching with functools.lru\_cache
----------------------------------
-
-Often, you have a function that is heavy to compute, in which you just
-want to cache results. Many developers will create their own caching
-implementation by using a dictionary, but that is error-prone and adds
-unnecessary code to our project. The `functools` module comes
-with a `decorator` --- that is,
-`functools.lru_cache`, which is provided exactly for these
-situations. It is a recently used cache, with a `max_size`
-that is provided when the code is constructed. This means that you can
-specify a number of input values that you want to cache as a maximum, to
-limit the memory this function can take, or it can grow indefinitely.
-Once you reach the maximum number of different inputs that we want to
-cache, the input that was the least recently used will be thrown away in
-favor of a new call.
-
-Additionally, the decorator provides some new methods in the function
-that can be used to interact with the cache. We can use
-`cache_clear` to remove all of the previous hits saved in
-`cache` or `cache_info` to get information about the
-**hits** and **misses**, so as to allow us to tune it if needed. The
-original function information is also offered for inspection, as with
-any properly decorated function, through the `__wrapped__`
-decorator.
-
-It is important to keep in mind that the LRU cache should be used only
-in functions. This is useful if we just want to reuse existing values or
-the side effect will not happen. As an example, we should not use the
-cache on a function that writes something into a file or sends a package
-to an endpoint, as those actions will not be performed once the function
-is called again with the same input, which is the main purpose of the
-cache.
-
-Lastly, for the cache to be usable in a function, all objects being
-passed need to be hashable. This means that `integers`,
-`frozensets`, `tuples`, and so on are allowed, but
-not modifiable objects, such as `dicts`, `sets`, or
-`lists`.
 
 
 Exercise 97: Using lru\_cache to Speed Up Our Code
