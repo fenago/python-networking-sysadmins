@@ -1,3 +1,3 @@
 import webbrowser
-webbrowser.open('https://timesofindia.indiatimes.com/world')
+webbrowser.open('https://www.nbcnews.com/')
 

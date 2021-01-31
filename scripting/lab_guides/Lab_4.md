@@ -551,7 +551,7 @@ in it: `read_simple.ini`
 
 ```
 [bug_tracker]
-url =https://timesofindia.indiatimes.com/
+url =https://www.nbcnews.com/
 ```
 
 Create `read_config_file.py` and enter the following content
@@ -573,7 +573,7 @@ output:
 $ python3 read_config_file.py
 
 Output:
-https://timesofindia.indiatimes.com/
+https://www.nbcnews.com/
 ```
 
 The `read()` method accepts more than one filename. Whenever
@@ -805,7 +805,7 @@ code in it:
 
 ```
 import webbrowser
-webbrowser.open('https://timesofindia.indiatimes.com/world')
+webbrowser.open('https://www.nbcnews.com/')
 ```
 
 Run the script as follows:
