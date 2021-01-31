@@ -1,5 +1,8 @@
 
-8. Software Development
+<img align="right" src="./logo.png">
+
+
+Lab 8. Software Development
 =======================
 
 Overview

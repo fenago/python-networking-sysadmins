@@ -1,5 +1,8 @@
 
-7. Becoming Pythonic
+<img align="right" src="./logo.png">
+
+
+Lab 7. Becoming Pythonic
 ====================
 
 Overview

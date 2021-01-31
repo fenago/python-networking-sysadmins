@@ -1,5 +1,8 @@
 
-10. Data Analytics with pandas and NumPy
+<img align="right" src="./logo.png">
+
+
+Lab 10. Data Analytics with pandas and NumPy
 ========================================
 
 Overview

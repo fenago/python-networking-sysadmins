@@ -1,4 +1,4 @@
-
+<img align="right" src="./logo.png">
 
 Lab 18. MySQL and SQLite Database Administrations
 --------------------------------------------------------------

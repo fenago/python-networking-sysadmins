@@ -1,5 +1,8 @@
 
-3. Executing Python -- Programs, Algorithms, and Functions
+<img align="right" src="./logo.png">
+
+
+Lab 3. Executing Python -- Programs, Algorithms, and Functions
 ==========================================================
 
 Overview

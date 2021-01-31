@@ -1,4 +1,4 @@
-
+<img align="right" src="./logo.png">
 
 Lab 17. Statistics Gathering and Reporting
 -------------------------------------------------------

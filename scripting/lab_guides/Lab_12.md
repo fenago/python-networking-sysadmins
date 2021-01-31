@@ -1,4 +1,4 @@
-
+<img align="right" src="./logo.png">
 
 Lab 12. Remote Monitoring of Hosts Over Telnet and SSH
 -------------------------------------------------------------------

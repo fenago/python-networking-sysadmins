@@ -1,5 +1,8 @@
 
-4. Extending Python, Files, Errors, and Graphs
+<img align="right" src="./logo.png">
+
+
+Lab 4. Extending Python, Files, Errors, and Graphs
 ==============================================
 
 Overview

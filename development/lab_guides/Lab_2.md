@@ -1,5 +1,8 @@
 
-2. Python Structures
+<img align="right" src="./logo.png">
+
+
+Lab 2. Python Structures
 ====================
 
 Overview

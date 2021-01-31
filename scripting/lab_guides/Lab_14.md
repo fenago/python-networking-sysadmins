@@ -1,3 +1,4 @@
+<img align="right" src="./logo.png">
 
 Lab 14. Working with Apache and Other Log Files
 ------------------------------------------------------------

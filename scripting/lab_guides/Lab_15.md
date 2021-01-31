@@ -1,4 +1,4 @@
-
+<img align="right" src="./logo.png">
 
 Lab 15. SOAP and REST API Communication
 ----------------------------------------------------

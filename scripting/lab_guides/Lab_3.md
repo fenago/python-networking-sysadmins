@@ -1,4 +1,4 @@
-
+<img align="right" src="./logo.png">
 
 Lab 3. Unit Testing - Introduction to the Unit Testing Framework
 -----------------------------------------------------------------------------

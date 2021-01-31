@@ -1,5 +1,8 @@
 
-9. Practical Python -- Advanced Topics
+<img align="right" src="./logo.png">
+
+
+Lab 9. Practical Python -- Advanced Topics
 ======================================
 
 Overview

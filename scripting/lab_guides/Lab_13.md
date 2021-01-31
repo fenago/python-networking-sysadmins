@@ -1,4 +1,4 @@
-
+<img align="right" src="./logo.png">
 
 Lab 13. Building Graphical User Interfaces
 -------------------------------------------------------

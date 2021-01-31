@@ -1,4 +1,6 @@
 
+<img align="right" src="./logo.png">
+
 Lab 1. Python Scripting Overview
 ---------------------------------------------
 

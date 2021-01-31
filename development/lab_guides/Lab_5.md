@@ -1,5 +1,8 @@
 
-5. Constructing Python -- Classes and Methods
+<img align="right" src="./logo.png">
+
+
+Lab 5. Constructing Python -- Classes and Methods
 =============================================
 
 Overview

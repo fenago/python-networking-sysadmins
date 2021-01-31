@@ -1,5 +1,8 @@
 
-6. The Standard Library
+<img align="right" src="./logo.png">
+
+
+Lab 6. The Standard Library
 =======================
 
 Overview

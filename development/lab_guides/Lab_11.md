@@ -1,5 +1,8 @@
 
-11. Machine Learning
+<img align="right" src="./logo.png">
+
+
+Lab 11. Machine Learning
 ====================
 
 Overview

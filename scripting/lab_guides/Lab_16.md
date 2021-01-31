@@ -1,4 +1,4 @@
-
+<img align="right" src="./logo.png">
 
 Lab 16. Web Scraping - Extracting Useful Data from Websites
 ------------------------------------------------------------------------

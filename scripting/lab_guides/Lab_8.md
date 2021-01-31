@@ -1,4 +1,4 @@
-
+<img align="right" src="./logo.png">
 
 Lab 8. Documentation and Reporting
 -----------------------------------------------

@@ -1,5 +1,8 @@
 
-1. Vital Python -- Math, Strings, Conditionals, and Loops
+<img align="right" src="./logo.png">
+
+
+Lab 1. Vital Python -- Math, Strings, Conditionals, and Loops
 =========================================================
 
 Overview

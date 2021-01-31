@@ -1,4 +1,4 @@
-
+<img align="right" src="./logo.png">
 
 Lab 11. Handling Emails Using Python Scripting
 -----------------------------------------------------------
