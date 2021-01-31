@@ -130,15 +130,6 @@ Tar archives
 ------------------------------
 
 
-
-In this section, we are going to learn about the `tarfile`
-module. We\'ll also learn about testing the
-entered filename, assessing whether it\'s a valid archive filename or
-not. We\'ll look at how to add a new file into the already archived
-file, how we can read metadata using the `tarfile` module, and
-how to extract the files from an archive using
-the `extractall()` function.
-
 First, we will test whether the entered filename is a valid archive file
 or not. To test this, the `tarfile` module has
 the `is_tarfile()` function, which returns a Boolean value.
@@ -157,23 +148,6 @@ for f_name in ['hello.py', 'work.tar.gz', 'welcome.py', 'nofile.tar', 'sample.ta
     print('{:} {}'.format(f_name, err))
 ```
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
  
 
@@ -528,17 +502,7 @@ with open("sample.txt.aes", "rb") as fIn:
  remove("sampleout.txt")
 ```
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
 
 Run the script as follows:
 
@@ -584,26 +548,8 @@ Questions
 ---------------------------
 
 
-
-
 1.  Can we compress the data using password protected? if yes how ?
 2.  What is context manager in python?
 3.  What is pickling and unpickling?
 4.  What are the different types of functions in python?
 
-
-
-Further reading
----------------------------------
-
-
-
-
--   Data Compression and
-    Archiving: <https://docs.python.org/3/library/archiving.html>
--   `tempfile`
-    documentation: <https://docs.python.org/2/library/tempfile.html>
--   Cryptography Python
-    documentation: <https://docs.python.org/3/library/crypto.html>
--   `shutil`
-    documentation: <https://docs.python.org/3/library/shutil.html>

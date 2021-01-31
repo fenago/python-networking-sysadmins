@@ -242,7 +242,7 @@ con_obj.close()
 
 It is very important to follow the previous steps before running this
 script; they should not be skipped. 
-:::
+
 
 Run the script and you will get the following output:
 
@@ -900,17 +900,3 @@ Questions
 3.  Can we connect a remote database? If yes, explain with an example.
 4.  Can we write triggers and procedures inside Python code?
 5.  What are DML and DDL statements?
-
-
-
-Further reading
-----------------------------------
-
-
-
-
--   Using PyMySQL library: <http://zetcode.com/python/pymysql/> 
--   MySQLdb, a Python connection
-    guide: <https://mysqlclient.readthedocs.io/> 
--   The DB-API 2.0 interface for SQLite
-    databases: <https://docs.python.org/3/library/sqlite3.html> 

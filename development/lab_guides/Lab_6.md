@@ -15,63 +15,6 @@ into the most common mistakes and set up applications with logs to
 facilitate future troubleshooting.
 
 
-Introduction
-============
-
-
-In the previous labs, you saw how we can create our own classes
-incorporating logic and data. Yet, you often don\'t need to do that ---
-you can rely on the standard library\'s functions and classes to do most
-of the work.
-
-The Python standard library consists of modules that are available on
-all implementations of the language. Every installation of Python will
-have access to these without the need for any further steps for the
-modules defined in the standard library
-
-While other famous languages don\'t have a standard library (such as
-JavaScript, which, as of 2019, is looking at implementing one), others
-have what seems to be an extensive set of tooling and functionality.
-Python goes a step further by including a vast number of basic utilities
-and protocol implementations as part of the default installation of the
-interpreter.
-
-Standard libraries are useful and perform tasks such as unzipping files,
-speaking with other processes and the OS on your computer, processing
-HTML, and even printing graphics on the screen. A program that sorts a
-list of music files according to their artists can be written in a few
-lines when you use the correct modules of the standard library.
-
-In this lab, you will look at the importance of the standard library
-and how it can be used in our code to write faster and better Python
-with fewer keystrokes. You will walk through a subset of the modules,
-covering them in detail on a user level.
-
-
-The Importance of the Standard Library
-======================================
-
-
-Python is often described as coming with \"*batteries included*,\" which
-is usually a reference to its standard library. The Python standard
-library is vast, unlike any other language in the tech world. The Python
-standard library includes modules to connect to a socket; that is, one
-to send emails, one to connect to SQLite, one to work with the locale
-module, or one to encode and decode JSON and XML.
-
-It is also renowned for including such modules as `turtle` and
-`tkinter`, graphical interfaces that most users probably
-don\'t use anymore, but they have proven useful when Python is taught at
-schools and universities.
-
-It even includes **IDLE**, a Python-integrated development environment,
-it is not widely used as there are either other packages within the
-standard library that are used more often or external tools to
-substitute them. These libraries are divided into high-level modules and
-lower-level modules:
-
-![](./images/C13963_06_01.jpg)
-
 
 High-Level Modules
 ------------------
@@ -125,20 +68,6 @@ outputs you get, before you dive further into this lab.
 The `turtle` module you worked on is an example of one of the
 high-level modules that the standard library offers.
 
-Other examples of high-level modules include:
-
--   Difflib: To check the differences line by line across two blocks of
-    text.
--   Re: For regular expressions, which will be covered in *Lab 7*,
-    *Being Pythonic*.
--   Sqlite3: To create and interact with SQLite databases.
--   Multiple data compressing and archiving modules, such as
-    `gzip`, `zipfile`, and `tarfile`.
--   XML, JSON, CSV, and config parser: For working with multiple file
-    formats.
--   Sched: To schedule events in the standard library.
--   Argparse: For the straightforward creation of command-line
-    interfaces.
 
 Now, you will use another high-level module `argparse` as an
 example and see how it can be used to create a command-line interface
@@ -180,85 +109,10 @@ in output *Figure 6.3*:
 ![](./images/C13963_06_03.jpg)
 
 
-Figure 6.3: Example help message of an argparse script
-
 Note
 
 We will be using this capitalize tool in *Exercise 86, Extending the
 echo.py Example*.
-
-
-Lower-Level Modules
--------------------
-
-The standard library also contains multiple lower-level modules that
-users rarely interact with. These lower-level modules are outside that
-of the standard library. Good examples are the different internet
-protocol modules, text formatting and templating, interacting with C
-code, testing, serving HTTP sites, and so on. The standard library comes
-with low-level modules to satisfy the needs of users in many of those
-scenarios, but you will usually see Python developers relying on
-libraries such as `jinja2`, `requests`,
-`flask`, `cython`, and `cffi` that are
-built on top of the low-level standard library module as they provide a
-nicer, simpler, more powerful interface. It is not that you cannot
-create an extension with the C API or ctypes, but cython allows you to
-remove a lot of the boilerplate, whereas the standard library requires
-you to write and optimize the most common scenarios.
-
-Finally, there is another type of low-level module, which extends or
-simplifies the language. Notable examples of these are the following:
-
--   Asyncio: To write asynchronous code
--   Typing: To type hinting
--   Contextvar: To save state based on the context
--   Contextlib: To help with the creation of context managers
--   Doctest: To verify code examples in documentation and docstrings
--   Pdb and bdb: To access debugging tools
-
-There are also modules such as `dis`, `ast`, and
-`code` that allow the developer to inspect, interact, and
-manipulate the Python interpreter and the runtime environment, but those
-aren\'t required by most beginner and intermediate developers.
-
-
-Knowing How to Navigate in the Standard Library
------------------------------------------------
-
-Getting to know the standard library is key for any
-intermediate/advanced developer, even if you don\'t know how to use all
-the modules. Knowing what the library contains and when modules can be
-used provides any developer with a boost in speed and quality when
-developing Python applications.
-
-Note
-
-Python beginners are usually encouraged to take the standard library
-tour in the Python documentation (link:
-<https://docs.python.org/3/tutorial/stdlib.html>) once they master the
-basic syntax of the language.
-
-While developers from other languages may try to implement everything on
-their own from scratch, experienced Python programmers will always first
-ask themselves \"*how can I do this with the standard library?*\" since
-using the code in the standard library brings multiple benefits, which
-will be explained later in the lab.
-
-The standard library makes code simpler and easier to understand. By
-using modules such as `dataclasses`, you can write code that
-would otherwise take hundreds of lines to create by ourselves and would
-most likely include bugs.
-
-The `dataclass` module allows you to create value semantic
-types with fewer keystrokes by providing a decorator that can be used in
-a class, which will generate all the required boilerplate to have a
-class with the most common methods.
-
-Note
-
-Value semantic types represent the classes of the data that they hold.
-Objects can be easily copied by attributes and printed, and can then be
-compared using these attributes.
 
 
 Exercise 85: Using the dataclass Module
@@ -927,16 +781,6 @@ You should get the following output:
 
 ![](./images/C13963_06_12.jpg)
 
-
-
-Handling dates and times properly is extremely difficult. For simple
-applications, you should be fine with a basic level of understanding,
-but otherwise, further reading and more specialized libraries will be
-needed. In Python, we have the `datetime` module as the key to
-handling date and time, which also contains the `timezone.utc`
-time zone. There are also `time` and `calendar`
-modules, which can be used when we need to measure with UNIX time and to
-get calendar information, respectively.
 
 
 Activity 15: Calculating the Time Elapsed to Run a Loop
@@ -3221,7 +3065,6 @@ Steps:
 Summary
 =======
 
-
 You have looked at multiple modules in the standard library and how they
 help you write well-tested and easier-to-read code. However, there are
 still many more modules to explore and understand in order to use them
@@ -3231,9 +3074,3 @@ situations, the utilities it provides are extended through an advanced
 API. By having the mindset of checking how things can be solved with the
 standard library before trying to write our own code, you can become
 better Python programmers.
-
-Now that you have some knowledge of the standard library, you will start
-to look more deeply into how to make our code easier to read for Python
-programmers, usually known as Pythonic code. While using the standard
-library as much as possible is a good start, there are some other tips
-and tricks that we will look at in *Lab 7*, *Becoming Pythonic.*

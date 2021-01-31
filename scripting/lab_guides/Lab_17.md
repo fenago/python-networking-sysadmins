@@ -430,23 +430,6 @@ array([2, 4, 6, 8])
 >>>
 ```
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 In the preceding example, first we accessed the array and got values in
 a range of (`2-10`). As a result, it shows the output as
@@ -1037,7 +1020,7 @@ The output is as follows:
 
 
 ![](./images/f5d18572-7ce1-4b06-9fe7-ef8650edc79b.jpg)
-:::
+
 
  
 
@@ -1103,7 +1086,7 @@ The output is as follows:
 
 
 ![](./images/1a35d7e2-d40a-41e1-99ad-f6f63a41ce62.jpg)
-:::
+
 
 In the preceding example, first we imported
 the required module, and then we used the `ggplot` style to
@@ -1165,7 +1148,7 @@ The output is as follows:
 ![](./images/81d8a772-b1db-46fa-855c-8f64b831ca5a.jpg)
 
 ![](./images/2f64ff32-d83c-4d79-b5f9-16ec4f3219b3.jpg)
-:::
+
 
 In the preceding example, we used the `plt.figure()` function
 to plot the things on a different canvas.  After that, we used the
@@ -1210,7 +1193,7 @@ The output is as follows:
 
 
 ![](./images/f8948c69-3f2c-4929-8db2-906b3972c0b3.jpg)
-:::
+
 
 In the preceding example, we used the `imshow()` function of
 Matplotlib to open the saved image of the figure.
@@ -1264,7 +1247,7 @@ The output is as follows:
 
 
 ![](./images/63b5f3e3-0bba-402b-aa76-2c8b0d8ee905.jpg)
-:::
+
 
 In the preceding example, we created an array of random numbers using
 `numpy`. Then we plotted that numerical data using
@@ -1311,7 +1294,7 @@ The output is as follows:
 
 
 ![](./images/0d1a8c78-e452-402d-a7fb-4f2c2724b941.jpg)
-:::
+
 
 In the preceding example, we got values of `x` and
 `y`. Then we plotted those values using
@@ -1360,7 +1343,7 @@ The output is as follows:
 
 
 ![](./images/1edda85a-1f2a-4da7-a80f-aa293a950b01.jpg)
-:::
+
 
 In the preceding example, we have two sets of values: `x1`,
 `y1` and `x2`, `y2`. After getting the
@@ -1439,7 +1422,7 @@ The output is as follows:
 
 
 ![](./images/5a0d71e9-606e-4176-8395-8ba3327def64.jpg)
-:::
+
 
 In the preceding example, we imported the `plotly` module and
 then we set `plotly` for offline use. We put arguments in it,
@@ -1502,7 +1485,7 @@ The output is as follows:
 
 
 ![](./images/0df3464b-e199-48b3-9736-ae9808c2bec2.jpg)
-:::
+
 
 In the preceding example, we imported `plotly` and then
 created random data by using `numpy` and, for that, import
@@ -1554,7 +1537,7 @@ The output is as follows:
 
 
 ![](./images/055b6b3b-6f6d-4e0b-b82b-dff863b1a925.jpg)
-:::
+
 
 In the preceding example, we imported `plotly`, as well as
 the `numpy` module. Then we generated some random values for
@@ -1609,7 +1592,7 @@ The output is as follows:
 
 
 ![](./images/dcd217c4-944c-453e-b18a-43412c2c216c.jpg)
-:::
+
 
 In the preceding example, we imported `plotly`, as well as
 the `numpy` module. Then we declared N as the total number
@@ -1682,7 +1665,7 @@ The output is as follows:
 
 
 ![](./images/0cb6d6f5-51b7-4d52-8c69-13d2cbd3c565.jpg)
-:::
+
 
  
 
@@ -1741,19 +1724,5 @@ print ("Output stacked array :\n ", out_arr)
 6.  What is NaN in pandas ?
 7.  How do you remove duplicates from a pandas DataFrame ?
 8.  How do you change the size of figures drawn with Matplotlib?
-9.  What are the alternatives available for plotting graphs using Python
-    ?
+9.  What are the alternatives available for plotting graphs using Python?
 
-
-Further reading
-----------------------------------
-
-
-
-
--   10 minutes to pandas
-    documentation: <https://pandas.pydata.org/pandas-docs/stable/> 
--   NumPy
-    tutorial: <https://docs.scipy.org/doc/numpy/user/quickstart.html> 
--   Graph plotting using
-    plotly: <https://plot.ly/d3-js-for-python-and-pandas-charts/> 

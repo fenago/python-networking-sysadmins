@@ -130,7 +130,7 @@ screenshot:
 
 
 ![](./images/1da996cf-a362-4963-b58b-3674103d4c14.png)
-:::
+
 
  
 
@@ -515,7 +515,7 @@ is of the `float` type.
 In Python, the division (`/`) operation always returns a float
 value. The `floor` division (`//`) gets an integer
 result. The `%` operator is used to calculate the remainder.
-:::
+
 
 Consider the following example:
 
@@ -651,7 +651,7 @@ expressed as follows:
 
 -   Enclosed in single quotes (`'...'`)
 -   Enclosed in double quotes (`"..."`)
-:::
+
 
 See the following example:
 
@@ -1624,7 +1624,7 @@ your script, Python supports two loops:
 
 -   `for loop`
 -   `while loop`
-:::
+
 
 Now, we are going to learn about `for loop` and
 `while loop`.
@@ -2043,23 +2043,8 @@ Questions
 ---------------------------
 
 
-
-
 1.  What are iterators and generators ?
 2.  Are lists mutable or immutable ?
 3.  What are the data structures in Python ?
 4.  How to access values in a list ?
 5.  What are modules ?
-
-
-Further reading
----------------------------------
-
-
-
-All of the Python documentation is available on the following
-site: [www.python.org](http://www.python.org/){.ulink}.
-
-You can also check the following courses, [*Learn Python Hard
-Way*] and [*Byte of Python*], to cover the basics
-of Python.

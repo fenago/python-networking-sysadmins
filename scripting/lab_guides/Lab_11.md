@@ -33,7 +33,7 @@ components:
 -   The receiver\'s email address
 -   The sender\'s email address
 -   The message
-:::
+
 
 There are other components also included in the message format, such as
 the subject line, email signatures, and attachments.
@@ -125,7 +125,7 @@ The POP3 protocol works on two ports:
 
 -   Port `110`: The default non-encrypted port
 -   Port `995`: The encrypted port
-:::
+
 
 Now, we\'ll see some examples. First, we\'ll see an example where we get
 a number of emails. For that, create a script,
@@ -259,7 +259,7 @@ The IMAP protocol works on two ports:
 
 -   Port `143`: The default non-encrypted port
 -   Port `993`: The encrypted port
-:::
+
 
  
 
@@ -310,7 +310,7 @@ We\'re using the `'select('Inbox')'` function over
 `imap_obj` to display messages in the inbox. Then we use a
 `for` loop to display messages that have been fetched one by
 one. To display messages, we use \"pretty print\"---that is, the
-`pprint.pprint()`** **function-because it formats
+`pprint.pprint()`function-because it formats
 your object, writes it into the data stream, and passes it as an
 argument. Then, finally, the connection is closed.
 

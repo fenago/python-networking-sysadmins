@@ -17,95 +17,6 @@ characteristics of your Python programs, and use tools to make your
 programs faster.
 
 
-Introduction
-============
-
-
-In this lab, you\'ll continue the move which started in *Lab 8*,
-*Software Development*, away from your individual focus on learning the
-syntax of the Python language toward becoming a contributing member of a
-Python development team. Large projects solving complex problems need
-expertise from multiple contributors, so it\'s very common to work on
-code with one or more colleagues as a developer community. Having
-already seen how to use `git` version control in *Lab 8*,
-*Software Development*, you\'ll apply that knowledge in this lab to
-working with teams. You\'ll be using GitHub, branches, and
-`pull` requests in order to keep your project in sync.
-
-Moving on, in the IT world, when you deliver a certain project, at some
-point, you\'ll want to deliver your code to your customers or
-stakeholders. An important part of the deployment process is making sure
-that the customer\'s system has the libraries and modules that your
-software needs, and also the same versions that you were developing
-against. For this, you\'ll learn how to use `conda` to create
-baseline Python environments with particular libraries present, and how
-to replicate those environments on another system.
-
-Next, you will look at Docker, which is a popular way to deploy software
-to internet servers and cloud infrastructure. You\'ll learn how to
-create a container that includes your `conda` environment and
-your Python software, and how to run the containerized software within
-Docker.
-
-Finally, you\'ll learn some useful techniques for developing real-world
-Python software. These include learning how to take advantage of
-parallel programming, how to parse command-line arguments, and how to
-profile your Python to discover and fix performance problems.
-
-
-Developing Collaboratively
-==========================
-
-
-In *Lab 8*, *Software Development*, you used `git` to keep
-track of the changes you made to your Python project. At its heart,
-membership of a programming team involves multiple people sharing their
-changes through `git` and ensuring that you are incorporating
-everybody else\'s changes when doing your own work.
-
-There are many ways for people to work together using `git`.
-The developers of the Linux kernel each maintain their own repository
-and share potential changes over email, which they each choose whether
-to incorporate or not. Large companies, including Facecourse and Google,
-use *trunk-based development*, in which all changes must be made on the
-main branch, usually called the \"*master*.\"
-
-A common workflow popularized by support in the GitHub user interface is
-the `pull` request.
-
-In the `pull` request workflow, you maintain your repository
-as a `fork` in GitHub of the canonical version from which
-software releases are made, often referred to as `upstream` or
-`origin`. You make a small collection of related changes, each
-representing progress toward a single bug fix or new feature, in a named
-branch on your own repository, which you push to your hosted repository
-with `git` `push`. When you are ready, you submit a
-`pull` request to the upstream repository. The team reviews
-these changes together in the `pull` request, and you add any
-further work needed to the branch. When the team is happy with the
-`pull` request, a supervisor or another developer merges it
-upstream, and the changes are \"pulled\" into the canonical version of
-the software.
-
-The advantage of the `pull` request workflow is that it\'s
-made easy by the user interface in applications such as Bitbucket,
-GitHub, and GitLab. The disadvantage comes from keeping those branches
-around while the `pull` request is being created and is under
-review. It\'s easy to fall behind as other work goes into the upstream
-repository, leaving your branch out of date and introducing the
-possibility that your change will conflict with some other changes, and
-those conflicts will need a resolution.
-
-To deal with fresh changes and conflicts as they arise, rather than as a
-huge headache when it comes time to merge the `pull` request,
-you use `git` to fetch changes from the upstream repository,
-and either merge them into your branch or rebase your branch on the
-up-to-date upstream revision. Merging combines the history of commits on
-two branches and rebasing reapplies commits such that they start at the
-tip of the branch you are rebasing against. Your team should decide
-which of these approaches they prefer.
-
-
 Exercise 117: Writing Python on GitHub as a Team
 ------------------------------------------------
 
@@ -252,15 +163,6 @@ this exercise more effective, you can collaborate with a friend.
 ![](./images/C13963_09_07.jpg)
 
 
-Figure 9.7: Merging a pull request
-
-You now understand how people can work together on the same repository
-on GitHub, reviewing and discussing each other\'s code before merging
-into the master branch. This comes in very handy as a developer when you
-want to have a single repository to store your code or help a fellow
-developer located somewhere else in the world. In the next section, you
-will look at dependency management.
-
 
 Dependency Management
 =====================
@@ -273,15 +175,6 @@ Python standard library. You may use `numpy` or
 in *Lab 10*, *Data Analytics with pandas and NumPy*), or any number
 of other libraries available to Python developers.
 
-Just like your own software, the libraries developed by other teams
-frequently change as bugs are fixed, features are added, and old code is
-removed or refactored, which is the process of restructuring existing
-code. That means it\'s important that your team uses the same version of
-a library so that it works in the same way for all of them.
-
-Additionally, you want your customers or the servers where you deploy
-your software to use the same versions of the same libraries as well, so
-that everything works the same way on their computers, too.
 
 There are multiple tools for solving this problem. These include
 `pip`, `easy_install`, `brew`, and
@@ -311,29 +204,7 @@ Now that you have the information about the packages, you can choose to
 install these packages on another machine or environment with the
 following command: `pip install -r requirements.txt`.
 
-In this lab, you will focus on `conda`, which provides a
-complete solution for dependency management. `conda` is
-particularly popular among data scientists and machine learning
-programmers. For instance, some dependencies in machine learning
-environments can\'t be managed by `pip`, as they might not be
-a simple Python package. `conda` takes care of these for us.
 
-
-Virtual Environments
---------------------
-
-In this lab, you will use `conda` to create \"virtual
-environments.\" When you code in Python, you have certain versions of
-certain packages installed. You\'re also using a specific version of
-Python itself, which is 3.7. However, what if you are working on two
-projects, with each requiring different versions of the packages? You
-would need to reinstall all of the packages when switching between these
-projects, which would be a hassle. Virtual environments address this
-problem. A virtual environment contains a set of particular packages at
-specific versions. By switching between virtual environments, you can
-switch between different packages and versions instantly. Typically, you
-will have a different virtual environment for each major project you are
-working on.
 
 
 Exercise 118: Creating and Setting Up a conda Virtual Environment to Install numpy and pandas
@@ -1177,7 +1048,6 @@ user, its value is `False`. If it is provided, its value is
 ![](./images/C13963_09_21.jpg)
 
 
-Figure 9.21: Viewing the help text of argparse\_demo
 
 You have successfully created a script that allows an argument to be
 specified when it is executed. You can probably imagine how useful this
@@ -1194,12 +1064,6 @@ type out the names of the arguments; for instance,
 `python copyfile.py --source infile --destination outfile`,
 every time you use the script.
 
-You can use positional arguments to define arguments that the user does
-not name but always provides in a particular order. The difference
-between a positional and a named argument is that a named argument
-starts with a hyphen (`-`), such as `--flag` in
-*Exercise 124, Introducing argparse to Accept Input from the User*. A
-positional argument does **not** start with a hyphen.
 
 
 Exercise 125: Using Positional Arguments to Accept Source and Destination Inputs from a User
@@ -1289,68 +1153,6 @@ accepting positional arguments using the `argparse` Python
 package.
 
 
-Performance and Profiling
-=========================
-
-
-Python is not often thought of as a high-performance language, though it
-really should be. The simplicity of the language and the power of its
-standard library mean that the time from idea to result can be much
-shorter than in other languages with better runtime performance.
-
-But we have to be honest. Python is not among the fastest-running
-programming languages in the world, and sometimes that\'s important. For
-instance, if you\'re writing a web server application, you need to be
-able to handle as many network requests as are being made, and with
-timeliness that satisfies the users making the requests.
-
-Alternatively, if you\'re writing a scientific simulation or a deep
-learning inference engine, then the simulation or training time can
-completely dwarf the programmer time (which is your time) spent writing
-the code. In any situation, reducing the time spent running your
-application can decrease the cost, whether measured in dollars on your
-cloud hosting bill or in milliamp-hours on your laptop battery.
-
-
-Changing Your Python
---------------------
-
-You\'ll learn how to use some of Python\'s timing and profiling tools
-later on in this section. Before that, you can consider whether you even
-need to do that. Taligent, an object-oriented software company in the
-1990s, had a performance saying: \"*There is no code faster than no
-code*.\" You can generalize that idea as follows:
-
-*There is no work that can be done faster than doing no work*.
-
-The fastest way to speed up your Python program can often be to simply
-use a different Python interpreter. You saw earlier in this lab that
-multithreaded Python is slowed down by `GIL`, which means that
-only one Python thread can be executing a Python instruction at any time
-in a given process. The `Jython` and `IronPython`
-environments, targeting the Java Virtual Machine and .NET common
-language runtime, do not have `GIL`, so they may be faster for
-multithreaded programs. But there are also two Python implementations
-that are specifically designed to perform better, so you\'ll look to
-those for assistance in later sections.
-
-
-PyPy
-----
-
-You will now look in more detail at another Python environment. It\'s
-called `pypy`, and Guido van Rossum (Python\'s creator) has
-said: \"*If you want your code to run faster, you should probably just
-use PyPy*.\"
-
-PyPy\'s secret is Just-in-time (JIT) compilation, which compiles the
-Python program to a machine language such as `Cython` but does
-it while the program is running rather than once on the developer\'s
-machine (called ahead-of-time, or AOT, compilation). For a long-running
-process, a JIT compiler can try different strategies to compile the same
-code and find the ones that work best in the program\'s environment. The
-program will quickly get faster until the best version the compiler can
-find is running. Take a look at PyPy in the following exercise.
 
 
 Exercise 126: Using PyPy to Find the Time to Get a List of Prime Numbers
@@ -1571,42 +1373,6 @@ everybody else switch to a different Python interpreter to reap the
 benefits.
 
 
-Profiling
-=========
-
-
-Having exhausted the minimum-effort options for improving your code\'s
-performance, it\'s time to actually put some work in if you need to go
-faster. There\'s no recipe to follow to write fast code: if there were,
-you could have taught you that in *Labs 1-8* and there wouldn\'t
-need to be a section on performance now. And, of course, speed isn\'t
-the only performance goal: you might want to reduce memory use or
-increase the number of simultaneous operations that can be in-flight.
-But programmers often use \"performance\" as a synonym for \"reducing
-time to completion,\" and that\'s what you\'ll investigate here.
-
-Improving performance is a scientific process: you observe how your code
-behaves, hypothesize about a potential improvement, make the change, and
-then observe it again and check that you really did improve things. Good
-tool support exists for the observation steps in this process, and
-you\'ll look at one such tool now: cProfile.
-
-cProfile is a module that builds an execution profile of your code.
-Every time your Python program enters or exits a function or other
-callable, cProfile records what it is and how long it takes. It\'s then
-up to you to work out how it could spend less time doing that. Remember
-to compare a profile recorded before your change with one recorded
-after, to make sure you improved things! As you\'ll see in the next
-exercise, not all \"optimizations\" actually make your code faster, and
-careful measurement and thought are needed to decide whether the
-optimization is worth pursuing and retaining. In practice, cProfile is
-often used when trying to understand why code is taking longer than
-expected to execute. For example, you might write an iterative
-calculation that suddenly takes 10 minutes to compute after scaling to
-1,000 iterations. With cProfile, you might discover that this is due to
-some inefficient function in the pandas library, which you could
-potentially avoid to speed up your code.
-
 
 Profiling with cProfile
 -----------------------
@@ -1669,11 +1435,6 @@ have on the profile. This example will be performed on the command line:
     takes up most of the execution time in the profile. So, is there a
     way to make it faster?
 
-    One hypothesis is that the method does a lot of redundant divisions.
-    Imagine that the number 101 is being tested as a prime number. This
-    implementation tests whether it is divisible by 2 (no), then 3 (no),
-    and then 4, but 4 is a multiple of 2, and you know it isn\'t
-    divisible by 2.
 
 3.  As a hypothesis, change the `__next__()` method so that it
     only searches the list of known prime numbers. You know that if the
@@ -1705,12 +1466,6 @@ have on the profile. This example will be performed on the command line:
     ![](./images/C13963_09_26.jpg)
 
 
-    Figure 9.26: It took longer this time!
-
-    Now, `__next()__` isn\'t the most frequently called
-    function in the profile, but that\'s not a good thing. Instead,
-    you\'ve introduced a list comprehension that gets called even more
-    times, and the whole process takes 30 times longer than it used to.
 
 4.  One thing that changed in the switch from testing a range of factors
     to the list of known primes is that the upper bound of tested
@@ -1788,17 +1543,7 @@ have on the profile. This example will be performed on the command line:
     ![](./images/C13963_09_28.jpg)
 
 
-    Figure 9.28: An even faster output
 
-    Once again, the result is better than the previous attempt, but it
-    is still not as good as the \"naive\" algorithm. This time, the
-    biggest contribution to the runtime is the lambda expression on
-    line 11. That tests whether one of the previously found primes is
-    smaller than the square root of the candidate number. There\'s no
-    way to remove that test from this version of the algorithm. In other
-    words, surprisingly, in this case, doing too much work to find a
-    prime number is faster than finding the minimum work necessary and
-    doing just that.
 
 6.  In fact, the good news is that our effort has not been wasted. It\'s
     don\'t recommend running this yourself unless the instructor says
@@ -1827,15 +1572,6 @@ cProfile.run('[p for p in itertools.takewhile(lambda x: x<10000000, Primes4())]'
 You should get the following output:
 
 ![](./images/C13963_09_30.jpg)
-
-
-Figure 9.30: The result of the optimized implementation
-
-By the end of this example, you were able to find the best-optimized
-method to run the code. This decision was made possible by observing the
-amount of time needed to run the code, allowing us to tweak the code to
-address inefficiencies. In the following activity, you will put all of
-these concepts together.
 
 
 Activity 23: Generating a List of Random Numbers in a Python Virtual Environment

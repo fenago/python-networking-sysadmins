@@ -5,27 +5,6 @@
 Lab 2. Python Structures
 ====================
 
-Overview
-
-By the end of this lab, you will be able to explain the different
-types of Python data structures; create lists, dictionaries, and sets
-and describe the differences between them; create matrices and
-manipulate both a matrix as a whole and its individual cells; call the
-`zip()` function to create different Python structures; find
-what methods are available for lists, dictionaries, and sets; write a
-program using the most popular methods for lists, dictionaries, and sets
-and convert between different Python structures.
-
-
-Introduction
-============
-
-
-In the previous lab, you learned the basics of the Python
-programming language and essential elements such as `string`,
-`int`, and the use of conditionals and loops that control the
-flow of a Python program. You should now be familiar with writing
-programs in Python by utilizing these elements.
 
 In this lab, you are going to look at how to use data structures to
 store more complex types of data that help to model the actual data and
@@ -64,13 +43,6 @@ There are four types of data structures in Python: `list`,
 ![](./images/C13963_02_01.jpg)
 
 
-Figure 2.1: The different data structures in Python
-
-These data structures define the relationship between data and the
-operations that can be performed on data. They are a way of organizing
-and storing data that can be accessed efficiently under different
-circumstances.
-
 
 The Power of Lists
 ==================
@@ -84,20 +56,6 @@ other programming languages, but they do a lot more.
 
 ![](./images/C13963_02_02.jpg)
 
-
-Figure 2.2: A Python list with a positive index
-
-A list in Python is written within square brackets, `[ ]`.
-Each element in the list has its own distinct **position** and
-**index**. The elements in a list have a finite sequence. Like other
-programming languages, the index of the first item of a list is 0, and
-the second item has an index of 1, and so on. This has to do with how
-lists are implemented at a lower programming level, so do take note of
-this when you are writing index-based operations for lists and other
-iterable objects.
-
-You will now look at the different ways that lists can be useful by
-completing *Exercise 21*, *Working with Python Lists*.
 
 
 Exercise 21: Working with Python Lists
@@ -1050,13 +1008,7 @@ the exercise:
 ![](./images/C13963_02_14.jpg)
 
 
-Figure 2.14: Output while storing a dictionary within a dictionary
 
-Up to this point, you have seen how easy it is to implement nesting in
-both lists and dictionaries. By combining lists and dictionaries
-creatively, we can store complex real-world information and model
-structures directly and easily. This is one of the main benefits of
-scripting languages such as Python.
 
 
 Activity 7: Storing Company Employee Table Data Using a List and a Dictionary
@@ -1664,48 +1616,8 @@ operations:
 
     You should get the following output:
 
-    
-    s 2.30: Output with the \>= operator checking whether the set](./images/C13963_02_30.jpg)
+    [](./images/C13963_02_30.jpg)
 
-
-Figure 2.30: Output with the \>= operator checking whether the set is a
-superset of another
-
-The first three statements will return `True` because
-`s8` is the superset of `s7` and is also a proper
-superset of `s7`. The last statement will return
-`false` because no set can be a proper superset of itself.
-
-Having completed this exercise, you now know that Python sets are useful
-for efficiently preventing duplicate values and are suitable for common
-math operations such as unions and intersections.
-
-Note
-
-After all the topics covered so far, you may think that sets are similar
-to lists or dictionaries. However, sets are unordered and do not map
-keys to values, so they are neither a sequence or a mapping type; they
-are a type by themselves.
-
-
-Choosing Types
-==============
-
-
-By now, you have learned about most of the common data structures in
-Python. One of the challenges you might face is knowing when to use the
-various data types.
-
-When choosing a collection type, it is useful to understand the unique
-properties of that type. For example, a list is for you to store
-multiple objects and to retain a sequence, a dictionary is for us to
-store unique key-value pair mappings, tuples are immutable, and sets
-only store unique elements. Choosing the right type for a particular
-dataset could mean an increase in efficiency or security.
-
-Choosing an incorrect type for your data will lead to data loss, in most
-cases it leads to low efficiency while running our code, and in the
-worst case, we might lose our data.
 
 
 Summary
@@ -1719,15 +1631,6 @@ developer. In this lab, you have covered lists, which are one of the
 important data types in Python that store multiple objects, and also
 other data types, such as dictionaries, tuples, and sets. Each of these
 data types helps us to store and retrieve data effectively.
-
-Data structures are an essential part of all programming languages. Most
-programming languages only provide basic data types to store different
-types of numbers, strings, and Booleans, as you learned in *Lab 1*,
-*Vital Python - Math, Strings, Conditionals, and Loops*. They are an
-essential part of any program. In this lab, you learned how to
-utilize advanced data structures such as nested lists and mixed data
-types, and lists with dictionaries --- structures that you can use to
-store complex data.
 
 Next up, we are going to learn how to use functions to write modular and
 understandable code that follows the **DRY (Don\'t Repeat Yourself)**

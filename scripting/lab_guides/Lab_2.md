@@ -189,7 +189,7 @@ Python:
 -   `pdb`
 -   `gdb`
 -   `pyDebug`
-:::
+
 
 In this section, we are going to learn about `pdb` Python
 debugger. `pdb` module is a part of Python\'s standard library
@@ -213,7 +213,7 @@ There are three ways to use this debugger:
 -   Within an interpreter
 -   From a command line
 -   Within a Python script
-:::
+
 
 We are going to create a `pdb_example.py` script and add the
 following content in that script:
@@ -510,8 +510,8 @@ printed with the time spent on each function. Now, we will see what
 these column headings mean:
 
 
--   `ncalls`:** **Number of calls
--   **`tottime`**:** **Total time spent
+-   `ncalls`:Number of calls
+-   **`tottime`**:Total time spent
     in the given function
 -   `percall`: Quotient of `tottime` divided by
     `ncalls`
@@ -619,16 +619,3 @@ print(q)
 6.  Which of the following is an invalid variable? a)
     `my_string_1` b) `1st_string` c)
     `foo` d) `_`
-
-
-
-Further reading
----------------------------------
-
-
-
-
--   How to handle GIL problems in python:
-    <https://realpython.com/python-gil/>
--   Check how to use `pdb` module in command line:
-    <https://fedoramagazine.org/getting-started-python-debugger/>

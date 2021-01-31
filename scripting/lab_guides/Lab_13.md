@@ -59,7 +59,7 @@ users. The components are listed here:
     called whenever a signal occurs.
 -   **PyQt5 layouts**: The PyQt5 layouts consist of multiple
     widgets.
-:::
+
 
 There are several PyQt5 classes available,
 which are divided into different modules. These modules are listed here:
@@ -84,7 +84,7 @@ which are divided into different modules. These modules are listed here:
     browser implementation.
 -   `QtXml`: `QtXml` contains classes for XML files.
 -   `QtSql`: `QtSql` contains classes for databases.
-:::
+
 
 The GUI is driven by the events. Now, what is an event? An event is a
 signal that indicates that something has happened in your program, for
@@ -176,7 +176,7 @@ student@ubuntu:~/gui_example$ python3 print_message.py
 
 
 ![](./images/b68f652f-2765-41fd-8830-14d63760f157.jpg)
-:::
+
 
 In the preceding example, we imported the necessary PyQt5 modules. Then,
 we created the application. The `QPushButton` creates the
@@ -219,7 +219,7 @@ student@ubuntu:~/gui_example$ python3 box_layout.py
 
 
 ![](./images/9fd422f0-549a-4d97-9f66-3d21f21fdf84.png)
-:::
+
 
 In the preceding example, we created a box layout. In that we have
 placed two buttons. This script is just for explaining the box layout.
@@ -252,7 +252,7 @@ the `access.log` file without applying a filter:
 
 
 ![](./images/6dbe759a-8990-4be0-89d7-942cce78e808.jpg)
-:::
+
 
  
 
@@ -261,7 +261,7 @@ the `access.log file` after applying a filter:
 
 
 ![](./images/99400f5f-249f-452e-85da-3e0430164c39.png)
-:::
+
 
 In the first case, we took the access log file and opened it in the Apache Logs Viewer. We can easily see that
 the access file that we opened in the Apache Logs Viewer contains all
@@ -301,15 +301,3 @@ Questions
 6.  Create a Python program that reads a text file and counts the number
     of times a certain letter appears in the text file.
 
-
-
-Further reading
-----------------------------------
-
-
-
-
--   Tkinter library for GUI
-    documentation: <https://docs.python.org/3/library/tk.html> 
--   PyQt library for GUI
-    documentation: <https://wiki.python.org/moin/PyQt> 

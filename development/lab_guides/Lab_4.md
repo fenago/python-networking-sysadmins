@@ -17,46 +17,6 @@ We will cover the basic input/output (I/O) operations for Python and how
 to use the matplotlib and seaborn libraries to create visualizations.
 
 
-Introduction
-============
-
-
-In *Lab 3*, *Executing Python -- Programs, Algorithms, and
-Functions*, you covered the basics of Python programs and learned how to
-write algorithms, functions, and programs. Now, you will learn how to
-make your programs more relevant and usable in the IT world.
-
-First, in this lab, you are going to look at file operations. File
-operations are essential for scripting for a Python developer,
-especially when you need to process and analyze a large number of files,
-like in data science. In companies that deal with data science, you
-often do not have direct access to a database, stored on a local server
-or a cloud server. Rather, we receive files in text format. These
-include `CSV` files for column data, and txt files for
-unstructured data (such as patient logs, news articles, user comments,
-etc.).
-
-In this lab, you will also cover error handling. This prevents your
-programs from crashing and also does its best to behave elegantly when
-encountering unexpected situations. You will also learn about
-exceptions, the special objects used in programming languages to manage
-runtime errors. Exception handling deals with situations and problems
-that can cause your programs to crash, which makes our programs more
-robust when they encounter either bad data or unexpected user behavior.
-
-
-Reading Files
-=============
-
-
-While databases such as MySQL and Postgres are popular and are widely
-used in many web applications, there is still a large amount of data
-that is stored and exchanged using text file formats. Popular formats
-like **comma-separated values (CSV)**, **JavaScript Object Notation
-(JSON)**, and **plain text** are used to store information such as
-weather data, traffic data, and sensor readings. You should take a look
-at the following exercise to read text from a file using Python.
-
 
 Exercise 58: Reading a Text File Using Python
 ---------------------------------------------
@@ -793,28 +753,6 @@ students and corresponding bar plots as a visual output.
 ![](./images/C13963_04_16.jpg)
 
 
-Figure 4.16: Horizontal bar plots
-
-In this exercise, you implemented a sample list of data and outputting
-data as bar graphs; these bar graphs were shown as vertical bars and
-horizontal bars as well. This could vary depending on your usage.
-
-In the next exercise, you will be implementing pie charts that many
-organizations use to pictorially classify their data. Pie charts are
-good for visualizing percentages and fractional data; for instance, the
-percentage of people who agree or disagree on some opinions, the
-fractional budget allocation for a certain project, or the results of an
-election.
-
-However, a pie chart is often regarded as not a very good practice by
-many analysts and data scientists for the following reasons:
-
--   Pie charts are often overused. Many people use pie charts without
-    understanding why they should use them.
--   A pie chart is not effective for comparison purposes when there are
-    many categories.
--   It is easier not to use a pie chart when the data can simply be
-    presented using tables or even written words.
 
 
 Exercise 65: Creating a Pie Chart to Visualize the Number of Votes in a School
@@ -855,17 +793,6 @@ each of the three candidates in an election for club president:
 ![](./images/C13963_04_17.jpg)
 
 
-Figure 4.17: Pie chart with three categories
-
-Having completed this exercise, you are now able to generate data as a
-pie chart. This type of representation is the best visual aid that many
-organizations use when sorting out data.
-
-In the next exercise, you will be implementing a `heatmap`
-visualization. Heatmaps are useful for showing the relationship between
-two categorical properties; for instance, the number of students who
-passed exams in three different classes. Now you will follow an exercise
-and learn how to draw a `heatmap` visualization.
 
 
 Exercise 66: Generating a Heatmap to Visualize the Grades of Students

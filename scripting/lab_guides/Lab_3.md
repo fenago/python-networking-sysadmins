@@ -18,41 +18,6 @@ In this lab, you will learn about the following topics:
 -   Creating unit testing tasks
 
 
-
-What is unittest?
------------------------------------
-
-
-
-The `unittest` is a unit testing framework in Python. It supports multiple tasks such as test fixtures,
-writing test cases, aggregating test cases into the test suites, and
-running tests.
-
-`unittest` supports four main concepts, which are listed here:
-
-
--   `test fixture`: This includes preparation and cleanup
-    activities for performing one or more tests
--   `test case`: This includes your individual unit test. By
-    using the `TestCase` base class of `unittest`,
-    we can create new test cases
--   `test suite`: This includes a collection of test cases,
-    test suites, or both. This is for executing test cases together
--   `test runner`: This includes arranging the test executions
-    and giving output to the users
-:::
-
- 
-
-Python has a `unittest` module that we will import in our
-script. The `unittest` module has `TestCase` class
-for creating test cases.
-
-Individual test cases can be created as methods. These method names
-start with the word [*test*]. So, test runner will know which
-methods represent test cases.
-
-
 Creating unit tests
 -------------------------------------
 
@@ -163,7 +128,7 @@ following:
     gets raised
 -   `setUp()` and `tearDown()`: This defines
     instructions that are executed before and after each test method
-:::
+
 
 You can use the `unittest` module from the command line as
 well. So, you can run the previous test script as follows:
@@ -280,7 +245,6 @@ is Python\'s unit testing framework. We also learned about how to create
 test cases and methods used in unit testing.
 
  
-
 In the next lab, we are going to learn how to automate the regular
 administrative activities of the system administrator. You will learn
 about accepting inputs, handling passwords, executing external commands,
@@ -294,23 +258,9 @@ Questions
 ---------------------------
 
 
-
-
 1.  What is unit testing, automation testing, and manual testing?
 2.  What are the alternative modules available apart from
     `unittest`?
 3.  What is the use of writing test cases?
 4.  What is PEP8 standards ?
 
-
-
-Further reading
----------------------------------
-
-
-
-
--   Unit testing
-    documentation: [https://docs.python.org/3/library/unittest.html ](https://docs.python.org/3/library/unittest.html){.ulink}
--   PEP8 coding standards in Python:
-    [https://www.python.org/dev/peps/pep-0008/ ](https://www.python.org/dev/peps/pep-0008/){.ulink}

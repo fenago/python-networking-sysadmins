@@ -254,7 +254,7 @@ pip3 install xlrd
 Note: Make sure you have an Excel file present in your system. I have
 `sample.xlsx` present in my system. So I\'m going to use that
 file throughout this section.
-:::
+
 
 We are going to look at how to read an Excel file and how to extract
 rows and columns from the Excel file.
@@ -280,7 +280,7 @@ result = excel_sheet.cell_value(0, 1)
 print(result)
 ```
 
-** **Run the script and you will get the following output:
+Run the script and you will get the following output:
 
 
 ```
@@ -321,7 +321,7 @@ for i in range(excel_sheet.ncols):
             print(excel_sheet.cell_value(0, i))
 ```
 
-** **Run the script and you will get the following output:
+Run the script and you will get the following output:
 
 
 ```
@@ -363,7 +363,7 @@ install `pandas` using the following command:
 Note: Make sure you have an Excel file present in your system. I
 have `sample.xlsx` present in my system. So I am going to use
 that file throughout this section.
-:::
+
 
  
 
@@ -617,7 +617,7 @@ for c1, c2, c3 in cells:
             print("{0:6} {1:6} {2:6}".format(c1.value, c2.value, c3.value))
 ```
 
-** **Run the script and you will get the following output:
+Run the script and you will get the following output:
 
 
 ```
@@ -684,7 +684,7 @@ as follows:
     registered dialects
 -   `csv.field_size_limit`: This function is used to return
     the current maximum field size allowed by the parser
-:::
+
 
 In this section, we are going to look at `csv.reader` and
 `csv.writer`  only.
@@ -711,7 +711,7 @@ with csv_file:
         print(row)
 ```
 
-** **Run the script and you will get the following output:
+Run the script and you will get the following output:
 
 
 ```
@@ -803,12 +803,12 @@ The access modes in Python are as follows:
 
 
 -   **R****ead Only Mode
-    (**`'r'`**)**:** **This
+    (**`'r'`**)**: This
     mode opens a text file for  the purpose. If that file doesn\'t
     exist, it raises an I/O error. We can also call this mode the
     default mode in which the file will open.
 -   **Read and Write Mode
-    (**`'r+'`**)**:** **This
+    (**`'r+'`**)**: This
     mode opens a text file for reading as
     well as writing purposes and raises an I/O error if the file does
     not exist.
@@ -830,7 +830,7 @@ The access modes in Python are as follows:
     (**`'a+'`**)**: This mode will open a
     text file for reading, as well as writing
     . It creates the file if the file does not exist and the data will
-    be inserted at the end of the existing data.** **
+    be inserted at the end of the existing data.
 
 
 ### The open() function
@@ -929,7 +929,7 @@ Run the preceding script and you will get the output as follows:
 
 
 ![](./images/b39a0d8e-8927-45a1-9e97-89980aa39ce7.jpg)
-:::
+
 
 Now, check your current working directory. You\'ll find a
 `test.txt` file that we created. Now, check the contents of
@@ -1020,15 +1020,3 @@ Questions
 5.  What is the use of `pass`?
 6.  What is a lambda expression?
 
-
-
-Further reading
----------------------------------
-
-
-
-
--   XLRD: <https://xlrd.readthedocs.io/en/latest/api.html>
--   `openoyxl`: <http://www.python-excel.org/>
--   Regarding generator concepts:
-    <https://wiki.python.org/moin/Generators>

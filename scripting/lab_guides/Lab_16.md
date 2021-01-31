@@ -323,23 +323,9 @@ Questions
 
 
 
-
 1.  What is web scrapping?
 2.  What are the web crawlers?
 3.  Can you scrape data behind a login page?
 4.  Can you crawl Twitter?
 5.  Is it possible to scrap the Java script pages? If yes, how?
 
-
-
-Further reading
-----------------------------------
-
-
-
-
--   Urllib
-    documentation: <https://docs.python.org/3/library/urllib.html>
--   Mechanize: <https://mechanize.readthedocs.io/en/latest/>
--   Scrapemark: <https://pypi.org/project/scrape/>
--   Scrapy: <https://doc.scrapy.org/en/latest/index.html>

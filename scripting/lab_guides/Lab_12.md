@@ -30,17 +30,6 @@ The telnetlib() module
 
 
 
-In this section, we are going to learn about the Telnet
-protocol and then we will do Telnet
-operations using the `telnetlib` module over a remote server.
-
-Telnet is a network protocol that allows a user to communicate with
-remote servers. It is mostly used by network administrators to remotely
-access and manage devices. To access the device, run the Telnet command
-with the IP address or hostname of a remote server in your Terminal.
-
- 
-
 Telnet uses TCP on the default port number `23`. To use
 Telnet, make sure it is installed on your system. If not, run the
 following command to install it:
@@ -210,7 +199,7 @@ class subprocess.Popen(args, bufsize=0, executable=None, stdin=None, stdout=None
 Let\'s look at each argument:
 
 
--   `args`:** **It can be a sequence of program
+-   `args`:It can be a sequence of program
     arguments or a single string. If `args` is a sequence, the
     first item in args is executed. If args is a string, it recommends
     to pass args as a sequence.
@@ -232,22 +221,22 @@ Let\'s look at each argument:
 -   `stdin`, `stdout`, and `stderr`: These
     arguments define the standard input, standard output, and standard
     error respectively. 
--   `preexec_fn`:** **This is set to a callable
+-   `preexec_fn`: This is set to a callable
     object and will be called just before the child is executed in the
     child process.
--   `close_fds`:** **In Linux, if
+-   `close_fds`:In Linux, if
     `close_fds` is true, all file descriptors except
     `0`, `1`, and `2` will be closed
     before the child process is executed. In Windows, if
     `close_fds` is `true` then the child process
     will inherit no handles. 
--   `env`:** **If the value is not
+-   `env`:If the value is not
     `None`, then mapping will define environment variables for
     new process.
--   `universal_newlines`:** **If the value is
+-   `universal_newlines`:If the value is
     `True` then `stdout` and `stderr` will
     be opened as text files in newlines mode.
-:::
+
 
 Now, we are going to see an example of `subprocess.Popen()`.
 For that, create a `ssh_using_sub.py` script and write the
@@ -579,11 +568,6 @@ connection is established, we executed configuration commands to create
 a number of virtual LANs using the `send_config_set()`
 function.
 
-When we use this type (`.send_config_set()`) of function to
-pass commands on a remote device, it automatically sets our device in
-configuration mode. After sending configuration commands, we also passed
-a simple command to get the information about the configured device.
-
 
 
 Summary
@@ -622,12 +606,3 @@ Questions
     the `calendar` module).
 6.  Write a Python program to count the number of lines in a text file.
 
-
-Further reading
-----------------------------------
-
-
-
-
--   Paramiko documentation: <https://github.com/paramiko/paramiko> 
--   Fabric documentation: <http://www.fabfile.org/>

@@ -55,7 +55,7 @@ listed here:
 -   `Ladon`
 -   `suds-jurko`
 -   `pysimplesoap`
-:::
+
 
 These are the SOAP API libraries for Python. In this section, we are
 going to learn about the Zeep library only.
@@ -237,7 +237,7 @@ functions for serializing and deserializing JSON.
     JSON file as a Python object.
 -   `json.loads(JSONfile)`: This function will deserializes a
     string-type JSON file to a Python object.
-:::
+
 
 It also has two classes for encoding and decoding listed here:
 
@@ -246,7 +246,7 @@ It also has two classes for encoding and decoding listed here:
     format.
 -   `JSONDecoder`: Used to convert a JSON formatted file into
     a Python object.
-:::
+
 
 Now, we are going to see some examples using a JSON module. First, we
 are going to see the conversion from JSON to Python. For that, create a
@@ -413,14 +413,3 @@ print(json.dumps(boolean_value))
 >>> json.loads(weird_json)
 ```
 
-
-
-Further reading
-----------------------------------
-
-
-
-
--   JSON documentation: <https://docs.python.org/3/library/json.html>  
--   REST API
-    information: <https://searchmicroservices.techtarget.com/definition/REST-representational-state-transfer>

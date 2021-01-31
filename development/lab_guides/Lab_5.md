@@ -16,58 +16,11 @@ of values to computed properties and perform validation and create
 classes that inherit methods and attributes from other classes.
 
 
-Introduction
-============
-
-
-In *Lab 4*, *Extending Python, Files, Errors, and Graphs*, you began
-to move beyond the basic and fundamental, into writing defensive code
-and anticipating potential issues. In this lab, you are introduced
-to one of the cornerstones of object-oriented programming (OOP):
-classes. Classes contain the definition of the objects we work with. All
-objects you work with in OOP are defined by a class, either in your
-code, or in a python library. So far in this course we have been using
-this, but we have not discussed how to extend and customize the behavior
-of objects. In this lab you start with objects
-you are familiar with and build on these by introducing the concept of
-classes.
-
-Perhaps you have been working with a string object in Python. What
-exactly is a string? What sort of things can you do with strings? Are
-there things you\'d like to be able to do with strings that Python\'s
-string object doesn\'t allow? Can you customize the behavior of this
-object somehow? This lab will answer these questions by exploring
-classes. Writing classes will unlock a world of possibilities, in which
-you\'ll be able to elegantly modify and combine code from external
-sources to fit your requirements.
-
-For example, say you find a third-party library for managing calendars
-that you want to incorporate into your organization\'s internal
-application. You will want to inherit classes from the library and
-override methods/properties in order to use the code as per your
-particular context. So, you can see how methods can come in handy.
-
-Your code will become increasingly more intuitive and readable, and your
-logic will be more elegantly encapsulated according to the **Do Not
-Repeat Yourself (DRY)** principle, which will be explained later in the
-lab.
-
 
 Classes and Objects
 ===================
 
 
-Classes are fundamental to object-oriented programming languages such as
-Python. A class is simply a template for creating objects. Classes
-define an object\'s various properties and specify the things you can do
-with that object. So far in this course, you have been relying on classes
-defined in the Python standard library or built into the Python
-programming language itself. For example, in *Exercise 37, Finding the
-System Date* of *Lab 3, Executing Python -- Programs, Algorithms,
-and Functions*, you used the `datetime` class to retrieve the
-current date. You will start off by exploring some more of the classes
-you\'ve already been using. This can be performed in a Python shell or
-Jupyter Notebook.
 
 Create a new integer object called `x` in a Python console:
 
@@ -113,17 +66,6 @@ int(x, base=10) -> integer
 Convert a number or string to an integer, or return 0 if no arguments
 are given. If **x** is a number, return `x.__int__()`. For
 floating point numbers, this truncates towards zero.
-
-So, you can see that even the simplest objects in Python, such as
-strings, have many interesting properties and methods that can be used
-to retrieve information about the object or perform some computation
-with the object. When you reach a point in your programming where you
-want to customize the behavior of these methods, or perhaps create a new
-type of object entirely, you will need to start writing your own
-classes. For example, perhaps instead of a string object, you want a
-`name` object that has a string as its main property and also
-contains methods that allow you to translate the name into other
-languages.
 
 
 Exercise 70: Exploring Strings

@@ -34,20 +34,7 @@ Using the os module to work with directories
 --------------------------------------------------------------
 
 
-
-A directory or folder is a collection of
-files and sub-directories. The `os` module
-provides various functions that allow us to
-interact with the operating system. In this section, we will learn about
-some functions that can be used while working with directories.
-
- 
-
-
-
-### Get the working directory
-
-
+**Get the working directory**
 
 To start working with directories, first, we will get the name of our current working
 directory. The `os` module has
@@ -68,8 +55,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 
-### Changing the directory
-
+**Changing the directory**
 
 
 Using the `os` module, we can change the current working directory.
@@ -85,8 +71,7 @@ For that, the `os` module has the
 ```
 
 
-### Listing files and directories
-
+**Listing files and directories**
 
 
 Listing the directory contents is easy in
@@ -102,16 +87,8 @@ directory:
 >>> 
 ```
 
- 
 
- 
-
- 
-
- 
-
-
-### Renaming a directory
+**Renaming a directory**
 
 
 
@@ -134,21 +111,8 @@ Copying, moving, renaming, and deleting data
 
 
 
-We will be learning about the four basic
-operations that system administrators perform
-on data, which are copy, move, rename, and delete. Python
-has a built-in module
-called `shutil`, which can perform these tasks. Using
-the `shutil` module, we can perform high-level operations on
-the data as well. To use the `shutil` module in your program,
-just write the `import shutil` import
-statement. The `shutil` module offers a few functions that
-support file copy and remove operations. Let\'s learn about these
-operations one by one.
 
-
-
-### Copying the data
+**Copying the data**
 
 
 
@@ -167,11 +131,6 @@ print ("Hello Python\n")
 
  
 
- 
-
- 
-
- 
 
 Now, we will write the code for copying into the
 `shutil_copy_example.py` script. Write the following content
@@ -200,7 +159,7 @@ find the contents of `hello.py` are copied successfully in
 `welcome.py`.
 
 
-### Moving the data
+**Moving the data**
 
 
 
@@ -606,7 +565,7 @@ actual data. It helps in finding a particular instance of your data.
 
 Make sure you have the `pdf` file present in your directory
 from which you want to extract the information.
-:::
+
 
  
 
@@ -821,18 +780,3 @@ Questions
 11. b\) list
 12. c\) tuple
 13. d\) string
-
-
-
-Further reading
----------------------------------
-
-
-
-
--   `pathlib`
-    documentation: <https://docs.python.org/3/library/pathlib.html>
--   [`pandas`
-    documentation: ](https://pandas.pydata.org/pandas-docs/stable/){.ulink}<https://pandas.pydata.org/pandas-docs/stable/>
--    `os` module documentation:
-    <https://docs.python.org/3/library/os.html>

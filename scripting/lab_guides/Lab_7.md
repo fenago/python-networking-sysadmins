@@ -60,7 +60,7 @@ The syntax is `textwrap.wrap(text, width)`:
 -   `text`: Text to wrap.
 -   `width`: Maximum length allowed of a wrapped line. The
     default value is `70`.
-:::
+
 
 Now, we will see an example of `wrap()`. Create
 a `wrap_example.py` script and write the following content in
@@ -115,7 +115,7 @@ textwrap.fill(text, width)
 
 -   `width`: Maximum length allowed of a wrapped line. The
     default value is `70`.
-:::
+
 
 Now, we will see an example of `fill()`. Create
 a `fill_example.py` script and write the following content in
@@ -223,7 +223,7 @@ The syntax for this function is: 
 
 -   `text`: The main string
 -   `prefix`: The prefix to add
-:::
+
 
 Create a `indent_example.py` script and write the following
 content in it:
@@ -335,7 +335,7 @@ four things:
 -   Modifiers
 -   Whitespace characters
 -   Flags
-:::
+
 
 The following table lists the identifiers,
 and there\'s a description for each one:
@@ -367,7 +367,7 @@ going to learn about the `match()`, `search()`,
 To use regular expressions in Python, you must import the `re`
 module in your scripts so that you will be able to use all the functions
 and methods for regular expressions.
-:::
+
 
 Now we are going to learn about these functions one by one in the
 following sections.
@@ -388,7 +388,7 @@ A `match` object will contain the information about the
 
 -   `group(num)`: Returns an entire match
 -   `groups()`: Return all matching subgroups in tuple
-:::
+
 
 The syntax for this function is as follows:
 
@@ -445,7 +445,7 @@ through our specified string for a match. It will return a
 
 -   `group(num)`: Returns an entire match
 -   `groups()`: Returns all matching subgroups in tuple
-:::
+
 
 The syntax for this function is as follows: 
 
@@ -580,7 +580,7 @@ pattern with the replacement string. The syntax is as follows:
 -   `count`: The number of occurrences to be replaced. The
     default value is `0`, which means replacing all
     occurrences.
-:::
+
 
 Now we are going to create a `re_sub.py`script and write the
 following content in it:
@@ -862,21 +862,9 @@ Questions
     `"we are humans"` Matched:
     `re.match(r'(.*) (.*?) (.*)'`,
     `sentence)``print(matched.group())`
-:::
+
 
 a\) `('we', 'are', 'humans')` b) `(we, are, humans)`
 c) `('we', 'humans')` d) `'we are humans'`
 
 
-
-Further reading
----------------------------------
-
-
-
-
--   Regular expressions: <https://docs.python.org/3.2/library/re.html>
--   Textwrap documentation:
-    <https://docs.python.org/3/library/textwrap.html>
--   Unicode documentation:
-    <https://docs.python.org/3/howto/unicode.html>

@@ -5,157 +5,21 @@
 Lab 1. Vital Python -- Math, Strings, Conditionals, and Loops
 =========================================================
 
-Overview
 
-[By the end of this lab, you will be able to
-]{.normaltextrun}simplify mathematical expressions with the order of
-operations using integers and floats; assign variables and change Python
-types to display and retrieve user information; apply global functions
-including `len()`, `print()`, and
-`input()`; manipulate strings using indexing, slicing, string
-concatenation, and string methods; apply Booleans and nested
-conditionals to solve problems with multiple pathways; utilize \'for
-loops\' and \'while loops\' to iterate over strings and repeat
-mathematical operations and create new programs by combining math,
-strings, conditionals, and loops.
+In this lab, you will learn about the following topics:
+
+- Simplify mathematical expressions with the order ofoperations using integers and floats; 
+- Assign variables and change Python types to display and retrieve user information
+- Apply global functions including `len()`, `print()`, and `input()`; 
+- Manipulate strings using indexing, slicing, string concatenation, and string methods; 
+- Apply Booleans and nested conditionals to solve problems
+- Utilize \'for loops\' and \'while loops\' to iterate over strings.
+- Create new programs by combining math, strings, conditionals, and loops.
+
 
 This lab covers the fundamentals of the Python language.
 
 
-Introduction
-============
-
-
-Welcome to the Python Workshop. This course is for anyone new to the
-Python programming language. Our objective is to teach you Python so
-that you can solve real-world problems as a Python developer and data
-scientist.
-
-This course will combine theory, examples, exercises, questions, and
-activities for all core concepts; so that you can learn to use Python
-best practices to solve real-world problems. The exercises and
-activities have been chosen specifically to help you review the concepts
-covered and extend your learning. The best way to learn Python is to
-solve problems on your own.
-
-The material (in this course) is targeted at beginners but will be equally
-as beneficial to experienced developers who are not yet familiar with
-Python. We are not teaching computer science per se, but rather Python,
-the most beautiful and powerful coding language in the world. If you
-have never studied computer science, you will learn the most important
-concepts here, and if you have studied computer science, you will
-discover tools and tricks for Python that you have never seen before.
-
-Python has become the most popular programming language in the world due
-to its simple syntax, extensive range, and dominance in the field of
-machine learning. In this course, you will become fluent in Python syntax,
-and you will take significant steps toward producing Pythonic code. You
-will gain experience in Python development, data science, and machine
-learning.
-
-Many introductory Python courses provide full introductions to computer
-science. Learning computer science with Python is an excellent way to
-start, but it is not the method of this course. Units on software
-development and data science are rarely covered in such courses. They may
-be touched upon, but here, they represent 40% of our course.
-
-By contrast, many courses on software development and data science are not
-designed for beginners. If they are, the Python fundamentals that they
-teach are usually summarized in one brief unit. This course devotes
-considerable space to Python fundamentals and essentials. Beginners are
-not only welcome; they are guided every step of the way.
-
-In addition to the unique focus on Python fundamentals and essentials,
-the fact that the content is written by seasoned educators, data
-scientists, and developers makes this Python course more than just a text
-or reference.
-
-Python is not the language of tomorrow; Python is the language of today.
-By learning Python, you will become empowered as a developer, and you
-will gain a significant edge over the competition. The journey will be
-fun, compelling, challenging, and ultimately, rewarding.
-
-
-Vital Python
-============
-
-
-In this lab, we present vital Python concepts, the core elements
-that everyone needs to know before starting to code. You cover a breadth
-of topics with a focus on math, strings, conditionals, and loops. By the
-end of this lab, you will have a strong foundation in Python, and
-you will be able to write significant Python programs as you continue
-with the rest of this course.
-
-You will start with a very famous developer example; that is, *Python as
-a calculator*. In addition to the standard operations of addition,
-subtraction, multiplication, division, and exponentiation, you will
-learn integer division and the modulus operator. By using only basic
-Python, you can outperform most calculators on the market.
-
-Next, you\'ll learn about **variables**. Python is dynamically typed,
-meaning that variable types are unknown before the code runs. Python
-variables do not require special initialization. Our first variables
-will be **integers**, **floats**, and **strings**. You will identify and
-convert between types.
-
-Next, in order to work with strings, you will utilize string methods, in
-addition to **indexing**, **slicing**, and string **concatenation**.
-You\'ll also use built-in functions such as `print()` and
-`input()` to communicate with the user.
-
-Moving ahead, you\'ll encounter Booleans, `true` or
-`false` Python types, that precede conditionals, statements
-with `if` clauses that lead to branching. Booleans and
-conditionals allow us to write more complex programs by taking a greater
-number of possibilities into account.
-
-Finally, you close the lab with loops that allows us to repeat
-operations. In particular, we apply `while` loops and
-`for` loops, utilizing `break` and
-`continue`.
-
-For true beginners, this introductory lab will get you up to speed
-with basic programming concepts. If you are new to Python, you will see
-why the Python language is so clear, powerful, and valuable. By the end
-of this lab, you will be comfortable running Python basics on their
-own, and you will be prepared to tackle more of the advanced concepts
-ahead.
-
-Let\'s start coding in Python.
-
-
-Numbers: Operations, Types, and Variables
-=========================================
-
-
-In the preface, we installed Anaconda, which comes along with Python 3.7
-and the Jupyter Notebook. It\'s time to open a Jupyter Notebook and
-begin our Pythonic journey.
-
-
-To Open a Jupyter Notebook
---------------------------
-
-To begin with this course, you need to make sure that you have a Jupyter
-Notebook open. Here are the steps.
-
-1.  Locate and open your Anaconda Navigator.
-2.  Search for `Jupyter` Notebook in Anaconda Navigator and
-    click on it.
-3.  A new window should open in the web browser of your choice.
-
-![](./images/C13963_01_01.jpg)
-
-
-Figure 1.1: The Jupyter Notebook interface
-
-Note
-
-If you are having trouble, it may mean that your Jupyter Notebook is not
-set up properly. Go back to the preface or see
-[https://jupyter-notebook.readthedocs.io/en/stable/troubleshooting.html](https://docs.python.org/3.7/library/cmath.html)
-for a troubleshooting guide.
 
 
 Python as a Calculator
@@ -181,25 +45,6 @@ For instance, in `mod5` which is a modulus of 5, we count
 0,1,2,3,4,0,1,2,3,4,0,1\... This goes in a circle, like the hands on a
 clock.
 
-The difference between division and integer division depends on the
-language. When dividing the integer 9 by the integer 4, some languages
-return 2; others return 2.25. In your case, Python will return 2.25.
-
-There are many advantages to using Python as your calculator of choice.
-The first is that you are not limited to using programs that others have
-written. You can write a program to determine the greatest common
-divisor or the Euclidean distance between two points.
-
-Other advantages include reliability, precision, and speed. Python
-generally prints out more decimal places than most calculators, and it
-always does what you command it to do.
-
-We\'ll cover a small sample of what Python can calculate. Complex
-numbers are previewed as a Python type. Great `math` libraries
-such as `Turtle`, which creates polygons and circles with
-ease, may be explored in your own time and are mentioned in *Lab 6*,
-*The Standard Library*. The depth of math required for data analysis and
-machine learning starts with the foundations laid here.
 
 Note
 
@@ -3622,25 +3467,7 @@ The expected output for bot 2 is as follows:
 ![](./images/C13963_01_19.jpg)
 
 
-Summary
-=======
-
-
-You have gone over a lot of material in this introductory lab. You
-have covered math operations, string concatenation and methods, general
-Python types, variables, conditionals, and loops. Combining these
-elements allows us to write programs of real value.
-
-Additionally, we have been learning Python syntax. You now understand
-some of the most common errors, and you\'re becoming accustomed to the
-importance that indentation plays. You\'re learning how to leverage
-important keywords such as `range`, `in`,
-`if`, and `True` and `False`.
-
-Going forward, you now have the key fundamental skills required of all
-Python programmers. Although there is much to learn, you have a vital
-foundation in place to build upon the types and techniques discussed
-here.
+**Next**
 
 Coming up next, you will learn about some of the most important Python
 types, including lists, dictionaries, tuples, and sets.

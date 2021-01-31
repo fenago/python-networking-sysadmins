@@ -162,7 +162,7 @@ modules:
 -   `http.cookies`: This is used for implementing state
     management with cookies
 -   `http.cookiejar`: This module provides cookie persistence
-:::
+
 
  
 
@@ -274,41 +274,7 @@ response = con_obj.getresponse()
 print(response.read().decode())
 ```
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
  
 
@@ -374,23 +340,6 @@ First, navigate to your desired directory and run the following command:
 student@ubuntu:~/Desktop$ python3 -m http.server 9000
 ```
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
  
 
@@ -623,7 +572,7 @@ using this module.
 -   `urllib.parse`: This is used for parsing URLs.
 -   `urllib.robotparser`: This is used for parsing
     `robots.txt` files.
-:::
+
 
 In this section, we are going to learn about opening a URL using
 `urllib` and how to read `html` files from the URL.
@@ -753,15 +702,3 @@ Questions
 6.  What are the differences between the `urllib`,
     `urllib2`, and `requests` modules?
 
-
-
-Further reading
-----------------------------------
-
-
-
-
--   `ftplib`
-    documentation: <https://docs.python.org/3/library/ftplib.html> 
--   `xmlrpc`
-    documentation: <https://docs.python.org/3/library/xmlrpc.html> 

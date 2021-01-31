@@ -20,25 +20,7 @@ In this lab, you will learn about the following:
 
 
 Standard input and output
--------------------------------------------
-
-
-
-In this section, we are going to learn about
-input and output in Python. We will learn about `stdin` and
-`stdout`, and the `input()` function.
-
-`stdin` and `stdout` are file-like objects. These
-objects are provided by the operating system.
-Whenever a user runs a program in an
-interactive session, `stdin` acts as input and
-`stdout` will be the user\'s Terminal. As `stdin` is
-a file-like object, we have to read the data from `stdin`
-rather than reading data at runtime. `stdout` is used for the
-output. It is used as an output for expressions and `print()` function, as well as a
-prompt for the `input()` function.
-
- 
+-------------------------
 
 Now, we will see an example of `stdin` and `stdout`.
 For that purpose, create a script,`stdin_stdout_example.py`,
@@ -263,7 +245,7 @@ Now, we are going to learn about string formatting using the
 -   `%s`: String
 -   `%f`: Floating point number
 -   `%c`: Character
-:::
+
 
 Now, we will look at an example. Create a
 `string_formatting.py`script and write the following content
@@ -479,11 +461,7 @@ sent that image as an attachment to the receiver.
 
 ### Note
 
-In the previous two examples -- `send_text.py` and
-`send_email_attachment.py`** **-- we sent email via
-Gmail. You can send via any other email providers. To use any other
-email provider, just write that provider name in `host_name`.
-Don't forget to add `smtp` before it. In these example, we
+In these example, we
 used `smtp.gmail.com`; for Yahoo! you can use
 `smtp.mail.yahoo.com`. So, you can change the hostname as well
 as the port, according to your email providers.
@@ -511,8 +489,6 @@ files such as PDF, Excel, and `csv.`
 
 Questions
 ---------------------------
-
-
 
 
 1.  What is the difference between `stdin` and input?
@@ -543,14 +519,3 @@ print('str1 * 3 =', str1 * 3)
 ```
 
 
-
-Further reading
----------------------------------
-
-
-
-
-1.  `string` documentation:
-    [https://docs.python.org/3.1/library/string.html ](https://docs.python.org/3.1/library/string.html){.ulink}
-2.  `smptplib`
-    documentation: [https://docs.python.org/3/library/smtplib.html ](https://docs.python.org/3/library/smtplib.html){.ulink}

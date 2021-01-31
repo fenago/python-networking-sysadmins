@@ -285,7 +285,7 @@ is a list to follow:
 -   All the parsing of log files must be combined into a single report.
 -   The tool you are using must operate on all files, from a specified
     directory or from different directories. Log files from all
-    sub-directories should also be included.** **
+    sub-directories should also be included.
 
 
 
@@ -300,7 +300,7 @@ directives for the error log are as follows:
 
 -   `ErrorLog`
 -   `LogLevel`
-:::
+
 
 The location and the name of server log files are set by the `ErrorLog` directive. It is the most
 important log file. The Apache `httpd` sends the information
@@ -398,16 +398,16 @@ log analysis programs read this log format.
 Now, we will see what each percent directive means:
 
 
--   `%h`:** **This shows us the IP address of the
+-   `%h`: This shows us the IP address of the
     client who made the request to the web server. If
     `HostnameLookups` is on, then the server will determine
     the hostname and will log it in place of the IP address.
 -   `%l`: This term is used to indicate that the information
     is not available for a requested piece.
--   `%u`:** **This is the user ID of the person who
+-   `%u`: This is the user ID of the person who
     has requested the document. The same value is provided to CGI
     scripts in the `REMOTE_USER` environment variable.
--   `%t`:** **This term is used to detect the time
+-   `%t`: This term is used to detect the time
     at which the processing request of server is finished. The format is
     as follows:
 
@@ -423,7 +423,7 @@ take two digits each for `hour`, `minute`, and
 `seconds`.
 
 
--   ** **`\"%r\"`: This term is used as the request
+-   `\"%r\"`: This term is used as the request
     line, which is given in double quotes from the client. This request
     line has useful information. The request client uses the
     `GET` method and the protocol used is HTTP.
@@ -449,7 +449,7 @@ filesystem as shown here:
 
 
 ![](./images/7f26ec0b-2ec6-45f8-9657-7a7db7bcb751.png)
-:::
+
 
 In the preceding screenshot, we can easily see the different types of
 log files (for instance, authentication log file `auth.log`,
@@ -586,14 +586,3 @@ Questions
     c.  `re.match(r'<.*?>', '<h1>TITLE</h1>').group()`
     
 
-
-Further reading
-----------------------------------
-
-
-
-
--   Python logging: <https://docs.python.org/3/library/logging.html>
--   Regular expression: <https://docs.python.org/3/howto/regex.html> 
--   Exception
-    handling: [https://www.pythonforbeginners.com/error-handling/python-try-and-except ](https://www.pythonforbeginners.com/error-handling/python-try-and-except){.ulink}

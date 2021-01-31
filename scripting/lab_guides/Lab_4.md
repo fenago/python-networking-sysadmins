@@ -5,12 +5,6 @@ Lab 4. Automating Regular Administrative Activities
 
 
 
-There are various administrative activities performed by system
-administrators. These activities may contain file handling, logging,
-administrating CPU and memory, password handling, and, most importantly,
-making backups. These activities need automation. In this lab,
-we\'re going to learn about automating these activities using Python.
-
 In this lab, we will cover the following topics:
 
 
@@ -30,13 +24,6 @@ In this lab, we will cover the following topics:
 Accepting input by redirection, pipe, and input files
 -----------------------------------------------------------------------
 
-
-
-In this section, we are going to learn about
-how users can accept input by redirection,
-pipe, and external input files.
-
- 
 
 For accepting input by redirection, we use
 `stdin`. `pipe` is another form of redirection. This concept means providing the output of one program as the input to another
@@ -667,7 +654,7 @@ $ python3 logging_example.py
 
 Output:
 FILE:
-DEBUG:root:This message should go to the log file
+DEBUG:root: This message should go to the log file
 ```
 
 Check `hello.py` and you see the debug message printed in that
@@ -678,7 +665,7 @@ script:
 $ cat log.txt
 
 Output:
-DEBUG:root:This message should go to the log file
+DEBUG:root: This message should go to the log file
 ```
 
 Now, we will write a script called `logging_warnings_codes.py`
@@ -1066,16 +1053,3 @@ Questions
 5.  List the libraries available for finding the `cpu` usage?
 6.  List the different methods to accept the input from the user?
 7.  What is the difference between sort and sorted?
-
-
-
-Further reading
----------------------------------
-
-
-
-
--    Learn basic commands of
-    linux:  <https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners> 
--   Selenium webdriver
-    documentation:[ https://selenium-python.readthedocs.io/index.html](https://selenium-python.readthedocs.io/index.html){.ulink} 

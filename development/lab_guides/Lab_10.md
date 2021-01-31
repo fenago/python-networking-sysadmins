@@ -17,68 +17,6 @@ generate and interpret statistical models using pandas and statsmodels
 and solve real-world problems using data analytics techniques.
 
 
-Introduction
-============
-
-
-In *Lab 9*, *Practical Python -- Advanced Topics*, you looked at how
-to use GitHub to collaborate with team members. You also used
-`conda` to document and set up the dependencies for Python
-programs and `docker` to create reproducible Python
-environments to run our code.
-
-We now shift gears to data science. Data science is booming like never
-before. Data scientists have become among the most sought-after
-practitioners in the world today. Most leading corporations have data
-scientists to analyze and explain their data.
-
-Data analytics focuses on the analysis of big data. As each day goes by,
-there is more data than ever before --- far too much for any human to
-analyze by sight. Leading Python developers such as Wes McKinney and
-Travis Oliphant addressed the gap by creating specialized Python
-libraries, in particular, pandas and NumPy to handle big data.
-
-Taken together, pandas and NumPy are masterful at handling big data.
-They are built for speed, efficiency, readability, and ease of use.
-
-Pandas provide you with a unique framework to view and modify data.
-Pandas handles all data-related tasks such as creating DataFrames,
-importing data, scraping data from the web, merging data, pivoting,
-concatenating, and more.
-
-NumPy, short for Numerical Python, is more focused on computation. NumPy
-interprets the rows and columns of pandas DataFrames as matrices in the
-form of NumPy arrays. When computing descriptive statistics such as the
-mean, median, mode, and quartiles, NumPy is blazingly fast.
-
-Another key player in data analysis is Matplotlib, a graphing library
-that handles scatter plots, histograms, regression lines, and much more.
-The importance of data graphs cannot be overstated since most
-non-technical professionals use them to interpret results.
-
-
-NumPy and Basic Stats
-=====================
-
-
-NumPy is designed to handle big data swiftly. It includes the following
-essential components according to the NumPy documentation:
-
--   A powerful n-dimensional array object
--   Sophisticated (broadcasting) functions
--   Tools for integrating C/C++ and Fortran code
--   Useful linear algebra, Fourier transform, and random number
-    capabilities
-
-You will be using NumPy for the rest of the course. Instead of using
-lists, you will use NumPy arrays. NumPy arrays are the basic elements of
-the NumPy package. NumPy arrays are designed to handle arrays of any
-dimension.
-
-Numpy arrays can be indexed easily and can have many types of data, such
-as `float`, `int`, `string`, and
-`object`, but the types must be consistent to improve speed.
-
 
 Exercise 128: Converting Lists to NumPy Arrays
 ----------------------------------------------
@@ -137,11 +75,6 @@ The following steps will enable you to complete the exercise:
 In this exercise, you were able to convert a list of test score marks to
 a NumPy array. You will find the mean using these values within the
 NumPy array in *Exercise 129*, *Calculating the Mean of the Test Score*.
-
-One of the most common statistical measures is the mean. Traditionally
-thought of as the average, the mean of a list is the sum of each entry
-divided by the number of entries. In NumPy, the mean may be computed
-using the `.mean` method.
 
 
 Exercise 129: Calculating the Mean of the Test Score
@@ -2278,26 +2211,6 @@ You should get the following output:
 ![](./images/C13963_10_49.jpg)
 
 
-Figure 10.49: Example output of a regression line
-
-You may wonder about the shaded part of the line. It represents a 95%
-confidence interval, meaning that Python is 95% confident that the
-actual regression line falls within that range. Since the shaded area is
-fairly small in relation to the plot, this means that the regression
-line is reasonably accurate.
-
-The general idea behind regression lines is that they can be used to
-predict new y values from new x values. For instance, if there is an
-eight-room house, you can use regression to get an estimate of its
-value. You will use this general philosophy in a more sophisticated
-manner in *Lab 11*, *Machine Learning*, using the machine learning
-version of linear regression.
-
-Although this is not a course on statistics, you want to provide enough
-of an introduction so that you can analyze data on your own. In this
-respect, there is one more key piece to the regression that is worth
-sharing. It\'s the data about the line itself.
-
 
 StatsModel Regression Output
 ----------------------------
@@ -2325,23 +2238,6 @@ improve your background in statistics:
 
 ![](./images/C13963_10_50.jpg)
 
-
-Figure 10.50: Summary of the regression line
-
-There\'s a lot of important information in this table. The first is the
-value of `R^2` at 0.484. This suggests that 48% of the data
-can be explained by the regression line. The second is the coefficient
-constant of `-34.6706`. This is the y-intercept. The third is
-the RM coefficient of `9.1021`. This suggests that for every
-one-bedroom increase, the value of the house increased by 9,102. (Keep
-in mind that this dataset is from 1980.)
-
-The standard error suggests how far off the actual values are from the
-line on average, and the numbers underneath the
-`[0.025 0.975] `column give the 95% **Confidence Interval** of
-the value, meaning `statsmodel` is 95% confident that the true
-increase in the value of the average house for every one-bedroom
-increase is between 8,279 and 9,925.
 
 
 Additional Models
@@ -2421,17 +2317,6 @@ You should get the following output:
 
 ![](./images/C13963_10_52.jpg)
 
-
-Figure 10.52: Violin plot output
-
-In the violin plot, the upper and lower bars define the minimum and
-maximum values, and the width of the plot indicates how many rows
-contain that particular value. The difference between the violin plot
-and the box plot is that the violin plot shows the overall distribution
-of the data.
-
-Now, you will have a look at an activity to see whether you are able to
-implement the concepts covered in this lab.
 
 
 Activity 24: Data Analysis to Find the Outliers in Pay versus the Salary Report in the UK Statistics Dataset

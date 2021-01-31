@@ -15,53 +15,9 @@ documentation on the web and create a Git repository and manage your
 source code versions.
 
 
-Introduction
-============
-
-
-Software development goes beyond writing code. In previous *Lab 7*,
-*Becoming Pythonic* you were introduced to the idea of being Pythonic.
-When you write software as professionals, we expect the code to be up to
-a certain standard and to be able to manage and distribute that code in
-a way that can be easily consumed by other developers.
-
-In this lab, you will go through the various concepts and tools that
-allow you to elevate the level of your source code and applications. You
-will examine Python tools that every Python developer uses for testing,
-writing documentation, packaging their code, and version control, as
-well as learning about techniques that allow us to debug issues that
-occur in existing code. Additionally, you will write tests to validate
-our assumptions and implementations of our code. These are all concepts
-and tools that are key to any successful developer in any company, as
-they allow developers to develop and collaborate effectively. Finally,
-you will cover some basics about using Git to manage your source code
-versions.
-
-
 Debugging
 =========
 
-
-Sooner or later in your development, you will reach a point where you
-see our program behave differently than you initially expected. In
-situations like these, you usually look back at the source code and try
-to understand what is different between your expectations and the code
-or inputs that are being used. To facilitate that process, there are
-multiple methods (in general, and some that are specific to Python) that
-you can use to try to \"debug\" or \"troubleshoot\" the issue.
-
-Usually, the first action of an experienced developer, when frustration
-arises from unexpected results in their code, is to look at the logs or
-any other output that the application produces. A good starting point is
-trying to increase the logging verbosity, as discussed in *Lab 6*,
-*Standard Library*. If you are not able to troubleshoot the problem with
-just logs, it usually means that you should look back at how we are
-instructing our application to log its state and activity producing what
-are known as traces, as there might be a good opportunity to improve it.
-
-The next step of verifying the inputs and outputs of the program is to
-receive and verify the log. The usual next step in Python is to use the
-Python debugger, **pdb**.
 
 The `pdb` module and its command line interface which is a
 `cli` tool allows you to navigate through the code as it runs
@@ -139,70 +95,13 @@ $ python3.7 magic_operation_with_breakpoint.py
 
 At this point, you can get a list of all the commands by running
 `help`, or you can get more information about a specific
-command by running the `help` command. The most commonly used
-commands are as follows:
-
--   `break filename:linenumber`: This sets a breakpoint in the
-    specified line. It ensures that you will stop the code at that point
-    when other commands are running by continuing the execution.
-    Breakpoints can be set in any file included in the standard library.
-    If we want to set a breakpoint in a file that is part of a module,
-    you can do so by just using its full path within the Python path.
-    For example, to stop the debugger in the parser module, which is
-    part of the HTML package of the standard library, you would perform
-    `b html/parser:50` to stop the code on line 50 of the
-    file.
--   `break` function: You can request to stop the code when a
-    specific function is called. If the function is in the current file,
-    you can pass the function name. If the function is imported from
-    another module, you will have to pass the full function
-    specification, for example, `html.parser`.
-    `HTMLParser.reset`, to stop at the `reset`
-    function of the `HTMLParser` class of
-    `html.parser`.
--   `break without arguments`: This lists all the current
-    breakpoints that are set in the current state of the program.
--   `continue`: This continues the execution until a
-    breakpoint is found. This is quite useful when you start a program,
-    set breakpoints in all the lines of code or functions you want to
-    inspect, and then just let it run until it stops at any of those.
--   `where`: This prints a stack trace with the current line
-    of execution where the debugger stopped. It is useful to know what
-    called this function or to be able to move around the stack.
--   `down` and `up`: These two commands allow us to
-    move around in the stack. If we are in a function call, we can use
-    `up` to move to the caller of the function and inspect the
-    state in that frame, or you can use `down` to go deeper in
-    the stack after we have moved up.
--   `list`: This displays 11 lines of code from the point
-    where the execution stopped for the first time to when it is called.
-    Successive calls to `list` will display the following
-    lines in batches of 11. To start again from where the execution
-    stopped, use `list`.
--   `longlist`: This shows the source code of the current
-    function in the current frame that is being executed.
--   `next`: This executes the line and moves to the following
-    one.
--   `step`: This executes the current line and stops at the
-    first opportunity within the function being executed. This is useful
-    when you don\'t want to just execute a function, but we want to step
-    through it.
--   `p`: This prints the value of an expression. It is useful
-    for checking the content of variables.
--   `pp`: This allows you to pretty print an expression. It is
-    useful for when we are trying to print long structures.
--   `run`/`restart`: This restarts the program
-    keeping all the breakpoints still set. It is useful if you have
-    passed an event you expected to see.
+command by running the `help` command. 
 
 Many functions have shortcuts; for example, you can use `b`
 instead of `break`, `c` or `cont` instead
 of `continue`, `l` instead of a `list`,
 `ll` for `longlist`, and so on.
 
-There are other functions not covered here, `pdb` comes with a
-broad toolbox. Use `help` to learn about all the different
-functions and how to use them.
 
 
 Exercise 112: Debugging a Salary Calculator
@@ -1537,12 +1436,6 @@ with their API documentation. Check `Django`,
 `flask`, or `CPython` as examples, as they are all
 generated with Sphinx.
 
-Note that if you intend our library to be used extensively and
-successfully, then documentation will be a key part of it. When you want
-to document how an API behaves, you should use just the plain API
-documentation that you generated before. However, there is also room to
-create small guides for specific features or tutorials to walk users
-through the most common steps to start a project.
 
 Additionally, there are tools such as Read the Docs, which greatly
 simplifies the generation and hosting of documentation. You can take the
