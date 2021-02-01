@@ -54,7 +54,7 @@ Labs for this course are available at endpoints shared below. Update `<host-ip>`
 12. ##### Remote Monitoring of Hosts Over Telnet and SSH
 		* http://<host-ip>/lab/workspaces/lab12_Sysadmin_Monitoring
 13. ##### MySQL and SQLite Database Administrations
-		* http://<host-ip>/lab/workspaces/lab18_Sysadmin_Database
+		* http://<host-ip>/lab/workspaces/lab13_Sysadmin_Database
 14. ##### Working with Apache and Other Log Files
 		* http://<host-ip>/lab/workspaces/lab14_Sysadmin_Apache
 15. ##### SOAP and REST API Communication

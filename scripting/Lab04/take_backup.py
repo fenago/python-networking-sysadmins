@@ -1,7 +1,7 @@
 import os
 import shutil
 import time
-from sh import rsync
+from sh import *
 def check_dir(os_dir):
 	if not os.path.exists(os_dir):
 		print (os_dir, "does not exist.")
