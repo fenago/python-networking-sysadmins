@@ -198,6 +198,21 @@ Hello Python
 Handling passwords at runtime in scripts
 ----------------------------------------------------------
 
+**Note:** We will connect to localhost using ssh. But we can connect to any host remotely by updating ip_address.
+
+Start ssh server:
+
+![](./images/ssh1.PNG)
+
+
+Create new user `student` and password `training`:
+
+![](./images/ssh1.PNG)
+
+
+Verify ssh connection is working:
+
+![](./images/ssh3.PNG)
 
 
 In this section, we will look at a simple example for handling passwords in script. We will
@@ -211,7 +226,7 @@ import sys
 import paramiko
 import time
 
-ip_address = "192.168.2.106"
+ip_address = "localhost"
 username = "student"
 password = "training"
 ssh_client = paramiko.SSHClient()
@@ -221,11 +236,10 @@ ssh_client.connect(hostname=ip_address,\
                                     username=username, password=password)
 print ("Successful connection", ip_address)
 ssh_client.invoke_shell()
-remote_connection = ssh_client.exec_command('cd Desktop; mkdir work\n')
-remote_connection = ssh_client.exec_command('mkdir test_folder\n')
-#print( remote_connection.read() )
+
 ssh_client.close
 ```
+
 
 Run the preceding script and you will receive the following output:
 
@@ -234,28 +248,17 @@ Run the preceding script and you will receive the following output:
 $ python3 handling_password.py
 
 Output:
-Successful connection 192.168.2.106
+Successful connection localhost
 ```
 
 In the preceding script, we used the `paramiko` module.
 The `paramiko` module is a Python implementation of
 `ssh` that provides client-server functionality.
 
-Install `paramiko` as follows:
 
-
-```
-pip3 install paramiko
-```
-
-In the preceding script, we are remotely
-connecting to the host, `192.168.2.106`. We have
-provided the host\'s username and password in
-our script.
-
-After running this script, on the `192.168.2.106` desktop, you
+After running this script, on the `localhost` desktop, you
 will find a `work` folder and `test_folder` can be
-found in the `home/` directory of `192.168.2.106`.
+found in the `home/` directory of `localhost`.
 
 
 

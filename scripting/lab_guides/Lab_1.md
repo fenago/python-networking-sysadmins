@@ -5,14 +5,6 @@ Lab 1. Python Scripting Overview
 ---------------------------------------------
 
 
-Python is an object-oriented, high-level programming language with
-dynamic semantics. Mainly, Python is an interpreted language. Python is
-used for rapid application development, as it has all of the advanced
-features for development.
-
-Python is simple and easy to learn, as its syntax makes programs more
-readable. Hence, the program maintenance cost is low.
-
 This lab will cover the following topics:
 
 
@@ -28,64 +20,7 @@ This lab will cover the following topics:
 -   Modules
 
 
-
-### Installing and using the virtual environment
-
-
-
-Now we will see how to install the virtual
-environment and how to activate it. 
-
-To install the virtual environment on Linux, perform the following
-steps:
-
-
-1.  First check whether `pip` is installed or not. We are
-    going to install `pip` for `python3`: 
-
-```
-sudo apt install python3-pip
-```
-
-
-2.  Install the virtual environment using `pip3`:
-
-```
-sudo pip3 install virtualenv
-```
-
-
-3.  Now we will create the virtual environment. You can give it any
-    name; I have called it `pythonenv`:
-
-```
-virtualenv pythonenv
-```
-
-
-4.  Activate your virtual environment:
-
-```
-source venv/bin/activate
-```
-
-
-5.  After your work is done, you can deactivate
-    `virtualenv` by using following command:
-
-```
-deactivate
-```
-
-In Windows, run the `pip install virtualenv` command to
-install the virtual environment. The steps for installing
-`virtualenv` are same as with Linux.
-
-
-
 ### The difference between Python and Bash scripting
-
-
 
 In this section, we\'re going to learn about
 the difference between Python and Bash scripting. The differences are as
@@ -99,7 +34,6 @@ follows:
     function from imported modules
 
 ### Starting the interactive console
-
 
 
 We can access Python\'s interactive console from any
