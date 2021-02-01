@@ -60,12 +60,21 @@ $ sudo apt-get install python3-mysqldb
 ```
 
 
+-   Start mysql database :
+
+```
+student@ubuntu:~$ service mysql status
+student@ubuntu:~$ service mysql start
+```
+
 -   Now, we will check if `mysql` is installed properly or
     not. For this, run the following command in Terminal:
 
 ```
 student@ubuntu:~$ sudo mysql -u root -p
 ```
+
+Note: Password is `fenago`
 
 Once the command runs, you will get the following output:
 
@@ -91,7 +100,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql>
 ```
 
-By running `sudo mysql -u root -p`, you will get
+By running `sudo mysql -u root -p`, password is `fenago` you will get
 the `mysql` console. There are some commands used for listing
 databases and tables, and using the database to store our work. We will
 see them one by one:
