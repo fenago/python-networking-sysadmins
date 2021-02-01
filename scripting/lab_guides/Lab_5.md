@@ -173,7 +173,7 @@ content in it:
 
 ```
 import shutil
-shutil.move('/home/jovyan/sample.txt', '/home/jovyan/Desktop/.')
+shutil.move('/home/jovyan/work/python-networking-sysadmins/sample.txt', '/home/jovyan/Desktop/.')
 ```
 
 Run the script as follows:
@@ -285,7 +285,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 >>> import os
 >>> os.path.abspath('sample.txt')
-'/home/jovyan/work/sample.txt'
+'/home/jovyan/work/python-networking-sysadmins/sample.txt'
 ```
 
 
@@ -293,7 +293,7 @@ Type "help", "copyright", "credits" or "license" for more information.
     your path.
 
 ```
->>> os.path.dirname('/home/jovyan/work/sample.txt')
+>>> os.path.dirname('/home/jovyan/work/python-networking-sysadmins/sample.txt')
 '/home/jovyan/work'
 ```
 
@@ -302,7 +302,7 @@ Type "help", "copyright", "credits" or "license" for more information.
     path.
 
 ```
->>> os.path.basename('/home/jovyan/work/sample.txt')
+>>> os.path.basename('/home/jovyan/work/python-networking-sysadmins/sample.txt')
 'sample.txt'
 ```
 
@@ -311,7 +311,7 @@ Type "help", "copyright", "credits" or "license" for more information.
     refers to the existing path.
 
 ```
->>> os.path.exists('/home/jovyan/work/sample.txt')
+>>> os.path.exists('/home/jovyan/work/python-networking-sysadmins/sample.txt')
 True
 ```
 
@@ -320,7 +320,7 @@ True
     path in bytes.
 
 ```
->>> os.path.getsize('/home/jovyan/work/sample.txt')
+>>> os.path.getsize('/home/jovyan/work/python-networking-sysadmins/sample.txt')
 39
 ```
 
@@ -329,7 +329,7 @@ True
     an existing file or not. Returns `True` if it is a file.
 
 ```
->>> os.path.isfile('/home/jovyan/work/sample.txt')
+>>> os.path.isfile('/home/jovyan/work/python-networking-sysadmins/sample.txt')
 True
 ```
 
@@ -339,7 +339,7 @@ True
     directory.
 
 ```
->>> os.path.isdir('/home/jovyan/work/sample.txt')
+>>> os.path.isdir('/home/jovyan/work/python-networking-sysadmins/sample.txt')
 False
 ```
 
@@ -545,71 +545,6 @@ return the filenames from those directories. In the fourth
 `glob()`, we passed `**/`, which will return
 directory names only.
 
-
-
-Metadata: data about data
--------------------------------------------
-
-
-
-In this section, we are going learn about the
-`pyPdf` module, which helps in extracting the
-metadata from a `pdf` file. But
-first, what is metadata? Metadata is data about data. Metadata is
-structured information that describes primary data. Metadata is a
-summary of that data. It contains the basic information regarding your
-actual data. It helps in finding a particular instance of your data.
-
-
-### Note
-
-Make sure you have the `pdf` file present in your directory
-from which you want to extract the information.
-
-
- 
-
-First, we have to install the `pyPdf` module, as follows:
-
-
-```
-pip install pyPdf
-```
-
-Now, we will write a `metadata_example.py` script and we will
-see how we get the metadata information from it. We are going to write
-this script in Python 2:
-
-
-```
-import pyPdf
-def main():
-            file_name = '/home/jovyan/sample_pdf.pdf'
-            pdfFile = pyPdf.PdfFileReader(file(file_name,'rb'))
-            pdf_data = pdfFile.getDocumentInfo()
-            print ("----Metadata of the file----")
-            for md in pdf_data:
-                        print (md+ ":" +pdf_data[md])
-if __name__ == '__main__':
-            main()
-```
-
-Run the script as follows:
-
-
-```
-student@ubuntu:~$ python metadata_example.py
-----Metadata of the file----
-/Producer:Acrobat Distiller Command 3.0 for SunOS 4.1.3 and later (SPARC)
-/CreationDate:D:19980930143358
-```
-
-In the preceding script, we used the `pyPdf` module of Python
-2. First, we created a `file_name` variable that stores the
-path of our `pdf`. Using `PdfFileReader()`, data
-gets read. The `pdf_data` variable will hold the information
-about your `pdf`. Lastly, we wrote a for loop to get the
-metadata information.
 
 
 
