@@ -5,7 +5,7 @@ setuptools.setup(
     version="1.0.0",
     author="Author Name",
     author_email="author@email.com",
-    description="packt example package",
+    description="fenago example package",
     long_description="This is the longer description and will appear in the web.",
     packages=setuptools.find_packages(),
     classifiers=[

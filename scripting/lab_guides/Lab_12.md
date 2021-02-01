@@ -196,46 +196,7 @@ class subprocess.Popen(args, bufsize=0, executable=None, stdin=None, stdout=None
               startupinfo=None, creationflags=0)
 ```
 
-Let\'s look at each argument:
 
-
--   `args`:It can be a sequence of program
-    arguments or a single string. If `args` is a sequence, the
-    first item in args is executed. If args is a string, it recommends
-    to pass args as a sequence.
--   `shell`: The shell argument is by default set to
-    `False` and it specifies whether to use shell for
-    execution of the program. If shell is `True`, it
-    recommends to pass args as a string. In Linux, if
-    `shell=True`, the shell defaults to `/bin/sh`.
-    If `args` is a string, the string specifies the command to
-    execute through the shell.
--   `bufsize`: If `bufsize` is `0` (by
-    default, it is `0`), it means unbuffered and if
-    `bufsize` is `1`, it means line buffered. If
-    `bufsize` is any other positive value, use a buffer of the
-    given size. If `bufsize` is any other negative value, it
-    means fully buffered.
--   `executable`: It specifies that the replacement program to
-    be executed. 
--   `stdin`, `stdout`, and `stderr`: These
-    arguments define the standard input, standard output, and standard
-    error respectively. 
--   `preexec_fn`: This is set to a callable
-    object and will be called just before the child is executed in the
-    child process.
--   `close_fds`:In Linux, if
-    `close_fds` is true, all file descriptors except
-    `0`, `1`, and `2` will be closed
-    before the child process is executed. In Windows, if
-    `close_fds` is `true` then the child process
-    will inherit no handles. 
--   `env`:If the value is not
-    `None`, then mapping will define environment variables for
-    new process.
--   `universal_newlines`:If the value is
-    `True` then `stdout` and `stderr` will
-    be opened as text files in newlines mode.
 
 
 Now, we are going to see an example of `subprocess.Popen()`.

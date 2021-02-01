@@ -26,21 +26,14 @@ reading data as the output:
 
 1.  Open a new Jupyter Notebook.
 
-2.  Now, copy the `text` file from the URL
-    (<http://www.gutenberg.org/cache/epub/37431/pg37431.txt>), save it to a local folder as
-    `pg37431.txt`, and remember where it is located.
+2.  Text file <http://www.gutenberg.org/cache/epub/37431/pg37431.txt> has been downloaded in a local folder:
+    `pg37431.txt`
 
-3.  Upload the file to your Jupyter Notebook by clicking on the
-    `Upload` button in the top-right corner. Select the
-    `pg37431.txt` file from your local folder, and then click
-    on the `Upload` button again to store it in the same
-    folder where your Jupyter Notebook runs:
+3.  Verify by opening file in jupyter browser.
 
     
 ![](./images/C13963_04_01.jpg)
 
-
-    Caption: The Upload button on the Jupyter Notebook
 
 4.  Now, you should extract the content of the file using Python code.
     Open a new Jupyter notebook file and type the following code into a

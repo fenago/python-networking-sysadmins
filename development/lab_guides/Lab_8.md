@@ -855,23 +855,6 @@ Creating a PIP Package
 ======================
 
 
-When you are working with Python code, you need to differentiate between
-the **source code tree**, the **source distributions** (**sdist**), and
-a **binary distribution** (wheels for example which is explained ahead).
-The folder where you work on the code is known as the source code tree,
-which is essentially how it is presented in the folder. This also
-contains Git files, configuration files, and others. The source
-distribution is a way to package our code so that it can be executed and
-installed on any machine---it just contains all the source code without
-any development-related files. A binary distribution is similar to
-source distribution, but it comes with the files ready to be installed
-on the system---there is no execution needed in the client host. Wheels
-are a particular standard for binary distributions that replace the old
-format, Python eggs. When we consume Python wheels we just get a file
-that is ready to be installed without the need of any compilation or
-build step, just ready to be consumed. This is especially useful for
-Python packages with C extensions.
-
 When you want to distribute our code to users, you need to create source
 or binary distributions and then upload them to a repository. The most
 common Python repository is `PyPI`, which allows users to
