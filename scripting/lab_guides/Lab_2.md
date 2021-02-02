@@ -26,43 +26,6 @@ In this lab, you\'ll learn about the following:
 
 
 
-What is debugging?
-------------------------------------
-
-
-
-Debugging is a process that resolves the issues that occur in your code and prevent your software from
-running properly. In Python, debugging is very easy. The Python debugger
-sets conditional breakpoints and debugs the source code one line at a
-time. We\'ll debug our Python scripts using a `pdb` module
-that\'s present in the Python standard library.
-
-
-
-### Python debugging techniques
-
-
-
-To better debug a Python program, various
-techniques are available. We\'re going to look at four techniques for
-Python debugging:
-
-
--   `print()` statement: This is the simplest way of
-    knowing what\'s exactly happening so you
-    can check what has been executed.
--   **`logging`**: This is like a `print`
-    statement but with more contextual
-    information so you can understand it fully.
--   **`pdb`** debugger: This is a commonly used
-    debugging technique. The advantage of
-    using `pdb` is that you can use `pdb` from the
-    command line, within an interpreter, and within a program.
--   IDE debugger: IDE has an integrated debugger. It allows developers
-    to execute their code and then the developer can inspect while the
-    program executes.
-
-
 Error handling (exception handling)
 -----------------------------------------------------
 
@@ -115,10 +78,6 @@ handle the exceptions.
 Whenever errors occur in your Python program, exceptions are raised. We
 can also forcefully raise an exception using `raise` keyword.
 
-Now we are going to see a `try…except` block that handles an
-exception. In the `try` block, we will write a code that may
-generate an exception. In the `except` block, we will write a
-solution for that exception.
 
 The syntax for `try…except` is as follows:
 
@@ -552,23 +511,6 @@ measure the performance of. So, we can easily define the setup code as
 well as the code snippet on which we want to perform the test
 separately. The main code runs 1 million times, which is the default
 time, whereas the setup code runs only once.
-
-
-
-Making programs run faster
---------------------------------------------
-
-
-
-There are various ways to make your Python programs run faster, such as the following:
-
-
--   Profile your code so you can identify the bottlenecks
--   Use built-in functions and libraries so the interpreter doesn\'t
-    need to execute loops
--   Avoid using globals as Python is very slow in accessing global
-    variables
--   Use existing packages
 
 
 

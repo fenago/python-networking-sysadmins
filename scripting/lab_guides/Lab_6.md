@@ -4,7 +4,6 @@ Lab 6. File Archiving, Encrypting, and Decrypting
 --------------------------------------------------------------
 
 
-
 In the previous lab, we learned about handling files, directories,
 and data. We also learned about the `tarfile` module. In this
 lab, we\'ll learn about file archiving, encryption, and decryption.
@@ -69,12 +68,7 @@ Run the program and you\'ll get the following output:
 
 ```
 $ python3 shutil_make_archive.py
-Archive contents:
-work
-work/bye.py
-work/shutil_make_archive.py
-work/welcome.py
-work/hello.py
+
 ```
 
 In the preceding example, to create an archive file, we used the
@@ -200,29 +194,19 @@ Run the script and you will get the following output:
 
 ```
 student@ubuntu:~/work$ python3 add_to_archive.py
+
 Output :
 creating archive
+
 Archive contents:
 work
-work/bye.py
-work/shutil_make_archive.py
-work/check_archive_file.py
-work/welcome.py
-work/add_to_archive.py
-work/shutil_unpack_archive.py
-work/hello.py
+work/work1_1.txt
+work/work1_2.txt
 adding sample.txt
 contents:
-['work', 'work/bye.py', 'work/shutil_make_archive.py', 'work/check_archive_file.py', 'work/welcome.py', 'work/add_to_archive.py', 'work/shutil_unpack_archive.py', 'work/hello.py', 'sample.txt']
+['work', 'work/work1_1.txt', 'work/work1_2.txt', 'sample.txt']
 ```
 
-In this example, first we created an archive file using
-`shutil.make_archive()` and then we printed the contents of
-the archived file. We then created a `sample.txt` file in the
-next statement. Now, we want to add that `sample.txt` in the
-already created `work.tar`. Here, we used the append
-mode, `a`. And next, we are again displaying the contents of
-the archived file.
 
 Now, we will learn about how we can read the metadata from an archive
 file. The `getmembers()` function will load the metadata of
@@ -247,28 +231,7 @@ output:
 
 ```
 student@ubuntu:~/work$ python3 read_metadata.py
-Output:
-work/bye.py
-Size : 30 bytes
-Type : b'0' 
-work/shutil_make_archive.py
-Size : 243 bytes
-Type : b'0'
-work/check_archive_file.py
-Size : 233 bytes
-Type : b'0'
 
-work/welcome.py
-Size : 48 bytes
-Type : b'0'
-
-work/add_to_archive.py
-Size : 491 bytes
-Type : b'0'
-
-work/shutil_unpack_archive.py
-Size : 279 bytes
-Type : b'0'
 ```
 
 Now, we will extract the contents from an archive using
@@ -300,13 +263,6 @@ your extracted files.
 
 ZIP creation
 ------------------------------
-
-
-
-In this section, we are going to work with ZIP files. We will learn
-about the `zipfile` module of `python`, how to
-create ZIP files, how to test whether an entered filename is a valid
-`zip` filename or not, reading the metadata, and so on.
 
 First, we will learn how to create a `zip` file using
 the `make_archive()` function of the `shutil`
@@ -351,12 +307,6 @@ Run the script as follows:
 
 ```
 student@ubuntu:~$ python3 check_zip_file.py
-Output :
-hello.py          False
-work.zip         True
-welcome.py     False
-sample.txt       False
-test.zip            True
 ```
 
 In this example, we have used a `for` loop, where we are
@@ -398,30 +348,7 @@ Execute the script as follows:
 
 ```
 student@ubuntu:~$ python3 read_metadata.py
-Output:
-sample.txt
-System         : Unix
-Zip Version    : 20
-Compressed     : 2 bytes
-Uncompressed   : 0 bytes
 
-bye.py
-System         : Unix
-Zip Version    : 20
-Compressed     : 32 bytes
-Uncompressed   : 30 bytes
-
-extract_contents.py
-System         : Unix
-Zip Version    : 20
-Compressed     : 95 bytes
-Uncompressed   : 132 bytes
-
-shutil_make_archive.py
-System         : Unix
-Zip Version    : 20
-Compressed     : 160 bytes
-Uncompressed   : 243 bytes
 ```
 
 To get the metadata information about the
@@ -526,17 +453,13 @@ Summary
 -------------------------
 
 
-
 In this lab, we learned about creating and extracting archived
 files. Archiving plays an important role in managing files, directories,
 and data. It also stores the files and directories into a single file. 
 
 We learned in detail about the `tarfile` and
 `zipfile` Python modules that enable you to create, extract,
-and test archive files. You will be able to add a new file into the
-already archived file, read metadata, extract the files from an archive.
-You also learned about file encryption and decryption using
-the `pyAescrypt` module. 
+and test archive files.
 
 In the next lab, you will learn about text processing and regular
 expressions in python. Python has a very powerful library called regular

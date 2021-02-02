@@ -111,24 +111,6 @@ Whenever you run your test script, you have three possible test results:
 
 
 
-Methods used in unit testing
-----------------------------------------------
-
-
-
-Whenever we use `unittest`, there are some methods we use in our script. These methods are the
-following:
-
-
--   `assertEqual()` and `assertNotEqual()`: This
-    checks for an expected result
--   `assertTrue()` and `assertFalse()`: This
-    verifies a condition
--   `assertRaises()`: This verifies that a specific exception
-    gets raised
--   `setUp()` and `tearDown()`: This defines
-    instructions that are executed before and after each test method
-
 
 You can use the `unittest` module from the command line as
 well. So, you can run the previous test script as follows:
@@ -185,13 +167,6 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
- 
-
- 
-
- 
-
- 
 
 Run the test script as follows:
 

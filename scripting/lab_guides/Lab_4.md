@@ -21,20 +21,10 @@ In this lab, we will cover the following topics:
 
 
 
-Accepting input by redirection, pipe, and input files
------------------------------------------------------------------------
+#### Accepting input by redirection, pipe, and input files
 
 
-For accepting input by redirection, we use
-`stdin`. `pipe` is another form of redirection. This concept means providing the output of one program as the input to another
-program. We can accept input by external files as well as by using
-Python.
-
-
-
-### Input by redirection
-
-
+**Input by redirection**
 
 `stdin` and `stdout` are objects created by the `os` module. We\'re going to write
 a script in which we will use
@@ -91,9 +81,7 @@ way to write on the Terminal
  
 
 
-### Input by pipe
-
-
+**Input by pipe**
 
 Pipe is another form of redirection. This technique is used to pass information from one program to another. The `|` symbol denotes pipe. By using
 the pipe technique, we can use more than two commands in such a way that
@@ -121,13 +109,6 @@ Output:
 7
 ```
 
-In the preceding script, `stdin` is a keyboard input. We are
-performing a `floor` division on the number we enter at
-runtime. The floor division returns only the integer part of the
-quotient. When we run the program, we pass `15` followed by
-the pipe `|` symbol, and then our script name. So, we are
-providing `15` as input to our script. So the floor division
-is performed and we get the output as `7`.
 
 We can pass multiple input to our script. So, in the following
 execution, we have passed multiple input values as `15`,
@@ -153,8 +134,7 @@ for `15`, `45` and `20` as `7`,
 
 
 
-### Input by input file
-
+**Input by input file**
 
 
 In this section, we are going to learn about
@@ -267,11 +247,6 @@ Executing external commands and getting their output
 
 
 
-In this section, we are going to learn about
-Python\'s subprocess module. Using `subprocess`, it\'s easy to
-spawn new processes and get their return
-code, execute external commands, and start new applications.
-
 We are going to see how we can execute external commands and get their
 output in Python by using the `subprocess` module. We will
 create a script called `execute_external_commands.py` and
@@ -297,12 +272,6 @@ Run the program and you will get the following output:
 
 ```
 $ python3 execute_external_commands.py
-Output:
-1.py     accept_by_pipe.py      sample_output.txt       sample.txt
-accept_by_input_file.py         execute_external_commands.py         output.txt        sample.py
-Sample.txt file created
-1.py     accept_by_input_file.py         accept_by_pipe.py execute_external_commands.py  output.txt            sample_output.txt       sample.py
-Sample.txt file deleted
 ```
 
 
@@ -332,33 +301,6 @@ Execute the script as follows:
 student@ubuntu:~$ python3 capture_output.py
 ```
 
-On execution, we will receive the following output:
-
-
-```
-Output:
-returncode: 0
-191 bytes in stdout:
-1.py
-accept_by_input_file.py
-accept_by_pipe.py
-execute_external_commands.py
-getpass_example.py
-ouput.txt
-output.txt
-password_prompt_again.py
-sample_output.txt
-sample.py
-capture_output.py
-```
-
-In the preceding script, we imported the subprocess module of Python,
-which helps in capturing the output. The subprocess module is used for
-creating new processes. It also helps in connecting input/output pipes
-and getting return code. `subprocess.run()` will run the
-command passed as an argument. `Returncode` will be the exit
-status of your child process. In the output, if you get return code as
-`0`, it indicates it ran successfully.
 
 
 
@@ -403,13 +345,6 @@ Password:
 Password entered: abcd
 ```
 
- 
-
- 
-
- 
-
- 
 
 
 2.  We will provide a prompt for entering a password. So, create a
@@ -479,17 +414,7 @@ Enter your password:
 The password entered is incorrect!!
 ```
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
 
 Here, we have written a script that never asks again to enter a password
 if we write a wrong password.
@@ -533,17 +458,6 @@ Welcome!!!
 Reading configuration files
 ---------------------------------------------
 
-
-
-In this section, we are going learn about
-the `configparser` module of Python. By using
-the `configparser` module, you can manage user-editable
-configuration files for the application.
-
-The common use of these configuration files is that users or system
-administrators can edit the files using a simple text editor to set
-application defaults and then the application will read and, parse them
-and act based on the contents written in them.
 
 To read a configuration file, `configparser` has
 the `read()` method. Now, we will write a simple script named
@@ -625,13 +539,6 @@ that are present and missing.
 Adding logging and warning code to scripts
 ------------------------------------------------------------
 
-
-
-In this section, we will learn about the
-logging and warnings modules of Python. The
-logging module will keep a track of events occurring within a program.
-The warnings module warns the programmers about the changes made in the
-language as well as the libraries.
 
 Now, we are going to see a simple logging example. We will write a
 script called `logging_example.py` and write the following
@@ -895,12 +802,6 @@ Creating abcd/sample_example.txt
 Cleaning up
 ```
 
-When you create a directory using `mkdir()`, all of the parent
-directories must be already created. But, when you create a directory
-with `makedirs()` , it will create any directory, which is
-mentioned in a path that doesn\'t exist. `unlink()` will
-remove the file path and `rmdir()` will remove the directory
-path.
 
 
 ### Examining the content of a filesystem
@@ -924,8 +825,6 @@ Run the script as follows:
 
 ```
 $ python3 list_dir.py /home/jovyan/
-
-['.ICEauthority', '.bash_history', '.bash_logout', '.bashrc', '.cache', '.config', '.gnupg', '.local', '.mozilla', '.pam_environment', '.profile', '.python_history', '.ssh', '.sudo_as_admin_successful', '.viminfo', '1.sh', '1.sh.x', '1.sh.x.c', 'Desktop', 'Documents', 'Downloads', 'Music', 'Pictures', 'Public', 'Templates', 'Videos', 'examples.desktop', 'execute_external_commands.py', 'log.txt', 'numbers.txt', 'python_learning', 'work']
 ```
 
 So, by using `listdir()`, you can list of all the content of

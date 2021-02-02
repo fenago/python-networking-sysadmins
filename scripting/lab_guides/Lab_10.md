@@ -340,30 +340,23 @@ First, navigate to your desired directory and run the following command:
 student@ubuntu:~/Desktop$ python3 -m http.server 9000
 ```
 
-
- 
-
 Now open your browser and write `localhost:9000` in your
 address bar and press [*Enter*]. You will get the output
 following:
 
 
 ```
-student@ubuntu:~/Desktop$ python3 -m http.server 9000
+(base) root@2e2c19fa7dc2:~/work/python-networking-sysadmins# python3 -m http.server 9000
+
+
 Serving HTTP on 0.0.0.0 port 9000 (http://0.0.0.0:9000/) ...
-127.0.0.1 - - [23/Nov/2018 16:08:14] code 404, message File not found
-127.0.0.1 - - [23/Nov/2018 16:08:14] "GET /Downloads/ HTTP/1.1" 404 -
-127.0.0.1 - - [23/Nov/2018 16:08:14] code 404, message File not found
-127.0.0.1 - - [23/Nov/2018 16:08:14] "GET /favicon.ico HTTP/1.1" 404 -
-127.0.0.1 - - [23/Nov/2018 16:08:21] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [23/Nov/2018 16:08:21] code 404, message File not found
-127.0.0.1 - - [23/Nov/2018 16:08:21] "GET /favicon.ico HTTP/1.1" 404 -
-127.0.0.1 - - [23/Nov/2018 16:08:26] "GET /hello/ HTTP/1.1" 200 -
-127.0.0.1 - - [23/Nov/2018 16:08:26] code 404, message File not found
-127.0.0.1 - - [23/Nov/2018 16:08:26] "GET /favicon.ico HTTP/1.1" 404 -
-127.0.0.1 - - [23/Nov/2018 16:08:27] code 404, message File not found
-127.0.0.1 - - [23/Nov/2018 16:08:27] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [02/Feb/2021 09:54:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [02/Feb/2021 09:54:34] "GET / HTTP/1.1" 200 -
 ```
+
+**Note:** You can also verify using curl: `curl localhost:9000`
+
+![](./images/curl.PNG)
 
 
 The ftplib module
@@ -427,19 +420,14 @@ You should get the following output:
 
 
 ```
-Downloading...hello
-Downloading...hello.c
-Downloading...sample.txt
-Downloading...strip_hello
-Downloading...test.py
+FileName...1000GB.zip
+FileName...100GB.zip
+FileName...100KB.zip
+FileName...100MB.zip
+FileName...10GB.zip
+FileName...10MB.zip
+...
 ```
-
-In the preceding example, we retrieved multiple files from the host by
-using the `ftplib` module. First, we mentioned the IP address,
-username, and password of the other machine. To get all the files from
-the host, we used the `ftp.nlst()` function, and to download
-those files to our computer, we used the `ftp.retrbinary()`
-function.
 
 
 ### Getting a welcome message using getwelcome():
@@ -525,18 +513,18 @@ You will get the following output:
 
 ```
 211-FTP server status:
-     Connected to ::ffff:192.168.2.109
-     Logged in as student
-   TYPE: ASCII
+     Connected to ::ffff:52.226.78.180
+     Logged in as ftp
+     TYPE: ASCII
      No session bandwidth limit
      Session timeout in seconds is 300
      Control connection is plain text
      Data connections will be plain text
-     At session startup, client count was 1
+     At session startup, client count was 22
      vsFTPd 3.0.3 - secure, fast, stable
 211 End of status
 
-257 "/home/jovyan" is the current directory
+257 "/" is the current directory
 ```
 
 In the preceding code, we first mentioned the IP address, username, and
