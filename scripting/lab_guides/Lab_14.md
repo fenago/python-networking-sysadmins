@@ -26,16 +26,6 @@ In this lab, you will learn the following:
 Parsing complex log files
 --------------------------------------------
 
-
-
-First, we are going to examine the concept of
-parsing complex log files. Parsing log files is a challenging task
-because most log files are in plain text format, and that format does
-not follow any rules. Those files may be modified without showing any
-warning. The user can decide what kind of data they are going to store
-in a log file and in which format, as well as who is going to develop
-the application.
-
 Before moving on to an example of log parsing or changing configurations
 in a log file, first we have to understand what we have got in a typical
 log file. According to that we have to decide, we will learn how to
@@ -43,18 +33,8 @@ manipulate or get the information from it. We can also look for common
 terms in the log file so that we can use those common terms to fetch
 data.
 
- 
 
-Generally, you will see that most of the content generated in a log file
-is by the application containers and also either the entries of system
-access state (in other words, logging off and logging on) or the entries
-of a system accessed over a network. Therefore, when your system is
-accessed over a network remotely, the entry of such a remote connection
-will be saved into a log file. Let\'s take an example for such
-condition. We already have a file named `access.log`  with
-some log information. 
-
-So, let\'s create a `read_apache_log.py`script and write the
+Let\'s create a `read_apache_log.py`script and write the
 following content in it:
 
 
@@ -147,49 +127,6 @@ Available IP Address in log file => 142.27.64.3 Count => 7
 ……
 ```
 
-In the preceding example, we created the Apache log parser to determine
-some specific IP addresses with their number of requests on your server.
-So, it is clear that we don\'t want entire log entries in the Apache log
-file, we just want to fetch IP addresses from the log file. To do that,
-we have to define a pattern to search IP addresses, and we can do that
-by using regular expressions. Because of that, we imported
-the `re` module. Then we imported the `Collection`
-module as the alternative to Python\'s built-in datatypes,
-`dict`, `list`, `set`, and
-`tuple`. This module has specialized container datatypes.
-After importing the required modules, we write a pattern using a regular
-expression to match specific conditions to map IP addresses from the log
-file.
-
-In that matching pattern, `\d` can be any numeric digit
-between `0` to `9` and `\r` stands for raw
-string. Then, we opened the Apache log file named `access.log`
-and read it. After that, we applied a regular expression condition on
-the Apache log file, then uses the `counter` function of
-`collection` module to get a count of each IP address that we
-are fetching on the basis of the `re` conditions. Finally, we
-printed the result of the operation, as we can see in the output.
-
-
-
-The need for exceptions
-------------------------------------------
-
-
-
-In this section, we are going to look at the need for exceptions in
-Python programming. The normal program flow consists of events and
-signals. The term exception revels that there is something wrong with
-your program. These exceptions can be of any type, such as zero division
-error, import error, attribute error, or assertion error. These
-exceptions will occur whenever the specified functions cannot perform
-their tasks properly. The moment the exception occurs the program
-execution stops and the interpreter will proceed with the exception
-handling process. The exception handling process consists of writing
-your code in  a `try…except` block. The reason the exception
-handling is that something unexpected happened in your program.
-
- 
 
 
 
@@ -247,87 +184,18 @@ After running the program, you get the output as follows:
 file not found. Please check whether the file is present in your directory or not.
 ```
 
- 
-
- 
-
-In this example, we are trying to read a file that is not present in our
-directory. But, as we used a file exception technique in this example,
-we put our code in `try:` and `except:` blocks. So,
-if any error or exception occurs in a `try:` block, it will
-skip that error and execute the code in an `except:` block. In
-our case, we just put a `print` statement in an
-`except:` block. Therefore, after running the script, when the
-exception occurs in the `try:` block, it skips that exception
-and executes the code in the `except:` block. So,
-the`print`statement in the `except` block gets
-executed, as we can see in the previous output.
-
-
-
-Tricks for parsing different files
------------------------------------------------------
-
-
-
-In this section, we are going to learn about the tricks to use to parse
-different files. Before we start with the actual parsing, we must read
-the data first. You need to understand where
-you will be getting all the data from. But, you must also remember all
-the log files come in different sizes. To make your task simpler, here
-is a list to follow:
-
-
--   Remember the log files can be either plain text or compressed.
--   All the Log files have a `.log` extension for a plain text
-    file and `log.bz2` for a `bzip2` file.
--   You should process the set of files based on their name.
--   All the parsing of log files must be combined into a single report.
--   The tool you are using must operate on all files, from a specified
-    directory or from different directories. Log files from all
-    sub-directories should also be included.
 
 
 
 Error log
 ----------------------------
 
-
-
 In this section, we are going to learn about the error log. The related
 directives for the error log are as follows:
-
 
 -   `ErrorLog`
 -   `LogLevel`
 
-
-The location and the name of server log files are set by the `ErrorLog` directive. It is the most
-important log file. The Apache `httpd` sends the information
-in this and also records produced while processing. Whenever a problem
-occurs with the server, this will be the first place to look. It
-contains the details of the things that went wrong and the process of
-fixing it.
-
- 
-
-The error log is written into a file. On Unix systems, the errors can be
-sent to `syslog` by the server or you can pipe them to your
-program. The first thing in that log entry is the date and time of the
-message. The second entry records the severity of the error.
-
-The `LogLevel` directive handles the errors sent to the error
-log by restricting the severity level. The third entry contains the
-information about the client who generated the error. That information
-will be the IP address. The next will be the message itself. It contains
-the information that the server has been configured to deny the client
-access. The server will then report the filesystem path of the requested
-document.
-
-The various types of message can appear in the error log files. The
-error log file also contains the debugging output from CGI scripts.
-Whatever the information is written into the `stderr` will be
-directly copied to the error log.
 
 The error log file is not customizable. The entries in the error log
 that deals with the requests will have corresponding entries in the
@@ -346,20 +214,12 @@ Access log
 -----------------------------
 
 
-
 In this section, you are going to learn about
 the access log. The server access log will record all the requests
 processed by the server. The `CustomLog` directive controls
 the location and content of the access log. The
 `LogFormat` directive is used to select the contents of the
 logs.
-
-Storing the information in the access log means starting log management.
-The next step will be analyzing the information that helps us get useful
-statistics. The Apache `httpd` has various versions, and these
-versions have used some other modules and directives to control access
-logging. You can configure the format of the access log. This format is
-specified using a format string.
 
 
 
@@ -377,23 +237,6 @@ access log:
              CustomLog logs/access_log nick_name
 ```
 
- 
-
-This string will define a nickname and then it will associate that
-nickname with the log format string. The log format string is made of
-percent directives. Each percent directive tells the server to log
-specific information. This string may contain literal characters. Those
-characters will get copied directly in log output.
-
-The `CustomLog` directive will set up a new log file with the
-help of a defined [*nickname*]. The filename for the access
-log is relative to the `ServerRoot`, unless it begins with a
-slash.
-
-The configuration we stated previously will write the log entries in a
-**Common Log Format** (**CLF**). This is a
-standard format and can be produced by many different web servers. Many
-log analysis programs read this log format.
 
 Now, we will see what each percent directive means:
 
@@ -419,21 +262,7 @@ For the `day` parameter, it takes two digits. For
 `month`, we have to define three letters. For year, as the
 year has four characters, we have to take four digits. Now after
 `day`, `month`, and `year`, we have to
-take two digits each for `hour`, `minute`, and
-`seconds`.
-
-
--   `\"%r\"`: This term is used as the request
-    line, which is given in double quotes from the client. This request
-    line has useful information. The request client uses the
-    `GET` method and the protocol used is HTTP.
--   `%>s`: This term defines the status code for the client.
-    The status code is very important and useful, because it indicates
-    whether the request sent by the client is successfully made to the
-    server or not.
--   `%b`: This term defines the total size of the object when
-    it returns to the client. This total size does not include the size
-    of the response header.
+take two digits each for `hour`, `minute`, and `seconds`.
 
 
 
@@ -453,7 +282,7 @@ filesystem as shown here:
 
 In the preceding screenshot, we can easily see the different types of
 log files (for instance, authentication log file `auth.log`,
-system log file `syslog`, and kernel log `kern.log`)
+system log file `syslog`, and kernel log `dpkg.log`)
 available for different operations entries. As we perform operations on
 Apache log files, as shown previously, we can also perform the same kind
 of operations on local log files. Let\'s see an example for parsing one
@@ -462,7 +291,7 @@ a `simple_log.py`script and write the following content in it:
 
 
 ```
-f=open('/var/log/kern.log','r')
+f=open('/var/log/dpkg.log','r')
 
 lines = f.readlines()
 for line in lines:
@@ -471,29 +300,13 @@ for line in lines:
 f.close()
 ```
 
-Run the script and you will get the output as follows:
+Run the script as follows:
 
 
 ```
 student@ubuntu:~$ python3 simple_log.py
-Output:
- ['Dec', '26', '14:39:38', 'ubuntu', 'NetworkManager[795]:', '<info>', '[1545815378.2891]', 'device', '(ens33):', 'state', 'change:', 'prepare', '->', 'config', '(reason', "'none')", '[40', '50', '0]']
-['Dec', '26', '14:39:38', 'ubuntu', 'NetworkManager[795]:', '<info>', '[1545815378.2953]', 'device', '(ens33):', 'state', 'change:', 'config', '->', 'ip-config', '(reason', "'none')", '[50', '70', '0]']
-['Dec', '26', '14:39:38', 'ubuntu', 'NetworkManager[795]:', '<info>', '[1545815378.2997]', 'dhcp4', '(ens33):', 'activation:', 'beginning', 'transaction', '(timeout', 'in', '45', 'seconds)']
-['Dec', '26', '14:39:38', 'ubuntu', 'NetworkManager[795]:', '<info>', '[1545815378.3369]', 'dhcp4', '(ens33):', 'dhclient', 'started', 'with', 'pid', '5221']
-['Dec', '26', '14:39:39', 'ubuntu', 'NetworkManager[795]:', '<info>', '[1545815379.0008]', 'address', '192.168.0.108']
-['Dec', '26', '14:39:39', 'ubuntu', 'NetworkManager[795]:', '<info>', '[1545815379.0020]', 'plen', '24', '(255.255.255.0)']
-['Dec', '26', '14:39:39', 'ubuntu', 'NetworkManager[795]:', '<info>', '[1545815379.0028]', 'gateway', '192.168.0.1']
 ```
 
-In the preceding example, first we created one simple file object,
-`f`, and opened the `kern.log` file in it with read
-mode. After that, we applied the `readlines()` function over
-`file` object to read the data in the file line-by-line in the
-`for` loop. Then we applied
-the **`split()`** function on each line of the
-kernel log file and then printed the whole file using the
-`print` function, as can be seen in the output.
 
 Like reading the kernel log file, we can also perform various operations
 on it, just like we are going to perform some operations now. Now, we
@@ -505,7 +318,7 @@ and put the following script in it:
 
 
 ```
-f=open('/var/log/kern.log','r')
+f=open('/var/log/dpkg.log','r')
 
 lines = f.readlines()
 for line in lines:
@@ -533,21 +346,6 @@ Output:
 ['26', '14:39:38'] 
 ```
 
-In the preceding example, we just added `[1:3]` next to the
-`split` function, in other words, slicing. A sub-sequence of a
-sequence is known as a slice and the operation that extracts a
-sub-sequence is known as slicing. In our example, we use square brackets
-(`[ ]`) as the slice operator and have two integer values
-inside it, separated by a colon (`:`). The operator
-`[1:3]` returns the part of the sequence from the first
-element to the third element, including the first but excluding the
-last. When we slice any sequence, the sub-sequence we got always has the same type as the original sequence from which
-it was derived. However, the elements of a list (or tuple) can be of any
-type; no matter how we apply slicing over it, the derived slice of a
-list is a list. So, after applying slicing on log file, as a result of
-that we got the output shown previously.
-
-
 
 Summary
 --------------------------
@@ -567,8 +365,6 @@ communication.
 
 Questions
 ----------------------------
-
-
 
 
 1.  What is the difference between runtime and compile time exceptions

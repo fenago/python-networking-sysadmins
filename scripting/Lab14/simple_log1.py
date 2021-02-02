@@ -1,4 +1,4 @@
-f=open('/var/log/kern.log','r')
+f=open('/var/log/dpkg.log','r')
 
 lines = f.readlines()
 for line in lines:
