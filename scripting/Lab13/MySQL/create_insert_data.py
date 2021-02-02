@@ -14,8 +14,8 @@ with con_obj:
 	cur_obj.execute("INSERT INTO books(Name) VALUES('Murder on the Orient Express')")
 	cur_obj.execute("INSERT INTO books(Name) VALUES('The adventures of Sherlock Holmes')")
 	cur_obj.execute("INSERT INTO books(Name) VALUES('Death on the Nile')")
+	cur_obj.execute("COMMIT")
 
 print("Table Created !!")
 print("Data inserted Successfully !!")
-
 

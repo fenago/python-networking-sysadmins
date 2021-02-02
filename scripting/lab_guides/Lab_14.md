@@ -102,32 +102,13 @@ Run the script and you will get the output as follows:
 
 ```
 student@ubuntu:~/work/Lab_15$ python3 parse_ip_address.py
+
+
 Output:
 Reading Apache log file
-Available IP Address in log file => 64.242.88.1 Count => 452
-Available IP Address in log file => 213.181.81.4 Count => 1
-Available IP Address in log file => 213.54.168.1 Count => 12
-Available IP Address in log file => 200.160.249.6 Count => 2
-Available IP Address in log file => 128.227.88.7 Count => 14
-Available IP Address in log file => 61.9.4.6 Count => 3
-Available IP Address in log file => 212.92.37.6 Count => 14
-Available IP Address in log file => 219.95.17.5 Count => 1
-3Available IP Address in log file => 10.0.0.1 Count => 270
-Available IP Address in log file => 66.213.206.2 Count => 1
-Available IP Address in log file => 64.246.94.1 Count => 2
-Available IP Address in log file => 195.246.13.1 Count => 12
-Available IP Address in log file => 195.230.181.1 Count => 1
-Available IP Address in log file => 207.195.59.1 Count => 20
-Available IP Address in log file => 80.58.35.1 Count => 1
-Available IP Address in log file => 200.222.33.3 Count => 1
-Available IP Address in log file => 203.147.138.2 Count => 13
-Available IP Address in log file => 212.21.228.2 Count => 1
-Available IP Address in log file => 80.58.14.2 Count => 4
-Available IP Address in log file => 142.27.64.3 Count => 7
+Available IP Address in log file => 127.0.0.1 Count => 1259
 ……
 ```
-
-
 
 
 ### Analyzing exceptions
@@ -185,87 +166,6 @@ file not found. Please check whether the file is present in your directory or no
 ```
 
 
-
-
-Error log
-----------------------------
-
-In this section, we are going to learn about the error log. The related
-directives for the error log are as follows:
-
--   `ErrorLog`
--   `LogLevel`
-
-
-The error log file is not customizable. The entries in the error log
-that deals with the requests will have corresponding entries in the
-access log. You should always monitor the error log for the problems
-during testing. On Unix systems, you can run the following command to
-accomplish this:
-
-
-```
-$ tail -f error_log
-```
-
-
-
-Access log
------------------------------
-
-
-In this section, you are going to learn about
-the access log. The server access log will record all the requests
-processed by the server. The `CustomLog` directive controls
-the location and content of the access log. The
-`LogFormat` directive is used to select the contents of the
-logs.
-
-
-
-### Common log format
-
-
-
-In this section, we are going to learn about
-common log format. The following syntax shows the configuration for the
-access log:
-
-
-```
-            LogFormat "%h %l %u %t \"%r\" %>s %b" nick_name
-             CustomLog logs/access_log nick_name
-```
-
-
-Now, we will see what each percent directive means:
-
-
--   `%h`: This shows us the IP address of the
-    client who made the request to the web server. If
-    `HostnameLookups` is on, then the server will determine
-    the hostname and will log it in place of the IP address.
--   `%l`: This term is used to indicate that the information
-    is not available for a requested piece.
--   `%u`: This is the user ID of the person who
-    has requested the document. The same value is provided to CGI
-    scripts in the `REMOTE_USER` environment variable.
--   `%t`: This term is used to detect the time
-    at which the processing request of server is finished. The format is
-    as follows:
-
-```
-[day/month/year:hour:minute:second zone]
-```
-
-For the `day` parameter, it takes two digits. For
-`month`, we have to define three letters. For year, as the
-year has four characters, we have to take four digits. Now after
-`day`, `month`, and `year`, we have to
-take two digits each for `hour`, `minute`, and `seconds`.
-
-
-
 Parsing other log files
 ------------------------------------------
 
@@ -282,7 +182,7 @@ filesystem as shown here:
 
 In the preceding screenshot, we can easily see the different types of
 log files (for instance, authentication log file `auth.log`,
-system log file `syslog`, and kernel log `dpkg.log`)
+system log file `syslog`, and dpkg log `dpkg.log`)
 available for different operations entries. As we perform operations on
 Apache log files, as shown previously, we can also perform the same kind
 of operations on local log files. Let\'s see an example for parsing one
@@ -308,7 +208,7 @@ student@ubuntu:~$ python3 simple_log.py
 ```
 
 
-Like reading the kernel log file, we can also perform various operations
+Like reading the log file, we can also perform various operations
 on it, just like we are going to perform some operations now. Now, we
 are going to access content in the kernel log file through indexing. It
 is possible because of the `split` function, as it splits all
@@ -331,19 +231,6 @@ Run the script and you will get the following output:
 
 ```
 student@ubuntu:~$ python3 simple_log1.py
-Output:
-['26', '14:37:20']
-['26', '14:37:20']
-['26', '14:37:32']
-['26', '14:39:38']
-['26', '14:39:38']
-['26', '14:39:38']
-['26', '14:39:38']
-['26', '14:39:38']
-['26', '14:39:38']
-['26', '14:39:38']
-['26', '14:39:38']
-['26', '14:39:38'] 
 ```
 
 

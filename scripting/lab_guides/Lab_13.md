@@ -40,24 +40,7 @@ in your Terminal:
 $ sudo apt install mysql-server
 ```
 
-This command installs the MySQL server and various other packages. While
-installing the package, we are prompted to enter a password for the
-MySQL root account:
-
-
--   The following code is used for checking for the `mysqldb`
-    package to install:
-
-```
-$ apt-cache search MySQLdb
-```
-
-
--   And the following is for installing the Python interface for MySQL:
-
-```
-$ sudo apt-get install python3-mysqldb
-```
+**Note:** mysql-server is already installed. You can start it by running `service mysql start`
 
 
 -   Start mysql database :
@@ -258,18 +241,10 @@ Run the script and you will get the following output:
 
 ```
 student@ubuntu:~/work/mysql_testing$ python3 get_database_version.py
-Output:
-Database version: 5.7.24-0ubuntu0.18.04.1
-```
 
-In the preceding example, we got the database version. For that, first
-we imported the MySQLdb module. Then we wrote the connection string. In
-the connection string, we mentioned our username, password, and database
-name. Next, we created a cursor object that is used for executing a SQL
-query. In `execute()`, we passed an SQL
-query. `fetchone()` retrieves the next row of query result.
-Next, we printed the result. The `close()` method closes the
-database connection.
+Output:
+Database version : 8.0.22-0ubuntu0.20.04.3 
+```
 
 
 ### Creating a table and inserting data
@@ -295,6 +270,7 @@ with con_obj:
             cur_obj.execute("INSERT INTO courses(Name) VALUES('Murder on the Orient Express')")
             cur_obj.execute("INSERT INTO courses(Name) VALUES('The adventures of Sherlock Holmes')")
             cur_obj.execute("INSERT INTO courses(Name) VALUES('Death on the Nile')")
+            cur_obj.execute("COMMIT")
 
 print("Table Created !!")
 print("Data inserted Successfully !!")
@@ -318,22 +294,8 @@ To check whether your table is created successfully or not, open your
 ```
 student@ubuntu:~/work/mysql_testing$ sudo mysql -u root -p
 
-Enter password:
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 6
-Server version: 5.7.24-0ubuntu0.18.04.1 (Ubuntu)
-
-Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 
-mysql>
-mysql>
 mysql> use test;
 Reading table information for completion of table and column names
 You can turn off this feature to get a quicker startup with -A
