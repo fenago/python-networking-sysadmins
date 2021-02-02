@@ -8,9 +8,9 @@ import getpass
 host_name = 'smtp.gmail.com'
 port = 465
 
-sender = 'mansi.joshi990@gmail.com'
+sender = 'pythonmailer12@gmail.com'
 password = getpass.getpass()
-receiver = 'kalpesh7402patil@gmail.com'
+receiver = 'fenagocontainers@gmail.com'
 
 text = MIMEMultipart()
 text['Subject'] = 'Test Attachment'

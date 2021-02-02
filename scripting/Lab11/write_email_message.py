@@ -4,8 +4,8 @@ import getpass
 host_name = "smtp.gmail.com"
 port = 465
 
-sender = 'mansi.joshi990@gmail.com'
-receiver = 'kalpesh7402patil@gmail.com'
+sender = 'pythonmailer12@gmail.com'
+receiver = 'fenagocontainers@gmail.com'
 
 password = getpass.getpass()
 msg = """\

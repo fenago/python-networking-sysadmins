@@ -20,10 +20,15 @@ In this lab, you\'ll learn about the following:
 -   POP3 and IMAP servers
 
 
+#### Gmail Credentials:
+
+**Username:** pythonmailer12@gmail.com
+
+**Password:** sysadmin1234@
+
 
 Email message format
 ---------------------------------------
-
 
 
 In this section, we\'re going to learn about the email message format. Email messages consist of three primary
@@ -35,12 +40,6 @@ components:
 -   The message
 
 
-There are other components also included in the message format, such as
-the subject line, email signatures, and attachments.
-
- 
-
- 
 
 Now, we\'re going to see a simple example of sending a plain text email
 from your Gmail address, in which you\'ll learn about writing an email
@@ -98,17 +97,6 @@ successfully.
 
 
 
-POP3 and IMAP servers
-----------------------------------------
-
-
-
-In this section, you\'ll learn about
-receiving emails via POP and IMAP servers.
-Python offers the `poplib` and `imaplib` libraries
-for receiving emails via Python scripts.
-
-
 
 ### Receiving email using the poplib library
 
@@ -157,13 +145,6 @@ student@ubuntu:~$ python3 number_of_emails.py
 
 As output, you\'ll get however many emails are present in your mailbox.
 
-In the preceding example, first we\'re importing the `poplib`
-library, which is used in Python for the POP3 protocol to receive an
-email securely. Then, we state the specific email server and our email
-credentials---that is, our username and password. After that, we print
-the response message from the server and provide the username and
-password to the POP3 SSL server. After login, we get mailbox stats and
-print them to the Terminal in the form of a number of emails.
 
 Now, we\'re going to write a script to get the latest email. For that,
 create a script, `latest_email.py`, and write the following
@@ -199,14 +180,6 @@ As output, you\'ll get the latest mail you received in your mailbox.
 
  
 
- 
-
-In the preceding example, we imported the `poplib` library
-used in Python to supply the POP3 protocol to receive an email securely.
-After stating the specific email server and the username and password,
-we printined the response message from the server and providing the
-username and password to the POP3 SSL server. Then, we\'re fetching the
-latest email from the mailbox.
 
 Now, we\'re going to write a script to get all of the emails. For that,
 create a script, `all_emails.py`, and write the following
@@ -247,7 +220,6 @@ mailbox.
 ### Receiving email using the imaplib library
 
 
-
 IMAP stands for Internet Message Access Protocol. It\'s used to access
 emails on a remote server through your local
 machine. IMAP allows simultaneous access by multiple
@@ -261,9 +233,6 @@ The IMAP protocol works on two ports:
 -   Port `993`: The encrypted port
 
 
- 
-
- 
 
 Now, we\'re going to see an example using the `imaplib`
 library. Create a script, `imap_email.py`, and write the
@@ -304,7 +273,7 @@ As output, you\'ll get all of the emails from the specified folder.
 In the preceding example, first, we\'re importing the
 `imaplib` library, which is used in Python to receive an email
 securely via the IMAP protocol. Then, we state the specific email server
-and our user credentials---that is, our username and password. After
+and our user credentials that is, our username and password. After
 that, we provide that username and password to the IMAP SSL server.
 We\'re using the `'select('Inbox')'` function over
 `imap_obj` to display messages in the inbox. Then we use a
@@ -334,8 +303,6 @@ In the next lab, you\'ll learn about Telnet and SSH.
 
 Questions
 ----------------------------
-
-
 
 
 1.  What are POP3 and IMAP?

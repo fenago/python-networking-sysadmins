@@ -7,10 +7,10 @@ import getpass
 
 host_name = 'smtp.gmail.com'  # smtp.mail.yahoo.com
 port = 465
-u_name = 'mansi.joshi990@gmail.com'
+u_name = 'pythonmailer12@gmail.com'
 password = getpass.getpass()
-sender = 'Mansi Joshi'
-receivers = ['info@levanatech.com', 'kalpesh7402patil@gmail.com']
+sender = 'Python SystemAdministrator'
+receivers = ['enter-your-email', 'fenagocontainers@gmail.com']
 
 text = MIMEMultipart()
 text['Subject'] = 'Test Attachment'

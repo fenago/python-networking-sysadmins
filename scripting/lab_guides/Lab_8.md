@@ -329,6 +329,18 @@ email to any internet machine with SMTP listener.
 We are going to look at an example. In this example, we will send an
 email containing a simple text from Gmail to the recipients.
 
+
+#### Gmail Credentials:
+
+We will following credentials for sending emails in this lab:
+
+**Username:** pythonmailer12@gmail.com
+
+**Password:** sysadmin1234@
+
+Allow lesssecureapps option has been turned on: https://myaccount.google.com/lesssecureapps 
+
+
 Create a `send_email.py`script and write the following content
 in it:
 
