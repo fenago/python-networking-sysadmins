@@ -1,15 +1,23 @@
 from ftplib import FTP
 
-ftp = FTP('192.168.2.105')
-ftp.login('student','training')
+## Browser Url: ftp://speedtest.tele2.net/
+        
+ftp = FTP("speedtest.tele2.net")
+ftp.login("anonymous", "anonymous")
 
-ftp.cwd('/home/jovyan/work/')
+ftp.cwd("/")
 files = ftp.nlst()
-
 # Print out the files
 for file in files:
-	print("Downloading..." + file)
-	ftp.retrbinary("RETR " + file ,open("/home/jovyan/testing/" + file, 'wb').write)
+    print("FileName..." + file)
+
+filename='512KB.zip'
+
+try:
+    ftp.retrbinary("RETR " + filename ,open(filename, 'wb').write)
+except:
+    print ("Error")
+    
 
 ftp.close()
 

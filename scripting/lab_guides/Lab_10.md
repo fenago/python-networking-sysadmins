@@ -393,22 +393,27 @@ following content in it:
 
 
 ```
-import os
 from ftplib import FTP
+       
+ftp = FTP("speedtest.tele2.net")
+ftp.login("anonymous", "anonymous")
 
-ftp = FTP('your-ftp-domain-or-ip')
-with ftp:
-    ftp.login('your-username','your-password')
-    ftp.cwd('/home/jovyan/work/')
-    files = ftp.nlst()
-    print(files)
-    # Print the files
-    for file in files:
-        if os.path.isfile(file):
-            print("Downloading..." + file)
-            ftp.retrbinary("RETR " + file ,open("/home/jovyan/testing/" + file, 'wb').write)
+ftp.cwd("/")
+files = ftp.nlst()
+# Print out the files
+for file in files:
+    print("FileName..." + file)
+
+filename='512KB.zip'
+
+try:
+    ftp.retrbinary("RETR " + filename ,open(filename, 'wb').write)
+except:
+    print ("Error")
+    
 
 ftp.close()
+
 ```
 
 Run the script as follows:
@@ -455,13 +460,14 @@ it:
 ```
 from ftplib import FTP
 
-ftp = FTP('your-ftp-domain-or-ip')
-ftp.login('your-username','your-password')
+ftp = FTP("speedtest.tele2.net")
+ftp.login("anonymous", "anonymous")
 
 welcome_msg = ftp.getwelcome()
 print(welcome_msg)
 
 ftp.close()
+
 ```
 
 Run the script as follows:
@@ -481,18 +487,6 @@ established.
 ### Sending commands to the server using the sendcmd() function
 
 
-
-In this section, we are going to learn about the `sendcmd()`
-function. We can use the `sendcmd()` function to send a simple
-`string` command to the server to get the
-String response. The client can send FTP
-commands such as `STAT`, `PWD`, `RETR`,
-and `STOR`. The `ftplib` module has multiple methods
-that can wrap these commands. The commands
-can be sent using the `sendcmd()` or `voidcmd()`
-methods. As an example, we are going to send a `STAT` command
-to check the status of a server.
-
 Create a `send_command.py` script and write the following
 content in it:
 
@@ -500,19 +494,19 @@ content in it:
 ```
 from ftplib import FTP
 
-ftp = FTP('your-ftp-domain-or-ip')
-ftp.login('your-username','your-password')
+ftp = FTP("speedtest.tele2.net")
+ftp.login("anonymous", "anonymous")
 
-ftp.cwd('/home/jovyan/')
 s_cmd_stat = ftp.sendcmd('STAT')
 print(s_cmd_stat)
 print()
-
 s_cmd_pwd = ftp.sendcmd('PWD')
 print(s_cmd_pwd)
 print()
 
 ftp.close()
+
+
 ```
 
 Run the script as follows:

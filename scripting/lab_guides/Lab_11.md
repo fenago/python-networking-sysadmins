@@ -22,6 +22,8 @@ In this lab, you\'ll learn about the following:
 
 #### Gmail Credentials:
 
+We will following credentials for sending emails in this lab:
+
 **Username:** pythonmailer12@gmail.com
 
 **Password:** sysadmin1234@

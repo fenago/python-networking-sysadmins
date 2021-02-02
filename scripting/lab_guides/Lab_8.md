@@ -341,6 +341,8 @@ We will following credentials for sending emails in this lab:
 Allow lesssecureapps option has been turned on: https://myaccount.google.com/lesssecureapps 
 
 
+
+
 Create a `send_email.py`script and write the following content
 in it:
 

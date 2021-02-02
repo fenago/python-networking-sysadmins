@@ -1,9 +1,10 @@
 from ftplib import FTP
 
-ftp = FTP('192.168.2.105')
-ftp.login('student','training')
+## Browser Url: ftp://speedtest.tele2.net/
 
-ftp.cwd('/home/jovyan/')
+ftp = FTP("speedtest.tele2.net")
+ftp.login("anonymous", "anonymous")
+
 s_cmd_stat = ftp.sendcmd('STAT')
 print(s_cmd_stat)
 print()
