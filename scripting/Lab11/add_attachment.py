@@ -20,7 +20,7 @@ text['To'] = receiver
 txt = MIMEText('Sending a sample image.')
 text.attach(txt)
 
-f_path = '/home/jovyan/python-networking-sysadmins/scripting/mountain.jpg'
+f_path = '/home/jovyan/work/python-networking-sysadmins/scripting/mountain.jpg'
 with open(f_path, 'rb') as f:
 	img = MIMEImage(f.read())
 
