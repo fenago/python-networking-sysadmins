@@ -13,10 +13,3 @@ By the end of the book, you’ll be able to balance technical and design conside
 * Develop web pages and programs with Python tools and packages
 * Automate essential tasks using Python scripts in real-time execution
 
-
-### The examples of this title has been implemented in the Windows operating system.
-
-### Software Requirement
-You’ll also need the following software installed in advance:
-* **Browser**: Google Chrome, Latest Version
-* **Softwares**: Python 3.7, The Jupyter notebook, Docker

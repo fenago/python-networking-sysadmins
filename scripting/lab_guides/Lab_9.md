@@ -4,7 +4,6 @@ Lab 9. Working with Various Files
 ----------------------------------------------
 
 
-
 In this lab, you will learn about working with various types of
 files, such as PDF files, Excel , CSV , and `txt` files.
 Python has modules for performing operations on these files. You will
@@ -19,7 +18,6 @@ In this lab, the following topics will be covered:
 -   Working with `txt` files
 
 
-
 Working with PDF files
 ----------------------------------------
 
@@ -32,24 +30,8 @@ has a module named `PyPDF2`, that\'s useful to do various
 operations on `pdf` files. It is third-party module which is a
 Python library built as a PDF toolkit.
 
-We must install this module first. To install `PyPDF2`, run
-the following command in your Terminal:
 
-
-```
-pip3 install PyPDF2
-```
-
-Now, we are going to look at some of the operations to work on PDF
-files, such as reading a PDF, getting the number of pages, extracting
-text, and rotating PDF pages.
-
- 
-
-
-
-### Reading a PDF document and getting the number of pages
-
+#### Reading a PDF document and getting the number of pages
 
 
 In this section, we are going read a PDF file
@@ -81,15 +63,9 @@ Following is the output:
 
 
 ```
-Number of pages in pdf :  20
-```
+Number of pages in pdf :  1
 
-In the preceding example, we used the `PyPDF2` module. Next,
-we created a `pdf` file object. `PdfFileReader()`
-will read the created object. After reading the PDF file, we are going
-to get the number of pages of that `pdf` file using
-the `numPages` property. In this case, it is `20`
-pages.
+```
 
 
 ### Extracting text
@@ -106,7 +82,7 @@ following content in it:
 import PyPDF2
 with open('test.pdf', 'rb') as pdf:
     read_pdf = PyPDF2.PdfFileReader(pdf)
-    pdf_page = read_pdf.getPage(1)
+    pdf_page = read_pdf.getPage(0)
     pdf_content = pdf_page.extractText()
     print(pdf_content)
 ```
@@ -118,32 +94,6 @@ Run the script and you will get the following output:
 student@ubuntu:~/work$ python3 extract_text.py
 ```
 
-Following is the output:
-
-
-```
-3Pythoncommands
-9
-3.1Comments........................................
-.9
-3.2Numbersandotherdatatypes........................
-......9
-3.2.1The
-type
-function................................9
-3.2.2Strings.......................................
-10
-3.2.3Listsandtuples................................
-..10
-3.2.4The
-range
-function................................11
-3.2.5Booleanvalues.................................
-.11
-3.3Expressions.....................................
-...11
-3.4Operators.......................................
-```
 
 In the preceding example, we created a file reader object. The
 `pdf` reader object has a function
@@ -195,22 +145,6 @@ Following is the output:
 pdf successfully rotated
 ```
 
-In the preceding example, for the rotation of `pdf`, we first
-create a `pdf` file reader object of the original
-`pdf` file. Then the rotated pages will be written to a new
-`pdf` file . So, for writing to a new `pdf`, we use
-the `PdfFileWriter()` function of the `PyPDF2`
-module. The new `pdf` file will be saved with the name
-`rotated.pdf`. Now, we will rotate the pages of the
-`pdf` file by using the `rotateClockwise()` method.
-Then, using the `addPage()` method, the pages to the rotated
-`pdf`. Now, we have to write those `pdf` pages to a
-new `pdf` file. So, first we have to open the new file object
-(`pdf_out`) and write `pdf` pages to it using the
-`write()` method of the `pdf` writer object. After
-all this, we\'re going to close the original (`test.pdf`) file
-object and the new (`pdf_out`) file object.
-
 
 
 Working with Excel files
@@ -226,39 +160,6 @@ Microsoft Excel.
 Python has different modules: `xlrd` , pandas, and
 `openpyxl` to work with Excel files. In this section, we will
 learn how to handle Excel files using these three modules.
-
-First, we will look at an example using the `xlrd` module. The
-`xlrd` module is used for reading, writing, and modifying
-Excel spreadsheets and doing a lot of work.
-
- 
-
-
-
-### Using the xlrd module
-
-
-
-First, we have to install the `xlrd` module. Run the
-following command in your Terminal to install
-the `xlrd` module:
-
-
-```
-pip3 install xlrd
-```
-
-
-### Note
-
-Note: Make sure you have an Excel file present in your system. I have
-`sample.xlsx` present in my system. So I\'m going to use that
-file throughout this section.
-
-
-We are going to look at how to read an Excel file and how to extract
-rows and columns from the Excel file.
-
 
 
 #### Reading an Excel file
@@ -287,12 +188,6 @@ Run the script and you will get the following output:
 student@ubuntu:~$ python3 read_excel.py
 ```
 
-Following is the output:
-
-
-```
-First Name
-```
 
 In the preceding example, we imported the `xlrd` module to
 read the Excel file. We also mentioned the location of the Excel file.
@@ -626,20 +521,6 @@ student@ubuntu:~/work$ python3 read_multiple.py
 
  
 
- 
-
-Following is the output:
-
-
-```
-Id     First Name Last Name
-   101 John   Smith
-   102 Mary   Williams
-   103 Rakesh Sharma
-   104 Amit   Roy  
-   105 Sandra Ace  
-```
-
 In the preceding example, we are reading the data of three columns by
 using the `range` operation. Then, we read the data from the
 cells `A1 – C6`.
@@ -653,37 +534,6 @@ module.
 Working with CSV files
 ----------------------------------------
 
-
-
-The **CSV** format stands for **Comma Separated
-Values**. The commas are used to separate the fields in a
-record. These are commonly used for importing and exporting the format for spreadsheets and databases.
-
-A CSV file is a plain text file that uses a specific type of structuring
-to arrange tabular data. Python has the  built-in `csv` module
-that allows Python to parse these types of files. The `csv`
-module can be mostly used to work with data that is exported from
-spreadsheets, as well as databases in text file format, with fields and
-records.
-
-The `csv` module has all of the required functions built-in,
-as follows:
-
-
--   `csv.reader`: This function is used to return a
-    `reader` object, which iterates over lines of a CSV file
--   `csv.writer`: This function is used to return a
-    `writer` object, which writes data into CSV file
--   `csv.register_dialect`: This function is used to register
-    a CSV dialect
--   `csv.unregister_dialect`: This function is used to
-    unregister a CSV dialect
--   `csv.get_dialect:` This function is used to returns a
-    dialect with a given name
--   `csv.list_dialects`: This function is used to return all
-    registered dialects
--   `csv.field_size_limit`: This function is used to return
-    the current maximum field size allowed by the parser
 
 
 In this section, we are going to look at `csv.reader` and
@@ -718,22 +568,6 @@ Run the script and you will get the following output:
 student@ubuntu:~$ python3 csv_read.py
 ```
 
-Following is the output:
-
-
-```
-['Region', 'Country', 'Item Type', 'Sales Channel', 'Order Priority', 'Order Date', 'Order ID', 'Ship Date', 'Units Sold']
-['Sub-Saharan Africa', 'Senegal', 'Cereal', 'Online', 'H', '4/18/2014', '616607081', '5/30/2014', '6593']
-['Asia', 'Kyrgyzstan', 'Vegetables', 'Online', 'H', '6/24/2011', '814711606', '7/12/2011', '124']
-['Sub-Saharan Africa', 'Cape Verde', 'Clothes', 'Offline', 'H', '8/2/2014', '939825713', '8/19/2014', '4168']
-['Asia', 'Bangladesh', 'Clothes', 'Online', 'L', '1/13/2017', '187310731', '3/1/2017', '8263']
-['Central America and the Caribbean', 'Honduras', 'Household', 'Offline', 'H', '2/8/2017', '522840487', '2/13/2017', '8974']
-['Asia', 'Mongolia', 'Personal Care', 'Offline', 'C', '2/19/2014', '832401311', '2/23/2014', '4901']
-['Europe', 'Bulgaria', 'Clothes', 'Online', 'M', '4/23/2012', '972292029', '6/3/2012', '1673']
-['Asia', 'Sri Lanka', 'Cosmetics', 'Offline', 'M', '11/19/2016', '419123971', '12/18/2016', '6952']
-['Sub-Saharan Africa', 'Cameroon', 'Beverages', 'Offline', 'C', '4/1/2015', '519820964', '4/18/2015', '5430']
-['Asia', 'Turkmenistan', 'Household', 'Offline', 'L', '12/30/2010', '441619336', '1/20/2011', '3830']
-```
 
 In the preceding program, we opened our `test.csv` file as
 `csv_file`. Then, we used the `csv.reader()`
@@ -743,8 +577,6 @@ look at the second function, `csv.Writer()`
 
 
 ### Writing into a CSV file
-
-
 
 To write data in a `csv` file, we use
 the `csv.writer` module. In this section, we will store some
@@ -799,38 +631,6 @@ function to create, open, close, and write and read text files. To do
 the operations, there are different access modes to govern the type of
 operation possible in an opened file.
 
-The access modes in Python are as follows:
-
-
--   **R****ead Only Mode
-    (**`'r'`**)**: This
-    mode opens a text file for  the purpose. If that file doesn\'t
-    exist, it raises an I/O error. We can also call this mode the
-    default mode in which the file will open.
--   **Read and Write Mode
-    (**`'r+'`**)**: This
-    mode opens a text file for reading as
-    well as writing purposes and raises an I/O error if the file does
-    not exist.
--   **Write Only Mode
-    (**`'w'`**): **This mode will open a
-    text file for writing. It creates the
-    file if the file does not exist and, for existing file, the data is
-    overwritten.
--   **Write and Read Mode
-    (**`'w+'`**)**:  This mode will open
-    a text file for reading and writing. For
-    the existing file, the data is overwritten.
--   **Append Only Mode
-    (**`'a'`**)**:  This mode will open a
-    text file for writing. It creates the
-    file if the file does not exist and the data will be inserted at the
-    end of existing data.
--   **Append and Read Mode
-    (**`'a+'`**)**: This mode will open a
-    text file for reading, as well as writing
-    . It creates the file if the file does not exist and the data will
-    be inserted at the end of the existing data.
 
 
 ### The open() function
@@ -936,19 +736,9 @@ Now, check your current working directory. You\'ll find a
 the file. You will find that the days that we have written in
 the `write()` function will be saved in `test.txt`.
 
-In the preceding program, we\'ve declared the
-`text_file` variable to open a file named
-`test.txt`. The `open` function takes two arguments:
-first, the file that we want to open, and second, the access mode that
-represents the permission or operation that we want to do or apply on
-the file. In our program, we used the `"w"` letter in our
-second argument, which indicates `write`. Then, we
-used **`text_file.close()`** to close the instance
-of the stored `test.txt` file.
 
 
 ### Reading a text file
-
 
 
 Reading a file is as easy as writing from a file. To open a file for reading, we set the second parameter that is the
