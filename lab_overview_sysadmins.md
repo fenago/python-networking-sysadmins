@@ -51,8 +51,8 @@ Labs for this course are available at endpoints shared below. Update `<host-ip>`
 		* http://<host-ip>/lab/workspaces/lab10_Sysadmin_Networking
 11. ##### Handling Emails Using Python Scripting
 		* http://<host-ip>/lab/workspaces/lab11_Sysadmin_Emails
-12. ##### Remote Monitoring of Hosts Over Telnet and SSH
-		* http://<host-ip>/lab/workspaces/lab12_Sysadmin_Monitoring
+12. ##### Statistics Gathering and Reporting
+		* http://<host-ip>/lab/workspaces/lab12_Sysadmin_Statistics
 13. ##### MySQL and SQLite Database Administrations
 		* http://<host-ip>/lab/workspaces/lab13_Sysadmin_Database
 14. ##### Working with Apache and Other Log Files
@@ -61,9 +61,7 @@ Labs for this course are available at endpoints shared below. Update `<host-ip>`
 		* http://<host-ip>/lab/workspaces/lab15_Sysadmin_Communication
 16. ##### Web Scraping - Extracting Useful Data from Websites
 		* http://<host-ip>/lab/workspaces/lab16_Sysadmin_Scraping
-17. ##### Statistics Gathering and Reporting
-		* http://<host-ip>/lab/workspaces/lab17_Sysadmin_Statistics
-		
+	
 
 ### About
 
