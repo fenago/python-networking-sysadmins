@@ -573,6 +573,6 @@ Questions
 Exercises
 ---------
 
-1) Concat student1.csv and student2.csv using pandas library.
-2) Examine the contents of TAR files using tarfile module
+1. Concat student1.csv and student2.csv using pandas library.
+2. Examine the contents of TAR files using tarfile module
 

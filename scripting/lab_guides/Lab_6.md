@@ -408,5 +408,5 @@ and data. It also stores the files and directories into a single file. 
 
 **Exercises**
 
-1) Write the code to to create a `zip` file using the `make_archive()` function of the `shutil` module.
-2) Write the code to decrypt the `sample.txt.aes` file to get the content of the file.
+1. Write the code to to create a `zip` file using the `make_archive()` function of the `shutil` module.
+2. Write the code to decrypt the `sample.txt.aes` file to get the content of the file.

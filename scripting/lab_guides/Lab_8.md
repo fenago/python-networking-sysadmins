@@ -479,5 +479,5 @@ print('str1 * 3 =', str1 * 3)
 Exercises
 ----------
 
-1) Write a program to get name, age and email of a person using sys.stdin.readline().
-2) Write a program to subtract two numbers using input function.
+1. Write a program to get name, age and email of a person using sys.stdin.readline().
+2. Write a program to subtract two numbers using input function.

@@ -765,5 +765,5 @@ Questions
 Exercises
 ----------
 
-1) Write a program to rotate pdf pages by rotateClockwise by `180` and `360` degree.
-2) Write a program to read a text file.
+1. Write a program to rotate pdf pages by rotateClockwise by `180` and `360` degree.
+2. Write a program to read a text file.

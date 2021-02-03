@@ -655,10 +655,10 @@ c) `('we', 'humans')` d) `'we are humans'`
 Exercises
 ----------
 
-1) Apply **textwrap** module functions learned in the lab on following string. Try different values for `width` parameter and check output.
+1. Apply **textwrap** module functions learned in the lab on following string. Try different values for `width` parameter and check output.
 
 "FeNAgO provides zero install cloud based hands-on labs so that you can learn by doing. Learn real skills that are in demand such as: Data Science, Big Data, Cyber Sec, DevOps, DevSecOps, Programming, Blockchain, and much more."
 
-2) Apply **re** module functions learned in the lab on following string.
+2. Apply **re** module functions learned in the lab on following string.
 
 "FeNAgO provides zero install cloud based hands-on labs so that you can learn by doing. Learn real skills that are in demand such as: Data Science, Big Data, Cyber Sec, DevOps, DevSecOps, Programming, Blockchain, and much more."
