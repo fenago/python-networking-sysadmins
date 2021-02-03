@@ -4,14 +4,6 @@ Lab 15. SOAP and REST API Communication
 ----------------------------------------------------
 
 
-
-In this lab, we will look at SOAP and REST API basics. We will also
-look at the Python libraries for SOAP and REST APIs. We are going to
-learn about the Zeep library for SOAP and requests for REST API. You
-will learn to work with the JSON data. We are going to see simple
-examples of working with JSON data, such as converting JSON strings into
-Python objects and converting Python objects into JSON strings.
-
 In this lab, you will learn the following:
 
 
@@ -23,18 +15,6 @@ In this lab, you will learn the following:
 
 
 #### Using libraries for SOAP
-
-
-In this section, we are going to learn about
-Python libraries for SOAP. There are various libraries used for SOAP
-listed here:
-
-
--   `SOAPpy`
--   `Zeep`
--   `Ladon`
--   `suds-jurko`
--   `pysimplesoap`
 
 
 
@@ -72,6 +52,21 @@ simple `Method1` function that is made available by
 arguments and returns a string.
 
 
+Exercise: SOAP
+----------------
+
+Now, create a `soap_example_exercise.py` script and pass different parameters to c.service.Method1 function.
+
+
+Run the script as follows:
+
+
+```
+$ python3 soap_example_exercise.py
+
+```
+
+
 
 What is a RESTful API?
 -----------------------------------------
@@ -81,7 +76,6 @@ What is a RESTful API?
 #### Using standard libraries for RESTful APIs
 
 
-
 In this section, we are going to learn how to
 use RESTful APIs. To do this, we are going to
 use the `requests` and JSON modules of Python. We will see an
@@ -89,12 +83,6 @@ example now. First, we are going to use the `requests` module
 to get the information from an API. We will see `GET` and
 `POST` requests.
 
-First, you must install the `requests` library as follows:
-
-
-```
-            $ pip3 install requests
-```
 
 Now, we will see an example. Create
 a `rest_get_example.py`script and write the following content
@@ -183,9 +171,30 @@ Harry
 HR
 ```
 
-In the preceding example, we have written a code that will covert a JSON
-string to a Python object. The `json.loads()` function is used
-to convert a JSON string to a Python object.
+Exercise: Working with JSON data
+-----------------------------------------------------------------------------
+
+Now, create a `json_to_python_exercise.py` script, use following Json string and print all values.
+
+j_obj =  '{ "Name":"fenago", "Year":2021, "Course":"Python-Networking-Sysadmin"}'
+
+Run the script as follows:
+
+```
+$ python3 json_to_python_exercise.py
+
+```
+
+
+Expected Output:
+
+```
+{'Name': 'fenago', 'Year': 2021, 'Course': 'Python-Networking-Sysadmin'}
+fenago
+2021
+Python-Networking-Sysadmin
+```
+
 
 Now, we are going to see how to convert Python to JSON. For that, create
 a `python_to_json.py`script and write the following code in
@@ -323,4 +332,11 @@ print(json.dumps(boolean_value))
 >> weird_json = '{"x": 1, "x": 2, "x": 3}'
 >>> json.loads(weird_json)
 ```
+
+
+Exercises
+---------
+
+1. Write a program to call c.service.Method1 and pass paramters.
+2. Write a program to covert Json string to object and print values.
 

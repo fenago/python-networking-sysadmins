@@ -443,6 +443,15 @@ name of your choice.
 
 
 
+**Exercises MYSQL**
+
+
+1. Write a program to create new tables with different column names and insert data in the table.
+2. Write a program to update, delete table.
+
+
+
+
 SQLite database administration
 -------------------------------------------------
 
@@ -790,9 +799,7 @@ sqlite>
 
 
 
-Summary
---------------------------
-
+**Summary**
 
 
 In this lab, we learned about MySQL as well as SQLite database
@@ -801,15 +808,19 @@ records in tables. Using the `select` statement, we retrieved
 the records. We also learned about updating and deleting the data.
 
 
-
-Questions
-----------------------------
-
-
-
+**Questions**
 
 1.  What is database used for?
 2.  What is CRUD in a database?
 3.  Can we connect a remote database? If yes, explain with an example.
 4.  Can we write triggers and procedures inside Python code?
 5.  What are DML and DDL statements?
+
+
+
+**Exercises SQLite**
+
+
+1. Write a program to create new tables with different column names and insert data in the table.
+2. Write a program to update, delete table.
+
