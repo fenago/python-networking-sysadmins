@@ -47,17 +47,11 @@ The syntax for this function is: 
 textwrap.fill(text, width)
 ```
 
-
 -   `text`: Text to wrap.
-
--   `width`: Maximum length allowed of a wrapped line. The
-    default value is `70`.
+-   `width`: Maximum length allowed of a wrapped line. The default value is `70`.
 
 
-Now, we will see an example of `fill()`. Create
-a `fill_example.py` script and write the following content in
-it:
-
+Create a `fill_example.py` script and write the following content in it:
 
 ```
 import textwrap
@@ -140,11 +134,6 @@ is `tab`, is removed.
 #### The indent() function
 
 
-
-The `indent()` function is used to add the
-specified prefix to the beginning of the
-selected lines in your text.
-
 The syntax for this function is: 
 
 
@@ -187,23 +176,9 @@ student@ubuntu:~/work$ python3 indent_example.py
 *significant whitespace.
 ```
 
-In the preceding example, we used the `fill()` and
-`indent()` functions of the `textwrap` module.
-First, we used the `fill` method to store the data into
-the `w` variable. Next, we used the `indent` method.
-Using `indent(),` each line in the output will have
-a `*` prefix. And next, we printed the output.
-
 
 #### The shorten() function
 
-
-
-This function of the `textwrap`module is used truncate the text to fit in the
-specified width. For example, if you want to
-create a summary or preview, use the `shorten()` function.
-Using `shorten()`, all the whitespaces in your text will get
-standardized into a single space.
 
 The syntax for this function is:
 
@@ -278,16 +253,14 @@ student@ubuntu:~/work$ python3 re_match.py
 ('This is python tutorial. Do you', 'learning')
 ```
 
-In the preceding script, we imported the `re` module to use
-regular expressions in Python. Then we created
-a `str_line` string. Next, we created an `obj` match
-object and store the match pattern result in it. In this example,
+In this example,
 the `(.*) enjoy (.*?) .*` pattern will print everything before
 the `enjoy` keyword, and it will print only one word after
 the `enjoy` keyword. Next, we used the `groups()`
 method of `match` object. It will print all the matched
 substrings in a tuple. So, the output you will get will be,
 `('This is python tutorial. Do you', 'learning')`.
+
 
 
 #### The search() function
