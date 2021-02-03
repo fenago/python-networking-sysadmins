@@ -62,7 +62,7 @@ Server version: 5.7.24-0ubuntu0.18.04.1 (Ubuntu)
 
 
 
-Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
 
 Oracle is a registered trademark of Oracle Corporation and/or its
 affiliates. Other names may be trademarks of their respective
@@ -126,7 +126,7 @@ Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 16
 Server version: 5.7.24-0ubuntu0.18.04.1 (Ubuntu)
 
-Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
 
 Oracle is a registered trademark of Oracle Corporation and/or its
 affiliates. Other names may be trademarks of their respective
@@ -194,7 +194,7 @@ and deleting the data.
 
 
 
-### Getting a database version
+#### Getting a database version
 
 
 
@@ -217,7 +217,7 @@ con_obj.close()
 ```
 
 
-### Note
+#### Note
 
 It is very important to follow the previous steps before running this
 script; they should not be skipped. 
@@ -234,7 +234,7 @@ Database version : 8.0.22-0ubuntu0.20.04.3
 ```
 
 
-### Creating a table and inserting data
+#### Creating a table and inserting data
 
 
 
@@ -301,7 +301,7 @@ mysql> show tables;
 You can see that your table courses is created.
 
 
-### Retrieving the data
+#### Retrieving the data
 
 
 
@@ -343,7 +343,7 @@ to execute the SQL query. In `execute()`, we wrote an SQL
 `select` statement. And last, we printed the records.
 
 
-### Updating the data
+#### Updating the data
 
 
 
@@ -392,7 +392,7 @@ example, in `execute()`, we have written an `update`
 statement that will update the data for ID `1`.
 
 
-### Deleting the data
+#### Deleting the data
 
 
 
@@ -447,33 +447,7 @@ SQLite database administration
 -------------------------------------------------
 
 
-
-Now, first, we will see how to create a database in SQLite. To create a
-database, you simply have to write the command in your Terminal as
-follows:
-
-
-```
-$ sqlite3 test.db
-```
-
-After running this command, you will get the `sqlite` console
-opened in your Terminal as follows:
-
-
-```
-student@ubuntu:~$ sqlite3 test.db
-SQLite version 3.22.0 2018-01-22 18:45:57
-Enter ".help" for usage hints.
-sqlite>
-```
-
-There you go, your database has been created by simply running
-`sqlite3 test.db`.
-
-
-
-### Connecting to the database
+#### Connecting to the database
 
 
 
@@ -507,7 +481,7 @@ perform the functionality. Now, check your directory and you will find
 the `test.db` file created in your directory.
 
 
-### Creating a table
+#### Creating a table
 
 
 
@@ -544,7 +518,7 @@ with our database using `test.db`. Next, we created a cursor
 object that we used to execute the SQL query on our database.
 
 
-### Inserting the data
+#### Inserting the data
 
 
 
@@ -585,7 +559,7 @@ that, we used `insert` in the SQL statement. By using
 current transactions.
 
 
-### Retrieving the data
+#### Retrieving the data
 
 
 
@@ -643,7 +617,7 @@ follows:
 student@ubuntu:~/work/sqlite3_testing$ sqlite3 test.db
 
 Output:
-SQLite version 3.22.0 2018-01-22 18:45:57
+SQLite version 3.33.0 2020-08-14 13:23:32
 Enter ".help" for usage hints.
 sqlite>
 sqlite> select * from courses;
@@ -656,7 +630,7 @@ sqlite>
 ```
 
 
-### Updating the data
+#### Updating the data
 
 
 
@@ -722,7 +696,7 @@ Checking on SQLite console:
 
 Output:
 student@ubuntu:~/work$ sqlite3 test.db
-SQLite version 3.22.0 2018-01-22 18:45:57
+SQLite version 3.33.0 2020-08-14 13:23:32
 Enter ".help" for usage hints.
 sqlite>
 sqlite> select * from courses;
@@ -735,7 +709,7 @@ sqlite>
 ```
 
 
-### Deleting the data
+#### Deleting the data
 
 
 
@@ -803,7 +777,7 @@ Checking on SQLite console:
 
 Output:
 student@ubuntu:~/work$ sqlite3 test.db
-SQLite version 3.22.0 2018-01-22 18:45:57
+SQLite version 3.33.0 2020-08-14 13:23:32
 Enter ".help" for usage hints.
 sqlite>
 sqlite> select * from courses;

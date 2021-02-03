@@ -255,8 +255,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 
--   `os.path.absname(path)`: Returns the absolute version of
-    your pathname.
 
 ```
 >>> import os
@@ -265,17 +263,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 
--   `os.path.dirname(path)`: Returns the directory name of
-    your path.
-
 ```
 >>> os.path.dirname('/home/jovyan/work/python-networking-sysadmins/sample.txt')
 '/home/jovyan/work'
 ```
 
-
--   `os.path.basename(path)`: Returns the base name of your
-    path.
 
 ```
 >>> os.path.basename('/home/jovyan/work/python-networking-sysadmins/sample.txt')
@@ -283,8 +275,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 
--   `os.path.exists(path)`: Returns `True` if path
-    refers to the existing path.
 
 ```
 >>> os.path.exists('/home/jovyan/work/python-networking-sysadmins/sample.txt')
@@ -292,17 +282,13 @@ True
 ```
 
 
--   `os.path.getsize(path)`: Returns the size of the entered
-    path in bytes.
-
 ```
 >>> os.path.getsize('/home/jovyan/work/python-networking-sysadmins/sample.txt')
 39
 ```
 
 
--   `os.path.isfile(path)`: Checks whether the entered path is
-    an existing file or not. Returns `True` if it is a file.
+
 
 ```
 >>> os.path.isfile('/home/jovyan/work/python-networking-sysadmins/sample.txt')
@@ -310,9 +296,7 @@ True
 ```
 
 
--   `os.path.isdir(path)`: Checks whether the entered path is
-    an existing directory or not. Returns `True` if it is a
-    directory.
+
 
 ```
 >>> os.path.isdir('/home/jovyan/work/python-networking-sysadmins/sample.txt')
@@ -323,27 +307,6 @@ False
 Comparing data
 --------------------------------
 
-
-
-Here, we are going to learn about how to
-compare data in Python. We will use a `pandas` module for this
-purpose.
-
-Pandas is an open source data analysis library that provides data
-structures and data analysis tools that are easy to use. It makes
-importing and analyzing data easier.
-
-Before starting with the example, make sure you have `pandas`
-installed on your system. You can install pandas as follows:
-
-
-```
-pip3 install pandas     --- For Python3
-
-or
-
-pip install pandas       --- For python2
-```
 
 We will study an example of comparing data using pandas. Initially, we
 will create two `csv` files: `student1.csv` and
@@ -411,71 +374,29 @@ Output:
 2  102  Mary  Female  20    London
 ```
 
-In the preceding example, we are comparing the data between the two
-`csv` files: `student1.csv` and
-`student2.csv`. We first converted our dataframes
-(`df1`, `df2`) into sets (`s1`,
-`s2`). Then, we used the `symmetric_difference()`
-set. So, it will check the symmetric difference between `s1`
-and `s2` and then we will print the result.
 
 
-Merging data
-------------------------------
+Exercise: Merging data
+----------------------
 
+Now, create a `merge_data_exercise.py` or notebook script and write the code to merge `student1.csv` and `student2.csv`.
 
-
-We are going to learn about how to merge data
-in Python. For that, we are going to use Python\'s pandas library. To
-merge the data, we are going to use two `csv` files that
-already created in the previous section, `student1.csv` and
-`student2.csv`.
-
-Now, create a `merge_data.py` script and write the following
-code in it:
-
-
-```
-import pandas as pd
-df1 = pd.read_csv("student1.csv")
-df2 = pd.read_csv("student2.csv")
-result = pd.concat([df1, df2])
-print(result)
-```
 
 Run the script as follows:
 
+```
+$ python3 merge_data_exercise.py
 
 ```
-$ python3 merge_data.py
 
-Output:
-    Id    Name  Gender  Age   Address
-0  101    John    Male   20  New York
-1  102    Mary  Female   18    London
-2  103  Aditya    Male   22    Mumbai
-3  104     Leo    Male   22   Chicago
-4  105     Sam    Male   21     Paris
-5  106    Tina  Female   23    Sydney
-0  101    John    Male   21  New York
-1  102    Mary  Female   20    London
-2  103  Aditya    Male   22    Mumbai
-3  104     Leo    Male   23   Chicago
-4  105     Sam    Male   21     Paris
-5  106    Tina  Female   23    Sydney
-```
 
+**Hint:** Use pandas **concat** function to complete the exercise. Solution is present in `merge_data.py`. 
 
 
 Pattern matching files and directories
 --------------------------------------------------------
 
 
-
-In this section, we will learn about pattern
-matching for files and directories. Python has the `glob`
-module, which is used to find the names of files and directories that
-match specific patterns.
 
 Now, we will look at an example. First, create a
 `pattern_match.py`script and write the following content in
@@ -507,21 +428,6 @@ Output:
 ['dir1/']
 ```
 
-In the previous example, we used Python\'s `glob` module for
-pattern matching. `glob` (pathname) will return the list of
-names that matches with the pathname. In out script, we have passed
-three pathnames in three different `glob()` functions. In the
-first `glob()`, we passed the pathname as
-`*.txt;` this will return all the filenames with
-`.txt` extensions. In the second `glob()`, we passed
-`[0-9].txt`; this will return filenames that start with a
-digit. In the third `glob()`, we passed `**/*.txt`,
-which will return filenames as well as directory names. It will also
-return the filenames from those directories. In the fourth
-`glob()`, we passed `**/`, which will return
-directory names only.
-
-
 
 
 Compressing and restoring
@@ -548,11 +454,6 @@ Run the script as follows:
 $ python3 compress_a_directory.py
 ```
 
-In the preceding script, in `shutil.make_archive()` function,
-we passed the first argument as a name to our compressed file.
-`zip` will be our compression technique. And the,
-`work/` will be the name of the directory that we want to
-compress.
 
 Now, to restore the data from the compressed
 file, we are going to use the `unpack_archive()` function from
@@ -606,39 +507,29 @@ Now, check your present working directory; you will see
 
 
 
-Using a tarfile module to examine the contents of TAR files
+Exercise: Using a tarfile module to examine the contents of TAR files
 -----------------------------------------------------------------------------
 
 
-Create a `examine_tar_file_content.py` script and write the
-following content in it:
+Now, create a `examine_tar_file_content_exercise.py` or notebook script and write the code to examine the contents of TAR files.
 
 
-```
-import tarfile
-tar_file = tarfile.open("work.tar.gz", "r:gz")
-print(tar_file.getnames())
-```
 
 Run the script as follows:
 
 
 ```
-$ python3 examine_tar_file_content.py
+$ python3 examine_tar_file_content_exercise.py
 
-Output:
-['welcome.py', 'hello.py', 'hello.txt', 'sample.txt', 'sample1.txt']
+
 ```
 
-In previous example, we used the `tarfile` module to examine
-the contents of the created tar file. We used
-the `getnames()` function to read the data.
 
+**Hint:** Use tarfile function **getnames** to complete the exercise. Solution is present in `examine_tar_file_content.py`. 
 
 
 Summary
 -------------------------
-
 
 
 In this lab, we learned about Python scripts for handling files and
@@ -660,7 +551,6 @@ Questions
 
 
 
-
 1.  How to deal with different path regardless of different OS (Windows,
     Llinux)?
 2.  What are different arguments available for `print()` in
@@ -678,3 +568,11 @@ Questions
 11. b\) list
 12. c\) tuple
 13. d\) string
+
+
+Exercises
+---------
+
+1) Concat student1.csv and student2.csv using pandas library.
+2) Examine the contents of TAR files using tarfile module
+

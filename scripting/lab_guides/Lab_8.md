@@ -52,6 +52,9 @@ Enter number2:
 Result: 30
 ```
 
+**Exercise** Write a program to get name, age and email of a person using sys.stdin.readline().
+
+
 Now, we will learn about the `input()` and `print()`
 functions. The `input()` function is used for taking input
 from the user. The function has an optional parameter: prompt string.
@@ -109,6 +112,9 @@ Enter num 1: 10.50
 Enter num 2: 2.0
 Value of num 3 is:  5.25
 ```
+
+
+**Exercise** Write a program to subtract two numbers using input function.
 
 
 We will look at a simple example for the `print()` function.
@@ -470,3 +476,8 @@ print('str1 * 3 =', str1 * 3)
 ```
 
 
+Exercises
+----------
+
+1) Write a program to get name, age and email of a person using sys.stdin.readline().
+2) Write a program to subtract two numbers using input function.

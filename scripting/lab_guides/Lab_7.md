@@ -12,21 +12,7 @@ In this lab, we will cover the following topics:
 -   Unicode strings
 
 
-
-
 #### The wrap() function
-
-
-The `wrap()` function is used to wrap an entire paragraph in to a single string. The
-output will be a list of output lines.
-
-The syntax is `textwrap.wrap(text, width)`:
-
-
--   `text`: Text to wrap.
--   `width`: Maximum length allowed of a wrapped line. The
-    default value is `70`.
-
 
 Now, we will see an example of `wrap()`. Create
 a `wrap_example.py` script and write the following content in
@@ -50,15 +36,8 @@ student@ubuntu:~/work$ python3 wrap_example.py
 ['Python is an interpreted high-', 'level programming language for', 'general-purpose programming.', 'Created by Guido van Rossum', 'and first released in', '1991, Python has a design', 'philosophy that emphasizes', 'code readability,  notably', 'using significant whitespace.']
 ```
 
-In the preceding example, we used the `textwrap` module of
-Python. First, we created a string named `sample_string`.
-Next, using the `TextWrapper` class we specified the width.
-Next, using the `wrap` function the string was wrapped to the
-width of `30`. And next, we printed the lines.
-
 
 #### The fill() function
-
 
  
 The syntax for this function is: 
@@ -642,17 +621,13 @@ the `textwrap` module. Finally, we learned about the Unicode
 characters and how to print the Unicode strings in Python.
 
  
-
- 
-
 In the next lab, we are going to learn about standard documenting
 and reporting of information using Python.
 
 
 
 Questions
----------------------------
-
+----------
 
 
 
@@ -676,3 +651,14 @@ a\) `('we', 'are', 'humans')` b) `(we, are, humans)`
 c) `('we', 'humans')` d) `'we are humans'`
 
 
+
+Exercises
+----------
+
+1) Apply **textwrap** module functions learned in the lab on following string. Try different values for `width` parameter and check output.
+
+"FeNAgO provides zero install cloud based hands-on labs so that you can learn by doing. Learn real skills that are in demand such as: Data Science, Big Data, Cyber Sec, DevOps, DevSecOps, Programming, Blockchain, and much more."
+
+2) Apply **re** module functions learned in the lab on following string.
+
+"FeNAgO provides zero install cloud based hands-on labs so that you can learn by doing. Learn real skills that are in demand such as: Data Science, Big Data, Cyber Sec, DevOps, DevSecOps, Programming, Blockchain, and much more."

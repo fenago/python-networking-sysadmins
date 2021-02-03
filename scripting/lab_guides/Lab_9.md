@@ -138,6 +138,24 @@ pdf successfully rotated
 ```
 
 
+Exercise: Rotating PDF pages
+----------------------------------
+
+
+1) Now, create a `rotate_pdf_exercise.py` or notebook script and write code to rotate pdf pages by rotateClockwise by `180` degree.
+
+Run the script as follows:
+
+
+```
+$ python3 rotate_pdf_exercise.py
+
+```
+
+2) Rotate file by 360 degree and verify that rotated.pdf is same as original file:
+
+**Hint:** Use `rotateClockwise(<degree>)` function to complete the exercise. 
+
 
 Working with Excel files
 ------------------------------------------
@@ -569,7 +587,6 @@ Working with txt files
 ----------------------------------------
 
 
-
 A plain text file is used to store data that
 represents only characters or strings and doesn\'t consider any
 structured metadata. In Python, there\'s no need to import any external
@@ -579,9 +596,7 @@ the operations, there are different access modes to govern the type of
 operation possible in an opened file.
 
 
-
 ### The open() function
-
 
 
 This function is used to open a file and does not require any external module to be imported.
@@ -656,7 +671,6 @@ text_file.close()
 ### Writing a text file
 
 
-
 By using Python, you can create a text file
 (`test.txt`). By using the code, writing to a text file is
 easy. To open a file for writing, we set the second parameter that is in
@@ -682,22 +696,28 @@ Now, check your current working directory. You\'ll find a
 `test.txt` file that we created.
 
 
-### Reading a text file
+
+Exercise: Reading a text file
+----------------------------------
+
+To open a file for reading, we set the second parameter that is the access mode  to `"r"` instead of `"w"`. To read the
+data from this file, we use the `read()` method of the `file handle` object.
 
 
-Reading a file is as easy as writing from a file. To open a file for reading, we set the second parameter that is the
-access mode  to `"r"` instead of `"w"`. To read the
-data from this file, we use the `read()` method of the
-`file handle` object. Create a script
-called  `text_read.py` and write the following content in it:
+Now, create a `text_read_exercise.py` or notebook script and write the code to read a text file.
+
+
+Run the script as follows:
 
 
 ```
-text_file = open("test.txt", "r")
-data = text_file.read()
-print(data)
-text_file.close()
+$ python3 text_read_exercise.py
+
 ```
+
+
+**Hint:** Use `.read()` instead of `.write()` function to complete the exercise. Solution is present in `text_read_exercise.py`. 
+
 
 Following is the output:
 
@@ -711,17 +731,6 @@ Thursday
 Friday
 Saturday
 ```
-
-In the preceding program, we\'ve declared the
-`text_file` variable to open a file named
-`test.txt`. The `open` function takes two arguments:
-first, the file that we want to open, and second, the access mode that
-represents the permission or operation we want to do or apply on the
-file. In our program, we used the `"r"` letter in our second
-argument, which indicates a `read` operation. Then, we
-used `text_file.close()` to close the instance of the
-stored `test.txt` file. After running the Python program, we
-can easily see the content in our text file in our Terminal.
 
 
 
@@ -743,8 +752,6 @@ Questions
 ---------------------------
 
 
-
-
 1.  What is the difference between `readline()` and
     `readlines()` ?
 2.  What is the difference between `open()` and
@@ -754,3 +761,9 @@ Questions
 5.  What is the use of `pass`?
 6.  What is a lambda expression?
 
+
+Exercises
+----------
+
+1) Write a program to rotate pdf pages by rotateClockwise by `180` and `360` degree.
+2) Write a program to read a text file.

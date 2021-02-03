@@ -4,13 +4,6 @@ Lab 6. File Archiving, Encrypting, and Decrypting
 --------------------------------------------------------------
 
 
-In the previous lab, we learned about handling files, directories,
-and data. We also learned about the `tarfile` module. In this
-lab, we\'ll learn about file archiving, encryption, and decryption.
-Archiving plays an important role in managing files, directories, and
-data. But first, what is archiving? Archiving is a process that stores
-the files and directories into a single file. Python has the
-`tarfile` module for creating such archive files.
 
 In this lab, we will cover the following topics:
 
@@ -24,7 +17,6 @@ In this lab, we will cover the following topics:
 
 Creating and unpacking archives
 -------------------------------------------------
-
 
 
 
@@ -234,29 +226,26 @@ Check your current working directory,and you will find the
 your extracted files.
 
 
-ZIP creation
-------------------------------
-
-First, we will learn how to create a `zip` file using
-the `make_archive()` function of the `shutil`
-module. Create a script called `make_zip_file.py` and write
-the following code in it:
 
 
-```
-import shutil
-shutil.make_archive('work', 'zip', 'work')
-```
+Exercise: ZIP creation
+-------------------------
+
+
+Now, create a `make_zip_file_exercise.py` or notebook script and write the code to to create a `zip` file using the `make_archive()` function of the `shutil` module.
+
 
 Run the script as follows:
 
 
 ```
-student@ubuntu:~$ python3 make_zip_file.py
+$ python3 make_zip_file_exercise.py
+
 ```
 
-Now check your current working directory and you will see
-`work.zip`.
+
+**Hint:** Send second argument 'zip' in shutil.make_archive function to complete the exercise. Solution is present in `make_zip_file.py`. 
+
 
 Now, we will test whether the entered filename is a `zip` file
 or not. For this purpose, the `zipfile` module has
@@ -376,42 +365,28 @@ Output :
 Please check your current working directory. You will find
 the `sample.txt.aes` encrypted file in it.
 
-Now, we will decrypt the `sample.txt.aes` file to get the
-content of the file. Create a script called `file_decrypt.py`
-and write the following content in it:
 
 
-```
-import pyAesCrypt
-from os import stat, remove
-bufferSize = 64 * 1024
-password = "#Training"
-encFileSize = stat("sample.txt.aes").st_size
-with open("sample.txt.aes", "rb") as fIn:
- with open("sampleout.txt", "wb") as fOut:
- try:
- pyAesCrypt.decryptStream(fIn, fOut, password, bufferSize, encFileSize)
- except ValueError:
- remove("sampleout.txt")
-```
 
+Exercise: File decryption
+---------------------------
+
+Now, create a `file_decrypt_exercises.py` or notebook script and write the code to decrypt the `sample.txt.aes` file to get the
+content of the file.
 
 
 Run the script as follows:
 
 
 ```
-student@ubuntu:~/work$ python3 file_decrypt.py
+student@ubuntu:~/work$ python3 file_decrypt_exercises.py
 ```
 
-Now, check your current working directory. A file named
-`sampleout.txt` will be created. That\'s your decrypted file.
 
-In this example, we mentioned the filename to decrypt, which is
-`sample.txt.aes`. Next, our decrypted file will be
-`sampleout.txt`. In `decryptStream()`, we mentioned
-`fIn`, which is our file to decrypt, and `fOut`,
-which is the name of the `decrypted` file.
+Now, check your current working directory. A file named `sampleout.txt` will be created. That\'s your decrypted file.
+
+
+**Hint:** Use pyAesCrypt library's **decryptStream** function to complete the exercise. Solution is present in `file_decrypt.py`. 
 
 
 
@@ -420,10 +395,6 @@ which is the name of the `decrypted` file.
 In this lab, we learned about creating and extracting archived
 files. Archiving plays an important role in managing files, directories,
 and data. It also stores the files and directories into a single file. 
-
-We learned in detail about the `tarfile` and
-`zipfile` Python modules that enable you to create, extract,
-and test archive files.
 
 
 
@@ -434,3 +405,8 @@ and test archive files.
 3.  What is pickling and unpickling?
 4.  What are the different types of functions in python?
 
+
+**Exercises**
+
+1) Write the code to to create a `zip` file using the `make_archive()` function of the `shutil` module.
+2) Write the code to decrypt the `sample.txt.aes` file to get the content of the file.
