@@ -83,10 +83,6 @@ way to write on the Terminal
 
 **Input by pipe**
 
-Pipe is another form of redirection. This technique is used to pass information from one program to another. The `|` symbol denotes pipe. By using
-the pipe technique, we can use more than two commands in such a way that
-the output of one command acts as input to the next command.
-
 Now, we are going to see how we can accept an input using pipe. For
 that, first we\'ll write a simple script that returns a
 `floor` division. Create a script called
@@ -750,17 +746,11 @@ Using the os module for handling directory and files
 ----------------------------------------------------------------------
 
 
-
 In this section, we will learn about
 the `os` module of Python. Python\'s `os` module
 helps in achieving operating system tasks. We
 need to import the `os` module if we want to perform
 operating system tasks.
-
-We will look at some examples related to handlingfiles and directories.
-
- 
-
 
 
 ### Creating and deleting the directory
@@ -904,20 +894,6 @@ Doing the backup now!
 Do you want to Continue? yes/no
 yes
 ```
-
-Now, check `Desktop/directory` and you will see
-your work folder in that directory. There are
-a few options used with the `rsync` command, namely the
-following:
-
-
--   `-a`: Archive
--   `-u`: Update
--   `-h`: Human-readable format
--   `-v`: Verbose
--   `--delete`: Deletes extraneous files from the receiving
-    side
--   `--exclude`: Exclude rule
 
 
 

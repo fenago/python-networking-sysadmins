@@ -4,21 +4,6 @@ Lab 7. Text Processing and Regular Expressions
 -----------------------------------------------------------
 
 
-
-In this lab, we are going to learn about text processing and regular
-expressions. Text processing is a process of creating or modifying the
-text. Python has a very powerful library called regular expressions that
-does tasks such as searching and extracting the data. You will learn how
-to do it with files and also learn to read and write to files.
-
-We are going to learn about the `re` Python module for regular
-expressions and processing text in Python. We are going to learn about
-the `match()`, `search()`, `findall()`,
-and `sub()` functions of `re` module. We are also
-going to learn about text wrapping in Python using
-the `textwrap` module. Finally, we will learn about unicode
-characters.
-
 In this lab, we will cover the following topics:
 
 
@@ -28,27 +13,8 @@ In this lab, we will cover the following topics:
 
 
 
-Text wrapping
--------------------------------
 
-
-
-In this section, we will learn about the `textwrap` Python
-module. This module provides
-the `TextWrapper` class that does all the work. The
-`textwrap` module is used for formatting and
-wrapping plain text. This module provides
-five main
-functions: `wrap()`, `fill()`, `dedent()`, `indent()`,
-and `shorten()`. We are going to learn these functions one by
-one now.
-
- 
-
-
-
-### The wrap() function
-
+#### The wrap() function
 
 
 The `wrap()` function is used to wrap an entire paragraph in to a single string. The
@@ -91,18 +57,10 @@ Next, using the `wrap` function the string was wrapped to the
 width of `30`. And next, we printed the lines.
 
 
-### The fill() function
+#### The fill() function
 
-
-
-The `fill()` function works similarly
-to `textwrap.wrap`, except it returns the data
-joined into a single, newline-separated
-string. This function wraps the input in text and returns a
-single string containing the wrapped text.
 
  
-
 The syntax for this function is: 
 
 
@@ -140,14 +98,9 @@ Python is an interpreted high-level programming
 language.
 ```
 
-In the preceding example, we used the `fill()` function. The
-procedure is the same as what we did in `wrap()`. First, we
-created a string variable. Next, we created
-the `textwrap` object. Then, we applied
-the `fill()` function. Finally, we printed the output.
 
 
-### The dedent() function
+#### The dedent() function
 
 
 
@@ -205,7 +158,7 @@ not equal. Therefore, the only common whitespace, which in our case
 is `tab`, is removed.
 
 
-### The indent() function
+#### The indent() function
 
 
 
@@ -263,7 +216,7 @@ Using `indent(),` each line in the output will have
 a `*` prefix. And next, we printed the output.
 
 
-### The shorten() function
+#### The shorten() function
 
 
 
@@ -304,90 +257,18 @@ student@ubuntu:~/work$ python3 shorten_example.py
 Python is an interpreted high-level [...]
 ```
 
-In the preceding example, we used the `shorten()` function to
-truncate our text and fit that text in a specified width. First, all the
-whitespaces truncated into the single space. If the result fited in the
-specified width, the result was displayed on the screen. If not, then
-the words of the specified width was displayed on the screen and the
-rest was placed in the placeholder.
-
-
 
 Regular expressions
 -------------------------------------
 
-
-
-In this section, we are going to learn about
-regular expressions in Python. Regular expression is a specialized
-programming language, which is embedded in Python and is available to
-users through the `re` module. We can define the rules for the
-set of strings that we want to match. Using regular expressions, we can
-extract specific information from files, code, documents, spreadsheets,
-and so on.
-
-In Python, a regular expression is denoted as `re` and can be
-imported through the `re` module. Regular expressions support
-four things:
-
-
--   Identifiers
--   Modifiers
--   Whitespace characters
--   Flags
-
-
-The following table lists the identifiers,
-and there\'s a description for each one:
-
-![](./images/12.PNG)
-
-The following table lists the modifiers, and
-there\'s a description for each one:
-
-![](./images/13.PNG)
- 
-
-The following table lists the whitespace
-characters, and there\'s a description for each one:
-
-![](./images/14.PNG)
-The following table lists the flags, and there\'s a description for
-each one:
-
-![](./images/15.PNG)
 
 Now we are going to see some examples of regular expressions. We are
 going to learn about the `match()`, `search()`,
 `findall()`, and `sub()` functions.
 
 
-### Note
+#### The match() function
 
-To use regular expressions in Python, you must import the `re`
-module in your scripts so that you will be able to use all the functions
-and methods for regular expressions.
-
-
-Now we are going to learn about these functions one by one in the
-following sections.
-
-
-
-### The match() function
-
-
-
-The `match()` function is a function of the `re` module. This function will match the
-specified `re` pattern with the string. If the match is found,
-a `match` object will be returned.
-A `match` object will contain the information about the
-`match`. If a match is not found, we will get the result as
-`None`. The `match` object has two methods:
-
-
--   `group(num)`: Returns an entire match
--   `groups()`: Return all matching subgroups in tuple
 
 
 The syntax for this function is as follows:
@@ -430,22 +311,7 @@ substrings in a tuple. So, the output you will get will be,
 `('This is python tutorial. Do you', 'learning')`.
 
 
-### The search() function
-
-
-
-The `search()` function of the `re` module will
-search through a string. It will look for any
-location for the specified `re` pattern. The
-`search()` will take a pattern and text and it will search
-through our specified string for a match. It will return a
-`match` object when a match is found. It will return `None` if no match found. The
-`match` object has two methods:
-
-
--   `group(num)`: Returns an entire match
--   `groups()`: Returns all matching subgroups in tuple
-
+#### The search() function
 
 The syntax for this function is as follows: 
 
@@ -482,26 +348,9 @@ Searching for hello in Python programming is fun
 No match found
 ```
 
-In the preceding example, we used the `search()` method of
-`match` object to find the `re` pattern. After
-importing the re module, we specified the pattern in a list. In that
-list, we wrote two strings: `programming` and
-`hello`. Next, we created a string:
-`Python programming is fun`. We wrote a for loop that will
-check for a specified pattern one by one. If a match is found,
-the `if` block will be executed. If no match is found,
-the `else` block will be executed.
 
+#### The findall() function
 
-### The findall() function
-
-
-
-This is one of the methods of the
-`match` object. The `findall()` method finds all the
-matches and then returns them as a list of strings. Each element of the
-list represents as a match. This method
-searches for the pattern without overlapping.
 
 Create a `re_findall_example.py`script and write the following
 content in it:
@@ -539,47 +388,16 @@ student@ubuntu:~/work$ python3 re_findall_example.py
 
  
 
-In the preceding script, we have written three examples of
-the `findall()` method. In the first example, we defined a
-pattern and a string. We found that pattern from the string using
-the `findall()` method and then printed it. In the second
-example, we created a string and we found the words whose first two
-letters are `pe` using `findall()` and then printing
-them. We will get the list of words whose first two letters are
-`pe`.
 
-In addition, we found the words whose first three letters are
-`pic` and then print them. Here, also, we will get the list of
-strings. In the third example, we created a string in which we specified
-`hello` in uppercase and lowercase, and a word:
-`bye`. Using `findall()`, we find the words whose
-first two letters are `he`. Also in `findall()`, we
-used a `re.IGNORECASE`flag that will ignore the case of the
-word and printed them.
+#### The sub() function
 
 
-### The sub() function
-
-
-
-This is one of the most important functions
-of the re module. The `sub()` is used for replacing the
-`re` pattern with the specified replacement. It will replace
-all the occurrences of the `re`
-pattern with the replacement string. The syntax is as follows:
+The syntax is as follows:
 
 
 ```
   re.sub(pattern, repl_str, string, count=0)
 ```
-
-
--   `pattern`: The `re` pattern.
--   `repl_str`: The replacement string.
--   `string`: The main string.
--   `count`: The number of occurrences to be replaced. The
-    default value is `0`, which means replacing all
-    occurrences.
 
 
 Now we are going to create a `re_sub.py`script and write the
@@ -604,10 +422,6 @@ print("Replaced: ", p)
 
  
 
- 
-
- 
-
 Run the script and you will get the output as follows:
 
 
@@ -619,13 +433,7 @@ Replacing only one occurrence of Peter...
 Replaced:  Mary Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?
 ```
 
-In the preceding example, we used `sub()` to replace the
-`re` pattern with a specified replacement string. We replaced
-`Peter` with `Mary`. So, all the occurrences of
-Peter will be replaced by Mary. Next, we also included the
-`count` parameter. We mentioned `count=1`: it means
-only one occurrence of Peter will be replaced and other occurrences of
-Peter will remain the same.
+
 
 Now, we will learn about the `subn()` function of the re
 module. The `subn()` function works the same as
@@ -722,7 +530,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 
-### Unicode code point
+#### Unicode code point
 
 
 
@@ -753,7 +561,7 @@ U+6587
 ```
 
 
-### Encoding
+#### Encoding
 
 
 
@@ -770,7 +578,7 @@ of how to encode Unicode code point, as shown in following code:
 ```
 
 
-### Decoding
+#### Decoding
 
 
 
@@ -788,7 +596,7 @@ following code:
 ```
 
 
-### Avoiding UnicodeDecodeError
+#### Avoiding UnicodeDecodeError
 
 
 

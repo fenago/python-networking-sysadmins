@@ -6,14 +6,6 @@ Lab 2. Debugging and Profiling Python Scripts
 
 
 
-Debugging and profiling play an important role in Python development.
-The debugger helps programmers to analyze the complete code. The
-debugger sets the breakpoints whereas the profilers run our code and
-give us the details of the execution time. The profilers will identify
-the bottlenecks in your programs. In this lab, we\'ll learn about
-the `pdb` Python debugger, `cProfile` module, and
-`timeit` module to time the execution of Python code.
-
 In this lab, you\'ll learn about the following:
 
 
@@ -28,15 +20,6 @@ In this lab, you\'ll learn about the following:
 
 Error handling (exception handling)
 -----------------------------------------------------
-
-
-
-In this section, we\'re going to learn how Python handles exceptions. But first, what is an exception? An
-exception is an error that occurs during program execution. Whenever any
-error occurs, Python generates an exception that will be handled using
-a `try…except` block. Some exceptions can\'t be handled by
-programs so they result in error messages. Now, we are going to see some
-exception examples.
 
 In your Terminal, start the `python3` interactive console and
 we will see some exception examples:
@@ -133,37 +116,9 @@ Out of try...except block
 ```
 
 
-Debuggers tools
----------------------------------
 
+#### The pdb debugger
 
-
-There are many debugging tools supported in
-Python:
-
-
--   `winpdb`
--   `pydev`
--   `pydb`
--   `pdb`
--   `gdb`
--   `pyDebug`
-
-
-In this section, we are going to learn about `pdb` Python
-debugger. `pdb` module is a part of Python\'s standard library
-and is always available to use.
-
-
-
-### The pdb debugger
-
-
-
-The `pdb` module is used to debug Python programs. Python programs use `pdb` interactive
-source code debugger to debug the programs.
-`pdb` sets breakpoints and inspects the stack frames, and
-lists the source code.
 
 Now we will learn about how we can use the `pdb` debugger.
 There are three ways to use this debugger:
@@ -195,11 +150,10 @@ Using this script as an example to learn Python debugging, we will see
 how we can start the debugger in detail.
 
 
-### Within an interpreter
+#### Within an interpreter
 
 
-
- To start the debugger from the Python
+To start the debugger from the Python
 interactive console, we are using `run()` or
 `runeval()`.
 
@@ -259,7 +213,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 
-### From a command line
+#### From a command line
 
 
 
@@ -296,7 +250,7 @@ The program finished and will be restarted
  
 
 
-### Within a Python script
+#### Within a Python script
 
 
 
@@ -348,13 +302,6 @@ So, these are the three ways by which you can start a debugger.
 Debugging basic program crashes
 -------------------------------------------------
 
-
-
-In this section, we are going to see the
-trace module. The trace module helps in tracing the program execution.
-So, whenever your Python program crashes, we can understand where it
-crashes. We can use trace module by importing it into your script as
-well as from the command line.
 
 Now, we will create a script named `trace_example.py` and
 write the following content in the script:
@@ -416,21 +363,13 @@ Profiling and timing programs
 -----------------------------------------------
 
 
-
 Profiling a Python program means measuring an
 execution time of a program. It measures the
 time spent in each function. Python\'s `cProfile` module is
 used for profiling a Python program.
 
 
-
-### The cProfile module
-
-
-
-As discussed previously, profiling means
-measuring the execution time of a program. We are going to use
-the `cProfile` Python module for profiling a program.
+#### The cProfile module
 
 Now, we will write a `cprof_example.py` script and write the
 following code in it:
@@ -464,26 +403,8 @@ Global Value:  0
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 ```
 
-So, using `cProfile`, all functions that are called will get
-printed with the time spent on each function. Now, we will see what
-these column headings mean:
 
-
--   `ncalls`:Number of calls
--   **`tottime`**:Total time spent
-    in the given function
--   `percall`: Quotient of `tottime` divided by
-    `ncalls`
--   `cumtime`: Cumulative time spent in this and all
-    `subfunctions`
--   `percall`: Quotient of `cumtime` divided by
-    primitive calls
--   `filename:lineno(function)`: Provides the respective data
-    of each function
-
-### timeit
-
-
+#### timeit
 
 `timeit` is a Python module used to
 time small parts of your Python script. You can call `timeit`
@@ -505,12 +426,6 @@ def timeit_example():
 # timeit statement
 print(timeit.timeit(setup = prg_setup, stmt = prg_code, number = 10000))
 ```
-
-Using `timeit`, we can decide what piece of code we want to
-measure the performance of. So, we can easily define the setup code as
-well as the code snippet on which we want to perform the test
-separately. The main code runs 1 million times, which is the default
-time, whereas the setup code runs only once.
 
 
 

@@ -5,15 +5,6 @@ Lab 10. Basic Networking - Socket Programming
 
 
 
-In this lab, you will learn about sockets and three internet
-protocols: `http`, `ftplib`, and `urllib`.
-You will also learn about the `socket` module in Python, which
-is used for networking. `http` is a package that is used for
-working with the **Hypertext Transfer Protocol**
-(**HTTP**). The `ftplib` module is used for
-performing automated FTP-related work.
-`urllib` is a package that handles URL-related work.
-
 In this lab, you will learn about the following:
 
 
@@ -27,15 +18,6 @@ In this lab, you will learn about the following:
 Sockets
 -------------------------
 
-
-
-In this section, we are going to learn about
-sockets. We are going to use Python\'s socket module. Sockets are
-endpoints for communication between machines, whether locally or across
-the internet. The socket module has a socket class, which is used to
-handle the data channel. It also has functions for network-related
-tasks. To use the functionality of the socket module, we first need to
-import the socket module.
 
 Let\'s see how to create a socket. The socket class has a socket
 function, with two arguments: `address_family` and
@@ -53,25 +35,6 @@ The following is the syntax:
  s = socket.socket(address_family, socket type)
 ```
 
-`address_family` controls the OSI network layer protocol.
-
-**`socket type`** controls the transport layer
-protocol.
-
-Python supports three address families: `AF_INET`,
-`AF_INET6`, and `AF_UNIX`. The most commonly used is
-`AF_INET`, which is used for internet addressing.
-`AF_INET6` is used for IPv6 internet addressing.
-`AF_UNIX` is used for **Unix Domain Sockets**
-(**UDS**), which is an inter-process communication protocol.
-
-There are two socket types: `SOCK_DGRAM` and
-`SOCK_STREAM`. The `SOCK_DGRAM` socket type is used
-for message-oriented datagram transport; these are associated with the
-UDP. Datagram sockets deliver individual
-messages. `SOCK_STREAM` is used for stream-oriented transport;
-these are associated with TCP. Stream sockets provide byte streams
-between the client and server.
 
 Sockets can be configured as server and client sockets. When both TCP/IP
 sockets are connected, communication will be bi-directional. Now we are
@@ -104,11 +67,7 @@ conn.send(recv_data.encode())
 conn.close()
 ```
 
- 
 
- 
-
- 
 
  
 
@@ -149,22 +108,6 @@ The output will be as follows:
 
 The http package
 ----------------------------------
-
-
-
-In this section, we are going to learn about
-the `http` package. The `http` package has four
-modules:
-
-
--   `http.client`: This is a low-level HTTP protocol client
--   `http.server`: This contains basic HTTP server classes
--   `http.cookies`: This is used for implementing state
-    management with cookies
--   `http.cookiejar`: This module provides cookie persistence
-
-
- 
 
  
 
@@ -231,12 +174,6 @@ Run the script as follows:
 ```
 student@ubuntu:~/work$ python3 get_example.py
 ```
-
- 
-
- 
-
- 
 
  
 
@@ -322,15 +259,6 @@ received a response.
 
 
 
-In this section, we are going to learn about a module from
-the `http` package, the `http.server` module. This
-module defines the classes used for implementing
-`HTTP` servers. It has two methods: `GET` and
-`HEAD`. By using this module, we can share files over a
-network. You can run the `http` server on any port. Make
-sure the port number is greater than
-`1024`. The default port number is `8000`.
-
 You can use `http.server` as follows.
 
 First, navigate to your desired directory and run the following command:
@@ -362,14 +290,6 @@ Serving HTTP on 0.0.0.0 port 9000 (http://0.0.0.0:9000/) ...
 The ftplib module
 ------------------------------------
 
-
-
-`ftplib` is a module in Python that provides all the functionality needed to perform various actions over
-the FTP protocol. `ftplib` contains the FTP client class, as
-well as some helper functions. Using this module, we can easily connect
-to an FTP server to retrieve multiple files and process them. By
-importing the `ftplib` module, we can use all the
-functionality it provides.
 
 In this section, we are going to cover how to do FTP transfers by using
 the `ftplib` module. We are going see various FTP objects.
@@ -433,12 +353,6 @@ FileName...10MB.zip
 ### Getting a welcome message using getwelcome():
 
 
-
-Once an initial connection is established, a server
-usually returns a welcome message. This
-message comes via the `getwelcome()` function, and sometimes
-includes disclaimers or helpful information
-that may be relevant to the user.
 
 Now we will see an example of `getwelcome()`. Create a
 `get_welcome_msg.py` script and write the following content in
@@ -537,35 +451,6 @@ The urllib package
 -------------------------------------
 
 
-
-Like `http`, `urllib` is also a package that has
-various modules for working with URLs. The
-`urllib` module allows you to access several websites via your
-script. We can also download data, parse data, modify headers, and more
-using this module.
-
-`urllib` has a few different modules, which are listed here:
-
-
--   `urllib.request`: This is used for opening and reading
-    URLs.
--   `urllib.error`: This contains exceptions raised by
-    `urllib.request`.
--   `urllib.parse`: This is used for parsing URLs.
--   `urllib.robotparser`: This is used for parsing
-    `robots.txt` files.
-
-
-In this section, we are going to learn about opening a URL using
-`urllib` and how to read `html` files from the URL.
-We are going to see a simple example of the use
-of `urllib`. We will import `urllib.requests`. Then
-we assign the opening of the URL to a variable, then we will use a
-`.read()` command to read the data from the URL. 
-
- 
-
- 
 
 Create a`url_requests_example.py` script and write the
 following content in it:

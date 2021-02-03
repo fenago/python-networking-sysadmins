@@ -18,27 +18,6 @@ In this lab, we will cover the following topics:
 
 
 
-What is web scraping?
-----------------------------------------
-
-
-
-Web scraping is the technique used to extract information from websites. This technique is used to transform
-unstructured data into structured data.
-
-The use of web scraping is to extract the data from the websites. The
-extracted information is saved as a local file on your system, and you
-can store it to database in a table format as well. The web scraping
-software accesses the **World Wide Web** (**WWW**)
-directly using HTTP or a web browser. This is an automated process
-implemented using a web crawler or a bot.
-
-Scraping a web page involves fetching the page and then extracting the
-data. A web crawler fetches a web page. A web crawler is a mandatory
-component in web scraping. After fetching, extraction takes place. You
-can search, parse, save the data into tables, and reformat the page.
-
-
 
 Data extraction
 ----------------------------------
@@ -49,56 +28,9 @@ In this section, we are going to see the actual data extraction process. Python 
 library to perform the data extraction task. We are also going to use
 the requests library of Python.
 
-First, we must install these two libraries. Run the following commands
-to install the `requests` and `beautifulsoup`
-libraries:
 
+#### The beautifulsoup library
 
-```
-$ pip3 install requests
-$ pip3 install beautifulsoup4
-```
-
-
-### The requests library
-
-
-
-The use of the `requests` library is to use
-HTTP within our Python script in
-human-readable format. We can download the pages using the
-`requests` library in Python. The `requests` library
-has different types of requests. Here, we are going to learn about
-the `GET` request. The `GET` request is used to
-retrieve information from a web server. The `GET` request
-downloads the HTML content of a specified web page. Every request has a
-status code. The status codes return with every request we made to the
-server. These status codes give us the information about what happened
-with the request we made. The types of status code are listed here:
-
-
--   `200`: Indicates everything went OK and returns the
-    result, if any
--   `301`: Indicates that the server is redirecting to a
-    different endpoint if it has switched the domain name or the
-    endpoint name must be changed
--   `400`: Indicates that you made a bad request
--   `401`: Indicates when we are not authenticated
--   `403`: Indicated that you are trying to access forbidden
-    resources
--   `404`: Indicates that the resource you are trying to
-    access is not available on the server
-
-### The beautifulsoup library
-
-
-
-`beautifulsoup` is a library in Python, used for
-web scraping. It has simple methods for
-searching, navigating, and modifying. It is simply a toolkit used for
-extracting the data you needed from a web page.
-
- 
 
 Now, to use the `requests` and `beautifulsoup`
 functionality in your scripts you must import these two libraries using
@@ -199,14 +131,7 @@ Output :
             </div>
 ```
 
-In the preceding example, we first imported the requests and
-`beautifulsoup` modules. Then, we created a request object and
-assigned an URL to it. Next, we created a `beautifulsoup`
-object `parse_obj`. This object
-takes `page_result.content` as its argument from requests and
-then the page was parsed using `html.parser`. Next, we used
-beautifulsoup\'s `find()` method to get the content from the
-`'news-article__content'` class.
+
 
 Now, we are going to see an example of extracting content from a
 particular tag. In this example, we are going to extract the content
@@ -239,15 +164,7 @@ Output:
 
  
 
- 
 
- 
-
- 
-
- 
-
- 
 
 In the preceding example, we are extracting contents from the
 `<a>` tag. We used the `find_all()` method to

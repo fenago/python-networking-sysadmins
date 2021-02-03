@@ -52,11 +52,6 @@ Enter number2:
 Result: 30
 ```
 
-In the preceding example, we have used `stdin` and
-`stdout` for taking input and displaying the output. The
-`sys.stdin.readline()` will read from `stdin`.
-The will write the data.
-
 Now, we will learn about the `input()` and `print()`
 functions. The `input()` function is used for taking input
 from the user. The function has an optional parameter: prompt string.
@@ -115,23 +110,6 @@ Enter num 2: 2.0
 Value of num 3 is:  5.25
 ```
 
-In the preceding example, we used `input()` function for three
-different values. Firstly for string, second for integer value, and
-third for `float` value. To use `input()` for
-integer and float, we have to use `int()` and
-`float()` type conversion functions to convert the received
-string into integer and float respectively.
-
-Now, the `print()` function is used to output the data. We
-have to put in a comma-separated list of arguments. In
-`input_example.py`, to get the output, we used
-the `print()` function. Using the `print()`
-function, you can simply write the data on to your screen by enclosing
-them in the  `" "` or `' '`. To access just the
-value, just write the variable name in the `print()` function.
-If you want to write some text as well as accessing a value in the same
-`print()` function, then separate these two by putting a comma
-between them.
 
 We will look at a simple example for the `print()` function.
 Create a `print_example.py` script and write the following
@@ -177,28 +155,6 @@ function.
 Information formatting
 ----------------------------------------
 
-
-
-In this section, we are going to learn about
-string formatting. We are going to learn how to format information in two ways: one by using the string
-`format()` method and the other by using the `%`
-operator.
-
-First, we will learn string formatting using the string
-`format()` method. This method of the `string` class
-allows us to do value formatting. It also allows us to do variable
-substitutions. This will concatenate the elements through positional
-arguments.
-
-Now, we are going to learn how to do this formatting using formatters.
-The string on which this method is called can contain literal text or
-replacement fields delimited by braces `{}`. Multiple pairs of
-`{}` can be used while formatting a string. This replacement
-field contains either an index of an argument, or the name of argument.
-As a result, you will get a copy of a string where each replacement
-field is replaced with the string value of an argument.
-
-Now, we will look at an example of string formatting.
 
 Create a `format_example.py`script and write the following
 content in it:
@@ -319,13 +275,6 @@ Sending email
 -------------------------------
 
 
-
-In this section, we are going to learn about
-sending an email from Gmail through a Python script. To do this, Python
-has a module named `smtplib`. The `smtplib` module
-in Python provides SMTPclient session object that is used to send an
-email to any internet machine with SMTP listener.
-
 We are going to look at an example. In this example, we will send an
 email containing a simple text from Gmail to the recipients.
 
@@ -339,7 +288,6 @@ We will following credentials for sending emails in this lab:
 **Password:** sysadmin1234@
 
 Allow lesssecureapps option has been turned on: https://myaccount.google.com/lesssecureapps 
-
 
 
 
@@ -387,17 +335,6 @@ Password:
 Mail sent successfully
 ```
 
-In the preceding example, we have sent an email from our Gmail ID to the
-receivers. The user name variable will store your email ID. In the
-password variable, either you can enter your password or else you can
-prompt for password using the `getpass` module. Here, we
-prompt for the password. Next, the sender variable will have your name.
-Now we are going to send this email to multiple receivers. Then, we
-included subject, from, and to for that email. Then in
-`login(),` we mentioned our username and password variables.
-Next, in `sendmail()`, we mentioned the sender, receivers, and
-text variables. So, using this process, we have sent the email
-successfully.
 
 Now, we will look at one more example of sending an email with an
 attachment. In this example, we are going to send an image to the

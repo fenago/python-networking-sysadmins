@@ -27,19 +27,8 @@ Creating and unpacking archives
 
 
 
-In this section, we\'re going to learn about
-how we can create and unpack archives using
-the `shutil` module of Python. The `shutil` module
-has the `make_archive()` function, which creates a new archive
-file. Using `make_archive()`, we can archive the entire
-directory with its contents.
 
- 
-
-
-
-### Creating archives
-
+#### Creating archives
 
 
 Now, we are going to write a script
@@ -82,15 +71,6 @@ files that are archived.
 
 ### Unpacking archives
 
-
-
-To unpack the archives, the `shutil` module has
-the `unpack_archive()` function. Using this function, we can extract the archive files. We passed the
-archive filename and the directory where we want to extract the
-contents. If no directory name is passed, then it will extract the
-contents into your current working directory.
-
- 
 
 Now, create a script called `shutil_unpack_archive.py` and
 write the following code in it:
@@ -157,13 +137,6 @@ nofile.tar         [Errno 2] No such file or directory: 'nofile.tar'
 sample.tar.xz   True
 ```
 
-So, `tarfile.is_tarfile()` will check every filename mentioned
-in the list. The `hello.py, welcome.py` file are not tar files
-so we got a Boolean value, `False`. `work.tar.gz`
-and `sample.tar.xz` are tar files, so we got the Boolean
-value, `True`. And there is no such file as
-`nofile.tar` present in our directory, so we have got an
-exception, as we\'ve written it in our script.
 
 Now, we are going to add a new file into our already created archived
 file. Create a script called `add_to_archive.py` and write the
@@ -403,13 +376,6 @@ Output :
 Please check your current working directory. You will find
 the `sample.txt.aes` encrypted file in it.
 
-In this example, we\'ve already mentioned the buffer size and password.
-Next, we mentioned our filename that will be encrypted. In
-`encryptStream`, we mentioned `fIn`, which is our
-file to encrypt, and `fOut`, which is our filename after
-encryption. We\'ve stored our encrypted file as
-`sample.txt.aes`.
-
 Now, we will decrypt the `sample.txt.aes` file to get the
 content of the file. Create a script called `file_decrypt.py`
 and write the following content in it:
@@ -449,9 +415,7 @@ which is the name of the `decrypted` file.
 
 
 
-Summary
--------------------------
-
+**Summary**
 
 In this lab, we learned about creating and extracting archived
 files. Archiving plays an important role in managing files, directories,
@@ -461,15 +425,9 @@ We learned in detail about the `tarfile` and
 `zipfile` Python modules that enable you to create, extract,
 and test archive files.
 
-In the next lab, you will learn about text processing and regular
-expressions in python. Python has a very powerful library called regular
-expressions that does tasks such as searching and extracting the data.
 
 
-
-Questions
----------------------------
-
+**Questions**
 
 1.  Can we compress the data using password protected? if yes how ?
 2.  What is context manager in python?

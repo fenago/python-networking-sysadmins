@@ -83,20 +83,6 @@ Password:
 Mail sent successfully
 ```
 
-In the preceding example, we used the `smtplib`Python module
-to send an email. Make sure you\'re sending an email from a Gmail ID to
-the receiver. The `sender` variable saves the sender\'s email
-address. In the `password` variable, you can either enter your
-password or you can prompt for a password using the `getpass`
-module. Here, we prompt for the password. Next, we created a variable
-named `msg`, which will be our actual email message. In that,
-we first mentioned a subject and then the message we want to send. Then,
-in `login()`, we mentioned the `sender` and
-`password` variables. Next, in `sendmail()`, we
-mentioned the `sender`, `receivers`, and
-`text` variables. So, using this process, we sent the email
-successfully.
-
 
 
 
@@ -104,14 +90,7 @@ successfully.
 
 
 
-**POP3** stands for **Post Office Protocol version
-3**. This standard protocol helps
-you receive emails from a remote server to our local machine. The main
-advantage of POP3 is that it allows us to download emails on to our local machine and read the downloaded
-emails offline.
-
-The POP3 protocol works on two ports:
-
+**POP3** stands for `Post Office Protocol version 3`. The POP3 protocol works on two ports:
 
 -   Port `110`: The default non-encrypted port
 -   Port `995`: The encrypted port
@@ -222,13 +201,7 @@ mailbox.
 ### Receiving email using the imaplib library
 
 
-IMAP stands for Internet Message Access Protocol. It\'s used to access
-emails on a remote server through your local
-machine. IMAP allows simultaneous access by multiple
-clients to your email. IMAP is more suitable
-when you access your email via different locations.
-
-The IMAP protocol works on two ports:
+IMAP stands for Internet Message Access Protocol. The IMAP protocol works on two ports:
 
 
 -   Port `143`: The default non-encrypted port
@@ -271,19 +244,6 @@ student@ubuntu:~$ python3 imap_email.py
 ```
 
 As output, you\'ll get all of the emails from the specified folder.
-
-In the preceding example, first, we\'re importing the
-`imaplib` library, which is used in Python to receive an email
-securely via the IMAP protocol. Then, we state the specific email server
-and our user credentials that is, our username and password. After
-that, we provide that username and password to the IMAP SSL server.
-We\'re using the `'select('Inbox')'` function over
-`imap_obj` to display messages in the inbox. Then we use a
-`for` loop to display messages that have been fetched one by
-one. To display messages, we use \"pretty print\"---that is, the
-`pprint.pprint()`function-because it formats
-your object, writes it into the data stream, and passes it as an
-argument. Then, finally, the connection is closed.
 
 
 

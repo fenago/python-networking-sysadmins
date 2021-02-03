@@ -23,14 +23,6 @@ Working with PDF files
 
 
 
-In this section, we are going to learn about
-how to work with PDF files using Python modules. PDF is a widely used
-document format and PDF files have `.pdf` extensions. Python
-has a module named `PyPDF2`, that\'s useful to do various
-operations on `pdf` files. It is third-party module which is a
-Python library built as a PDF toolkit.
-
-
 #### Reading a PDF document and getting the number of pages
 
 
@@ -68,7 +60,7 @@ Number of pages in pdf :  1
 ```
 
 
-### Extracting text
+#### Extracting text
 
 
 
@@ -151,15 +143,10 @@ Working with Excel files
 ------------------------------------------
 
 
-
 In this section, we are going to work with
 Excel files, which have the `.xlsx` extension. This file
 extension is for an open XML spreadsheet file format, which is used by
 Microsoft Excel.
-
-Python has different modules: `xlrd` , pandas, and
-`openpyxl` to work with Excel files. In this section, we will
-learn how to handle Excel files using these three modules.
 
 
 #### Reading an Excel file
@@ -253,26 +240,12 @@ install `pandas` using the following command:
 ```
 
 
-### Note
-
-Note: Make sure you have an Excel file present in your system. I
-have `sample.xlsx` present in my system. So I am going to use
-that file throughout this section.
-
-
- 
 
 Now, we will look at some examples using `pandas`.
 
 
-
 #### Reading an Excel file
 
-
-
-In this section, we are going to read Excel
-files using the  `pandas`  module. Now, let\'s look at an
-example of reading an Excel file.
 
 Create a script called  `rd_excel_pandas.py` and write the
 following content in it:
@@ -360,33 +333,7 @@ Following is the output:
 4  Central  Andrews  Pencil
 ```
 
-In the preceding example, first we imported the pandas module. Then, we
-created a string called `excel_file` to hold the filename.
-Then we defined the `cols` variable and put index values of
-the columns inside it. So, when we used the `read_excel`
-method, within that method, we also provided the `usecols`
-parameter to fetch a particular column through the index, which we
-defined previously in the `cols` variable. Therefore, after
-running the script, we are getting only specific columns from the Excel
-file.
 
-We can also perform various operations on Excel files using the pandas
-module, such as reading an Excel file with missing data, skipping
-particular rows, and reading multiple Excel sheets.
-
-### Using openpyxl
-
-
-
-`openpyxl` is a Python library that\'s used to read and write
-`xlsx`, `xlsm`, `xltx`,
-and `xltm` files. First, we have to
-install `openpyxl.` Run the following command:
-
-
-```
-            pip3 install openpyxl
-```
 
 Now, we will look at some some examples of using `openpyxl`.
 
@@ -732,10 +679,7 @@ Run the preceding script and you will get the output as follows:
 
 
 Now, check your current working directory. You\'ll find a
-`test.txt` file that we created. Now, check the contents of
-the file. You will find that the days that we have written in
-the `write()` function will be saved in `test.txt`.
-
+`test.txt` file that we created.
 
 
 ### Reading a text file

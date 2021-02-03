@@ -5,14 +5,6 @@ Lab 5. Handling Files, Directories, and Data
 
 
 
-The system administrator performs tasks such as handling various files,
-directories, and data. In this lab, we will learn about the
-`os` module. The `os` module provides the
-functionality to interact with the operating system. Python programmers
-can easily use this `os` module for performing file and
-directory operations. The `os` module provides tools for
-programmers that deal with files, paths, directories, and data.
-
 In this lab, you will learn about the following:
 
 
@@ -111,7 +103,6 @@ Copying, moving, renaming, and deleting data
 
 
 
-
 **Copying the data**
 
 
@@ -183,14 +174,7 @@ Run the script as follows:
 $ python3 shutil_move_example.py
 ```
 
-In this script, our file to move is `sample.txt`, which is in
-the `/home/jovyan` directory. `/home/jovyan` is
-our source folder and `/home/jovyan/Desktop` is our
-destination folder. So, after running the script, `sample.txt`
-will be moved from `/home/jovyan` to
-the `/home/jovyan/Desktop` directory.
 
- 
 
 
 ### Renaming data
@@ -224,14 +208,6 @@ renamed `hello_renamed.py`.
 
 ### Deleting data
 
-
-
-We will learn how to delete files and folders
-using the `os` module in Python.
-The `remove()` method of the `os` module will delete
-a file. If you try to remove a directory using this method, it will give
-you an `OSError`. To remove directories, use
-`rmdir()`.
 
 Now, create a `os_remove_file_directory.py` script and write
 the following content in it:
@@ -606,14 +582,7 @@ Using the tarfile module to create TAR archives
 -----------------------------------------------------------------
 
 
-
-This section will help you to learn about how
-we can create tar archives using Python\'s `tarfile` module.
-
- The `tarfile` module is used to read and write tar archives
-using `gzip`, `bz2` compression techniques. Make
-sure the necessary files and directories are present. Now, create a
-`tarfile_example.py` script and write the following content in
+Now, create a `tarfile_example.py` script and write the following content in
 it:
 
 
@@ -640,12 +609,6 @@ Now, check your present working directory; you will see
 Using a tarfile module to examine the contents of TAR files
 -----------------------------------------------------------------------------
 
-
-
-In this section, we will learn about how we
-can examine the contents of a created tar archive without actually
-extracting that tar file. We will do it using Python\'s
-`tarfile` module.
 
 Create a `examine_tar_file_content.py` script and write the
 following content in it:

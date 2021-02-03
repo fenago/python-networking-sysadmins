@@ -97,14 +97,6 @@ The output is as follows:
  [11 22 33 44]] <class 'numpy.ndarray'>
 ```
 
-In the preceding example, we imported the `numpy` module.
-After that, we created two lists: `my_list1` and
-`my_list2`. Then we made another list of lists
-(`my_list1` and `my_list2`) and applied
-the `np.array()` function on the list (`my_lists`)
-and stored it in an object called `my_array`. Finally, we
-printed the `numpy` array.
-
 Now, we are going to look at more operations that can be done with an
 array. We are going to study how to know the size as well as the data
 type of our created array; that is, `my_array`. For that, we
@@ -154,15 +146,6 @@ int64
  
 
  
-
- 
-
-In the preceding example, we applied the shape function as
-`my_array.shape` to get the size of our array. The output
-was `(2, 4)`. Then we applied the `dtype` function
-as `my_array.dtype` on the array and the output was
-`int64`**.**
-
 Now, we are going to look at some examples of special case arrays.
 
 First, we will make an array with all zeros using
@@ -246,7 +229,7 @@ of that, the array index value starts with `0`.
 
 
 
-### Using arrays and scalars
+#### Using arrays and scalars
 
 
 
@@ -344,7 +327,7 @@ output as the cube of each value in the array.
  
 
 
-### Array indexing
+#### Array indexing
 
 
 
@@ -496,7 +479,7 @@ is the copy the original array.
 
 
 
-#### Indexing a 2D array
+##### Indexing a 2D array
 
 
 
@@ -615,7 +598,7 @@ array([[1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
 In the preceding example, we fetch particular index values. So, in the
 result, we got the output.
 
-### Universal array functions
+#### Universal array functions
 
 
 
@@ -704,30 +687,6 @@ Pandas module
 --------------------------------
 
 
-
-In this section, we are going to learn about
-the pandas module. The pandas module provides fast and flexible data
-structures that are designed for working with structured and time series
-data. The pandas module is used for data analysis. The pandas module is
-built on packages such as NumPY and Matplotlib and gives us a place to
-do most of our analysis and visualization work in. To use the
-functionality of this module, you must import it first.
-
-First, install the following packages that we need in our examples by
-running the following commands:
-
-
-```
-$ pip3 install pandas
-$ pip3 install matplotlib
-```
-
- 
-
- 
-
- 
-
  
 
 Here, we are going to look at some examples of using the pandas module.
@@ -737,7 +696,7 @@ using pandas.
 
 
 
-### Series
+#### Series
 
 
 
@@ -775,17 +734,6 @@ The output is as follows :
 3 40
 Name: numbers, dtype: int64
 ```
-
-In the preceding example, we learned about series without declaring an
-index. First, we imported two modules: pandas and `numpy`.
-Next, we created the `s_data` object that will store the
-series data. In that series, we created a list and instead of declaring
-an index, we provided the name attribute, which will give a name to the
-list, and then we printed the data. In the output, the left column is
-your index for the data. Even if we never provide the index, pandas will
-give it implicitly. The index will always start from `0`.
-Underneath the columns is the name of our series and the data type of
-the values.
 
  
 
@@ -831,17 +779,8 @@ In the preceding example, we provided an index value for our data in the
 values that we provided.
 
 
-### DataFrames
+#### DataFrames
 
-
-
-In this section, we are going to learn about
-pandas DataFrames. DataFrames are two-dimensional labeled data
-structures that have columns and may be of different data types.
-DataFrames are similar to SQL tables or a spreadsheet. They are the most
-common object when working with pandas.
-
- 
 
 Now, we are going to look at an example of reading data from a
 `csv` file into a DataFrame. For that, you must have a
@@ -901,69 +840,16 @@ Output:
 
  
 
-In the preceding example, we first created a `csv` file
-called `employee.csv`. We are using the pandas module to
-create data frames. The goal is to read that `csv` file into
-the DataFrame. Next, we created a `df`object and we are
-reading the contents of a `csv` file into it. Next we are
-printing a DataFrame. Here, we used the `head()` and
-`tail()` methods to get the particular number of lines of
-data. We specified `head(3)`, which means we are printing the
-first three lines of data. We also specified `tail(1)`, which
-means we are printing the last line of data.
-
-
 Data visualization
 -------------------------------------
 
-
-
-Data visualization is the term that describes
-the efforts in understanding the significance of data, placing it in a
-visual manner. In this section, we are going to look at the following
-data visualization techniques:
-
+In this section, we are going to look at the followingdata visualization techniques:
 
 -   Matplotlib
 -   Plotly
 
 
-### Matplotlib
-
-
-
-Matplotlib is the data visualization library
-in Python and it allows us to generate plots, histograms, power spectra,
-bar charts, error charts, scatter plots, and so on, using a
-few lines of code. Matplotlib usually make
-things easier and the hardest things possible.
-
-To use `matplotlib` in your Python program, first we have to
-install `matplotlib`. Run the following command in your
-Terminal to install `matplotlib:`
-
-
-```
-$ pip3 install matplotlib
-```
-
-Now, you have to install one more package, `tkinter`, for
-graphical representations. Install it using the following command:
-
-
-```
-$ sudo apt install python3-tk
-```
-
-Now that `matplotlib` is installed in your system, we will
-look at some examples. While plotting, there are two important
-components: figures and axes. The figure is the container that acts as
-the window on which everything is drawn. It can have various types of
-independent figures. The axis is the area where you can plot your data
-and any labels associated with it. Axes consist of an `x` axis
-and a `y` axis.
-
- 
+#### Matplotlib
 
 Now, we are going to look at some examples of `matplotlib`.
 Let\'s start with a simple example. Create a script
@@ -996,28 +882,7 @@ The output is as follows:
 ![](./images/f5d18572-7ce1-4b06-9fe7-ef8650edc79b.jpg)
 
 
- 
 
-In the preceding example, we imported two
-modules,`matplotlib`and`numpy`, to visualize the
-data as well as to create the arrays [*x*] and
-[*y*], respectively. After this, we plotted two arrays
-as`plt.plot(x,y)`. Then we added a title and labels to the
-plot using the`xlabel()`,
-`ylabel()`, and`title()`functions, and to display
-this plotting, we used the`plt.show()`function. Because we are
-using Matplotlib within a Python script, don\'t forget to
-add`plt.show()`at the end line to display your plot.
-
-Now we are going to create two arrays to display two lines of curves in
-the plot and we are going to apply style to both the curves. In the
-following example, we will use the `ggplot` style to plot the
-graph. `ggplot` is a system used for creating graphics
-declaratively, and is based on the grammar of graphics. To plot
-`ghraph`, we just provide the data and then tell
-`ggplot` how to map variables and what graphical primitives to
-use, and it takes care of the details. In
-most cases, we start with the `ggplot()` style.
 
 Now, create a script called `simple_plot2.py` and write the
 following content in it:
@@ -1062,15 +927,7 @@ The output is as follows:
 ![](./images/1a35d7e2-d40a-41e1-99ad-f6f63a41ce62.jpg)
 
 
-In the preceding example, first we imported
-the required module, and then we used the `ggplot` style to
-plot the graph.  We created two sets of array; that is,  `x1`,
-`y1` and `x2`, `y2`. Then we used the
-subplot function, `plt.subplot()`, because it allows us to
-plot different things within the same canvas. You can also use
-the `plt.figure()` function instead of
-`plt.subplot(),` if you want to display these two plots on a
-different canvas.
+
 
 Now, we are going to see how to plot the arrays using
 the `plt.figure()` function and save our generated figure
@@ -1124,23 +981,7 @@ The output is as follows:
 ![](./images/2f64ff32-d83c-4d79-b5f9-16ec4f3219b3.jpg)
 
 
-In the preceding example, we used the `plt.figure()` function
-to plot the things on a different canvas.  After that, we used the
-`plt.plot()` function. This function has different arguments,
-which are useful to plot the graph. In the preceding example, we used
-some of arguments; that is `x1`, `x2`,
-`y1`,and `y2`. These are the respective axis points
-used to plot.
 
- 
-
-Then we  used the `color` argument to provide a particular
-color to the graph line and, in the third argument, we used
-`linewidth`, which decides the width of the graph line. After
-that, we also used the `savefig()` method to save our figure
-in a particular image format. You can check them in your current
-directory (if you did not mention the path) where you run your Python
-script.
 
 You can open those images by directly accessing that directory or you can also use following method to open
 those generated images using `matplotlib`. Now, we will look
@@ -1172,15 +1013,9 @@ The output is as follows:
 In the preceding example, we used the `imshow()` function of
 Matplotlib to open the saved image of the figure.
 
-Now, we will look at different types of plots. Matplotlib
-allows us to create different types of plots
-to deal with data in arrays, such as histograms, scatter plots, bar
-charts, and so on. The use of different kinds of plots depends on the
-purpose of the data visualization. Let\'s look at some of these plots.
 
 
-
-#### Histograms
+##### Histograms
 
 
 
@@ -1228,7 +1063,7 @@ In the preceding example, we created an array of random numbers using
 the `plt.hist()` method.
 
 
-#### Scatter plots
+##### Scatter plots
 
 
 
@@ -1276,7 +1111,7 @@ the `plt.scatter()` method to get a scatter plot for
 the `x` and `y` values.
 
 
-#### Bar charts
+##### Bar charts
 
 
 
@@ -1331,31 +1166,8 @@ operations using another tool of data visualization: `plotly`.
 
  
 
-### Plotly
+#### Plotly
 
-
-
-Plotly is an interactive, open source graphing library in Python. It is a charting library that provides
-over 30 chart types, such as scientific charts, 3D graphs, statistical
-charts, financial charts, and more.
-
-To use `plotly` in Python, first we have to install it in
-our system. To install `plotly`,
-run the following command in your Terminal:
-
-
-```
-$ pip3 install plotly
-```
-
-We can use `plotly` online as well as offline. For online
-usage, you need to have a `plotly` account and after that you
-need to set up your credentials in Python:
-
-
-```
-            plotly.tools.set_credentials_file(username='Username', api_key='APIkey')
-```
 
 To use `plotly` offline, we need to use the `plotly`
 function:  `plotly.offline.plot()`
@@ -1384,9 +1196,6 @@ the following output:
 student@ubuntu:~/work$ python3 sample_plotly.py
 ```
 
- 
-
- 
 
  
 
@@ -1398,24 +1207,12 @@ The output is as follows:
 ![](./images/5a0d71e9-606e-4176-8395-8ba3327def64.jpg)
 
 
-In the preceding example, we imported the `plotly` module and
-then we set `plotly` for offline use. We put arguments in it,
-which are useful to plot a graph. In the example, we used some of
-arguments: `data` and `layout`. In the
-`data` argument, we define the scatter function with
-`x` and `y` arrays, which have values to plot over
-the `x` and `y` axes, respectively. Then we use the
-`layout` argument, in which we define the layout function to
-provide the title for the graph. The output of the preceding program is
-saved as an HTML file and gets opened in your default browser. This HTML
-file is in the same directory as your script.
-
 Now let\'s look at some different types of charts for visualizing the
 data. So, first, we are going to start with the scatter plot.
 
 
 
-#### Scatter plots
+##### Scatter plots
 
 
 
@@ -1461,18 +1258,8 @@ The output is as follows:
 ![](./images/0df3464b-e199-48b3-9736-ae9808c2bec2.jpg)
 
 
-In the preceding example, we imported `plotly` and then
-created random data by using `numpy` and, for that, import
-the `numpy` module in your script. After generating the
-dataset, we created one object named `trace` and inserted our
-numerical data in it to be scattered. Then, finally, we place the data
-in the `trace` object into
-the `plotly.offline.plot()` function to get the scatter plot
-of data. Like our first sample graph, the output of this example is
-also saved in HTML format and displayed in your default web browser.
 
-
-#### Line scatter plots
+##### Line scatter plots
 
 
 
@@ -1523,7 +1310,7 @@ saved with the name `line_scatter_plot.html` in your current
 directory.
 
 
-#### Box plots
+##### Box plots
 
 
 
@@ -1581,7 +1368,7 @@ and plot the data through the offline `plotly` function.
  
 
 
-#### Contour plots
+##### Contour plots
 
 
 

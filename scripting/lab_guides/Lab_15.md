@@ -22,27 +22,7 @@ In this lab, you will learn the following:
 -   Working with JSON data
 
 
-What is SOAP?
---------------------------------
-
-
-
-**SOAP** is **Simple Object Access Protocol**.
-SOAP is the standard communication protocol system that permits
-processes to use different operating systems.
-These communicate via HTTP and XML. It is a web services technology.
-SOAP APIs are mainly designed for tasks such as creating, updating,
-deleting, and recovering data. SOAP API uses the Web Services
-Description language to describe the functionalities offered by web
-services. SOAP describes all the functions and the types of data. It
-builds an XML-based protocol.
-
- 
-
-
-
-### Using libraries for SOAP
-
+#### Using libraries for SOAP
 
 
 In this section, we are going to learn about
@@ -57,16 +37,6 @@ listed here:
 -   `pysimplesoap`
 
 
-These are the SOAP API libraries for Python. In this section, we are
-going to learn about the Zeep library only.
-
-To use the functionality of Zeep, you need to install it first. Run the
-following command in your Terminal to install Zeep:
-
-
-```
-            $ pip3 install Zeep
-```
 
 The `Zeep` module is used for WSDL documents. It generates the
 code for the services and the documents and provides the programming
@@ -108,30 +78,7 @@ What is a RESTful API?
 
 
 
-**REST** stands for **Representational State
-Transfer**. RESTful API has an approach to communication used in the development of web services. It
-is a style of a web service that works as a channel of communication between different systems over the
-internet. It is an application interface and is used to `GET`,
-`PUT`, `POST`, and `DELETE` data using
-`HTTP` requests.
-
-The advantage of REST is that it uses less bandwidth, which is suitable
-for internet usage. The REST API uses uniform interfaces. All the
-resources are handled by `GET`, `POST`,
-`PUT`, and `DELETE` operations. The `REST`
-API uses `GET` to retrieve a resource, uses `PUT` to
-update the resource or to change the state of resource, uses
-`POST` to create a resource, and uses `DELETE` to
-delete the resource. Systems using REST APIs deliver fast performance
-and reliability.
-
-The REST API handles every request independently. The request from
-client to server must contain all the information that is necessary to
-understand that request.
-
-
-
-### Using standard libraries for RESTful APIs
+#### Using standard libraries for RESTful APIs
 
 
 
@@ -172,13 +119,6 @@ Output:
 
  
 
- 
-
-In the preceding example, we imported the `requests` module to
-get the request. Next, we created a request object, `req_obj`,
-and specified a link from where we want to get the request. And next, we
-printed it. The output we got is a status code `200`, which
-indicates success.
 
 Now, we are going to see the `POST` request example.
 `POST` requests are used for sending data to a server. Create
@@ -218,35 +158,6 @@ a `POST` request. The output we got is status code
 
 Working with JSON data
 -----------------------------------------
-
-
-
-In this section, we are going to learn about
-JSON data. **JSON** stands for **JavaScript Object
-Notation**. JSON is a data interchange format. It encodes
-Python objects as JSON strings and decodes JSON strings into Python
-objects. Python has a JSON module that formats the JSON output. It has
-functions for serializing and deserializing JSON.
-
-
--   `json.dump(obj, fileObj)`: This function will serialize an
-    object as a JSON-formatted stream.
--   `json.dumps(obj)`: This function will serialize an object
-    as a JSON formatted string.
--   `json.load(JSONfile)`: This function will deserialize a
-    JSON file as a Python object.
--   `json.loads(JSONfile)`: This function will deserializes a
-    string-type JSON file to a Python object.
-
-
-It also has two classes for encoding and decoding listed here:
-
-
--   `JSONEncoder`: Used to convert Python objects into JSON
-    format.
--   `JSONDecoder`: Used to convert a JSON formatted file into
-    a Python object.
-
 
 Now, we are going to see some examples using a JSON module. First, we
 are going to see the conversion from JSON to Python. For that, create a

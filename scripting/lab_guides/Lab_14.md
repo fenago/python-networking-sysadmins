@@ -4,7 +4,6 @@ Lab 14. Working with Apache and Other Log Files
 ------------------------------------------------------------
 
 
-
 In this lab, you are going to learn about log files. You will learn
 how to parse log files. You will also learn why you need to write
 exceptions in your programs. The different ways to parse different files
@@ -25,13 +24,6 @@ In this lab, you will learn the following:
 
 Parsing complex log files
 --------------------------------------------
-
-Before moving on to an example of log parsing or changing configurations
-in a log file, first we have to understand what we have got in a typical
-log file. According to that we have to decide, we will learn how to
-manipulate or get the information from it. We can also look for common
-terms in the log file so that we can use those common terms to fetch
-data.
 
 
 Let\'s create a `read_apache_log.py`script and write the

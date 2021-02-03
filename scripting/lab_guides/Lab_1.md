@@ -14,30 +14,15 @@ This lab will cover the following topics:
 -   Python supported data structures and how to use all of these
     concepts in a script
 -   Decision making; that is, the `if` statement
--   Looping statements; that is, the `for` and
-    `while` loops
+-   Looping statements; that is, the `for` and `while` loops
 -   Functions
 -   Modules
 
 
-### The difference between Python and Bash scripting
-
-In this section, we\'re going to learn about
-the difference between Python and Bash scripting. The differences are as
-follows:
-
-
--   Python is a scripting language, whereas Bash is a shell used for
-    entering and executing commands
--   Dealing with larger programs is easier with Python
--   In Python, you can do most things just by calling a one-line
-    function from imported modules
 
 ### Starting the interactive console
 
 
-We can access Python\'s interactive console from any
-computer that has Python already installed.
 Run the following command to start Python\'s interactive console:
 
 
@@ -214,16 +199,6 @@ follows:
 ```
 
 
-### Exiting the Python console
-
-
-
-We can come out of the Python console in two ways:
-
-
--   The keyboard shortcut: [*Ctrl + D*]
--   Using the `quit()` or `exit()` functions
-
 
 #### The keyboard shortcut
 
@@ -264,11 +239,6 @@ student@ubuntu$
 ### Indentation and tabs
 
 
-
-Indentation is a must when writing block code
-in Python. Indentation is useful when you are writing functions, decision-making statements, looping statements,
-and classes. This makes it easy to read your Python programs.
-
 We use indentation to indicate the block of code in Python programs. To
 indent a block of code, you can use spaces or tabs. Refer to the
 following example:
@@ -288,12 +258,6 @@ we didn\'t indent it.
 
 ### Variables
 
-
-
-Like other programming languages, there\'s no need to declare your
-variables first. In Python, just think of any name to give your variable
-and assign it a value. You can use that variable in your program. So, in Python, you can declare variables whenever
-you need them.
 
 In Python, the value of a variable may change during the program
 execution, as well as the type. In the following line of code, we assign
@@ -351,13 +315,6 @@ the following code:
 
 #### Creating and assigning values to variables
 
-
-
-In Python, variables don\'t need to be declared explicitly to reserve memory space. So, the
-declaration is done automatically
-whenever you assign a value to the variable.
-In Python, the equal sign `=` is used to assign values to
-variables.
 
 Consider the following example:
 
@@ -1900,17 +1857,6 @@ function and a list.
 Modules
 -------------------------
 
-
-
-Modules are just files that contain Python statements and definitions. A
-file that contains Python code (for example, `sample.py`) is
-called a module and its module name would be `sample`. Using
-modules, we can break larger programs into small and organized ones. An
-important feature of a module is re-usability. Instead of copying the
-definitions of the most used functions in
-different programs, you can define them in the module and just import
-them whenever needed.
-
 Let\'s create a module and import it. We will create two
 scripts: `sample.py` and `add.py`. We will import a
 sample module in our `add.py`. Now, save the following code as
@@ -1923,12 +1869,6 @@ def addition(num1, num2):
     result = num1 + num2
     return result
 ```
-
-Here, we have defined a `addition()` function inside a module
-named `sample`. The function takes in two numbers and returns
-their sum. Now we have created a module. You can import this in any
-Python program.
-
 
 
 ### Importing modules
@@ -1964,12 +1904,6 @@ learned about Python-supported data types, variables, numbers and
 strings, decision-making statements, and looping statements in Python.
 We also learned about functions and how to use them in scripts and
 modules and how to create and import them.
-
-In the next lab, [*Debugging and Profiling Python
-Scripts*], you will learn about Python debugging techniques,
-error handling (exception handling), debuggers tools, debugging basic
-program crashes, profiling and timing programs, and making programs run
-faster.
 
 
 

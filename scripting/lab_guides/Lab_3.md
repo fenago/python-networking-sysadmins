@@ -5,12 +5,6 @@ Lab 3. Unit Testing - Introduction to the Unit Testing Framework
 
 
 
-Testing your project is an essential part of your software development.
-In this lab, we are going to learn about unit testing in Python.
-Python has the module called `unittest`, which is a unit
-testing framework. We are going to learn about
-the `unittest` is framework in this lab.
-
 In this lab, you will learn about the following topics:
 
 
@@ -20,8 +14,6 @@ In this lab, you will learn about the following topics:
 
 Creating unit tests
 -------------------------------------
-
-
 
 In this section, we are going to create unit
 tests. To do this, we will create two scripts. One will be your normal
@@ -80,12 +72,6 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
-In the preceding script, we have written the three test cases for
-the `add_numbers` function. The first is for testing integer
-numbers, the second is for testing float numbers, and the third is for
-testing strings. In strings, adding means concatenating two strings.
-Similarly, you can write the test cases for subtraction, multiplication,
-and division.
 
 Now, we will run our `test_addition.py`test script and we will
 see what result we get after running this script.
@@ -210,9 +196,7 @@ FAILED (failures=1)
 
 
 
-Summary
--------------------------
-
+**Summary**
 
 
 In this lab, we have learned about the `unittest`, which
@@ -220,18 +204,7 @@ is Python\'s unit testing framework. We also learned about how to create
 test cases and methods used in unit testing.
 
  
-In the next lab, we are going to learn how to automate the regular
-administrative activities of the system administrator. You will learn
-about accepting inputs, handling passwords, executing external commands,
-reading config files, adding warning codes to scripts, setting CPU
-limits, web-browser launching, using the `os` module, and
-taking backups.
-
-
-
-Questions
----------------------------
-
+**Questions**
 
 1.  What is unit testing, automation testing, and manual testing?
 2.  What are the alternative modules available apart from

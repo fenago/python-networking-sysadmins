@@ -24,15 +24,7 @@ MySQL database administration
 
 
 
-This section will cover MySQL database
-administration using Python. You already know Python has
-various modules for `mysql`
-database administration. So, we will learn about the MySQLdb module
-here. The `mysqldb` module is an interface for MySQL database
-server and is used to provide Python database API.
-
-Let\'s learn how to install MySQL and a
-Python `mysqldb` package. For this, run the following command
+Let\'s learn how to install MySQL. For this, run the following command
 in your Terminal:
 
 
@@ -176,11 +168,6 @@ Database changed
 mysql>
 ```
 
-First, we listed all the databases using show databases. Next, we
-created our database test using the create
-`database` statement. Again, we executed show databases to
-find whether our database is created or not. Our database is now
-created. Next, we used that database to store the work we are doing.
 
 Now, we are going to create a user and grant the privileges to that
 user. Run the following commands:
@@ -460,25 +447,6 @@ SQLite database administration
 -------------------------------------------------
 
 
-
-In this section, we are going to learn how to install and use SQLite.
-Python has the `sqlite3` module to do SQLite database tasks.
-SQLite is a serverless, zero configuration, transactional SQL database
-engine. SQLite is very fast and lightweight. The entire database is
-stored in a single disk file.
-
-Now, we will install SQLite first. Run the
-following command in your Terminal:
-
-
-```
-$ sudo apt install sqlite3
-```
-
-In this section, we are going to learn following the operations:
-creating database, creating tables, inserting data into table,
-retrieving the data, and updating and deleting the data from table. We
-will see each operation one by one.
 
 Now, first, we will see how to create a database in SQLite. To create a
 database, you simply have to write the command in your Terminal as
