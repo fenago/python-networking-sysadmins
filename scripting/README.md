@@ -27,16 +27,3 @@ The code will look like the following:
 'hihihihello' 
 ```
 
-**Following is what you need for this book:**
-This book would be ideal for users with some basic understanding of Python programming and who are interested in scaling their programming skills to command line scripting and system administration.  Prior knowledge of Python would be necessary.
-
-With the following software and hardware list you can run all code files present in the book (Chapter 1-18).
-### Software and Hardware List
-| Chapter | Software required | OS required |
-| -------- | ------------------------------------ | ----------------------------------- |
-| For all chapters | Python 3.7 | Windows, Mac OS X, and Linux (Any) |
-| 18 | MySQL | Windows, Mac OS X, and Linux (Any) |
-| 18 | SQlite | Windows, Mac OS X, and Linux (Any) |
-
-
-
