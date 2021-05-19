@@ -1087,11 +1087,12 @@ This exercise will be performed on the command line:
 
     ```
     $ python setup.py build_ext --inplace
+
     running build_ext
     building 'sieve_module' extension
     creating build
     creating build/temp.macosx-10.7-x86_64-3.7
-    gcc -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/leeg/anaconda3/include -arch x86_64 -I/Users/leeg/anaconda3/include -arch x86_64 -I/Users/leeg/anaconda3/include/python3.7m -c sieve_module.c -o build/temp.macosx-10.7-x86_64-3.7/sieve_module.o
+    gcc -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/leeg/anaconda3/include -arch x86_64 -I/Users/leeg/anaconda3/include -arch x86_64 -I/Users/leeg/anaconda3/include/python3.8m -c sieve_module.c -o build/temp.macosx-10.7-x86_64-3.7/sieve_module.o
     gcc -bundle -undefined dynamic_lookup -L/Users/leeg/anaconda3/lib -arch x86_64 -L/Users/leeg/anaconda3/lib -arch x86_64 -arch x86_64 build/temp.macosx-10.7-x86_64-3.7/sieve_module.o -o /Users/leeg/Nextcloud/Documents/Python Book/Lesson_9/sieve_module.cpython-37m-darwin.so
     ```
 

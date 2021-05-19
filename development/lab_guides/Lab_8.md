@@ -53,7 +53,7 @@ follows:
 
 
 ``` {.language-markup}
-python3.7 –m pdb magic_operation.py
+python3.8 -m pdb magic_operation.py
 > [...]Lesson08/1.debugging/magic_operation.py(3)<module>()
 -> this = "is the first line to execute"
 (Pdb)
@@ -87,7 +87,7 @@ simplest and fastest way:
 
 
 ``` {.language-markup}
-$ python3.7 magic_operation_with_breakpoint.py
+$ python3.8 magic_operation_with_breakpoint.py
 > [...]/Lesson08/1.debugging/magic_operation_with_breakpoint.py(7)secret_sauce()
 -> if number <= 10:
 (Pdb)
@@ -272,7 +272,7 @@ The following steps will help you complete this exercise:
     breakpoint in your `calculate_new_salary` function:
 
     ```
-    $ python3.7 -m pdb salary_calculator.py
+    $ python3.8 -m pdb salary_calculator.py
     > /Lesson08/1.debugging/salary_calculator.py(1)<module>()
     -> """Adjusts the salary rise of an employ"""
     (Pdb) b calculate_new_salary
@@ -309,7 +309,7 @@ The following steps will help you complete this exercise:
 
 
     ```
-      /usr/local/lib/python3.7/bdb.py(585)run()
+      /usr/local/lib/python3.8/bdb.py(585)run()
     -> exec(cmd, globals, locals)
       <string>(1)<module>()
       /Lesson08/1.debugging/salary_calculator.py(34)<module>()
@@ -772,7 +772,7 @@ validate the implementation and potentially find any existing bugs:
 
 
     ```
-    python3.7 test_unittest.py  -v
+    python3.8 test_unittest.py  -v
     ```
 
     Run the test by executing it with a Python interpreter. By using
@@ -910,7 +910,7 @@ You can now create the source distribution by running the following:
 
 
 ``` {.language-markup}
-python3.7 setup.py sdist
+python3.8 setup.py sdist
 ```
 
 This will generate a file in the `dist` folder, which is ready
@@ -921,7 +921,7 @@ the following to create a `wheel`:
 
 
 ``` {.language-markup}
-python3.7 setup.py bdist_wheel
+python3.8 setup.py bdist_wheel
 ```
 
 Once you have this file generated, you can install Twine, which is the
@@ -967,9 +967,9 @@ contain multiple files and upload them to the test version of PyPI:
 
 
     ```
-    python3.7 –m venv venv
+    python3.8 -m venv venv
     . venv/bin/activate
-    python3.7 –m pip install twine setuptools
+    python3.8 -m pip install twine setuptools
     ```
 
     You now have all the dependencies we need to create and distribute
@@ -1030,7 +1030,7 @@ contain multiple files and upload them to the test version of PyPI:
 
 
     ```
-    python3.7 setup.py sdist
+    python3.8 setup.py sdist
     ```
 
     This will create a source distribution. You can test it out by
@@ -1038,7 +1038,7 @@ contain multiple files and upload them to the test version of PyPI:
 
 
     ```
-    cd dist && python3.7 –m pip install *
+    cd dist && python3.8 -m pip install *
     ```
 
 5.  Upload to the `PyPI` test:
@@ -1262,7 +1262,7 @@ in the testing topic, `divisible.py`, from *Exercise 113*,
 2.  Run the `sphinx` quick-start tool:
 
     Make sure you have Sphinx installed (otherwise, run
-    `python3.7 –m pip install sphinx –user`) and run
+    `python3.8 -m pip install sphinx –user`) and run
     `sphinx-quickstart` within the `docs` folder.
     You can leave all the functions with the default value by pressing
     return when prompted, except for the following:

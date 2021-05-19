@@ -19,51 +19,7 @@ facilitate future troubleshooting.
 High-Level Modules
 ------------------
 
-The Python standard library is truly vast and diverse, providing a
-*toolbelt* for the user that can be used to write most of their trivial
-programs. You can open an interpreter and run the following code snippet
-to print graphics on the screen. This can be executed on the Python
-terminal. The code mentioned here is with the `>>>` symbol:
-
-
-``` {.language-markup}
->>> from turtle import Turtle, done
->>> turtle = Turtle()
->>> turtle.right(180)
->>> turtle.forward(100)
->>> turtle.right(90)
->>> turtle.forward(50)
->>> done()
-```
-
-
-Here is a detailed explanation of the `turtle` module code
-snippet:
-
-1.  It creates a turtle in the middle of the screen.
-2.  It then rotates it 180 degrees to the right.
-3.  It moves forward 100 pixels, painting as it walks.
-4.  It then rotates to the right once again, this time by 90 degrees.
-5.  It then moves forward 50 pixels once again.
-6.  It ends the program using `done()`.
-
-The code mentioned earlier in this section will result in the following
-output:
-
-![](./images/C13963_06_02.jpg)
-
-
-Caption: Example of output screen when using turtle
-
-You can go ahead and explore and input different values, playing around
-a bit with the `turtle` module and checking the different
-outputs you get, before you dive further into this lab.
-
-The `turtle` module you worked on is an example of one of the
-high-level modules that the standard library offers.
-
-
-Now, you will use another high-level module `argparse` as an
+Let's use an high-level module `argparse` as an
 example and see how it can be used to create a command-line interface
 that echoes words passed in and, optionally, capitalizes them in a few
 lines of code. This can be executed in the Python terminal:
