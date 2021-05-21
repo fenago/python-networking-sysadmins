@@ -1,6 +1,6 @@
 <img align="right" src="./logo.png">
 
-<h2><span style="color:red;"></span>Python for System Administrators</h2>
+<h2><span style="color:red;">Python for Networking and System Administrators</span></h2>
 
 ### Description
 
