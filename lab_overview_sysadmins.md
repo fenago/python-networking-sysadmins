@@ -12,16 +12,6 @@ Leverage the features and libraries of Python to administrate your environment e
 - Learn to handle regular expressions, network administration
 - Web-scraping and database administration including data analytics
 
-**What You Will Learn**
-
-- Understand how to install Python and debug Python scripts
-- Understand and write scripts for automating testing and routine administrative activities
-- Understand how to write scripts for text processing, encryption, decryption, and archiving
-- Handle files, such as pdf, excel, csv, and txt files, and generate reports
-- Write scripts for remote network administration, including handling emails
-- Build interactive tools using a graphical user interface
-- Handle Apache log files, SOAP and REST APIs communication
-- Automate database administration and perform statistical analysis
 
 ### Labs
 
@@ -63,10 +53,14 @@ Labs for this course are available at endpoints shared below. Update `<host-ip>`
 		* http://<host-ip>/lab/workspaces/lab16_Sysadmin_Scraping
 	
 
-### About
 
-Python has evolved over time and extended its features in relation to every possible IT operation. Python is simple to learn, yet has powerful libraries that can be used to build powerful Python scripts for solving real-world problems and automating administrators' routine activities. The objective of this course is to walk through a series of projects that will teach readers Python scripting with each project.
+**What You Will Learn**
 
-This course will initially cover Python installation and quickly revise basic to advanced programming fundamentals. The course will then focus on the development process as a whole, from setup to planning to building different tools. It will include IT administrators' routine activities (text processing, regular expressions, file archiving, and encryption), network administration (socket programming, email handling, the remote controlling of devices using telnet/ssh, and protocols such as SNMP/DHCP), building graphical user interface, working with websites (Apache log file processing, SOAP and REST APIs communication, and web scraping), and database administration (MySQL and similar database data administration, data analytics, and reporting).
-
-By the end of this course, you will be able to use the latest features of Python and be able to build powerful tools that will solve challenging, real-world tasks
+- Understand how to debug Python scripts
+- Understand and write scripts for automating testing and routine administrative activities
+- Understand how to write scripts for text processing, encryption, decryption, and archiving
+- Handle files, such as pdf, excel, csv, and txt files, and generate reports
+- Write scripts for remote network administration, including handling emails
+- Build interactive tools using a graphical user interface
+- Handle Apache log files, SOAP and REST APIs communication
+- Automate database administration and perform statistical analysis
